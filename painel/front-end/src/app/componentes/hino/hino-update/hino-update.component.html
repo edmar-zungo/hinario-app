@@ -1,0 +1,113 @@
+<div class="container mb-3">
+  <h2 class="mb-3">Criar Hino</h2>
+
+  <form [formGroup]="hinoForm" (ngSubmit)="onSave()">
+    <div class="col-md-8 col-sm-12 mb-3">
+      <label for="id" class="form-label">Id</label>
+      <input
+        type="text"
+        class="form-control"
+        id="id"
+        formControlName="id"
+        [readOnly]="isReadOnly"
+      />
+    </div>
+    <div class="col-md-8 col-sm-12 mb-3">
+      <label for="titulo" class="form-label">Titulo</label>
+      <input
+        type="text"
+        class="form-control"
+        id="titulo"
+        formControlName="titulo"
+      />
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-4 col-sm-12">
+        <label for="pagina" class="form-label">Pagina</label>
+        <input
+          type="number"
+          class="form-control"
+          id="pagina"
+          formControlName="pagina"
+        />
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <label for="numero" class="form-label">Número</label>
+        <input
+          type="number"
+          class="form-control"
+          id="numero"
+          formControlName="numero"
+        />
+      </div>
+    </div>
+
+    <div class="col-md-8 col-sm-12 mb-3">
+      <label for="autor" class="form-label">Autor</label>
+      <input
+        type="text"
+        class="form-control"
+        id="autor"
+        formControlName="autor"
+      />
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-4 col-sm-12">
+        <label for="dataCriacao" class="form-label">Data de Criação</label>
+        <input
+          type="date"
+          class="form-control"
+          id="dataCriacao"
+          formControlName="dataCriacao"
+        />
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <label for="dataActualizacao" class="form-label"
+          >Data de Actualização</label
+        >
+        <input
+          type="date"
+          class="form-control"
+          id="dataActualizacao"
+          formControlName="dataActualizacao"
+        />
+      </div>
+    </div>
+
+    <div class="col-md-8 col-sm-12 mb-3">
+      <label for="comentario" class="form-label">Comentário</label>
+      <textarea
+        class="form-control"
+        id="comentario"
+        formControlName="comentario"
+      ></textarea>
+    </div>
+
+    <div class="col-4 mb-3">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="favorito" formControlName="favorito" />
+        <label
+          class="form-check-label"
+          for="favorito"
+
+        >
+          Favorito ?
+        </label>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <button
+        type="submit"
+        class="btn btn-primary me-2"
+        [disabled]="this.hinoForm.invalid"
+      >
+        Salvar
+      </button>
+      <button type="submit" class="btn btn-warning" (click)="onCancel()">
+        Cancelar
+      </button>
+    </div>
+  </form>
+</div>

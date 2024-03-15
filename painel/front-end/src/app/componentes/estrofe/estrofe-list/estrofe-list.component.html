@@ -1,0 +1,69 @@
+<div class="container">
+  <h2>Estrofes</h2>
+
+  <div class="float-end mb-3">
+    <button type="button" class="btn btn-primary me-2" (click)="getAll()">
+      <i class="fa fa-refresh" aria-hidden="true"></i>
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      [routerLink]="['/estrofe/create']"
+    >
+      <i class="fa fa-plus" aria-hidden="true"></i>
+      Novo
+    </button>
+  </div>
+
+  <div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Numeo</th>
+          <th scope="col">Descrição</th>
+          <th scope="col">Refrão</th>
+          <th scope="col">Hino</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (estrofe of estrofes; track $index) {
+        <tr>
+          <td>{{ estrofe.numero }}</td>
+          <td>{{ estrofe.descricao }}</td>
+          <td>{{ estrofe.refrao }}</td>
+          <td>
+            <a class="link-secondary"
+              [routerLink]="['/estrofe/visualizar/', estrofe.hino?.id]"
+              [routerLinkActive]="['router-link-active']"
+            >
+              {{ estrofe.hino?.titulo }}
+            </a>
+          </td>
+          <td class="text-end">
+            <div class="btn-group">
+              <a
+                [routerLink]="['/estrofe/visualizar/', estrofe.id]"
+                [routerLinkActive]="['router-link-active']"
+                class="btn btn-primary btn-md"
+                ><i class="fa fa-eye" aria-hidden="true"></i
+              ></a>
+
+              <a
+                class="btn btn-success btn-md"
+                [routerLink]="['/estrofe/editar/', estrofe.id]"
+                [routerLinkActive]="['router-link-active']"
+                ><i class="fa fa-pencil" aria-hidden="true"></i
+              ></a>
+
+              <a (click)="onDelete(estrofe.id)" class="btn btn-danger btn-md"
+                ><i class="fa fa-close" aria-hidden="true"></i
+              ></a>
+            </div>
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

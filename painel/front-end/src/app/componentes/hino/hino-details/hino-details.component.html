@@ -1,0 +1,29 @@
+<div class="container">
+  <h2 class="mb-3">Detalhes do Hino</h2>
+  <div class="template mb-3">
+    <p class="fw-bold">Id</p>
+    <p>{{ hino?.id }}</p>
+    <p class="fw-bold">Titulo</p>
+    <p>{{ hino?.titulo }}</p>
+    <p class="fw-bold">Página</p>
+    <p>{{ hino?.pagina }}</p>
+    <p class="fw-bold">Número</p>
+    <p>{{ hino?.numero }}</p>
+    <p class="fw-bold">Autor</p>
+    <p>{{ hino?.autor }}</p>
+    <p class="fw-bold">Data de Criação</p>
+    <p>{{hino?.dataCriacao}}</p>
+    <p class="fw-bold">Data de Actualização</p>
+    <p>{{hino?.dataActualizacao}}</p>
+    <p class="fw-bold">Comentário</p>
+    <p>{{hino?.comentario}}</p>
+    <p class="fw-bold">Favorito ?</p>
+    <p>{{hino?.favorito}}</p>
+  </div>
+
+    <div class="">
+      <button type="button" class="btn btn-primary me-2" (click)="back()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button>
+      <button type="button" class="btn btn-secondary"    [routerLink]="['/hino/editar/', hino!.id]"
+      [routerLinkActive]="['router-link-active']">Editar</button>
+    </div>
+  </div>

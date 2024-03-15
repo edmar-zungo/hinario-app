@@ -1,0 +1,29 @@
+<div class="container">
+  <h2 class="mb-3">Detalhes da Estrofe</h2>
+  <div class="template mb-3">
+    <p class="fw-bold">Id</p>
+    <p>{{ estrofe.id }}</p>
+    <p class="fw-bold">Número</p>
+    <p>{{ estrofe.numero }}</p>
+    <p class="fw-bold">Descrição</p>
+    <p>{{ estrofe.descricao }}</p>
+    <p class="fw-bold">Refrão ?</p>
+    <p>{{ estrofe.refrao }}</p>
+    <p class="fw-bold">Hino</p>
+    <p>
+      <a
+        class="link-secondary"
+        [routerLink]="['/estrofe/visualizar/', estrofe.hino?.id]"
+        [routerLinkActive]="['router-link-active']"
+      >
+        {{ estrofe.hino?.titulo }}
+      </a>
+    </p>
+  </div>
+
+  <div class="">
+     <button type="button" class="btn btn-primary me-2" (click)="back()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button>
+     <button type="button" class="btn btn-secondary"  [routerLink]="['/estrofe/editar/', estrofe.id]"
+     [routerLinkActive]="['router-link-active']">Editar</button>
+   </div>
+</div>

@@ -1,0 +1,68 @@
+<div class="container">
+  <h2>Hinos</h2>
+
+  <div class="float-end mb-3">
+    <button type="button" class="btn btn-primary me-2" (click)="getAll()">
+      <i class="fa fa-refresh" aria-hidden="true"></i>
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      [routerLink]="['/hino/create']"
+    >
+      <i class="fa fa-plus" aria-hidden="true"></i>
+      Novo
+    </button>
+  </div>
+
+  <div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Numeo</th>
+          <th scope="col">Pagina</th>
+          <th scope="col">Titulo</th>
+          <th scope="col">Favorito</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (hino of hinos; track $index) {
+        <tr>
+          <td>{{ hino.numero }}</td>
+          <td>{{ hino.pagina }}</td>
+          <td>{{ hino.titulo }}</td>
+          <td>{{ hino.favorito }}</td>
+          <td class="text-end">
+            <div class="btn-group">
+              <a
+                class="btn btn-warning btn-md"
+                (click)="addFavoritos(hino?.id)"
+                ><i class="fa fa-star" aria-hidden="true"></i
+              ></a>
+
+              <a
+                [routerLink]="['/hino/visualizar/', hino.id]"
+                [routerLinkActive]="['router-link-active']"
+                class="btn btn-primary btn-md"
+                ><i class="fa fa-eye" aria-hidden="true"></i
+              ></a>
+
+              <a
+                class="btn btn-success btn-md"
+                [routerLink]="['/hino/editar/', hino.id]"
+                [routerLinkActive]="['router-link-active']"
+                ><i class="fa fa-pencil" aria-hidden="true"></i
+              ></a>
+
+              <a (click)="onDelete(hino.id)" class="btn btn-danger btn-md"
+                ><i class="fa fa-close" aria-hidden="true"></i
+              ></a>
+            </div>
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

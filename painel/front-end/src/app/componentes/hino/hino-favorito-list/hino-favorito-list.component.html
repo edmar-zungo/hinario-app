@@ -1,0 +1,32 @@
+<div class="container">
+     <h2>Hinos Favoritos</h2>
+   
+     <div class="float-end mb-3">
+       <button type="button" class="btn btn-primary me-2" (click)="getAllFavoritos()">
+         <i class="fa fa-refresh" aria-hidden="true"></i>
+       </button>
+     </div>
+   
+     <div>
+       <table class="table table-striped">
+         <thead>
+           <tr>
+             <th scope="col">Numeo</th>
+             <th scope="col">Pagina</th>
+             <th scope="col">Titulo</th>
+           </tr>
+         </thead>
+         <tbody>
+           @for (hino of hinos; track $index) {
+           <tr>
+             <td>{{ hino.numero }}</td>
+             <td>{{ hino.pagina }}</td>
+             <td>{{ hino.titulo }}</td>
+             
+           </tr>
+           }
+         </tbody>
+       </table>
+     </div>
+   </div>
+   

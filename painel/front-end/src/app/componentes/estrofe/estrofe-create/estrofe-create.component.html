@@ -1,0 +1,63 @@
+<div class="container mb-3">
+  <h2 class="mb-3">Criar Estrofe</h2>
+
+  <form [formGroup]="estrofeForm" (ngSubmit)="onSave()">
+    <div class="col-md-4 col-sm-12 mb-3">
+      <label for="numero" class="form-label">Número</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numero"
+        formControlName="numero"
+        required="true"
+      />
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-4 col-sm-12 mb-3">
+        <label for="descricao" class="form-label">Descrição</label>
+        <textarea
+          class="form-control"
+          id="descricao"
+          formControlName="descricao"
+          required="true"
+        ></textarea>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-12 mb-3">
+      <label for="hino" class="form-label">Hino</label>
+      <select class="form-control" formControlName="hino" id="hino" name="hino" required="true">
+        <option [ngValue]="null"> Selecione um hino </option>
+        @for (hino of hinos; track $index) {
+          <option [ngValue]="hino"> {{ hino.titulo }} </option>
+        }
+      </select>
+    </div>
+
+    <div class="col-4 mb-3">
+     <div class="form-check">
+       <input class="form-check-input" type="checkbox" id="refrao" formControlName="refrao"/>
+       <label
+         class="form-check-label"
+         for="refrao"
+       >
+         Refrão ?
+       </label>
+     </div>
+   </div>
+
+    <div class="col-12">
+      <button
+        type="submit"
+        class="btn btn-primary me-2"
+        [disabled]="this.estrofeForm.invalid"
+      >
+        Salvar
+      </button>
+      <button type="submit" class="btn btn-warning" (click)="onCancel()">
+        Cancelar
+      </button>
+    </div>
+  </form>
+</div>
