@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { EstrofeModel } from '../estrofe-model';
 import { EstrofeService } from '../service/estrofe.service';
 import { RouterLink, RouterLinkActive } from '@angular/router';
@@ -12,12 +12,13 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class EstrofeListComponent implements OnInit{
 
-  estrofes: EstrofeModel[] = [];
+  @Input() estrofes?: EstrofeModel[] = [];
+  @Input() hinoId? = '';
 
   constructor(private estrofeService: EstrofeService){}
 
   ngOnInit(): void {
-    this.getAll();
+    
   }
 
   getAll() {
@@ -30,6 +31,8 @@ export class EstrofeListComponent implements OnInit{
     this.estrofeService.deleteEstrofe(estrofeId!).subscribe(() => {
       this.getAll();
     });
+
+    location.reload();
   }
 
 }

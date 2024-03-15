@@ -1,13 +1,9 @@
-.navbar{
+.navbar-expand-lg{
      height: 4em;
-}
-
-.container-fluid{
      display: flex;
      flex-direction: row;
      justify-content: space-between;
 }
-
 .nav-link{
      color: white;
 }

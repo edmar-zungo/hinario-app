@@ -9,7 +9,7 @@
         class="form-control"
         id="numero"
         formControlName="numero"
-        required="true"
+        
       />
     </div>
 
@@ -25,15 +25,12 @@
       </div>
     </div>
 
-    <div class="col-md-4 col-sm-12 mb-3">
+    <!-- <div class="col-md-4 col-sm-12 mb-3">
       <label for="hino" class="form-label">Hino</label>
       <select class="form-control" formControlName="hino" id="hino" name="hino" required="true">
-        <option [ngValue]="null"> Selecione um hino </option>
-        @for (hino of hinos; track $index) {
-          <option [ngValue]="hino"> {{ hino.titulo }} </option>
-        }
+          <option [ngValue]="estrofeForm.value.hino"> {{ estrofeForm.value.hino.titulo }} </option>
       </select>
-    </div>
+    </div> -->
 
     <div class="col-4 mb-3">
      <div class="form-check">

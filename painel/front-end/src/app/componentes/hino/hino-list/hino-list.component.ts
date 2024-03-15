@@ -23,12 +23,16 @@ export class HinoListComponent implements OnInit {
     this.hinoService.getAll().subscribe((resp) => {
       this.hinos = resp ?? [];
     });
+    
   }
 
   onDelete(hinoId: string | undefined) {
     this.hinoService.deleteHino(hinoId!).subscribe(() => {
       this.getAll();
     });
+
+    location.reload();
+    
   }
 
   addFavoritos(hinoId: string | undefined) {

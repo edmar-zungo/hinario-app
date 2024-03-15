@@ -52,7 +52,7 @@ public class EstrofeController {
     }
 
     @DeleteMapping("/delete/{estrofeId}")
-    public ResponseEntity<String> deleteEstrofe(@PathVariable UUID estrofeId){
+    public ResponseEntity<?> deleteEstrofe(@PathVariable UUID estrofeId){
         estrofeService.deleteHino(estrofeId);
 
         return ResponseEntity.status(HttpStatus.OK).body("Estrofe eliminado!");

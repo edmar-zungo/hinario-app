@@ -1,38 +1,48 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { EstrofeModel } from '../estrofe-model';
-import { EstrofeService } from '../service/estrofe.service';
-import { Router } from '@angular/router';
-import { HinoModel } from '../../hino/hino-model';
-import { HinoService } from '../../hino/service/hino.service';
+import { Component, OnInit } from "@angular/core";
+import {
+  FormBuilder,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators,
+} from "@angular/forms";
+import { EstrofeModel } from "../estrofe-model";
+import { EstrofeService } from "../service/estrofe.service";
+import { ActivatedRoute, Router } from "@angular/router";
+import { HinoModel } from "../../hino/hino-model";
+import { HinoService } from "../../hino/service/hino.service";
 
 @Component({
-  selector: 'app-estrofe-create',
+  selector: "app-estrofe-create",
   standalone: true,
   imports: [ReactiveFormsModule],
-  templateUrl: './estrofe-create.component.html',
-  styleUrl: './estrofe-create.component.css'
+  templateUrl: "./estrofe-create.component.html",
+  styleUrl: "./estrofe-create.component.css",
 })
-export class EstrofeCreateComponent implements OnInit{
-
+export class EstrofeCreateComponent implements OnInit {
   estrofeForm!: FormGroup;
   estrofe!: EstrofeModel;
   hinos: HinoModel[] = [];
 
-
-  constructor(private estrofeService: EstrofeService, private formBuilder: FormBuilder, private router: Router, private hinoService: HinoService){}
+  constructor(
+    private estrofeService: EstrofeService,
+    private formBuilder: FormBuilder,
+    private hinoService: HinoService,
+    private activatedRoute: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
     this.loadHinos();
     this.cresteForm();
+
+    this.addHinoToForm();
   }
 
   cresteForm() {
     this.estrofeForm = this.formBuilder.group({
-      numero: ["", Validators.required],
+      numero: [""],
       descricao: ["", Validators.required],
-      hino: [, Validators.required],
-      refrao: [false]
+      hino: [""],
+      refrao: [false],
     });
   }
 
@@ -40,24 +50,33 @@ export class EstrofeCreateComponent implements OnInit{
     if (this.estrofeForm.valid) {
       this.estrofe = this.estrofeForm.value;
 
-      console.log(this.estrofe)
-
       this.estrofeService.createEstrofe(this.estrofe).subscribe(() => {
-        this.estrofeService.getAll()
+        this.estrofeService.getAll();
         this.estrofeForm.reset();
       });
     }
 
-    this.router.navigate(["/estrofe"]);
+    window.history.back();
   }
 
   onCancel() {
     window.history.back();
   }
 
-  loadHinos(){
-    this.hinoService.getAll().subscribe(resp => {
+  loadHinos() {
+    this.hinoService.getAll().subscribe((resp) => {
       this.hinos = resp ?? [];
-    })
+    });
+  }
+
+  addHinoToForm() {
+    this.activatedRoute.queryParams.subscribe((resp) => {
+      const hinoId = resp["hinoID"];
+      this.hinoService.getHinoById(hinoId).subscribe((param) => {
+        this.estrofeForm.patchValue({
+          hino: param,
+        });
+      });
+    });
   }
 }

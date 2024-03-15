@@ -12,6 +12,7 @@ import java.time.LocalDate;
 import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 @Service
 public class HinoService {
@@ -19,13 +20,17 @@ public class HinoService {
     private final String caminho = "/home/edmar-zungo/Documents/hinario.json";
 
     private final ObjectMapper mapper = new ObjectMapper();
-    List<Hino> hinos;
 
-    public HinoService() {
-        loadHinos();
+    List<Hino> hinos;
+    List<Hino> hinosFavoritos;
+
+    public HinoService(){
+        this.loadHinos();
+        this.loadHinosFavoritos();
     }
 
     public List<Hino> getAllHinos() throws IOException {
+
         return hinos;
     }
 
@@ -45,9 +50,6 @@ public class HinoService {
         hino.setDataCriacao(LocalDate.now().toString());
         hino.setDataActualizacao(LocalDate.now().toString());
 
-        if (!hino.isFavorito()){
-            hino.setFavorito(false);
-        }
 
         if (hino.getAutor().equals(null) || hino.getAutor().equals("")){
             hino.setAutor("IERA");
@@ -57,38 +59,54 @@ public class HinoService {
             hino.setComentario("Nenhum comenatario adicionado");
         }
 
-//        hino.setAutor(hino.getAutor() == null ? "IERA" : hino.getAutor());
-//        hino.setComentario( hino.getComentario() == null ? "Nenhum comentario adicionado" : hino.getComentario() );
-
         hinos.add(hino);
-
         saveToFile();
+
+        if (hino.getIsFavorito()){
+            this.loadHinosFavoritos();
+        }
 
         return hino;
     }
 
     public Hino updateHino(UUID hinoId, Hino hino){
-        Hino hinoResult = getHinoById(hinoId);
+        Hino hinoResult = this.getHinoById(hinoId);
+
         if (hinoResult != null){
             hinoResult.setId(hinoId);
             hinoResult.setDataCriacao(hino.getDataCriacao());
             hinoResult.setDataActualizacao(LocalDate.now().toString());
             hinoResult.setComentario(hino.getComentario());
             hinoResult.setAutor(hino.getAutor());
-            hinoResult.setFavorito(hino.isFavorito());
+            hinoResult.setFavorito(hino.getIsFavorito());
             hinoResult.setPagina(hino.getPagina());
             hinoResult.setNumero(hino.getNumero());
             hinoResult.setTitulo(hino.getTitulo());
 
             saveToFile();
+
+            if (!hino.getIsFavorito()){
+                hinosFavoritos.removeIf(x -> x.getId().equals(hinoId));
+                this.loadHinosFavoritos();
+                this.loadHinos();
+            }
+
+            if (hino.getIsFavorito()){
+                this.loadHinosFavoritos();
+                this.loadHinos();
+            }
         }
 
         return hino;
     }
 
-    public boolean deleteHino(UUID hinoId){
+    public void deleteHino(UUID hinoId){
+        hinos.removeIf(x -> x.getId().equals(hinoId));
+        hinosFavoritos.removeIf(x -> x.getId().equals(hinoId));
 
-        return hinos.removeIf(x -> x.getId().equals(hinoId));
+        saveToFile();
+        this.loadHinosFavoritos();
+        this.loadHinos();
     }
 
     private File criarArquivo(String caminho) throws IOException {
@@ -131,4 +149,35 @@ public class HinoService {
             e.printStackTrace();
         }
     }
+
+
+/**
+ * LOGICA DOS HINOS FAVORITOS
+ * */
+
+public List<Hino> getAllFavoritos(){
+    return hinosFavoritos;
+}
+
+    public Hino createHinoFavorito(UUID hinoId) {
+
+        Hino hino = this.getHinoById(hinoId);
+        hino.setFavorito(true);
+
+        saveToFile();
+
+        this.updateHino(hinoId, hino);
+        this.loadHinos();
+
+        return hino;
+    }
+
+    private void loadHinosFavoritos() {
+    try {
+        hinosFavoritos = this.getAllHinos().stream().filter(Hino::getIsFavorito).collect(Collectors.toList());
+    } catch (IOException e){
+        e.printStackTrace();
+    }
+    }
+
 }

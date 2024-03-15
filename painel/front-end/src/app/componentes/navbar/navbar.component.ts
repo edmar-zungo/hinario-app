@@ -8,7 +8,7 @@ import { HinoFavoritoListComponent } from '../hino/hino-favorito-list/hino-favor
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [HinoListComponent,EstrofeListComponent,HinoFavoritoListComponent,RouterLink, RouterLinkActive, AppComponent],
+  imports: [HinoListComponent,HinoFavoritoListComponent,RouterLink, RouterLinkActive, AppComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })

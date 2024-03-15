@@ -49,7 +49,7 @@ export class EstrofeUpdateComponent {
       id: [""],
       numero: [""],
       descricao: [""],
-      hino: [""],
+      hino: [],
       refrao: [false]
     });
   }

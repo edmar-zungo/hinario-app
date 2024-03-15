@@ -9,6 +9,7 @@
       type="button"
       class="btn btn-secondary"
       [routerLink]="['/estrofe/create']"
+      [queryParams]="{hinoID: hinoId}"
     >
       <i class="fa fa-plus" aria-hidden="true"></i>
       Novo
@@ -22,7 +23,6 @@
           <th scope="col">Numeo</th>
           <th scope="col">Descrição</th>
           <th scope="col">Refrão</th>
-          <th scope="col">Hino</th>
           <th scope="col"></th>
         </tr>
       </thead>
@@ -32,14 +32,7 @@
           <td>{{ estrofe.numero }}</td>
           <td>{{ estrofe.descricao }}</td>
           <td>{{ estrofe.refrao }}</td>
-          <td>
-            <a class="link-secondary"
-              [routerLink]="['/estrofe/visualizar/', estrofe.hino?.id]"
-              [routerLinkActive]="['router-link-active']"
-            >
-              {{ estrofe.hino?.titulo }}
-            </a>
-          </td>
+
           <td class="text-end">
             <div class="btn-group">
               <a

@@ -89,7 +89,7 @@ public class Hino {
         this.comentario = comentario;
     }
 
-    public boolean isFavorito() {
+    public boolean getIsFavorito() {
         return isFavorito;
     }
 

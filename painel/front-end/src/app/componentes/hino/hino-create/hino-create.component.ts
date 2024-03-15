@@ -20,6 +20,7 @@ import { Router } from "@angular/router";
 export class HinoCreateComponent implements OnInit {
   hinoForm!: FormGroup;
   hino!: HinoModel;
+  hinoId?: string;
 
   constructor(
     private formBuider: FormBuilder,
@@ -39,7 +40,7 @@ export class HinoCreateComponent implements OnInit {
       dataCriacao: [""],
       dataActualizacao: [""],
       comentario: [""],
-      isFavorito: new FormControl(false),
+      isFavorito: [false],
     });
   }
 
@@ -47,16 +48,22 @@ export class HinoCreateComponent implements OnInit {
     if (this.hinoForm.valid) {
       this.hino = this.hinoForm.value;
 
-      this.hinoService.createHino(this.hino).subscribe(() => {
-        this.hinoService.getAll()
+      this.hinoService.createHino(this.hino).subscribe((resp) => {
+
+        this.hinoService.getAll().subscribe(()=>{
+          location.reload();
+        });
+
         this.hinoForm.reset();
+        this.router.navigate(["/hino/visualizar/", resp.id]);
       });
     }
 
-    this.router.navigate(["/hino"]);
+    
   }
 
   onCancel() {
-    window.history.back();
+    this.router.navigate(["/hino"]);
   }
+
 }

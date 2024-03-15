@@ -8,5 +8,5 @@ export interface HinoModel {
      dataCriacao: Date,
      dataActualizacao: Date,
      comentario: string,
-     favorito: boolean
+     isFavorito: boolean
 }

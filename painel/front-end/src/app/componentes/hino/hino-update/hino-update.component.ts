@@ -39,7 +39,7 @@ export class HinoUpdateComponent implements OnInit {
           dataCriacao: resp.dataCriacao,
           dataActualizacao: resp.dataActualizacao,
           comentario: resp.comentario,
-          favorito: resp.favorito,
+          isFavorito: resp.isFavorito
         });
       });
     });
@@ -66,7 +66,9 @@ export class HinoUpdateComponent implements OnInit {
   onSave() {
     this.hino = this.hinoForm.value;
     this.hinoService.updateHino(this.hino.id, this.hino).subscribe(() => {
-      this.hinoService.getAll();
+      this.hinoService.getAll().subscribe(() => {
+        location.reload();
+      });
     });
 
     this.router.navigate(['/hino']);

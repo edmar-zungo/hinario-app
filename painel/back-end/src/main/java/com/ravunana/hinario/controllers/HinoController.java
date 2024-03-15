@@ -1,7 +1,6 @@
 package com.ravunana.hinario.controllers;
 
 import com.ravunana.hinario.model.Hino;
-import com.ravunana.hinario.services.FavoritoService;
 import com.ravunana.hinario.services.HinoService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,12 +15,10 @@ import java.util.UUID;
 public class HinoController {
 
     private final HinoService hinoService;
-    private final FavoritoService favoritoService;
 
 
-    public HinoController(HinoService hinoService, FavoritoService favoritoService) {
+    public HinoController(HinoService hinoService) {
         this.hinoService = hinoService;
-        this.favoritoService = favoritoService;
     }
 
     @GetMapping("/all")
@@ -65,7 +62,7 @@ public class HinoController {
     }
 
     @DeleteMapping("/delete/{hinoId}")
-    public ResponseEntity<String> deleteHino(@PathVariable UUID hinoId){
+    public ResponseEntity<?> deleteHino(@PathVariable UUID hinoId){
         hinoService.deleteHino(hinoId);
 
         return ResponseEntity.status(HttpStatus.OK).body("Hino eliminado");
@@ -73,15 +70,15 @@ public class HinoController {
 
     @PostMapping("favorito/add/{hinoId}")
     public ResponseEntity<Hino> addToFavorito(@PathVariable UUID hinoId){
-        Hino hinoResult = favoritoService.createHinoFavorito(hinoId);
+        Hino hinoResult = hinoService.createHinoFavorito(hinoId);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(hinoResult);
     }
 
     @GetMapping("favorito/all")
     public ResponseEntity<List<Hino>> getAllFavoritos(){
-        List<Hino> hinos = favoritoService.getAllFavoritos();
+        List<Hino> hinosFavoritos = hinoService.getAllFavoritos();
 
-        return ResponseEntity.status(HttpStatus.OK).body(hinos);
+        return ResponseEntity.status(HttpStatus.OK).body(hinosFavoritos);
     }
 }

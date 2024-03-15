@@ -3,8 +3,6 @@ package com.ravunana.hinario.services;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ravunana.hinario.model.Estrofe;
-import com.ravunana.hinario.model.Hino;
-import com.ravunana.hinario.repositories.EstrofeRepository;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
@@ -59,8 +57,8 @@ public class EstrofeService {
     }
 
     public void deleteHino(UUID estrofeId){
-
         estrofes.removeIf(x -> x.getId().equals(estrofeId));
+        saveToFile();
     }
 
     private File criarArquivo(String caminho) throws IOException {
