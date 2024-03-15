@@ -65,7 +65,7 @@ export class EstrofeUpdateComponent {
       this.estrofeService.getAll();
     });
 
-    this.router.navigate(['/estrofe']);
+    window.history.back()
   }
 
   loadHinos(){
