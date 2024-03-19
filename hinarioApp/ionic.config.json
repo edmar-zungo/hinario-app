@@ -1,7 +1,0 @@
-{
-  "name": "hinarioApp",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular-standalone"
-}
