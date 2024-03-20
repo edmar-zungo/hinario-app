@@ -81,4 +81,13 @@ public class HinoController {
 
         return ResponseEntity.status(HttpStatus.OK).body(hinosFavoritos);
     }
+
+/** LOGICA DE PESQUISA*/
+
+@GetMapping("pesquisa/{query}")
+    public ResponseEntity<List<Hino>> pesquisa(@PathVariable String query) throws IOException {
+    List<Hino> pesquisaResult = this.hinoService.pesquisa(query).stream().toList();
+
+    return ResponseEntity.status(HttpStatus.OK).body(pesquisaResult);
+}
 }

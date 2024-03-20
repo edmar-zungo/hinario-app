@@ -51,6 +51,7 @@ public class HinoService {
         hino.setDataActualizacao(LocalDate.now().toString());
 
 
+
         if (hino.getAutor().equals(null) || hino.getAutor().equals("")){
             hino.setAutor("IERA");
         }
@@ -178,6 +179,12 @@ public List<Hino> getAllFavoritos(){
     } catch (IOException e){
         e.printStackTrace();
     }
+    }
+
+    public List<Hino> pesquisa(String query) throws IOException {
+    var hinos = this.getAllHinos().stream().filter(x -> x.getTitulo().contains(query) || String.valueOf(x.getNumero()).contains(query) || String.valueOf(x.getPagina()).contains(query)).toList();
+
+    return hinos;
     }
 
 }
