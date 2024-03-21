@@ -2,6 +2,8 @@ package com.ravunana.hinario.model;
 
 
 
+import com.ravunana.hinario.enums.Linguas;
+
 import java.util.Objects;
 import java.util.UUID;
 
@@ -24,6 +26,7 @@ public class Hino {
     private String comentario;
 
     private boolean isFavorito;
+    private Linguas lingua;
 
     public UUID getId() {
         return id;
@@ -96,18 +99,25 @@ public class Hino {
     public void setFavorito(boolean favorito) {
         isFavorito = favorito;
     }
+    public Linguas getLingua() {
+        return lingua;
+    }
+
+    public void setLingua(Linguas lingua) {
+        this.lingua = lingua;
+    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Hino hino = (Hino) o;
-        return pagina == hino.pagina && numero == hino.numero && isFavorito == hino.isFavorito && Objects.equals(id, hino.id) && Objects.equals(titulo, hino.titulo) && Objects.equals(autor, hino.autor) && Objects.equals(dataCriacao, hino.dataCriacao) && Objects.equals(dataActualizacao, hino.dataActualizacao) && Objects.equals(comentario, hino.comentario);
+        return pagina == hino.pagina && numero == hino.numero && isFavorito == hino.isFavorito && Objects.equals(id, hino.id) && Objects.equals(titulo, hino.titulo) && Objects.equals(autor, hino.autor) && Objects.equals(dataCriacao, hino.dataCriacao) && Objects.equals(dataActualizacao, hino.dataActualizacao) && Objects.equals(comentario, hino.comentario) && Objects.equals(lingua, hino.lingua);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, titulo, pagina, numero, autor, dataCriacao, dataActualizacao, comentario, isFavorito);
+        return Objects.hash(id, titulo, pagina, numero, autor, dataCriacao, dataActualizacao, comentario, isFavorito, lingua);
     }
 
     @Override
@@ -122,6 +132,9 @@ public class Hino {
                 ", dataActualizacao=" + dataActualizacao +
                 ", comenatrio='" + comentario + '\'' +
                 ", isFavorito=" + isFavorito +
+                ", lingua='" + lingua + '\'' +
                 '}';
     }
+
+
 }

@@ -1,3 +1,5 @@
+import { Linguas } from "./linguas";
+
 export interface HinoModel {
 
      id?: string,
@@ -8,5 +10,6 @@ export interface HinoModel {
      dataCriacao: Date,
      dataActualizacao: Date,
      comentario: string,
-     isFavorito: boolean
+     isFavorito: boolean,
+     lingua: Linguas
 }

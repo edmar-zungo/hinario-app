@@ -18,6 +18,7 @@
           <th scope="col">Numeo</th>
           <th scope="col">Pagina</th>
           <th scope="col">Titulo</th>
+          <th scope="col">Língua</th>
           <th scope="col"></th>
         </tr>
       </thead>
@@ -27,6 +28,7 @@
           <td>{{ hino.numero }}</td>
           <td>{{ hino.pagina }}</td>
           <td>{{ hino.titulo }}</td>
+          <td>{{ hino.lingua }}</td>
           <td class="text-end">
             <a
               [routerLink]="['/hino/visualizar/', hino.id]"

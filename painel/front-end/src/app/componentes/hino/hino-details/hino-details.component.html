@@ -12,23 +12,32 @@
     <p class="fw-bold">Autor</p>
     <p>{{ hino?.autor }}</p>
     <p class="fw-bold">Data de Criação</p>
-    <p>{{hino?.dataCriacao}}</p>
+    <p>{{ hino?.dataCriacao }}</p>
     <p class="fw-bold">Data de Actualização</p>
-    <p>{{hino?.dataActualizacao}}</p>
+    <p>{{ hino?.dataActualizacao }}</p>
     <p class="fw-bold">Comentário</p>
-    <p>{{hino?.comentario}}</p>
+    <p>{{ hino?.comentario }}</p>
     <p class="fw-bold">Favorito ?</p>
-    <p>{{hino?.isFavorito}}</p>
+    <p>{{ hino?.isFavorito }}</p>
+    <p class="fw-bold">Língua</p>
+    <p>{{ hino?.lingua }}</p>
   </div>
 
   <div class="mb-3">
-    <app-estrofe-list [hinoId]="hino?.id" [estrofes]="estrofes"/>
+    <app-estrofe-list [hinoId]="hino?.id" [estrofes]="estrofes" />
+  </div>
 
+  <div>
+    <button type="button" class="btn btn-primary me-2" (click)="back()">
+      <i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      [routerLink]="['/hino/editar/', hino?.id]"
+      [routerLinkActive]="['router-link-active']"
+    >
+      Editar
+    </button>
   </div>
-  
-    <div>
-      <button type="button" class="btn btn-primary me-2" (click)="back()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button>
-      <button type="button" class="btn btn-secondary"    [routerLink]="['/hino/editar/', hino?.id]"
-      [routerLinkActive]="['router-link-active']">Editar</button>
-    </div>
-  </div>
+</div>

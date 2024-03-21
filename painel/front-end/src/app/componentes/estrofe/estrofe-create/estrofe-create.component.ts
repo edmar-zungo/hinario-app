@@ -31,7 +31,7 @@ export class EstrofeCreateComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.loadHinos();
+    // this.loadHinos();
     this.cresteForm();
 
     this.addHinoToForm();

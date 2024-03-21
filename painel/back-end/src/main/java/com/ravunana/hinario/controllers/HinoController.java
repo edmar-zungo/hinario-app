@@ -69,8 +69,8 @@ public class HinoController {
     }
 
     @PostMapping("favorito/add/{hinoId}")
-    public ResponseEntity<Hino> addToFavorito(@PathVariable UUID hinoId){
-        Hino hinoResult = hinoService.createHinoFavorito(hinoId);
+    public ResponseEntity<Hino> addOrRemoveHinoFavorito(@PathVariable UUID hinoId){
+        Hino hinoResult = hinoService.addOrRemoveHinoFavorito(hinoId);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(hinoResult);
     }

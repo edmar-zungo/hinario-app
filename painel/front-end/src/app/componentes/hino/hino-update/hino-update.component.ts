@@ -39,7 +39,8 @@ export class HinoUpdateComponent implements OnInit {
           dataCriacao: resp.dataCriacao,
           dataActualizacao: resp.dataActualizacao,
           comentario: resp.comentario,
-          isFavorito: resp.isFavorito
+          isFavorito: resp.isFavorito,
+          lingua: resp.lingua
         });
       });
     });
@@ -56,6 +57,7 @@ export class HinoUpdateComponent implements OnInit {
       dataActualizacao: [""],
       comentario: [""],
       isFavorito: [false],
+      lingua: [""]
     });
   }
 

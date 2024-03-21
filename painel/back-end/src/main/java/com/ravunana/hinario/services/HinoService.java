@@ -160,9 +160,20 @@ public List<Hino> getAllFavoritos(){
     return hinosFavoritos;
 }
 
-    public Hino createHinoFavorito(UUID hinoId) {
+    public Hino addOrRemoveHinoFavorito(UUID hinoId) {
 
         Hino hino = this.getHinoById(hinoId);
+
+        if (hino.getIsFavorito()){
+            hino.setFavorito(false);
+            saveToFile();
+
+            this.updateHino(hinoId, hino);
+            this.loadHinos();
+
+            return hino;
+        }
+
         hino.setFavorito(true);
 
         saveToFile();
