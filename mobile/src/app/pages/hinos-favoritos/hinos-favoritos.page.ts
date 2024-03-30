@@ -20,22 +20,17 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   ],
 })
 export class HinosFavoritosPage implements OnInit {
+  
   hinosFavoritos: HinoModel[] = [];
 
   constructor(private hinarioService: HinarioService) {}
 
   ngOnInit() {
-    this.getAllFavoritosHinos();
+    this.getAllHinosFavoritos();
   }
 
-  getAllFavoritosHinos() {
-
-    this.hinosFavoritos
-    console.log(this.hinosFavoritos);
- 
+  getAllHinosFavoritos(){
+   this.hinosFavoritos = this.hinarioService.getAllHinosFavoritos();
   }
 
-  addFavoritos(){
-    this.hinosFavoritos.push(this.hinarioService.getAllHinosFavoritos());
-  }
 }

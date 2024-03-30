@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
@@ -6,43 +6,56 @@ import { ActivatedRoute, RouterLink, RouterLinkActive } from '@angular/router';
 import { HinarioService } from 'src/app/services/hinario.service';
 import { HinoModel } from 'src/app/model/hino-model';
 import { EstrofeModel } from 'src/app/model/estrofe-model';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-hino-read',
   templateUrl: './hino-read.page.html',
   styleUrls: ['./hino-read.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule, RouterLink, RouterLinkActive]
+  imports: [
+    IonicModule,
+    CommonModule,
+    FormsModule,
+    RouterLink,
+    RouterLinkActive,
+  ],
 })
 export class HinoReadPage implements OnInit {
-
   hino?: HinoModel;
 
   estrofes: EstrofeModel[] = [];
+  @Output() hinosFavoritos: HinoModel[] = [];
   liked: boolean = false;
 
-  constructor(private activatedRoute: ActivatedRoute, private hinarioService: HinarioService) { }
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private hinarioService: HinarioService
+  ) {}
 
   ngOnInit() {
     this.loadHino();
     this.loadEstrofesPorHino();
   }
 
-  loadHino(){
+  loadHino() {
     const hinoId = this.activatedRoute.snapshot.params['hinoId'];
- 
-    this.hinarioService.getAllHinoByJSON().subscribe(resp => {
-      this.hino = resp.find(x => x.id === hinoId);
-    })
+
+    this.hinarioService.getAllHinoByJSON().subscribe((resp) => {
+      this.hino = resp.find((x) => x.id === hinoId);
+    });
   }
 
-  loadEstrofesPorHino(){
-    const hinoId = this.activatedRoute.snapshot.params['hinoId']
-    
-      this.hinarioService.getAllEstrofesByJSON().subscribe(resp => {
-        this.estrofes = resp.filter(x => x.hino?.id === hinoId ) ?? [];
-      } )
+  loadEstrofesPorHino() {
+    const hinoId = this.activatedRoute.snapshot.params['hinoId'];
 
+    this.hinarioService.getAllEstrofesByJSON().subscribe((resp) => {
+      this.estrofes = resp.filter((x) => x.hino?.id === hinoId) ?? [];
+    });
+  }
+
+  addOuRemoveDosFavoritos(hinoId: string | undefined){
+    this.hinarioService.addOuRemoveDosFavoritos(hinoId);
   }
 
   // addOuRemoveDosFavoritos(hinoId: string | undefined) {
@@ -53,7 +66,7 @@ export class HinoReadPage implements OnInit {
   //       hino.isFavorito = false;
   //       this.hinarioService.actualizaHinoOnJSON(hino!);
   //       this.hinarioService.addFavoritos(hino);
-        
+
   //       this.liked = false;
   //     } else {
   //       hino!.isFavorito = true;
@@ -64,12 +77,13 @@ export class HinoReadPage implements OnInit {
   //   });
   // }
 
-  addOuRemoveDosFavoritos(hinoId: string | undefined) {
 
-    this.hinarioService.getAllHinoByJSON().subscribe(resp => {
-      const hinoResult = resp.find(x => x.id === hinoId)!;
-    })
-    
-  }
 
+  // addOuRemoveDosFavoritos(hinoId: string | undefined) {
+
+  //   this.hinarioService.getAllHinoByJSON().subscribe(resp => {
+  //     const hinoResult = resp.find(x => x.id === hinoId)!;
+  //   })
+
+  // }
 }
