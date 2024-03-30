@@ -1,0 +1,21 @@
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90%;
+}
+
+ion-img {
+  height: 25%;
+  width: 50%;
+}
+
+h2 {
+  font-weight: 900;
+}
+
+i{
+  margin-left: .6em;
+}

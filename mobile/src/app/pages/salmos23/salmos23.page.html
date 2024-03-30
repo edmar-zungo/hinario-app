@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Salmos 23</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <h4 class="titulo">O SENHOR É O MEU PASTOR (Salmos 23)</h4>
+  @for (salmo of salmos23; track $index) {
+    <p>{{ salmo }}</p>
+  }
+</ion-content>

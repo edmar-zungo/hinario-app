@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Hinos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list lines="full">
+    <div class="ion-padding"> PORTUGUES </div>
+      @for (hino of hinosByJSON; track $index) {
+        @if (hino.lingua === 'PORTUGUES') {
+          <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]" [routerLinkActive]="['router-link-active']">
+            <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label>
+            <ion-label slot="end">{{hino.pagina}}</ion-label>
+          </ion-item>
+        }
+        }
+    <div class="ion-padding">  KIKONGO REVISADO  </div>
+    @for (hino of hinosByJSON; track $index) {
+      @if (hino.lingua === 'KIKONGO_REVISADO') {
+        <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]">
+          <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label>
+          <ion-label slot="end">{{hino.pagina}}</ion-label>
+        </ion-item>
+      }
+      }
+    <div class="ion-padding">  KIKONGO DE ORIGEM  </div>
+    @for (hino of hinosByJSON; track $index) {
+      @if (hino.lingua === 'KIKONGO_ORIGEM') {
+        <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]">
+          <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label>
+          <ion-label slot="end">{{hino.pagina}}</ion-label>
+        </ion-item>
+      }
+      }
+    <div class="ion-padding">  KINBUMDU </div>
+    @for (hino of hinosByJSON; track $index) {
+      @if (hino.lingua === 'KINBUMDU') {
+        <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]">
+          <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label>
+          <ion-label slot="end">{{hino.pagina}}</ion-label>
+        </ion-item>
+      }
+      }
+    
+  </ion-list>
+
+  <ion-fab slot="fixed" horizontal="end" vertical="bottom">
+    <ion-fab-button [routerLink]="['/searchPage']" [routerLinkActive]="['router-link-active']">
+      <ion-icon class="fa fa-search"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button default-href="/hinos-list" slot="start"/>
+    <ion-searchbar show-clear-button="always" placeholder="Hino, número ou página..." [debounce]="1000" (ionInput)="pesquisaOnJSON($event.target.value?.toString())" (ionClear)="setVezio()"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  @for (hino of hinosResult; track $index) {
+    <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]" lines="full">
+      <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label> 
+      <ion-label slot="end">{{hino.pagina}}</ion-label>
+    </ion-item>
+  }
+</ion-content>

@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Hinos Favoritos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list lines="full">
+    @for (hinoFavorito of hinosFavoritos; track $index) {
+      <ion-item  [button]="true" [routerLink]="['/hino-read/', hinoFavorito.id]">
+        <ion-label>{{hinoFavorito.numero}}. {{hinoFavorito.titulo}} </ion-label>
+        <ion-label slot="end" class="icon-star"> <i class="fa fa-star"></i> </ion-label>
+      </ion-item>
+    }
+  </ion-list>
+</ion-content>

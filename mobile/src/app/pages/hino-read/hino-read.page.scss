@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "RobotoR";
+  src: url("../../../assets/fonts/Roboto-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "RobotoB";
+  src: url("../../../assets/fonts/Roboto-Bold.ttf") format("ttf");
+}
+
+ion-title,
+.titulo {
+  text-align: center;
+}
+
+ion-content {
+  font-family: "RobotoR", sans-serif;
+}
+
+.titulo,
+.coro {
+  font-weight: 900;
+  font-family: "RobotoB", sans-serif;
+}
+
+.coro {
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  font-style: italic;
+}
+.estrofe {
+  text-align: justify;
+  line-height: 1.5em;
+  font-size: 1.2em;
+}
+
+ion-toast {
+  color: white;
+}
+
+.estrofe-note {
+  font-size: 1em;
+  margin-right: 0.1em;
+}
+
+.pagina {
+  margin-right: 2em;
+  color: #120af9;
+}
+
+ion-label {
+  margin-right: 1em;
+  font-size: 1.2em;
+  color: hsl(58, 100%, 50%);
+}
+
+.numero {
+  color: #120af9;
+  font-weight: 900;
+}
