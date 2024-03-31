@@ -23,14 +23,11 @@ export class HinosFavoritosPage implements OnInit {
   
   hinosFavoritos: HinoModel[] = [];
 
-  constructor(private hinarioService: HinarioService) {}
+  constructor() {}
 
   ngOnInit() {
-    this.getAllHinosFavoritos();
-  }
-
-  getAllHinosFavoritos(){
-   this.hinosFavoritos = this.hinarioService.getAllHinosFavoritos();
+    this.hinosFavoritos = JSON.parse(localStorage.getItem('hinos')!)
+    
   }
 
 }

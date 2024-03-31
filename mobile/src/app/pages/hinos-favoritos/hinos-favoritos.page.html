@@ -14,6 +14,10 @@
         <ion-label>{{hinoFavorito.numero}}. {{hinoFavorito.titulo}} </ion-label>
         <ion-label slot="end" class="icon-star"> <i class="fa fa-star"></i> </ion-label>
       </ion-item>
+    } @empty {
+      <div class="ion-padding">
+        <p>Nenhum hinos aos Favoritos!</p>
+      </div>
     }
   </ion-list>
 </ion-content>

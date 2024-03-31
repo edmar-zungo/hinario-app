@@ -15,6 +15,7 @@ export class HinarioService {
   apiHinosFavoritos = environment.apiHinosFavoritos;
   hinosFavoritos: HinoModel[] = [];
 
+
   constructor(private http: HttpClient) {}
 
   // addOrRemoveHinoFavorito(hinoId: string | undefined): Observable<HinoModel> {
@@ -37,7 +38,7 @@ export class HinarioService {
   }
 
   getAllHinosFavoritos(): HinoModel[] {
-    return this.hinosFavoritos = JSON.parse(localStorage.getItem('hinos' || '[]')!);
+    return JSON.parse(localStorage.getItem('hinos')!);
   }
 
   addOuRemoveDosFavoritos(hinoId: string | undefined) {
@@ -60,6 +61,7 @@ export class HinarioService {
             this.hinosFavoritos.indexOf(hinoFounded!),
             1
           );
+          
           localStorage.setItem('hinos', JSON.stringify(this.hinosFavoritos));
           this.getAllHinosFavoritos();
         } else {

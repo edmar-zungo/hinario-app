@@ -6,7 +6,7 @@ import { ActivatedRoute, RouterLink, RouterLinkActive } from '@angular/router';
 import { HinarioService } from 'src/app/services/hinario.service';
 import { HinoModel } from 'src/app/model/hino-model';
 import { EstrofeModel } from 'src/app/model/estrofe-model';
-import { Observable } from 'rxjs';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-hino-read',
@@ -25,12 +25,12 @@ export class HinoReadPage implements OnInit {
   hino?: HinoModel;
 
   estrofes: EstrofeModel[] = [];
-  @Output() hinosFavoritos: HinoModel[] = [];
   liked: boolean = false;
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private hinarioService: HinarioService
+    private hinarioService: HinarioService,
+    private toastController: ToastController
   ) {}
 
   ngOnInit() {
@@ -43,6 +43,12 @@ export class HinoReadPage implements OnInit {
 
     this.hinarioService.getAllHinoByJSON().subscribe((resp) => {
       this.hino = resp.find((x) => x.id === hinoId);
+      var hinos: HinoModel[] = JSON.parse(localStorage.getItem('hinos')!);
+      if (hinos.find((x) => x.id === this.hino!.id)) {
+        this.liked = true;
+      } else {
+        this.liked = false;
+      }
     });
   }
 
@@ -54,36 +60,34 @@ export class HinoReadPage implements OnInit {
     });
   }
 
-  addOuRemoveDosFavoritos(hinoId: string | undefined){
+  addOuRemoveDosFavoritos(hinoId: string | undefined, action: 'add' | 'rem') {
     this.hinarioService.addOuRemoveDosFavoritos(hinoId);
+    this.createTost(action);
+    this.loadHino();
   }
 
-  // addOuRemoveDosFavoritos(hinoId: string | undefined) {
-  //   this.hinarioService.getAllHinoByJSON().subscribe((resp) => {
-  //     const hino = resp.find((x) => x.id === hinoId);
-  //     this.hinarioService.getAllHinoByJSON();
-  //     if (hino?.isFavorito) {
-  //       hino.isFavorito = false;
-  //       this.hinarioService.actualizaHinoOnJSON(hino!);
-  //       this.hinarioService.addFavoritos(hino);
+  async createTost(action: 'add' | 'rem') {
+    var toast;
 
-  //       this.liked = false;
-  //     } else {
-  //       hino!.isFavorito = true;
-  //       this.hinarioService.actualizaHinoOnJSON(hino!);
-  //       this.liked = true;
-  //       this.hinosFavoritos.push(hino!);
-  //     }
-  //   });
-  // }
+    switch (action) {
+      case 'add':
+        toast = await this.toastController.create({
+          message: 'Adicionado aos Favoritos',
+          color: 'primary',
+          duration: 500,
+          position: 'bottom'
+        });
+        break;
+      case 'rem':
+        toast = await this.toastController.create({
+          message: 'Removido dos Favoritos',
+          color: 'danger',
+          duration: 500,
+          position: 'bottom'
+        });
+        break;
+    }
 
-
-
-  // addOuRemoveDosFavoritos(hinoId: string | undefined) {
-
-  //   this.hinarioService.getAllHinoByJSON().subscribe(resp => {
-  //     const hinoResult = resp.find(x => x.id === hinoId)!;
-  //   })
-
-  // }
+    await toast.present();
+  }
 }

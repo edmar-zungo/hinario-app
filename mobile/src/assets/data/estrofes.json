@@ -10283,4 +10283,3200 @@
     "lingua" : "KIKONGO_REVISADO"
   },
   "refrao" : false
+}, {
+  "id" : "2f311f81-66ed-4ab0-a5f9-4493fae2a298",
+  "numero" : 5,
+  "descricao" : "Bosi tukota kuna Zulu, Kue tumuena Nhuludi,\nYandi Ntinu, Yandi nlemvu,\nYandi Mfumu kuele mvu, Njila Zulu Yangudi,\nTuakakala kua Nzambi.",
+  "hino" : {
+    "id" : "5f1ba2b1-8189-4db8-8283-48fa5047eb52",
+    "titulo" : "Muna paka ya itueji muna paka ya itueji",
+    "pagina" : 157,
+    "numero" : 28,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-27",
+    "dataActualizacao" : "2024-03-27",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "adb5cbb2-6eeb-4af2-afc9-772afc4930ab",
+  "numero" : 1,
+  "descricao" : "Luhuhamu ofuku wau, Muna ndambu aleka wau, Muna Belem Kautuka,\nNtinu wa Moyo wa Zulu ye Tsi, Yisu I Nnuludi.",
+  "hino" : {
+    "id" : "76b4fe22-64b7-4a74-8630-9b2077a3cc12",
+    "titulo" : "LUHUHAMU OFUKU WAU",
+    "pagina" : 158,
+    "numero" : 29,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "adf033cf-4498-4f13-9b2e-348717f78fb6",
+  "numero" : 2,
+  "descricao" : "Luhuhamu ofuku wau, Muna kiana ahungudi, Awuidi Apunga aiimbila,\nNkembu walukulu lua mvu ya rnvu; Nkudi arne, Nkudi aku pe.",
+  "hino" : {
+    "id" : "76b4fe22-64b7-4a74-8630-9b2077a3cc12",
+    "titulo" : "LUHUHAMU OFUKU WAU",
+    "pagina" : 158,
+    "numero" : 29,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "4b7d2415-9c89-4287-9c4f-a0dc90fade53",
+  "numero" : 3,
+  "descricao" : "Luhuhamu ofuku wau, Hana Polo hatemuna, Tuke luwatiku lua tsi\nyai, Hana Polo ha moneka, Tangua itemingina.",
+  "hino" : {
+    "id" : "76b4fe22-64b7-4a74-8630-9b2077a3cc12",
+    "titulo" : "LUHUHAMU OFUKU WAU",
+    "pagina" : 158,
+    "numero" : 29,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "4affea3f-522c-4e9d-8668-df3a9df97a54",
+  "numero" : 1,
+  "descricao" : "Nani yandi zolele fuete sambila, Luhuluzu lua kenda nufuete tonda-Io,\nNga yenu tonda nulenda huluka, Wese zolele, kuiza wau.",
+  "hino" : {
+    "id" : "79166336-864d-4da0-88cb-1a90efa58e60",
+    "titulo" : "NANI YANDI ZOLELE FUETE SAMBILA",
+    "pagina" : 159,
+    "numero" : 30,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "b150f2f2-47b4-4421-bae4-1841a61548bb",
+  "numero" : 0,
+  "descricao" : "Wese zolele, wese zolele, Kani mbevo kaka yandi lenda wa, Tata andi\nku ZuJu zolele monanga, Wese zolele, kuiza wau.",
+  "hino" : {
+    "id" : "79166336-864d-4da0-88cb-1a90efa58e60",
+    "titulo" : "NANI YANDI ZOLELE FUETE SAMBILA",
+    "pagina" : 159,
+    "numero" : 30,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "08315be9-fad2-4322-aaa4-d7fab69cc4c6",
+  "numero" : 2,
+  "descricao" : "Nani yandi zolele fuete kuiza wau, Ekiaki kielo kiayanguka, lenda\nkota wau, Yandi Mfumu YISU, zolele kotisa, Wese zolele, kuiza wau.",
+  "hino" : {
+    "id" : "79166336-864d-4da0-88cb-1a90efa58e60",
+    "titulo" : "NANI YANDI ZOLELE FUETE SAMBILA",
+    "pagina" : 159,
+    "numero" : 30,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "88ea669c-25c8-4578-9c2b-d3d72d0774a8",
+  "numero" : 3,
+  "descricao" : "Nani yandi zolele fuete Janda wau, Yenu auonso wau nufuete kuiza\npe, Nani yandi zolele Jenda kernbela, Wese zolele, kuiza wau.",
+  "hino" : {
+    "id" : "79166336-864d-4da0-88cb-1a90efa58e60",
+    "titulo" : "NANI YANDI ZOLELE FUETE SAMBILA",
+    "pagina" : 159,
+    "numero" : 30,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "ad37b51b-c5ba-44ee-9284-01bc5398e992",
+  "numero" : 1,
+  "descricao" : "Kamba tsangu zambote, za Cristu Nhuludi, O Cristu Kenda zandi\nzingi, Yo luzolo Luandi mpe, Wau muna mambu Mandi, Yatoma indula,\nEkuma Yandi rnene Nzambi, Wazola kua mono.",
+  "hino" : {
+    "id" : "9497c7fd-97ab-491c-a003-154a2192b351",
+    "titulo" : "KAMBA TSANGU ZAMBOTE",
+    "pagina" : 159,
+    "numero" : 31,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "fab8c684-0129-45b0-a2e1-8c6151e8ef25",
+  "numero" : 0,
+  "descricao" : "Kamba Tsangu zambote, Za Cristu ó Nhuludi.",
+  "hino" : {
+    "id" : "9497c7fd-97ab-491c-a003-154a2192b351",
+    "titulo" : "KAMBA TSANGU ZAMBOTE",
+    "pagina" : 159,
+    "numero" : 31,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "aa8409ae-a570-464a-a9e3-43ee5412c99d",
+  "numero" : 2,
+  "descricao" : "Kamba tsangu zambote, Za Cristu Nololoki, Yehova Yandi kaka\nNzambi, Ifuete Sambilua, Yatonda Mfumu Yisu, Wahana Moyo Andi,\nWau mono ilanda Yandi, Kamba dia jijila.",
+  "hino" : {
+    "id" : "9497c7fd-97ab-491c-a003-154a2192b351",
+    "titulo" : "KAMBA TSANGU ZAMBOTE",
+    "pagina" : 159,
+    "numero" : 31,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "749a1fd1-6798-4fd1-823b-2d0323e198d9",
+  "numero" : 3,
+  "descricao" : "Nkembu mia tsi yai, Tulenganga mio pe, Yauonso mesu mena mona,\nKatumoni yo luimbi, ko Mu pukumuni zame, Kua Yandi isundila, Ku\nZulu Yandi tulukidi, Ku hulula mono.",
+  "hino" : {
+    "id" : "9497c7fd-97ab-491c-a003-154a2192b351",
+    "titulo" : "KAMBA TSANGU ZAMBOTE",
+    "pagina" : 159,
+    "numero" : 31,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "d359a3e8-4f36-4bf4-bbf1-3ff34fb5f01b",
+  "numero" : 1,
+  "descricao" : "Zenu yenu aleke, Tuimba Nkunga mietu, Mia Yisu Nlemvu watuzola,\nYisu Nhuludi, Yandi mene watonda dio, Idiau pe wabokele, Nuyeka au\naleka eza kua Mono.",
+  "hino" : {
+    "id" : "16421400-8e60-4ba5-ba20-39aa6b31b13a",
+    "titulo" : "ZENU YENU ALEKE",
+    "pagina" : 160,
+    "numero" : 32,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "35d60fd0-170e-45ca-ab5e-7c189335c1ac",
+  "numero" : 2,
+  "descricao" : "A rnase mu luzolo, Atuele tuana tuau, Ahehua etsambu yo sambilua, Kua\nCristu Emanuel, Au alongoki abadidi, Mu ngolo zau aitngidi,\n«Nukatul'au aleke nuendenu pe!»",
+  "hino" : {
+    "id" : "16421400-8e60-4ba5-ba20-39aa6b31b13a",
+    "titulo" : "ZENU YENU ALEKE",
+    "pagina" : 160,
+    "numero" : 32,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "435bdaab-e495-4e6b-9521-779f5b84eeda",
+  "numero" : 3,
+  "descricao" : "Kasi Yisu Nlongi Wambote, YeNdinga andi ya kenda, Wabokele aleke\neza, Azaya Nhuludi au,\nMu Moko mandi watambula, Iboxi wa asambila, Nuyeka au aleke eza\nkua mono.",
+  "hino" : {
+    "id" : "16421400-8e60-4ba5-ba20-39aa6b31b13a",
+    "titulo" : "ZENU YENU ALEKE",
+    "pagina" : 160,
+    "numero" : 32,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "3d9b7a11-9b13-4c4c-aca7-6a81b0adf383",
+  "numero" : 4,
+  "descricao" : "Zenu yenu aleke, ó Yisu wanukula, Waiza enu kunufwila,\nYenu auonso nuahuluka, Nua Ndinga ya Yisu, ó yandi zolele yenu,\nNuyeka au aleke eza kua Mono.",
+  "hino" : {
+    "id" : "16421400-8e60-4ba5-ba20-39aa6b31b13a",
+    "titulo" : "ZENU YENU ALEKE",
+    "pagina" : 160,
+    "numero" : 32,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "04e3c68d-984e-415f-a8e0-de5abd6a9361",
+  "numero" : 1,
+  "descricao" : "NGUIDI Ndinga mbote, Ya Cristu Nhuludi, lbokelanga asumuki, Nuiza\nnuahuluka.",
+  "hino" : {
+    "id" : "4ae2928f-2460-443a-941d-288c2126631b",
+    "titulo" : "NGUIDI NDINGA MBOTE",
+    "pagina" : 161,
+    "numero" : 33,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "f005fe1b-faa6-4d54-9a47-41af779c9a21",
+  "numero" : 0,
+  "descricao" : "IKUIZA Mfumu ame, wau ngina, IKUIZA wau insumuki, NDINGA aku\npfuete wa.",
+  "hino" : {
+    "id" : "4ae2928f-2460-443a-941d-288c2126631b",
+    "titulo" : "NGUIDI NDINGA MBOTE",
+    "pagina" : 161,
+    "numero" : 33,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "65077c77-f167-43d2-ab6e-8fc292b968c8",
+  "numero" : 2,
+  "descricao" : "Masumu ma ngina, Kilendi tanga ko, o Menga maku malitika, Mau\nmakutsukula.",
+  "hino" : {
+    "id" : "4ae2928f-2460-443a-941d-288c2126631b",
+    "titulo" : "NGUIDI NDINGA MBOTE",
+    "pagina" : 161,
+    "numero" : 33,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "34b7b496-1582-48a9-b50e-00cb495c0db2",
+  "numero" : 3,
+  "descricao" : "Mu pipa yaleka, YISU utemuna,\nÓ Muanda aku wahelela, Wandonga zaya Ngeye.",
+  "hino" : {
+    "id" : "4ae2928f-2460-443a-941d-288c2126631b",
+    "titulo" : "NGUIDI NDINGA MBOTE",
+    "pagina" : 161,
+    "numero" : 33,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "7deabecd-31a4-491f-9423-93040c9bbb8d",
+  "numero" : 1,
+  "descricao" : "Zenu yenu alcke, tuenda kua YISU, Utubokelanga, nuiza auonso atu,\nYISU zolele kuetu, pe yauonso tsi, Nuiza kua Nhuludi.",
+  "hino" : {
+    "id" : "ed2dab05-b64f-4cf9-8274-e302fb14ad10",
+    "titulo" : "ENU YENU ALEKE, TUENDA KUA YISU",
+    "pagina" : 162,
+    "numero" : 34,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "4433c975-3add-42d5-b567-3d90fdf074b9",
+  "numero" : 0,
+  "descricao" : "Zenu yenu aleke tuenda kua YISU wau, Tubaka ngangu zetu tuyeka\nmazowa wau, Muna Menga mandi sukula mbi, Nuiza kua Nhuludi.",
+  "hino" : {
+    "id" : "ed2dab05-b64f-4cf9-8274-e302fb14ad10",
+    "titulo" : "ENU YENU ALEKE, TUENDA KUA YISU",
+    "pagina" : 162,
+    "numero" : 34,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "95e41abf-10fc-4b3b-81dd-e7039344218b",
+  "numero" : 2,
+  "descricao" : "Zenu aleke ndolo kanubedi lua ko, YISU kuna polo katulendi vila ko,\nKutubokelanga Nuiza kua Nhuludi.",
+  "hino" : {
+    "id" : "ed2dab05-b64f-4cf9-8274-e302fb14ad10",
+    "titulo" : "ENU YENU ALEKE, TUENDA KUA YISU",
+    "pagina" : 162,
+    "numero" : 34,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "c0c546c9-5d92-42ad-b90e-57df8cc8bd28",
+  "numero" : 3,
+  "descricao" : "Zenu venu andumba tuenda kua YISU, Katulendi nanga mu njila ku\nZulu, Tuzolele Mfumu YISU, yandi Nkudi a tsi,\nNuiza kua Nhuludi.",
+  "hino" : {
+    "id" : "ed2dab05-b64f-4cf9-8274-e302fb14ad10",
+    "titulo" : "ENU YENU ALEKE, TUENDA KUA YISU",
+    "pagina" : 162,
+    "numero" : 34,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "6fe85b55-d5cf-4552-aea0-811be71fddce",
+  "numero" : 4,
+  "descricao" : "Zenu yenu andurnba tuenda kua YISU. Tuyeka pipa yauonso tulanda\nmuini wau, Matondo kua Mfumu YISU, Nzambi Nloloki, Nuiza kua\nNhuludi.",
+  "hino" : {
+    "id" : "ed2dab05-b64f-4cf9-8274-e302fb14ad10",
+    "titulo" : "ENU YENU ALEKE, TUENDA KUA YISU",
+    "pagina" : 162,
+    "numero" : 34,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "43ca74f4-5c65-4e70-9303-186cfb3970e9",
+  "numero" : 1,
+  "descricao" : "Kuna Zulu Nzarnbi ludikidi, Fulu kietu kiambote kina ko, Kuna nkembu\nye kiese tukala, Mu kikunda kia Nzambi, Kuna pe, Kuna pe, Ye Punga\nza Muanda jina ko, Muna lumbu ya nkembu yo muini, Kua yetu, Yisu\nbekela.",
+  "hino" : {
+    "id" : "4df63c2a-33bb-4e94-88e9-0d89ed91c1e0",
+    "titulo" : "KUNA ZULU NZAMBI LUDIKIDI",
+    "pagina" : 163,
+    "numero" : 35,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "2678f4b3-bd69-414b-aa80-32a44cf5d5e1",
+  "numero" : 2,
+  "descricao" : "Muna nkembu miauonso mu tsi, Pila rnvuma zamena zabua, Kasi\nnkembu mia Nzambi ku Zulu, Miakala mu mvu ya mvu, Kuna pe, Kuna\npe, Tukala yo Yisu kurnoxi, Muna nkembu yo rnuini una ko, Muna nkata\nya Nzambi etu.",
+  "hino" : {
+    "id" : "4df63c2a-33bb-4e94-88e9-0d89ed91c1e0",
+    "titulo" : "KUNA ZULU NZAMBI LUDIKIDI",
+    "pagina" : 163,
+    "numero" : 35,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "4318dbac-6796-47ec-9fd4-d30fd17d0b2d",
+  "numero" : 3,
+  "descricao" : "Katulendi ko, banza kumbundu, Ubamba wetu wakubikua ko,\nTukuikilanga kaka mu mambu, Yo mu moyo wa kiese tuvua, Kuna pe,\nkuna pe, Kuna ndinga imoxi kaka, Muna polo ya Nzambi etu, Yo mu\npolo ya Mfumu YISU.",
+  "hino" : {
+    "id" : "4df63c2a-33bb-4e94-88e9-0d89ed91c1e0",
+    "titulo" : "KUNA ZULU NZAMBI LUDIKIDI",
+    "pagina" : 163,
+    "numero" : 35,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "c8173d65-fa90-49a1-9d0f-bfa740df0d98",
+  "numero" : 4,
+  "descricao" : "Muna tangua tukota ku Zulu, Kuna Tsi yahelela, Muna moyo\nwapembe tukala, Moyo wa luzolo lua Yisu, Kuna pe kuna pe, Mu\nluzolo tukala mvu ya mvu, O luzolo kasonga muna Nti, Tuku uila\nYisu Nhuludi.",
+  "hino" : {
+    "id" : "4df63c2a-33bb-4e94-88e9-0d89ed91c1e0",
+    "titulo" : "KUNA ZULU NZAMBI LUDIKIDI",
+    "pagina" : 163,
+    "numero" : 35,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "0a138eb9-97e5-481e-9f34-26619838794e",
+  "numero" : 1,
+  "descricao" : "Yisu uku bokela, Muna kikanga, nsumuki, Yandi kuhulula,\nWuiza kunangi ko, Kua Nkudi aku.",
+  "hino" : {
+    "id" : "84285d93-60f9-409e-8dbf-d788e7ed2da1",
+    "titulo" : "Yisu uku bokela",
+    "pagina" : 164,
+    "numero" : 36,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "5ea1298b-99aa-4a12-8ee9-6b3fa4cc1be5",
+  "numero" : 0,
+  "descricao" : "Yisu kuhulula, Yisu kuhulula, Kunangi ko, wuiza nsumuki, Wuiza wau\nunu hoha kua Yandi, Ngeye kupulula, Mfumu ame.",
+  "hino" : {
+    "id" : "84285d93-60f9-409e-8dbf-d788e7ed2da1",
+    "titulo" : "Yisu uku bokela",
+    "pagina" : 164,
+    "numero" : 36,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "b2940d27-46b7-40bf-ac4a-3629db3aa41d",
+  "numero" : 2,
+  "descricao" : "Yandi una bekela, Yandi walemvoka Mfumu etu,\nYandi YISU, Una kubokela mu Juzolo luandi.",
+  "hino" : {
+    "id" : "84285d93-60f9-409e-8dbf-d788e7ed2da1",
+    "titulo" : "Yisu uku bokela",
+    "pagina" : 164,
+    "numero" : 36,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "1ac3dec4-29d6-4dee-a2a1-7f5c72b9d187",
+  "numero" : 3,
+  "descricao" : "Luzolo luavula, Waiiza hatsi Nhuludi etu, Wuiza kua Yandi,\nTonda kua Yisu Nkudi aku.",
+  "hino" : {
+    "id" : "84285d93-60f9-409e-8dbf-d788e7ed2da1",
+    "titulo" : "Yisu uku bokela",
+    "pagina" : 164,
+    "numero" : 36,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "01ab4b8b-8ade-4cd2-ae70-195437246ada",
+  "numero" : 1,
+  "descricao" : "Ndinga yambote Yisu bokelanga, Bokela yetu atu, Tala ha muelo\nYisu bekelanga, Bekela yetu atu. Wuiza, wiza, ngeye wanioma wuiza,\nNdinga yambote Yisu bokelanga, Bokela yetu atu.",
+  "hino" : {
+    "id" : "fb48ab01-60e2-44c7-bcc4-34b9c17488dc",
+    "titulo" : "Ndinga yambote yisu bokelanga           ",
+    "pagina" : 165,
+    "numero" : 37,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "d415949c-f15d-40ae-8972-2fa2becb83fd",
+  "numero" : 2,
+  "descricao" : "Nani nubekela? Yisu bokelanga, Bokela yetu atu, Ekuma diabula kenda\nkahana? Hana kua yetu atu.",
+  "hino" : {
+    "id" : "fb48ab01-60e2-44c7-bcc4-34b9c17488dc",
+    "titulo" : "Ndinga yambote yisu bokelanga           ",
+    "pagina" : 165,
+    "numero" : 37,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "5901e67e-cdca-40a9-ac69-b46515845af0",
+  "numero" : 3,
+  "descricao" : "Tangua ifuene ye ilurnbu iluta, Luta kua yetu atu,\nLufua ye pasi utulonga mene, Longa kua yetu atu.",
+  "hino" : {
+    "id" : "fb48ab01-60e2-44c7-bcc4-34b9c17488dc",
+    "titulo" : "Ndinga yambote yisu bokelanga           ",
+    "pagina" : 165,
+    "numero" : 37,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "e942fd57-f3ac-46dd-a0c5-1651d48cc271",
+  "numero" : 4,
+  "descricao" : "Tala luzolo Yisu kena hana, Hana kua yetu atu,\nEkuma masumu metu Ya,adi nete, Kuhulula yetu atu.",
+  "hino" : {
+    "id" : "fb48ab01-60e2-44c7-bcc4-34b9c17488dc",
+    "titulo" : "Ndinga yambote yisu bokelanga           ",
+    "pagina" : 165,
+    "numero" : 37,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "85c01804-4f16-4740-bc0d-be03b927d6f3",
+  "numero" : 1,
+  "descricao" : "Wau Nsamu wa Mfumu: Aleluia, Marnbu mambote ma Nzambi, Yisu\nhulula asurnuki: Aleluia, Lendandi kutuhulula.\nTalenu, apangi wau, Talenu kua Yisu wau, Yandi hulula asumuki,\ntutonda, Lendandi Kutuhulula.",
+  "hino" : {
+    "id" : "d09b9ef5-fb99-44a1-8c84-cd9c67d6870a",
+    "titulo" : "Wau nsamu wa mfumu: aleluia",
+    "pagina" : 165,
+    "numero" : 38,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "90842a4d-62ff-4840-9b04-cdca13fa8e1f",
+  "numero" : 2,
+  "descricao" : "Pfuka zenu wafuta: Aleluia, Yandi Yisu futidi mu Nti, Moyo andi\nhele wo: Aleluia, Yenu kunusonga kua Nzambi.",
+  "hino" : {
+    "id" : "d09b9ef5-fb99-44a1-8c84-cd9c67d6870a",
+    "titulo" : "Wau nsamu wa mfumu: aleluia",
+    "pagina" : 165,
+    "numero" : 38,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "3e2e2f95-a9b3-4d5c-9059-56ae1f9cedd8",
+  "numero" : 3,
+  "descricao" : "Yandi kaiidi kua yenu: Aleluia, Moyo wa mvu ya mvu kuna Zulu,\nTalenu kua Yisu kaka: Aleluia, Kuikilanga uau mu Nzambi enu.",
+  "hino" : {
+    "id" : "d09b9ef5-fb99-44a1-8c84-cd9c67d6870a",
+    "titulo" : "Wau nsamu wa mfumu: aleluia",
+    "pagina" : 165,
+    "numero" : 38,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "50be91e9-baa6-4aaa-8db8-81c4c9c775bb",
+  "numero" : 4,
+  "descricao" : "Tonda wau Nhuludi: Aleluia, Landenu mu itambi Yandi, Numuanga\nTsangu zandi: Aleluia, Kembelanga Nkudi etu Yisu",
+  "hino" : {
+    "id" : "d09b9ef5-fb99-44a1-8c84-cd9c67d6870a",
+    "titulo" : "Wau nsamu wa mfumu: aleluia",
+    "pagina" : 165,
+    "numero" : 38,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-29",
+    "dataActualizacao" : "2024-03-29",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "25b4efa3-a789-49b2-8de7-939c0fb65ffa",
+  "numero" : 1,
+  "descricao" : "Njila nsoki, njila fua, Kukangadimo-ko, Nga moyo aku uzola vua,\nKukangadi-mo ko.",
+  "hino" : {
+    "id" : "f2ff3ab5-b6a4-4726-a6a1-ae793a323209",
+    "titulo" : "Njila nsoki njila fua",
+    "pagina" : 166,
+    "numero" : 39,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "e505ade0-bdbc-414f-a7f7-135a657e1d17",
+  "numero" : 0,
+  "descricao" : "Tina mambi Wuiza kua Yisu Cristu, Yandi Yisu lenda hulula ntu",
+  "hino" : {
+    "id" : "f2ff3ab5-b6a4-4726-a6a1-ae793a323209",
+    "titulo" : "Njila nsoki njila fua",
+    "pagina" : 166,
+    "numero" : 39,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "335fce3d-6e72-441c-9b7e-e67d467c21df",
+  "numero" : 2,
+  "descricao" : "Nga masumu unata-mo, Kalendi huluka ko, Njila Nzambi wamenga\nyo, Kalendi huluka ko.",
+  "hino" : {
+    "id" : "f2ff3ab5-b6a4-4726-a6a1-ae793a323209",
+    "titulo" : "Njila nsoki njila fua",
+    "pagina" : 166,
+    "numero" : 39,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "e85d15a1-6a87-4556-a2ad-f85e266b0350",
+  "numero" : 3,
+  "descricao" : "Nga Mambu ma Yisu, ukuikila, Kukonda Nhuludi ko,\nNga tsangu Zandi tondele, Kukonda Nhuludi ko.",
+  "hino" : {
+    "id" : "f2ff3ab5-b6a4-4726-a6a1-ae793a323209",
+    "titulo" : "Njila nsoki njila fua",
+    "pagina" : 166,
+    "numero" : 39,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "a741f4d7-85f8-423f-8f07-c0a50d11c910",
+  "numero" : 4,
+  "descricao" : "Masumu maku malolokua, Kukonda mu nkanu ko,\nNga mbi kua Yisu wakusunua, Kukala mu nkanu ko.",
+  "hino" : {
+    "id" : "f2ff3ab5-b6a4-4726-a6a1-ae793a323209",
+    "titulo" : "Njila nsoki njila fua",
+    "pagina" : 166,
+    "numero" : 39,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "f3f2a36f-9f18-4119-964d-073c3c4277c3",
+  "numero" : 1,
+  "descricao" : "Kunanga mbongo, mbongo ya kenda, Mene-mene, muini, kani masika,\nBekelanga kamba tangua isalua, Tukemba ye kiese mitete tuna miau,",
+  "hino" : {
+    "id" : "7bcb219a-db3c-45b8-a10d-8876abedec66",
+    "titulo" : "Kuna nga mbongo ya kenda",
+    "pagina" : 167,
+    "numero" : 40,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "05bcda51-1739-44e9-b39b-3482dc6c533e",
+  "numero" : 0,
+  "descricao" : "Mitete tuna miau, mitete tuna miau;\nTukemba ye kiese, mitete tuna miau.",
+  "hino" : {
+    "id" : "7bcb219a-db3c-45b8-a10d-8876abedec66",
+    "titulo" : "Kuna nga mbongo ya kenda",
+    "pagina" : 167,
+    "numero" : 40,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "757bd872-b4e7-4344-815b-00255d96f2b8",
+  "numero" : 2,
+  "descricao" : "Solanga kiana hetamanga kuingi, Mvula yo muini ketulenga ko, Tangua\nisalu, isalu ihuidi, Tukemba ye kiese, mitete tuna miau",
+  "hino" : {
+    "id" : "7bcb219a-db3c-45b8-a10d-8876abedec66",
+    "titulo" : "Kuna nga mbongo ya kenda",
+    "pagina" : 167,
+    "numero" : 40,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "65af978b-1612-4a75-9a75-30886904edc7",
+  "numero" : 3,
+  "descricao" : "Tsangu za Yisu, Nhuludi wetu, Mbongo yakunua muna ntima miau, Ó\nYai lenda hulula ndonga, Tukemba ye kiese, mitete tuna miau.",
+  "hino" : {
+    "id" : "7bcb219a-db3c-45b8-a10d-8876abedec66",
+    "titulo" : "Kuna nga mbongo ya kenda",
+    "pagina" : 167,
+    "numero" : 40,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "dc06ab01-9f03-4185-b2f4-f6a268caf498",
+  "numero" : 1,
+  "descricao" : "Tsangu za Yisu Cristu, Numuanganesa zo, E pfuila katufuila, Nzola\nkazolele tsi, Nzambi wazola tsi, Yandi hana kahana, Ó Muan' Andi\nwanzolua, Keza kutuhulula.",
+  "hino" : {
+    "id" : "33383c48-322d-443f-b947-7aca9fbe9387",
+    "titulo" : "Tsangu za yisu cristo",
+    "pagina" : 167,
+    "numero" : 41,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "338a3b53-23ca-418e-b098-8db10803e2f2",
+  "numero" : 0,
+  "descricao" : "Kuikila, kuikila, Mu Yisu nualolokua,\nTambula luhuluzul Luangohou hana lo.",
+  "hino" : {
+    "id" : "33383c48-322d-443f-b947-7aca9fbe9387",
+    "titulo" : "Tsangu za yisu cristo",
+    "pagina" : 167,
+    "numero" : 41,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "34476076-3a12-455e-b928-604131381e75",
+  "numero" : 2,
+  "descricao" : "Tsangu za Yisu Cristu, Kivuvu zinatanga, Ye luhuhamu lua kieleka,\nYo moyo wa mvu ya rnvu, Nkembu kasisidi, Katina hondua ko, E mfunu\nkatuvuidi, Nzola katuzolele.",
+  "hino" : {
+    "id" : "33383c48-322d-443f-b947-7aca9fbe9387",
+    "titulo" : "Tsangu za yisu cristo",
+    "pagina" : 167,
+    "numero" : 41,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "c467b497-2692-4bbc-9740-cd949dfedc1e",
+  "numero" : 3,
+  "descricao" : "Yenu makamba rname, Kalutini Yisu ko, E pasi zauonso kamona, Mu\nyenu kamuena zo, Wau nutambula, Ka nuzembi nkutu ko, E tangua yai ya\nkenda, tangua ya huluka.",
+  "hino" : {
+    "id" : "33383c48-322d-443f-b947-7aca9fbe9387",
+    "titulo" : "Tsangu za yisu cristo",
+    "pagina" : 167,
+    "numero" : 41,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "d5c29ade-7baa-46df-96a8-9cd738908fd0",
+  "numero" : 1,
+  "descricao" : "Wuilakana\npoha\nYisu,Wuilakana\nkaka\nwau,\nÓ wau wuilakana Yisu, Wuilakana kaka wau.\n",
+  "hino" : {
+    "id" : "d041b836-d3e5-4af0-92b9-135df7182d44",
+    "titulo" : "Wilankana poha yisu",
+    "pagina" : 168,
+    "numero" : 42,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "a81bcee7-20ad-44a2-bb6d-025dc1907720",
+  "numero" : 2,
+  "descricao" : "Wuiza moneka kua Yisu, Wuiza moneka wau, Ó wau wuiza wau kua\nYisu, Wuiza moneka wau.",
+  "hino" : {
+    "id" : "d041b836-d3e5-4af0-92b9-135df7182d44",
+    "titulo" : "Wilankana poha yisu",
+    "pagina" : 168,
+    "numero" : 42,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "8c12a080-e396-4aee-8160-c840f97b6a19",
+  "numero" : 3,
+  "descricao" : "Ngeye zolele kua Yisu, Ukuzolanga wau, Ó wau zolele kua Yisu,\nUkuzolanga wau.",
+  "hino" : {
+    "id" : "d041b836-d3e5-4af0-92b9-135df7182d44",
+    "titulo" : "Wilankana poha yisu",
+    "pagina" : 168,
+    "numero" : 42,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "e688fe5d-7b15-4569-82e8-e3f76436a13e",
+  "numero" : 4,
+  "descricao" : "Yisu lenda hulula ntu, Lenda kuandi wau, Owau ngeye huluka pe,\nHuluka kuaku wau",
+  "hino" : {
+    "id" : "d041b836-d3e5-4af0-92b9-135df7182d44",
+    "titulo" : "Wilankana poha yisu",
+    "pagina" : 168,
+    "numero" : 42,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "53afe286-c64a-44a7-bdcc-3b0e6e7e9f55",
+  "numero" : 5,
+  "descricao" : "Tonda Yisu sambilanga, Xia vuvu wau, Evuvu kiaku Yisu,\nKuikilanga Ó wau.",
+  "hino" : {
+    "id" : "d041b836-d3e5-4af0-92b9-135df7182d44",
+    "titulo" : "Wilankana poha yisu",
+    "pagina" : 168,
+    "numero" : 42,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "397cc243-4627-4169-ae61-a1881a6e52df",
+  "numero" : 6,
+  "descricao" : "Tonda Nzambi, Aleluia, Aleluia, Amen, Amen, Aleluia, Aleluia\nAmen.",
+  "hino" : {
+    "id" : "d041b836-d3e5-4af0-92b9-135df7182d44",
+    "titulo" : "Wilankana poha yisu",
+    "pagina" : 168,
+    "numero" : 42,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "7ba36a43-3c73-4912-a5af-20fc9d0f41d8",
+  "numero" : 1,
+  "descricao" : "Hena ye TÓ yakangala, yo Menga ma Yisu, I mau ma kutsukula,\nMono rnbuta nsumuki.",
+  "hino" : {
+    "id" : "e3f18808-81f4-4f5d-9619-09bd18d03d37",
+    "titulo" : "Bena ye to yakangala",
+    "pagina" : 169,
+    "numero" : 43,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "bbfa4ee6-cf58-473a-a26b-f03e687f5df6",
+  "numero" : 0,
+  "descricao" : "Mono rnbuta nsumuki.\nMono mbuta nsumuki,\nMono mbuia nsumuki,\nI muau muna luhuluzi,\nMono rnbuta nsumki.",
+  "hino" : {
+    "id" : "e3f18808-81f4-4f5d-9619-09bd18d03d37",
+    "titulo" : "Bena ye to yakangala",
+    "pagina" : 169,
+    "numero" : 43,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "868d58bc-fd4e-431f-86d7-7a2e5c82c6e9",
+  "numero" : 2,
+  "descricao" : "o muivi muau kamuena, Muna Nti wayondala, I muau muna Luhuluzu,\nKua ndonga ya Yisu.",
+  "hino" : {
+    "id" : "e3f18808-81f4-4f5d-9619-09bd18d03d37",
+    "titulo" : "Bena ye to yakangala",
+    "pagina" : 169,
+    "numero" : 43,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "0d7e9fc2-472d-4397-b229-7f47a7cea026",
+  "numero" : 3,
+  "descricao" : "Yai TÓ Yatsukula, Ntima ame wambi, Ó Menga maku Yisu, Mu luzolo\nlua sunda.",
+  "hino" : {
+    "id" : "e3f18808-81f4-4f5d-9619-09bd18d03d37",
+    "titulo" : "Bena ye to yakangala",
+    "pagina" : 169,
+    "numero" : 43,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "d5e00df0-b3e5-4cb2-87ea-4cf15fe616b2",
+  "numero" : 4,
+  "descricao" : "Nga utsukudi ikuenda ko, Kua akuetu ndonga, Avuata vuatu kiapemne,\nKuna fulu kia Nzambi.",
+  "hino" : {
+    "id" : "e3f18808-81f4-4f5d-9619-09bd18d03d37",
+    "titulo" : "Bena ye to yakangala",
+    "pagina" : 169,
+    "numero" : 43,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "22d3e25f-d96e-4852-a2e8-82a1a58f9d75",
+  "numero" : 1,
+  "descricao" : "Nkua pasi jina diandi,Muana Nzambi waiza, Kula yetu asumuki,\nAleluia Nhuludi etu.",
+  "hino" : {
+    "id" : "b9a22134-2633-4449-9d8e-85b0e8510d54",
+    "titulo" : "Nkua paasi jina diandi",
+    "pagina" : 170,
+    "numero" : 44,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "71b40004-100f-40f0-a2f1-6c571f0c89ce",
+  "numero" : 2,
+  "descricao" : "Tsoni ye pasi bakidi, Muna nitu muna Nti, Kuna Zulu Kavuanda wau,\nAleluia Nhuludi etu.",
+  "hino" : {
+    "id" : "b9a22134-2633-4449-9d8e-85b0e8510d54",
+    "titulo" : "Nkua paasi jina diandi",
+    "pagina" : 170,
+    "numero" : 44,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "39b0e99c-0695-45fe-9db1-3b87297323e6",
+  "numero" : 3,
+  "descricao" : "Muana Nzambi wahelela, Kua yandi wakondua mbi, Muna Nti\nkakomenua, Aleluia Nhuludi etu.",
+  "hino" : {
+    "id" : "b9a22134-2633-4449-9d8e-85b0e8510d54",
+    "titulo" : "Nkua paasi jina diandi",
+    "pagina" : 170,
+    "numero" : 44,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "c04936d5-082d-4efc-ab91-13cdcdc68841",
+  "numero" : 1,
+  "descricao" : "Mfumu YISU muna Nti Andi, Ku pelelesa wapfuila pe, Yahelela muna\nmenga wau, Menga ma YISU.",
+  "hino" : {
+    "id" : "62f145ea-1f39-4c1f-8ea2-eb00d76f4c09",
+    "titulo" : "Mfimu yisu muna nti andi",
+    "pagina" : 171,
+    "numero" : 45,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "b71bd3c0-7595-4458-af2c-07cfd7387e05",
+  "numero" : 0,
+  "descricao" : "Nkembu kua YISU, Nkembu kua YISU, Yandi Mfumu wapulula,\nNkembu kua YISU.",
+  "hino" : {
+    "id" : "62f145ea-1f39-4c1f-8ea2-eb00d76f4c09",
+    "titulo" : "Mfimu yisu muna nti andi",
+    "pagina" : 171,
+    "numero" : 45,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "92a655d0-bc62-41ed-a651-46df0faa8f81",
+  "numero" : 2,
+  "descricao" : "Zola kua kuingi kanzolele, Mu kenda zandi wandoloka, Wapulula\nmuna ntambu a lufua, Nkembu kua YISU.",
+  "hino" : {
+    "id" : "62f145ea-1f39-4c1f-8ea2-eb00d76f4c09",
+    "titulo" : "Mfimu yisu muna nti andi",
+    "pagina" : 171,
+    "numero" : 45,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "547cba04-344b-40e3-8198-055bb4d6845a",
+  "numero" : 3,
+  "descricao" : "Yatonda wau kua Nhuludi, Mawote rnandi kapangidi, Tondele kuingi\nmu ntirn'ame, Tondele YISU.",
+  "hino" : {
+    "id" : "62f145ea-1f39-4c1f-8ea2-eb00d76f4c09",
+    "titulo" : "Mfimu yisu muna nti andi",
+    "pagina" : 171,
+    "numero" : 45,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "711ec45b-a1cb-41ee-ad7c-e0b5868ad7ba",
+  "numero" : 4,
+  "descricao" : "Yenu nuakulua kua Nhuludi, Nding' Andi kaka nufuete wa, Nuatambula\nrnbila nuabokelua, Nuiza kuenu wau.",
+  "hino" : {
+    "id" : "62f145ea-1f39-4c1f-8ea2-eb00d76f4c09",
+    "titulo" : "Mfimu yisu muna nti andi",
+    "pagina" : 171,
+    "numero" : 45,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "fedeb6a3-0a02-4c47-bd82-32b7ad8ce639",
+  "numero" : 1,
+  "descricao" : "fumu YISU Nkudi etu, di tukuntondanga, mvuala tuna kua Nzambi,\nYISU Nhuludi.",
+  "hino" : {
+    "id" : "813ed2cf-4daf-49c8-816c-3b6ad93fb79d",
+    "titulo" : "Mfumu yisu nkudi etu",
+    "pagina" : 172,
+    "numero" : 46,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "ec1ddee6-9371-4a64-b7f4-89b91c1d519e",
+  "numero" : 0,
+  "descricao" : "Wau Nzarnbi tutondanga, Ngeye Kutuvundisa, Kitufuete utuhana,\nNgeye kutukubika",
+  "hino" : {
+    "id" : "813ed2cf-4daf-49c8-816c-3b6ad93fb79d",
+    "titulo" : "Mfumu yisu nkudi etu",
+    "pagina" : 172,
+    "numero" : 46,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "c16bf27e-2a56-453b-9c3e-fcc523e420b1",
+  "numero" : 2,
+  "descricao" : "Nzo etu tuna dilengelu, Muna tangua masumu, Kuehi iina? Kuna Zulu,\nYandi mene Nhuludi.",
+  "hino" : {
+    "id" : "813ed2cf-4daf-49c8-816c-3b6ad93fb79d",
+    "titulo" : "Mfumu yisu nkudi etu",
+    "pagina" : 172,
+    "numero" : 46,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "1a432216-451a-4ce0-a84f-f86efd46dd65",
+  "numero" : 3,
+  "descricao" : "Maza ma rnoyo kuna Zulu, Mfumu YISU, hana mo, Tufuete lomba\ntufuete huka, YISU kaka Nhuludi.",
+  "hino" : {
+    "id" : "813ed2cf-4daf-49c8-816c-3b6ad93fb79d",
+    "titulo" : "Mfumu yisu nkudi etu",
+    "pagina" : 172,
+    "numero" : 46,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "53ec468f-3384-4a5f-b94d-e0c2eae1f553",
+  "numero" : 4,
+  "descricao" : "Yandi muini tuamona wo, Yetu nga tukuikila, Muna pipa tuatuka mo,\nMu kenda zandi Nhuludi.",
+  "hino" : {
+    "id" : "813ed2cf-4daf-49c8-816c-3b6ad93fb79d",
+    "titulo" : "Mfumu yisu nkudi etu",
+    "pagina" : 172,
+    "numero" : 46,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "f180c8a0-0223-48e9-aab8-f4c64d9de922",
+  "numero" : 5,
+  "descricao" : "Muana Nzambi watufuila, Menga mandi mahuha, Mu masumu\ntuatukarno, Moyo rnietu miahelela",
+  "hino" : {
+    "id" : "813ed2cf-4daf-49c8-816c-3b6ad93fb79d",
+    "titulo" : "Mfumu yisu nkudi etu",
+    "pagina" : 172,
+    "numero" : 46,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "421c334e-45c9-4fbc-86a5-c85e0436aa54",
+  "numero" : 6,
+  "descricao" : "Nuiza unu tuenda rala, Kuehi tufuete lengela, Nkubiki etu tuna yandi,\nNzambi kutulundanga.",
+  "hino" : {
+    "id" : "813ed2cf-4daf-49c8-816c-3b6ad93fb79d",
+    "titulo" : "Mfumu yisu nkudi etu",
+    "pagina" : 172,
+    "numero" : 46,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "2233415b-0d83-4851-b8ec-f6b948405beb",
+  "numero" : 7,
+  "descricao" : "Mfumu etu watusonga, Njila moyo mvu ya mvu, Wese tonda fuete\nsonga, Mfumu YISU wafuluka",
+  "hino" : {
+    "id" : "813ed2cf-4daf-49c8-816c-3b6ad93fb79d",
+    "titulo" : "Mfumu yisu nkudi etu",
+    "pagina" : 172,
+    "numero" : 46,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "f26ab882-a661-46ce-9d83-e7470aa86b81",
+  "numero" : 1,
+  "descricao" : "YISU mono nzolele, YISU Muana Nzambi, Menga mandi sukula, Ntima\name wambimbi.",
+  "hino" : {
+    "id" : "3220861d-989d-45c9-b4a3-cea9f682d704",
+    "titulo" : "Yisu mono nzolele",
+    "pagina" : 173,
+    "numero" : 47,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "a0770bcf-4537-4389-91e8-88e55b5e11d2",
+  "numero" : 0,
+  "descricao" : "Muna Nti, Muna Nti, YISU tambudi fulu, Pasi zame bakidi, Mono\nibaka Zulu.",
+  "hino" : {
+    "id" : "3220861d-989d-45c9-b4a3-cea9f682d704",
+    "titulo" : "Yisu mono nzolele",
+    "pagina" : 173,
+    "numero" : 47,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "6acbbd2c-0467-4682-8bdb-60a0afcb9e48",
+  "numero" : 2,
+  "descricao" : "Muna Nti Ó YISU pe, Luzolo luandi songa, Kua Tata yandi lombele,\nLoloka andonga",
+  "hino" : {
+    "id" : "3220861d-989d-45c9-b4a3-cea9f682d704",
+    "titulo" : "Yisu mono nzolele",
+    "pagina" : 173,
+    "numero" : 47,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "291226df-7d94-443a-9ea0-22bd76a076c4",
+  "numero" : 3,
+  "descricao" : "Muna Nti mbuene pe, Masumu mame masunda, Yisu Yandi hohele,\nKenda zame zasunda.",
+  "hino" : {
+    "id" : "3220861d-989d-45c9-b4a3-cea9f682d704",
+    "titulo" : "Yisu mono nzolele",
+    "pagina" : 173,
+    "numero" : 47,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "00b19db4-809e-4623-ae4a-94c14410f270",
+  "numero" : 4,
+  "descricao" : "Mambumame, kuikidi, Makaepana moyo, YISU yandi nsundi Ofua,\nMono pe isunda.",
+  "hino" : {
+    "id" : "3220861d-989d-45c9-b4a3-cea9f682d704",
+    "titulo" : "Yisu mono nzolele",
+    "pagina" : 173,
+    "numero" : 47,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "cf55c3b3-a421-434d-b8c3-bb3d2ab19a4a",
+  "numero" : 1,
+  "descricao" : "Yafuila muna Nti, Kua ngeye Huluka, Moyo ame pele wo, ngeye\nlenda huluka",
+  "hino" : {
+    "id" : "0e2c26b2-f48a-4317-b90f-b666311f5b5c",
+    "titulo" : "Yafuila muna nti kua ngeye huluka",
+    "pagina" : 173,
+    "numero" : 48,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "5c70262e-0a97-4bb6-864d-3056af49c5e9",
+  "numero" : 0,
+  "descricao" : "Yafua, Yafua mu Nti kua ngeye, uhanga uau pe?",
+  "hino" : {
+    "id" : "0e2c26b2-f48a-4317-b90f-b666311f5b5c",
+    "titulo" : "Yafuila muna nti kua ngeye huluka",
+    "pagina" : 173,
+    "numero" : 48,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "0cebcf92-fd4f-426a-9b79-bd4077c33988",
+  "numero" : 2,
+  "descricao" : "Yakele wau kua ngeye pasi jisundidi, Yauonso mono pangidi, kukala\nNhuludi,",
+  "hino" : {
+    "id" : "0e2c26b2-f48a-4317-b90f-b666311f5b5c",
+    "titulo" : "Yafuila muna nti kua ngeye huluka",
+    "pagina" : 173,
+    "numero" : 48,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "4f083e66-1808-4143-8892-c2badf95aa3d",
+  "numero" : 3,
+  "descricao" : "Mu Nti mbuene pasi kuhulula ngeye, Moyo wapa mono ngina, ikuhana\nwo.",
+  "hino" : {
+    "id" : "0e2c26b2-f48a-4317-b90f-b666311f5b5c",
+    "titulo" : "Yafuila muna nti kua ngeye huluka",
+    "pagina" : 173,
+    "numero" : 48,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "ae87cfff-7f7d-4864-b0e6-4fe63aa4f3f7",
+  "numero" : 4,
+  "descricao" : "Mono ndete luhuluzu lua nkembu wa Zulu, Ikuloloka rnasurnu mu\nluzolo lusundidi.",
+  "hino" : {
+    "id" : "0e2c26b2-f48a-4317-b90f-b666311f5b5c",
+    "titulo" : "Yafuila muna nti kua ngeye huluka",
+    "pagina" : 173,
+    "numero" : 48,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "a8180644-aba3-4247-a4e2-add54a004044",
+  "numero" : 1,
+  "descricao" : "Hena ye to yayela, Yo Menga ma Yisu, Au adimbukanga rnuna to, Aman\na hehela.",
+  "hino" : {
+    "id" : "ad845fae-7fcb-4ec7-94c1-198cdf9e140f",
+    "titulo" : "Hena ye to yayela",
+    "pagina" : 174,
+    "numero" : 49,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "e3431063-9ead-43c5-a0d7-2219062cd4b2",
+  "numero" : 0,
+  "descricao" : "Wau iikuikila yazaya wo, YISU wame Nhuludi, Wapfuila mene muna\nNti.: Yatoma huluka.",
+  "hino" : {
+    "id" : "ad845fae-7fcb-4ec7-94c1-198cdf9e140f",
+    "titulo" : "Hena ye to yayela",
+    "pagina" : 174,
+    "numero" : 49,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "7d30b380-783f-45c4-982f-82a986d41d16",
+  "numero" : 2,
+  "descricao" : "Ó rnuivi yandi wahelela, Mu yai to ya menga, Mono pe nsumuki, Muau\npe wahelela",
+  "hino" : {
+    "id" : "ad845fae-7fcb-4ec7-94c1-198cdf9e140f",
+    "titulo" : "Hena ye to yayela",
+    "pagina" : 174,
+    "numero" : 49,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "65772641-84c9-47f1-b41a-e3b7f1db183f",
+  "numero" : 3,
+  "descricao" : "YISU Menga maku, Mamana hulula, Auonso akukuikila,\nAkulanda, yo mu lufua.",
+  "hino" : {
+    "id" : "ad845fae-7fcb-4ec7-94c1-198cdf9e140f",
+    "titulo" : "Hena ye to yayela",
+    "pagina" : 174,
+    "numero" : 49,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "2cf38eb2-9018-4fb5-bb49-01e56e6e6c6d",
+  "numero" : 4,
+  "descricao" : "E nitu oha iivundila, Mu vundu eki kia lufua, Moyo ame ukukembela,\nMuna kuaku hulula.",
+  "hino" : {
+    "id" : "ad845fae-7fcb-4ec7-94c1-198cdf9e140f",
+    "titulo" : "Hena ye to yayela",
+    "pagina" : 174,
+    "numero" : 49,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "0a1dc0aa-22f2-4784-987c-7af124f73b92",
+  "numero" : 1,
+  "descricao" : "Ku-ki mono yahuluka, Muna Menga mandi Yisu, Luhuhamu mbuene\nlo, Muna Menga mandi Yisu.",
+  "hino" : {
+    "id" : "0548438f-2415-459d-b556-7fa64d662b2b",
+    "titulo" : "Kuki mono yahuluka",
+    "pagina" : 175,
+    "numero" : 50,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "faed582a-ed26-436d-9cf5-4602a35c1d43",
+  "numero" : 0,
+  "descricao" : "Ó Menga ma Yisu, Ma lenda sukula mbi! Luhuhamu ngina,\nLuna Muna Menga Mandi.",
+  "hino" : {
+    "id" : "0548438f-2415-459d-b556-7fa64d662b2b",
+    "titulo" : "Kuki mono yahuluka",
+    "pagina" : 175,
+    "numero" : 50,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "af53d711-b243-41c1-8144-f0b97c63e360",
+  "numero" : 2,
+  "descricao" : "Cristu wahanga kikulu, Muna Menga mandi kaka, Ngeye lenda\nlolokua, Muna Menga Mandi kaka.",
+  "hino" : {
+    "id" : "0548438f-2415-459d-b556-7fa64d662b2b",
+    "titulo" : "Kuki mono yahuluka",
+    "pagina" : 175,
+    "numero" : 50,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "f82d162b-7ce8-4ca1-8f2e-17d47698d95d",
+  "numero" : 3,
+  "descricao" : "Luhuluzu kua Yisu, Luna Muna Menga mandi, Moyo kuele mvu ivua,\nMuna Menga mandi kaka.",
+  "hino" : {
+    "id" : "0548438f-2415-459d-b556-7fa64d662b2b",
+    "titulo" : "Kuki mono yahuluka",
+    "pagina" : 175,
+    "numero" : 50,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "63a81ab8-fd22-43c6-9c84-dccb47eae31d",
+  "numero" : 4,
+  "descricao" : "Aleluia kua Yisu, Watukula muna Menga, Tufuete pe Kuntonda, Muna\nntima mietu wau.",
+  "hino" : {
+    "id" : "0548438f-2415-459d-b556-7fa64d662b2b",
+    "titulo" : "Kuki mono yahuluka",
+    "pagina" : 175,
+    "numero" : 50,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "e4f4735a-f862-4f1c-a326-26ac56ac05de",
+  "numero" : 1,
+  "descricao" : "Ngeye nsumuki tumbulanga Nzambi, una ntima aku luimbi luyelele, e\nbanza wau Pasi za Yisu, tangua yandi wele muna kuluzu.",
+  "hino" : {
+    "id" : "da27eabb-6208-4980-b10e-2fb0893b94c1",
+    "titulo" : "Ngeye nsumuki tumbulanga",
+    "pagina" : 176,
+    "numero" : 51,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "c920bd1a-7b9a-4efe-8d11-aeb39c1125fb",
+  "numero" : 0,
+  "descricao" : "Mfumu Yisu, Mfumu Yisu, Pasi bakidi kua yetu muna Nti, Muna\nNti, Wuiza, wuiza, nsumuki, wuiza wuiza wau.",
+  "hino" : {
+    "id" : "da27eabb-6208-4980-b10e-2fb0893b94c1",
+    "titulo" : "Ngeye nsumuki tumbulanga",
+    "pagina" : 176,
+    "numero" : 51,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "e402b4af-9be5-43c8-be1f-5a8c8f25b1ab",
+  "numero" : 2,
+  "descricao" : "Tangua keke isidi tangua luta wau, Fuete yeka huna ye sumuka pe,\nWenda kudibanza kua yandi Nhuludi, Okutelemesa mu ngolo zandi.",
+  "hino" : {
+    "id" : "da27eabb-6208-4980-b10e-2fb0893b94c1",
+    "titulo" : "Ngeye nsumuki tumbulanga",
+    "pagina" : 176,
+    "numero" : 51,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "f14bf119-b7b7-4597-8cb1-483dde754cde",
+  "numero" : 3,
+  "descricao" : "Toma banza wau mu Pasi za Yisu, Muna tangua yandi Kafuila, Muna\nKuluzu, Wafuta muna kenda pfuka za Sumu,\nÓwau tufuete tonda Tsangu za Yisu.",
+  "hino" : {
+    "id" : "da27eabb-6208-4980-b10e-2fb0893b94c1",
+    "titulo" : "Ngeye nsumuki tumbulanga",
+    "pagina" : 176,
+    "numero" : 51,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "9c48f75e-dfa5-407b-a07f-5742b37eb1fd",
+  "numero" : 1,
+  "descricao" : "YISU wafuluka, Mambu makieleka, Mu Njamu Yandi tukidi,\nWalunga pe lufua",
+  "hino" : {
+    "id" : "601feeeb-3edb-464b-8fcf-466e10fc9db3",
+    "titulo" : "Yisu wafuluka",
+    "pagina" : 177,
+    "numero" : 52,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "96261862-12dc-4c0a-977b-1a8c6c221938",
+  "numero" : 2,
+  "descricao" : "YISU Wafuluka, Lufua fuidi-Io, Ndiona yandi kuikila, Kalendi vila-\nko.",
+  "hino" : {
+    "id" : "601feeeb-3edb-464b-8fcf-466e10fc9db3",
+    "titulo" : "Yisu wafuluka",
+    "pagina" : 177,
+    "numero" : 52,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "c7553751-50e2-4408-bed7-a4ddbbeda809",
+  "numero" : 3,
+  "descricao" : "YISU wafuluka, Nkembu tuirnbila, Lukailu pe tuhukidi, Mu Menga\nluhuhamu.YISU wafuluka, Nkembu tuirnbila, Lukailu pe tuhukidi, Mu Menga\nluhuhamu.",
+  "hino" : {
+    "id" : "601feeeb-3edb-464b-8fcf-466e10fc9db3",
+    "titulo" : "Yisu wafuluka",
+    "pagina" : 177,
+    "numero" : 52,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "eaedc3a7-9dd0-4278-b175-5623738f436a",
+  "numero" : 4,
+  "descricao" : "YISU Wafuluka, Engi azeya-wo, Ó YISU Kani wanlunga,\nMfumu kuele mvu.",
+  "hino" : {
+    "id" : "601feeeb-3edb-464b-8fcf-466e10fc9db3",
+    "titulo" : "Yisu wafuluka",
+    "pagina" : 177,
+    "numero" : 52,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "f4a24b76-fe45-4904-be92-4a0f1e7f97dd",
+  "numero" : 5,
+  "descricao" : "YISU Wafuluka, Funda kafundisa, Ndonga Yingi aiinini, Aina Nhuludi\nau. Ó YISU wafuluka, Jipunga akembela, O yetu pe tunkembela, Mu\nnkembu wa mvu ya mvu.",
+  "hino" : {
+    "id" : "601feeeb-3edb-464b-8fcf-466e10fc9db3",
+    "titulo" : "Yisu wafuluka",
+    "pagina" : 177,
+    "numero" : 52,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "0a61a38a-965e-4192-8637-81ceff71a35a",
+  "numero" : 1,
+  "descricao" : "Cristu wafululuka; Aleluia! Muna lufua sundidi; Aleluia! Yawonso\nyalulama; Aleluia! Luhuluzu lua kenda; Aleluia!",
+  "hino" : {
+    "id" : "d11bcb98-728a-4e3f-81ff-b645b0d38c1f",
+    "titulo" : "Cristo wafululuka: aleluia",
+    "pagina" : 178,
+    "numero" : 53,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "74fbd8c4-668b-471f-ae10-52036705babe",
+  "numero" : 2,
+  "descricao" : "Pasi muna nti mu.ene; Aleluia! Kua Yisu kafuididi: Aleluia! Kasi wau\nrnoyo kena; Aleluia! Yandi ntinu wa nitinu; Aleluia!",
+  "hino" : {
+    "id" : "d11bcb98-728a-4e3f-81ff-b645b0d38c1f",
+    "titulo" : "Cristo wafululuka: aleluia",
+    "pagina" : 178,
+    "numero" : 53,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "a8dbfa6c-f3cb-4294-8092-469c67737331",
+  "numero" : 3,
+  "descricao" : "Kolesenu ndinga zenu; Aleluia! Kua Yisu ntinu etu; Aleluia! Yandi\nsundidi lufua; Aleluia! Asumuki ahuluka; Aleluia!",
+  "hino" : {
+    "id" : "d11bcb98-728a-4e3f-81ff-b645b0d38c1f",
+    "titulo" : "Cristo wafululuka: aleluia",
+    "pagina" : 178,
+    "numero" : 53,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "186e450e-4dcb-4b43-af67-9d2d9bf999df",
+  "numero" : 1,
+  "descricao" : "Tutoma zaya nsinga wau, Watukangilu diaka, Kudizola mua Yisu, E\nkanda dike nkutu.",
+  "hino" : {
+    "id" : "0439141c-8ed7-43ce-8a93-6da8ea9df191",
+    "titulo" : "Tutoma zaya nsinga wau",
+    "pagina" : 178,
+    "numero" : 54,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "99154332-2dc5-4f8c-b6ab-a7abd985dc4e",
+  "numero" : 2,
+  "descricao" : "Tata eto mosi kuna Zulu. Tu samba tufukama, lbosi tuwa Ndinga-\nAndi, Mu fulu kia kondama.",
+  "hino" : {
+    "id" : "0439141c-8ed7-43ce-8a93-6da8ea9df191",
+    "titulo" : "Tutoma zaya nsinga wau",
+    "pagina" : 178,
+    "numero" : 54,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "717e5ad0-6afb-48e6-be83-71554bda2b69",
+  "numero" : 3,
+  "descricao" : "Nga pangi eto una dila, Tuenda tuandidisa, Tuankatula manienge pe,\nTuadila yandi kumosi.",
+  "hino" : {
+    "id" : "0439141c-8ed7-43ce-8a93-6da8ea9df191",
+    "titulo" : "Tutoma zaya nsinga wau",
+    "pagina" : 178,
+    "numero" : 54,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "6a3180e0-cea7-4702-89c2-78029caf436f",
+  "numero" : 4,
+  "descricao" : "Nga pangi eto tuazolana, Tukala mu ukamba, Ekudizola mua Yisu, E\nkanda dike nkutu.",
+  "hino" : {
+    "id" : "0439141c-8ed7-43ce-8a93-6da8ea9df191",
+    "titulo" : "Tutoma zaya nsinga wau",
+    "pagina" : 178,
+    "numero" : 54,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "6f1dda67-7e38-47aa-bd17-b0d91a10afd1",
+  "numero" : 1,
+  "descricao" : "Tala ndonga muna pipa avila, Kami azaya nani Nhuludi,\nNani kuenda kamba kuau tsangu, Yisu Nhuludi asumuki.",
+  "hino" : {
+    "id" : "b0ca1c35-7d85-4c83-8273-1408dfa6754a",
+    "titulo" : "Tala a ndonga muna pipa avila",
+    "pagina" : 179,
+    "numero" : 55,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "4428621e-5f11-409a-9199-0eed043aa434",
+  "numero" : 0,
+  "descricao" : "Ngolo zawonso ngina zau mu tsi, Ye kuna zulu pe, Luenda kueno\nmwanganesa tsango, Mono ngina kumosi yo yeno.",
+  "hino" : {
+    "id" : "b0ca1c35-7d85-4c83-8273-1408dfa6754a",
+    "titulo" : "Tala a ndonga muna pipa avila",
+    "pagina" : 179,
+    "numero" : 55,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "cc0dd8d7-717f-4e24-98ed-3d87bb0af975",
+  "numero" : 2,
+  "descricao" : "Yelu ya yanguka muna tsi zawonso, Lutelama kweno yeno akuikizi,\nAkuikizi kungolo lukubama, Ena mu kembila Nhuludi",
+  "hino" : {
+    "id" : "b0ca1c35-7d85-4c83-8273-1408dfa6754a",
+    "titulo" : "Tala a ndonga muna pipa avila",
+    "pagina" : 179,
+    "numero" : 55,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "3f1e7c51-4765-4df6-bef6-e45be1a423ad",
+  "numero" : 3,
+  "descricao" : "Nuiza kua mono ndinga ina boka, Nuiza lwakulua mu jina dia Yisu,\nYandi kuluhulula mumbi zawonso, Menga ma Yisu maitika mu Nti.",
+  "hino" : {
+    "id" : "b0ca1c35-7d85-4c83-8273-1408dfa6754a",
+    "titulo" : "Tala a ndonga muna pipa avila",
+    "pagina" : 179,
+    "numero" : 55,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "9e0cf814-fc9b-4f56-9329-1471f135a4bd",
+  "numero" : 4,
+  "descricao" : "Nzambi utuma kilumbu kia kiese, Au akulua ahuharna, Au ahelele\nakernbisanga Nzambi Tangu za wonso za Munvu ya Mvu.",
+  "hino" : {
+    "id" : "b0ca1c35-7d85-4c83-8273-1408dfa6754a",
+    "titulo" : "Tala a ndonga muna pipa avila",
+    "pagina" : 179,
+    "numero" : 55,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "b340f79c-33b0-46b5-98e6-c175ce1e8010",
+  "numero" : 1,
+  "descricao" : "Tukunsanisina tukunkembila, Tukunkembila mu Muanda wa Helela,",
+  "hino" : {
+    "id" : "a8154dd2-b1ed-471d-ad3b-0f38189845dc",
+    "titulo" : "Tukunsanisina tukunkembila",
+    "pagina" : 180,
+    "numero" : 56,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "fec0b3de-166d-4f8e-be80-44facefab555",
+  "numero" : 0,
+  "descricao" : "Nkembu kua Tata, Nkembu kua Muana, Nkembu kua Bundu; Mu\nMuanda wa Helela.",
+  "hino" : {
+    "id" : "a8154dd2-b1ed-471d-ad3b-0f38189845dc",
+    "titulo" : "Tukunsanisina tukunkembila",
+    "pagina" : 180,
+    "numero" : 56,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "74c23753-1396-4689-922a-33106973ba8d",
+  "numero" : 2,
+  "descricao" : "Mfumu Yisu wa fua, wafulukidi, Yandi tekele fua mu kubika",
+  "hino" : {
+    "id" : "a8154dd2-b1ed-471d-ad3b-0f38189845dc",
+    "titulo" : "Tukunsanisina tukunkembila",
+    "pagina" : 180,
+    "numero" : 56,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "fb0fae6f-911f-423c-b41c-705c068ebbb1",
+  "numero" : 3,
+  "descricao" : "Kuikila kuaku wau kembila Nzambi aku, Njila kakuluakisa mu\nvundilu diapa.",
+  "hino" : {
+    "id" : "a8154dd2-b1ed-471d-ad3b-0f38189845dc",
+    "titulo" : "Tukunsanisina tukunkembila",
+    "pagina" : 180,
+    "numero" : 56,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "c6fced8d-2571-41e2-aa79-ce236f85f60c",
+  "numero" : 1,
+  "descricao" : "Ó Yisu wau nzeye wo, Ngeye Nhuludi, Nkanda Nzambi ukembe wo, Ye\nmono kuidiki.",
+  "hino" : {
+    "id" : "c907669d-9c3a-47e5-a021-b3fe7cb99645",
+    "titulo" : "O yisu wau nzeye wo",
+    "pagina" : 181,
+    "numero" : 57,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "f96d8710-e766-41c1-908e-12fec846c2b6",
+  "numero" : 0,
+  "descricao" : "Ó YISU wafuila muna Nti, Muna fulu kia mono, Ye Menga mandi,\nmahuhidi, Wo nkembu yaionda wo.",
+  "hino" : {
+    "id" : "c907669d-9c3a-47e5-a021-b3fe7cb99645",
+    "titulo" : "O yisu wau nzeye wo",
+    "pagina" : 181,
+    "numero" : 57,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "847625b0-b760-4a69-a8a9-bee213b4b180",
+  "numero" : 2,
+  "descricao" : "Kiboko kaJa kizaidi ko, Yisu Nhuludi, Vuvu muakatu kele kiau, Muna\npipa yavidila.",
+  "hino" : {
+    "id" : "c907669d-9c3a-47e5-a021-b3fe7cb99645",
+    "titulo" : "O yisu wau nzeye wo",
+    "pagina" : 181,
+    "numero" : 57,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "c78aae25-56e7-42c0-b695-58770fef178f",
+  "numero" : 3,
+  "descricao" : "Ngeye wiza kua YISU, za, Kua, YISU Nloloki, Muna ntima baka\nluyangalalu, Tonda kua Nhuludi,",
+  "hino" : {
+    "id" : "c907669d-9c3a-47e5-a021-b3fe7cb99645",
+    "titulo" : "O yisu wau nzeye wo",
+    "pagina" : 181,
+    "numero" : 57,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "88bb7fb1-b06b-4788-8359-463ee84955a5",
+  "numero" : 4,
+  "descricao" : "Muna polo aku tufukama, Tutonda Ngeye YISU, Ó Muenixi wa\nluhuhamu, Ó Nzambi mvu ya rnvu.",
+  "hino" : {
+    "id" : "c907669d-9c3a-47e5-a021-b3fe7cb99645",
+    "titulo" : "O yisu wau nzeye wo",
+    "pagina" : 181,
+    "numero" : 57,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "56af84e4-48c5-45a1-ac9d-3567ce22c820",
+  "numero" : 1,
+  "descricao" : "Nzambi wahoha ikunuhulula, Nani kuikila mu Yisu uhuluka.",
+  "hino" : {
+    "id" : "d929a117-9fb7-4ad0-964c-6f2868a5e81b",
+    "titulo" : "Nzambi waho ha ikunuhulula",
+    "pagina" : 182,
+    "numero" : 58,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "8f9d41b7-ed20-4331-954e-312ca2712145",
+  "numero" : 0,
+  "descricao" : "Aleluia mono kuikila kua Mfumu Yisu, Ye moyo ngina wa mvu ya mvu.",
+  "hino" : {
+    "id" : "d929a117-9fb7-4ad0-964c-6f2868a5e81b",
+    "titulo" : "Nzambi waho ha ikunuhulula",
+    "pagina" : 181,
+    "numero" : 58,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "9aea9869-a83b-48b2-bbe2-dbd41ead2cb7",
+  "numero" : 2,
+  "descricao" : "Mu fulu kiame yandi fuididi, Njimbu za masumu yandi futidi.",
+  "hino" : {
+    "id" : "d929a117-9fb7-4ad0-964c-6f2868a5e81b",
+    "titulo" : "Nzambi waho ha ikunuhulula",
+    "pagina" : 181,
+    "numero" : 58,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "f96be88c-c178-47d2-8ea7-9611050442b1",
+  "numero" : 3,
+  "descricao" : "Kalendi iina ko, luzolo luandi, Mono fukarna kaka 'muna polo andi.",
+  "hino" : {
+    "id" : "d929a117-9fb7-4ad0-964c-6f2868a5e81b",
+    "titulo" : "Nzambi waho ha ikunuhulula",
+    "pagina" : 181,
+    "numero" : 58,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "02e55a7e-1577-4ffb-96dc-d035ae7dde75",
+  "numero" : 4,
+  "descricao" : "Mu tangua ikota, ku nkembu andi, Auonso aheledi kuna iimbila.\nAleluia watukula Yisu Muana Nzambi, Yo Menga mandi matusukula.",
+  "hino" : {
+    "id" : "d929a117-9fb7-4ad0-964c-6f2868a5e81b",
+    "titulo" : "Nzambi waho ha ikunuhulula",
+    "pagina" : 181,
+    "numero" : 58,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "71cbfb37-f4ee-4c86-9ee6-5c65d9c80f2a",
+  "numero" : 1,
+  "descricao" : "Mono nguidi ndinga Nzambi, Yisu I Nhuludi, lbokela kuna Zulu, Yisu\n-I Nhuludi, Tsangu zambote zatuka Nti, · Nzambi zola nsumuki, Luhuluzu\nmuna Yisu, Yisu I nhuludi.",
+  "hino" : {
+    "id" : "31579ea9-b33f-43bd-b4b9-3f470df7ca3c",
+    "titulo" : "Mono nguidi ndinga nzambi",
+    "pagina" : 182,
+    "numero" : 59,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "493c5e72-9a67-4fb3-b347-c97ded7fd084",
+  "numero" : 2,
+  "descricao" : "Yenu ndonga talenu, Yisu I Nhuludi, Mu Menga mandi nualolokua,\nYisu I Nhuludi, Tsi zauonso iimbila, Luzolo luandi longa pe, Punga za\nMuanda tekela, Yisu I Nhuludi,",
+  "hino" : {
+    "id" : "31579ea9-b33f-43bd-b4b9-3f470df7ca3c",
+    "titulo" : "Mono nguidi ndinga nzambi",
+    "pagina" : 182,
+    "numero" : 59,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "6a851026-24a8-474f-b02e-80251b86029a",
+  "numero" : 3,
+  "descricao" : "Aheledi nuhohenu, Yisu I Nhuludi, Baka kiese yenu atu, Yisu I\nNhuludi, Luhuluzu lua kenda, Kua auonso assumuki, Nkembu, nkembu\nkua Nzarnbi, YISU I Naulud",
+  "hino" : {
+    "id" : "31579ea9-b33f-43bd-b4b9-3f470df7ca3c",
+    "titulo" : "Mono nguidi ndinga nzambi",
+    "pagina" : 182,
+    "numero" : 59,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "a8d645ce-7cfe-4c4b-8171-39878fc9b65c",
+  "numero" : 1,
+  "descricao" : "Ntima moxi, rnoxi, usata, Akuehi lenda kuvundila, Kasi kivundu kia\nkieleka, Yisu kaka hana kio,",
+  "hino" : {
+    "id" : "3a9e62b5-01d9-46ec-b36e-3d6a868d43c6",
+    "titulo" : "Ntima mosi mosi usata",
+    "pagina" : 183,
+    "numero" : 60,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "415ba112-09bd-465a-8754-20d416fcad34",
+  "numero" : 0,
+  "descricao" : "Mfumu Yisu, Yandi kaka, Yisu Nkudi ye Ntinu, Karnba diame nsadisi\name, Yauonso m,u yandi iina.",
+  "hino" : {
+    "id" : "3a9e62b5-01d9-46ec-b36e-3d6a868d43c6",
+    "titulo" : "Ntima mosi mosi usata",
+    "pagina" : 183,
+    "numero" : 60,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "2ecf2947-2129-4897-ba58-3121dcc63479",
+  "numero" : 2,
+  "descricao" : "Mfumu Yisu, Yandi kaka, Yisu Nkudi ye Ntinu, Karnba diame nsadisi\name, Yauonso m,u yandi iina.",
+  "hino" : {
+    "id" : "3a9e62b5-01d9-46ec-b36e-3d6a868d43c6",
+    "titulo" : "Ntima mosi mosi usata",
+    "pagina" : 183,
+    "numero" : 60,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "5cc72a3f-4ba9-4ce1-ab59-53b9a30abbc7",
+  "numero" : 1,
+  "descricao" : "Muakatu nguelele O Mfumu hohele, O nhuludi etu o Yisu, Ku Zulu\nuatambula.",
+  "hino" : {
+    "id" : "37faf54b-e7ab-4f3d-8504-d2c46bfb2240",
+    "titulo" : "Muakatu nguelele",
+    "pagina" : 183,
+    "numero" : 61,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "275e2a7c-d223-4d17-8ea9-c2abc9be19fa",
+  "numero" : 2,
+  "descricao" : "Muakatu nguelele, O Nzarnbi wakieleka, Watonda Yisu nkudi etu, Ku\nzulu utubekela.",
+  "hino" : {
+    "id" : "37faf54b-e7ab-4f3d-8504-d2c46bfb2240",
+    "titulo" : "Muakatu nguelele",
+    "pagina" : 183,
+    "numero" : 61,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "6bcc8976-ac07-4030-9e4c-b928c6b17f40",
+  "numero" : 3,
+  "descricao" : "Muakatu nguelele, Cadi apemba ovididi, Awonso nani akuikila, Kua\nMfumu etu Yisu.",
+  "hino" : {
+    "id" : "37faf54b-e7ab-4f3d-8504-d2c46bfb2240",
+    "titulo" : "Muakatu nguelele",
+    "pagina" : 183,
+    "numero" : 61,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "cbab5de6-3c86-4b7a-88cd-6ff626431526",
+  "numero" : 4,
+  "descricao" : "Muakatu nguelele, Akuikidi Yisu, O menga ah uhisa mo,Kua Yisu muna nti.",
+  "hino" : {
+    "id" : "37faf54b-e7ab-4f3d-8504-d2c46bfb2240",
+    "titulo" : "Muakatu nguelele",
+    "pagina" : 183,
+    "numero" : 61,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "a7c61af7-9f38-4e6e-9fee-45b142de2166",
+  "numero" : 1,
+  "descricao" : "Nhuludi wame ku Zulu kena, Kipohila kiame kua Nzambi Tata,\nWatoma kundunda Karnba dia Nzolua, Wakitula mbote Kamba diaku pe.",
+  "hino" : {
+    "id" : "3555368a-9055-4f34-96aa-f4d0ab32c2d8",
+    "titulo" : "Nhuludi wame ku zulu kena",
+    "pagina" : 184,
+    "numero" : 62,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "f744156f-bfad-4665-856d-8e4cb3669ee5",
+  "numero" : 0,
+  "descricao" : "Kua Ngeye isambilanga, Kua Ngeye isambilanga kaka, Watambula wau\nhe Karnba diaku pe.",
+  "hino" : {
+    "id" : "3555368a-9055-4f34-96aa-f4d0ab32c2d8",
+    "titulo" : "Nhuludi wame ku zulu kena",
+    "pagina" : 184,
+    "numero" : 62,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "706e14b5-fbfd-4ea2-8437-f83fb7bc0753",
+  "numero" : 2,
+  "descricao" : "Ngina ye Tata yandi wapana, Kivuvu mu ntima, kia tarnbulua, Ku\nZulu diandi kalenda kutuala, Ye kiese kia tuala kua ngeye pe ,",
+  "hino" : {
+    "id" : "3555368a-9055-4f34-96aa-f4d0ab32c2d8",
+    "titulo" : "Nhuludi wame ku zulu kena",
+    "pagina" : 184,
+    "numero" : 62,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "b21a6eb5-4469-48b9-86d8-d6d8ac7d7e58",
+  "numero" : 3,
+  "descricao" : "Ngina ye kiese kingi mu ntima, Kia tuka kua Yisu, Kikubama pe,\nKisundidi iima yauonso yai, Ukamba kua Ngeye katambika wo.",
+  "hino" : {
+    "id" : "3555368a-9055-4f34-96aa-f4d0ab32c2d8",
+    "titulo" : "Nhuludi wame ku zulu kena",
+    "pagina" : 184,
+    "numero" : 62,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "7f98b458-c4b2-4d79-8b54-34d4cf1636ae",
+  "numero" : 4,
+  "descricao" : "Kuei kuna Kamba, diakaka, o hatsi, Ifuete kuvundisa nti'aku wau, Mu\nYisu yasodilua mambu rnauonso, Ke hena diarnbu dikondeleko.",
+  "hino" : {
+    "id" : "3555368a-9055-4f34-96aa-f4d0ab32c2d8",
+    "titulo" : "Nhuludi wame ku zulu kena",
+    "pagina" : 184,
+    "numero" : 62,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "c9c4b849-cade-43ee-9e90-3920d3ec0dfe",
+  "numero" : 5,
+  "descricao" : "Ngeye pe hanga ukamba kua Yisu, Yandi Mfumu ame i Mfumu aku\npe, Wenda longingi akuaku auonso, Azaya huluka pila ngeye.",
+  "hino" : {
+    "id" : "3555368a-9055-4f34-96aa-f4d0ab32c2d8",
+    "titulo" : "Nhuludi wame ku zulu kena",
+    "pagina" : 184,
+    "numero" : 62,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "6d6174c3-bc5f-4e02-9331-d100a6a74a3b",
+  "numero" : 1,
+  "descricao" : "Pulukidi kuame ngina yo Yisu, Yandi wafua, wanata masumu, Wakula\nmono, yatonda Yandi, Tuele kua Yandi tondele.",
+  "hino" : {
+    "id" : "7045d08d-5bfd-48ad-9712-69dcb79cc87b",
+    "titulo" : "Pulukidi kuame ngji yo yisu",
+    "pagina" : 185,
+    "numero" : 63,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "1ece458c-e4aa-4468-936c-50148941f1a5",
+  "numero" : 0,
+  "descricao" : "Pangi etu fuete pe tonda, Nsurnuki njila ina, Tala kua Yisu, walanda\nYandi, Wakula yetu muna Nti.",
+  "hino" : {
+    "id" : "7045d08d-5bfd-48ad-9712-69dcb79cc87b",
+    "titulo" : "Pulukidi kuame ngji yo yisu",
+    "pagina" : 185,
+    "numero" : 63,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "1262e301-e6a7-4bb6-9295-6aaae721b4f6",
+  "numero" : 2,
+  "descricao" : "O nsumuki fuete baka pasi, Kasi luloloko Yisu hana lo, uka, lua kenda\nwatonda lo, pe. Yisu watukula muna Nti.",
+  "hino" : {
+    "id" : "7045d08d-5bfd-48ad-9712-69dcb79cc87b",
+    "titulo" : "Pulukidi kuame ngji yo yisu",
+    "pagina" : 185,
+    "numero" : 63,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "ff88bc55-e628-4045-a511-92c7ec152bfc",
+  "numero" : 3,
+  "descricao" : "Tsangu zambote, pasi zaluta, Tuna luhuhamu, Wonga muakatu, Tuvuata\nvuatu kia Mfumu Yisu, yandi watukula muna Nti",
+  "hino" : {
+    "id" : "7045d08d-5bfd-48ad-9712-69dcb79cc87b",
+    "titulo" : "Pulukidi kuame ngji yo yisu",
+    "pagina" : 185,
+    "numero" : 63,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "b8f10c11-2141-4387-93a8-d0b42dc2fe1b",
+  "numero" : 4,
+  "descricao" : "Tuana tua Nzambi kiese monanga, Nzambi Juzolo Jusundidi mene,\ntyo tala ndonga wakubika yo, Tua kubarnet u kua Yisu.",
+  "hino" : {
+    "id" : "7045d08d-5bfd-48ad-9712-69dcb79cc87b",
+    "titulo" : "Pulukidi kuame ngji yo yisu",
+    "pagina" : 185,
+    "numero" : 63,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-30",
+    "dataActualizacao" : "2024-03-30",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "98540b66-b4ed-45ba-9eac-1fcbf0d4064d",
+  "numero" : 1,
+  "descricao" : "Muakalanga nkentu Wawelele kiavula, Nkentu Ndiona wawelele, Kumi\ndia Mvu ye miole.",
+  "hino" : {
+    "id" : "ac15fc76-c257-4b1a-9804-316327b4a021",
+    "titulo" : "Muakalanga nkentu mosi",
+    "pagina" : 186,
+    "numero" : 64,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "c5c5d5ba-15f8-4a5d-8f2d-ac807f44ef8a",
+  "numero" : 0,
+  "descricao" : "Wakuikila Nzarnbi, Wakuikila Nzambi, Wele diandi diakole.",
+  "hino" : {
+    "id" : "ac15fc76-c257-4b1a-9804-316327b4a021",
+    "titulo" : "Muakalanga nkentu mosi",
+    "pagina" : 186,
+    "numero" : 64,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "07adbdc6-506a-485d-a6dc-64381c069d3f",
+  "numero" : 2,
+  "descricao" : "Wakasimba mukivuatu, Kia Yisu mpe kolele, Mfumu Yisu wa inhudi,\nNani iondi simbidi.",
+  "hino" : {
+    "id" : "ac15fc76-c257-4b1a-9804-316327b4a021",
+    "titulo" : "Muakalanga nkentu mosi",
+    "pagina" : 186,
+    "numero" : 64,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "62d57be8-dc57-4cd5-b2d7-4a9949b3e8e0",
+  "numero" : 3,
+  "descricao" : "Mfumu Yisu wa hohese, Nda wendaku nda wendaku, Kieleka wau\nkieleka wau, Atu auonso asimane.",
+  "hino" : {
+    "id" : "ac15fc76-c257-4b1a-9804-316327b4a021",
+    "titulo" : "Muakalanga nkentu mosi",
+    "pagina" : 186,
+    "numero" : 64,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "b331e252-b3b2-48a3-9496-0348aba9e69a",
+  "numero" : 1,
+  "descricao" : "Mfumu YISU walonga mo, Mambu mambote ma moyo, Wuiza\nkulengi diaka-ko,Mambu mambote ma moyo,\nI:\nMfumu YISU muna Nti, Pasi zetu bakidi, Mambote mo, mambote mo,\nMambu mambote ma moyo.",
+  "hino" : {
+    "id" : "38611059-b692-4f39-b9c2-2579770039fd",
+    "titulo" : "Mfumu yisu walonga mo",
+    "pagina" : 187,
+    "numero" : 65,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "559ad4c7-553c-4485-8784-04f5a2e54dfc",
+  "numero" : 2,
+  "descricao" : "Mfumu YISU Yandi PE Mbolo yambote ya moyo, Jitisa Muana pila\nSe, Mbolo yambote ya moyo, Mbolo ya moyo ndidi yo, Kilendi baka nzala\nko,\nYambote yo, yambote yo, Mbolo yarnbote yamoyo.",
+  "hino" : {
+    "id" : "38611059-b692-4f39-b9c2-2579770039fd",
+    "titulo" : "Mfumu yisu walonga mo",
+    "pagina" : 187,
+    "numero" : 65,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "867c085f-86b2-49fa-97fa-9724ddd74fe7",
+  "numero" : 3,
+  "descricao" : "Mfumu Yisu wahana mo, Maza mambote ma moyo, Huka kaka wa nua\nmo, Maza mam bote ma rnoyo, Nuini kala wese ntu, moyo wa mvu ya\nmvu. bote mo, mambote mo, mambote ma rnoyo.",
+  "hino" : {
+    "id" : "38611059-b692-4f39-b9c2-2579770039fd",
+    "titulo" : "Mfumu yisu walonga mo",
+    "pagina" : 187,
+    "numero" : 65,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "7de91a55-e7e9-4294-abc1-888c35ded3cd",
+  "numero" : 1,
+  "descricao" : "Kuna Zulu yo haha hatsi, Jina dimoxi dina mo, Jina dia Yandi\nYisu, Akaka kalendi zaya ko.",
+  "hino" : {
+    "id" : "fd1eb294-c6db-4ffd-846a-34fa139762f6",
+    "titulo" : "Kuna zulu yo hara hatsi",
+    "pagina" : 188,
+    "numero" : 66,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "b12f31d2-5b67-48db-8961-dcd27e2f0e83",
+  "numero" : 0,
+  "descricao" : "Diambote dio, diambote dio, Jina dia YISU, Jina dia YISU,\nVuvu kietu mvu ya mvu, Diambote dio, diambote dio,\nJina dia YISU, Vuvu kietu mvu ya mvu.",
+  "hino" : {
+    "id" : "fd1eb294-c6db-4ffd-846a-34fa139762f6",
+    "titulo" : "Kuna zulu yo hara hatsi",
+    "pagina" : 188,
+    "numero" : 66,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "935c5788-fd13-4f87-811f-819a9e8db7b6",
+  "numero" : 2,
+  "descricao" : "Yandi YISU muna vita, Sadisa yo lungisa, Kani muini, kani pipa, Kua\nYisu Ndoki zakama.",
+  "hino" : {
+    "id" : "fd1eb294-c6db-4ffd-846a-34fa139762f6",
+    "titulo" : "Kuna zulu yo hara hatsi",
+    "pagina" : 188,
+    "numero" : 66,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "b5e788f5-3fab-4371-8991-ba0ab9fb0bf8",
+  "numero" : 3,
+  "descricao" : "Lumbu mbimbi lumbu mbote, Tangua pukumuni,\nJina dia Yisu diambote, Diau dilenda kubika.",
+  "hino" : {
+    "id" : "fd1eb294-c6db-4ffd-846a-34fa139762f6",
+    "titulo" : "Kuna zulu yo hara hatsi",
+    "pagina" : 188,
+    "numero" : 66,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "c4da5502-40de-4b1f-99ad-e5e3138d25d5",
+  "numero" : 4,
+  "descricao" : "Yisu, Yisu, Yisu, Mfumu, Wambote mene Nhuludi, Onata dio Yandi\nunu, Jijilanga mvu ya mvu",
+  "hino" : {
+    "id" : "fd1eb294-c6db-4ffd-846a-34fa139762f6",
+    "titulo" : "Kuna zulu yo hara hatsi",
+    "pagina" : 188,
+    "numero" : 66,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "12c4ddb4-6aab-4c32-82e8-3ddf4a4e8b07",
+  "numero" : 1,
+  "descricao" : "Idihene kua Yisu Mfumu ame, Masumu mame mawonso pasi pe, Muna\ntangua imuene muna nti, Mu Iuzolo ukembe «Mono Yisu», Muna zitu\ndiame hana hau mbuene dio, Muna zitu diame hana hau mbuene dio.",
+  "hino" : {
+    "id" : "f8e45afb-408d-4b1f-ac15-8aea807b3390",
+    "titulo" : "Idihele kua yisu mfumu ame",
+    "pagina" : 188,
+    "numero" : 67,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "6de6e62b-483d-4203-82c9-62ab11a55c1c",
+  "numero" : 2,
+  "descricao" : "N,iekele Yo, Yawonso kua Yisu, Muna moko Mandi ngina wau, Muna\nluzolo Luandi kuikidi, Muna Muand' Andi ngina wau, E kenda zandi\nzafuana kupulula, Kenda zandi zafuana kupulula Muna mbi.",
+  "hino" : {
+    "id" : "f8e45afb-408d-4b1f-ac15-8aea807b3390",
+    "titulo" : "Idihele kua yisu mfumu ame",
+    "pagina" : 188,
+    "numero" : 67,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "5f21b829-436c-456a-ab1e-3d756e590e03",
+  "numero" : 3,
+  "descricao" : "Lukuikilu luawonso inhene lo, Muna ulemvu yabaka kenda za Yisu,\nZatuka kua Yandi Yisu Nhuludi, Mu kiese kiawonso ivundila, Ye mbote\nzame zawonso kua Yisu ibaka zo, Ye mbote zame zawonso kua Yisu\nibaka zo.",
+  "hino" : {
+    "id" : "f8e45afb-408d-4b1f-ac15-8aea807b3390",
+    "titulo" : "Idihele kua yisu mfumu ame",
+    "pagina" : 188,
+    "numero" : 67,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "8b7e07ba-b3e3-43cc-8b87-55680501c63d",
+  "numero" : 4,
+  "descricao" : "Mbanzu zaku zawonso wayeka zo, Hana zo kua Yisu wasambila,\nKiboko kala wavila muna mbi, Yandi zola ngeye nsumuki, Yisu ngeye\nkasata wavutuka kua Nzambi, Telama kuaku wenda kua Yisu, Nhuludi.",
+  "hino" : {
+    "id" : "f8e45afb-408d-4b1f-ac15-8aea807b3390",
+    "titulo" : "Idihele kua yisu mfumu ame",
+    "pagina" : 188,
+    "numero" : 67,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "4fa23728-9c1e-4455-ab82-32aeb1083b69",
+  "numero" : 1,
+  "descricao" : "Ngina ye kiese mbuene Yisu, Mu kiese ikuendila mbuene Yisu, Nkembu\nmia tsi yai, Vila mivilanga, Luhuhamu ngina, luna mu Yisu.",
+  "hino" : {
+    "id" : "94c9ed9c-eed0-4ec5-b762-58ce8940486b",
+    "titulo" : "Ngina ye kiese mbuene yisu",
+    "pagina" : 189,
+    "numero" : 68,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "67824e41-da65-4c3b-8666-24ae2bd70a81",
+  "numero" : 2,
+  "descricao" : "Mono Jenda suka, Yisu Kundunda, Nga mono inzununu, Yisu\nKibamJ-auonso ikondele, andi hana yo pe, Gsata kima ko, ngina yo Yisu",
+  "hino" : {
+    "id" : "94c9ed9c-eed0-4ec5-b762-58ce8940486b",
+    "titulo" : "Ngina ye kiese mbuene yisu",
+    "pagina" : 189,
+    "numero" : 68,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "3fa8d691-c0fd-4a8b-8ec9-a09580d989b9",
+  "numero" : 3,
+  "descricao" : "Muna tsuka ya tsi, Yisu kaka usala, Kikuiza Mfundisi yandi ó Yisu,\nKiese ikala kiau, Kikuiza Ntinu ame, Kua yandi hoha «Mono Mfumu»\naku.",
+  "hino" : {
+    "id" : "94c9ed9c-eed0-4ec5-b762-58ce8940486b",
+    "titulo" : "Ngina ye kiese mbuene yisu",
+    "pagina" : 189,
+    "numero" : 68,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "75c14aa5-01e7-4dbf-baa8-0bd7f802c5b6",
+  "numero" : 4,
+  "descricao" : "Mu lufua ki wonga ko, ngina yo Yisu, Mono ikuenda ku Zulu, kua\nMfumu Yisu, Yandi Nkudi ame, Ye Pelelesa pe,\nNsongi wa kieleka ngina mu Yisu.",
+  "hino" : {
+    "id" : "94c9ed9c-eed0-4ec5-b762-58ce8940486b",
+    "titulo" : "Ngina ye kiese mbuene yisu",
+    "pagina" : 189,
+    "numero" : 68,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "0d316bdb-5e3e-4d25-8ab8-997759eba120",
+  "numero" : 1,
+  "descricao" : "Masoladi ma YISU, Yenu akuikiji, Nuzangulanga, edimbu, Nusunda mu\nvita, Mu kati atuadimenga, Nujijilanga kaka, Nulanda Nturni a vita, Yandi\ni Nkubiki",
+  "hino" : {
+    "id" : "9d27fe12-5918-4d30-ae17-3287a8ab92d4",
+    "titulo" : "Masoladi ma yisu",
+    "pagina" : 191,
+    "numero" : 69,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "2567616a-b425-484e-9ef0-c5187f364b9a",
+  "numero" : 2,
+  "descricao" : "Masoladi ma YISU, Mu Yandi nuanenu, Nuvuata vuatu kiandi, Nudiata\nku ngolo, Nukala pe ye kasu, Muna lusarnbilu,\nMu tangua pukumuni, Yandi nujijila",
+  "hino" : {
+    "id" : "9d27fe12-5918-4d30-ae17-3287a8ab92d4",
+    "titulo" : "Masoladi ma yisu",
+    "pagina" : 191,
+    "numero" : 69,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "ae648bd0-8c10-4f1b-8943-96a7af379f3e",
+  "numero" : 3,
+  "descricao" : "Masoladi ma YISU, Ku tambi zangolo, Mu vita yai, ya pasi, Unu\nnusunda yo, O wau mvu ya mvu, tukembela Nzambi etu, Cristu Nhuludi.",
+  "hino" : {
+    "id" : "9d27fe12-5918-4d30-ae17-3287a8ab92d4",
+    "titulo" : "Masoladi ma yisu",
+    "pagina" : 191,
+    "numero" : 69,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "f865730b-5408-49ec-9773-5972a7aebacc",
+  "numero" : 1,
+  "descricao" : "Tuimbila YISU wa Muini wa tsi, 'Ye pipa yalenga muini Wijidi.",
+  "hino" : {
+    "id" : "a568f171-353e-4940-b904-04f795e1d5a5",
+    "titulo" : "Tuimba yisu wa muini watsi",
+    "pagina" : 192,
+    "numero" : 70,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "aca99286-143a-45ae-bb75-61bbf78f2194",
+  "numero" : 0,
+  "descricao" : "Hana nkembu kua Mfumu YISU, Kua ngeye wafua, Tonda Yandi\nNloloki, aku, Una Moyo YISU.",
+  "hino" : {
+    "id" : "a568f171-353e-4940-b904-04f795e1d5a5",
+    "titulo" : "Tuimba yisu wa muini watsi",
+    "pagina" : 192,
+    "numero" : 70,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
+}, {
+  "id" : "b623f7a0-0cf3-4ee8-b478-03d9e2616947",
+  "numero" : 2,
+  "descricao" : "Tuimbila YISU, watufuila mu Nti, Muna Menga maiitika, makula yetu.",
+  "hino" : {
+    "id" : "a568f171-353e-4940-b904-04f795e1d5a5",
+    "titulo" : "Tuimba yisu wa muini watsi",
+    "pagina" : 192,
+    "numero" : 70,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "1e8f2e66-1d8e-422a-a1b9-90a9591fed48",
+  "numero" : 3,
+  "descricao" : "Tuiimbila Nzambi, watuzola mene, Watuhana Mfumu YISU, Nhuludi\netu.",
+  "hino" : {
+    "id" : "a568f171-353e-4940-b904-04f795e1d5a5",
+    "titulo" : "Tuimba yisu wa muini watsi",
+    "pagina" : 192,
+    "numero" : 70,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "44d52bde-ddc8-46de-b005-1772998e3558",
+  "numero" : 4,
+  "descricao" : "Tusambila Ngeye, Nganga mvuala etu, Tsaudi ya mambu kua Nzambi\nApungu.",
+  "hino" : {
+    "id" : "a568f171-353e-4940-b904-04f795e1d5a5",
+    "titulo" : "Tuimba yisu wa muini watsi",
+    "pagina" : 192,
+    "numero" : 70,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "2cf59128-7610-41b8-bbd6-45d15f570d23",
+  "numero" : 5,
+  "descricao" : "Nukuikila wau, e tangua ifuene, Njila ya moyo I Mfumu YISU.",
+  "hino" : {
+    "id" : "a568f171-353e-4940-b904-04f795e1d5a5",
+    "titulo" : "Tuimba yisu wa muini watsi",
+    "pagina" : 192,
+    "numero" : 70,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "48e37489-324c-4775-ab98-16e34af3df21",
+  "numero" : 1,
+  "descricao" : "Etangua kiese yai pe, o YISU yandi upuludi, Ku kiese una ntim'ame, o\nmono wau ihohanga.",
+  "hino" : {
+    "id" : "bed71c78-fe43-46d8-b911-7776147d8073",
+    "titulo" : "Etangua kiese yai pe",
+    "pagina" : 192,
+    "numero" : 71,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : false
+}, {
+  "id" : "4d55c807-f426-42bd-a177-793027ca119f",
+  "numero" : 0,
+  "descricao" : "Kembela kembela, o YISU wau nzolele, E YISU undonga sambila, Ya\nkuikila yo sambanga, Kembila kembila, ó Yisu wau nzolele.",
+  "hino" : {
+    "id" : "bed71c78-fe43-46d8-b911-7776147d8073",
+    "titulo" : "Etangua kiese yai pe",
+    "pagina" : 192,
+    "numero" : 71,
+    "autor" : "IERA",
+    "dataCriacao" : "2024-03-31",
+    "dataActualizacao" : "2024-03-31",
+    "comentario" : "Nenhum comenatario adicionado",
+    "isFavorito" : false,
+    "lingua" : "KIKONGO_REVISADO"
+  },
+  "refrao" : true
 } ]

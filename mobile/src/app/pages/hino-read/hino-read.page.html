@@ -9,13 +9,13 @@
     <ion-label slot="end">
       <i  *ngIf="liked"
         class="fa fa-star"
-        (click)="addOuRemoveDosFavoritos(hino?.id)"
+        (click)="addOuRemoveDosFavoritos(hino?.id, 'rem')"
         id="open-toast">
     </i>
       <i
         *ngIf="!liked"
         class="fa-regular fa-star"
-        (click)="addOuRemoveDosFavoritos(hino?.id)"
+        (click)="addOuRemoveDosFavoritos(hino?.id, 'add')"
         id="open-toast"
       ></i>
     </ion-label>
@@ -35,12 +35,6 @@
   </p>
   } }
 
-  <ion-toast
-    trigger="open-toast"
-    message="Adiconado aos favoritos"
-    [duration]="500"
-    color="primary"
-  ></ion-toast>
 </ion-content>
 
 <ion-footer class="ion-no-border">
