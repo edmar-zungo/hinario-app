@@ -62,6 +62,7 @@ export class HinoReadPage implements OnInit {
 
   addOuRemoveDosFavoritos(hinoId: string | undefined, action: 'add' | 'rem') {
     this.hinarioService.addOuRemoveDosFavoritos(hinoId);
+
     this.createTost(action);
     this.loadHino();
   }

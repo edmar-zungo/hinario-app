@@ -15,7 +15,6 @@ export class HinarioService {
   apiHinosFavoritos = environment.apiHinosFavoritos;
   hinosFavoritos: HinoModel[] = [];
 
-
   constructor(private http: HttpClient) {}
 
   // addOrRemoveHinoFavorito(hinoId: string | undefined): Observable<HinoModel> {
@@ -46,13 +45,11 @@ export class HinarioService {
     this.getAllHinoByJSON().subscribe((resp) => {
       hinoResult = resp.find((x) => x.id === hinoId)!;
       if (!localStorage.getItem('hinos')) {
-        localStorage.setItem('hinos', JSON.stringify([]));
+        this.setStorage([])
         this.hinosFavoritos.push(hinoResult);
-        localStorage.setItem('hinos', JSON.stringify(this.hinosFavoritos));
+        this.setStorage(this.hinosFavoritos)
       } else {
-        this.hinosFavoritos = JSON.parse(
-          localStorage.getItem('hinos' || '[]')!
-        );
+        this.hinosFavoritos = this.getStorage();
         if (this.hinosFavoritos.find((x) => x.id === hinoResult.id)) {
           const hinoFounded = this.hinosFavoritos.find(
             (x) => x.id === hinoResult.id
@@ -61,17 +58,22 @@ export class HinarioService {
             this.hinosFavoritos.indexOf(hinoFounded!),
             1
           );
-          
-          localStorage.setItem('hinos', JSON.stringify(this.hinosFavoritos));
-          this.getAllHinosFavoritos();
+          this.setStorage(this.hinosFavoritos)
         } else {
           this.hinosFavoritos.push(hinoResult);
-          localStorage.setItem('hinos', JSON.stringify(this.hinosFavoritos));
-          this.getAllHinosFavoritos();
+          this.setStorage(this.hinosFavoritos);
         }
       }
 
       // console.log(this.hinosFavoritos);
     });
+  }
+
+  getStorage(): HinoModel[] | [] {
+    return JSON.parse(localStorage.getItem('hinos' || '[]')!);
+  }
+
+  setStorage(hinos: HinoModel[] | []){
+    localStorage.setItem('hinos', JSON.stringify(hinos));
   }
 }

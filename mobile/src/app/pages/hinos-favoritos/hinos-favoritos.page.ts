@@ -5,6 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { HinarioService } from 'src/app/services/hinario.service';
 import { HinoModel } from 'src/app/model/hino-model';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { async } from 'rxjs';
 
 @Component({
   selector: 'app-hinos-favoritos',
@@ -26,8 +27,14 @@ export class HinosFavoritosPage implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.hinosFavoritos = JSON.parse(localStorage.getItem('hinos')!)
-    
+      this.getAllHinos()
   }
+
+  getAllHinos(){
+    this.hinosFavoritos = JSON.parse(localStorage.getItem('hinos')!)
+  }
+
+  
+
 
 }
