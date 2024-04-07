@@ -17,13 +17,6 @@ export class HinarioService {
 
   constructor(private http: HttpClient) {}
 
-  // addOrRemoveHinoFavorito(hinoId: string | undefined): Observable<HinoModel> {
-  //   return this.http.post<HinoModel>(
-  //     `${this.apiHinoUrl}${hinoId}`,
-  //     null
-  //   );
-  // }
-
   /**
    * METODOS USANDO O ARQUIVO JSON COMO FONTE
    */
@@ -31,6 +24,7 @@ export class HinarioService {
   getAllHinoByJSON(): Observable<HinoModel[]> {
     return this.http.get<HinoModel[]>(`${this.apiHinoUrl}`);
   }
+
 
   getAllEstrofesByJSON(): Observable<EstrofeModel[]> {
     return this.http.get<EstrofeModel[]>(`${this.apiEstrofesUrl}`);
@@ -65,7 +59,6 @@ export class HinarioService {
         }
       }
 
-      // console.log(this.hinosFavoritos);
     });
   }
 

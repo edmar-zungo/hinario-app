@@ -36,6 +36,18 @@
   } }
 
 
+  <ion-fab slot="fixed" horizontal="start" vertical="center">
+    <ion-fab-button size="small" color="medium" (click)="getHinoAnterior(hino!.id)">
+      <i class="fas fa-angle-left"></i>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab slot="fixed" horizontal="end" vertical="center">
+    <ion-fab-button size="small" color="medium" (click)="getHinoSeguinte(hino!.id)">
+      <i class="fas fa-angle-right"></i>
+    </ion-fab-button>
+  </ion-fab>
+
+
 </ion-content>
 
 <ion-footer class="ion-no-border">

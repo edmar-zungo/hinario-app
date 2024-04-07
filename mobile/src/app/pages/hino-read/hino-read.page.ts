@@ -2,7 +2,7 @@ import { Component, OnInit, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
-import { ActivatedRoute, RouterLink, RouterLinkActive } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { HinarioService } from 'src/app/services/hinario.service';
 import { HinoModel } from 'src/app/model/hino-model';
 import { EstrofeModel } from 'src/app/model/estrofe-model';
@@ -30,7 +30,8 @@ export class HinoReadPage implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private hinarioService: HinarioService,
-    private toastController: ToastController
+    private toastController: ToastController,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -50,6 +51,8 @@ export class HinoReadPage implements OnInit {
         this.liked = false;
       }
     });
+
+
   }
 
   loadEstrofesPorHino() {
@@ -90,5 +93,24 @@ export class HinoReadPage implements OnInit {
     }
 
     await toast.present();
+  }
+
+  getHinoSeguinte(hinoId: string | undefined){
+    this.hinarioService.getAllHinoByJSON().subscribe(resp => {
+      const hinoResult = resp.find(x => x.id === hinoId);
+      const indexHino = resp.indexOf( hinoResult!);
+      const hinoAseguir = resp[indexHino + 1];
+      this.router.navigate(['/hino-read/', hinoAseguir.id])
+
+    })
+  }
+  getHinoAnterior(hinoId: string | undefined){
+    this.hinarioService.getAllHinoByJSON().subscribe(resp => {
+      const hinoResult = resp.find(x => x.id === hinoId);
+      const indexHino = resp.indexOf( hinoResult!);
+      const hinoAnterior = resp[indexHino - 1];
+      this.router.navigate(['/hino-read/', hinoAnterior.id])
+
+    })
   }
 }
