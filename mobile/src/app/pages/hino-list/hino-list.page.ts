@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
+import { IonHeader, IonToolbar, IonButtons, IonTitle, IonContent, IonList, IonLabel, IonFab, IonIcon, IonMenuButton, IonItem } from '@ionic/angular/standalone';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { HinarioService } from 'src/app/services/hinario.service';
 import { HinoModel } from 'src/app/model/hino-model';
@@ -11,7 +11,7 @@ import { HinoModel } from 'src/app/model/hino-model';
   templateUrl: './hino-list.page.html',
   styleUrls: ['./hino-list.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule, RouterLink, RouterLinkActive]
+  imports: [IonIcon, IonFab, IonLabel, IonList, IonContent, IonTitle, IonButtons, IonToolbar, CommonModule, FormsModule, RouterLink, RouterLinkActive, IonHeader, IonMenuButton, IonItem, ]
 })
 export class HinoListPage implements OnInit {
 

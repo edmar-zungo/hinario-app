@@ -1,7 +1,7 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
+import { IonHeader, IonToolbar, IonButtons, IonTitle, IonLabel, IonContent, IonNote, IonFab, IonFabButton, IonFooter, IonToast } from '@ionic/angular/standalone';
 import { ActivatedRoute, Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { HinarioService } from 'src/app/services/hinario.service';
 import { HinoModel } from 'src/app/model/hino-model';
@@ -13,8 +13,7 @@ import { ToastController } from '@ionic/angular';
   templateUrl: './hino-read.page.html',
   styleUrls: ['./hino-read.page.scss'],
   standalone: true,
-  imports: [
-    IonicModule,
+  imports: [IonFooter, IonFabButton, IonFab, IonNote, IonContent, IonLabel, IonTitle, IonButtons, IonToolbar, IonHeader,IonToast, 
     CommonModule,
     FormsModule,
     RouterLink,

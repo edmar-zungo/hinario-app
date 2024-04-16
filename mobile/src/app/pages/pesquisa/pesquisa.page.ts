@@ -1,36 +1,58 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule, SearchbarInputEventDetail } from '@ionic/angular';
+import {
+  IonHeader,
+  IonSearchbar,
+  IonToolbar,
+  IonContent,
+  IonLabel,
+  IonBackButton,
+  IonItem,
+} from '@ionic/angular/standalone';
 import { HinarioService } from 'src/app/services/hinario.service';
 import { HinoModel } from 'src/app/model/hino-model';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { IonSearchbarCustomEvent } from '@ionic/core';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-pesquisa',
   templateUrl: './pesquisa.page.html',
   styleUrls: ['./pesquisa.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule, RouterLink, RouterLinkActive]
+  imports: [
+    IonBackButton,
+    IonLabel,
+    IonContent,
+    IonToolbar,
+    IonSearchbar,
+    IonHeader,
+    CommonModule,
+    FormsModule,
+    RouterLink,
+    RouterLinkActive,
+    IonItem,
+  ],
 })
-export class PesquisaPage{
-
-
+export class PesquisaPage {
   hinosResult: HinoModel[] = [];
+  autoFocus: boolean = true;
 
-  constructor(private hinarioService: HinarioService) { }
+  constructor(private hinarioService: HinarioService) {}
 
- setVezio() {
-  this.hinosResult = [];
+  setVezio() {
+    this.hinosResult = [];
   }
 
-  pesquisaOnJSON(query: string | undefined){
-    this.hinarioService.getAllHinoByJSON().subscribe(resp => {
-      this.hinosResult = resp.filter(x => x.titulo.includes(query!) || x.titulo.toLocaleUpperCase().includes(query!.toLocaleUpperCase()) || x.numero.toString().includes(query!) || x.pagina.toString().includes(query!)) ?? [];
-    })
-    
+  pesquisaOnJSON(query: string | undefined) {
+    this.hinarioService.getAllHinoByJSON().subscribe((resp) => {
+      this.hinosResult =
+        resp.filter(
+          (x) =>
+            x.titulo.includes(query!) ||
+            x.titulo.toUpperCase().includes(query!.toUpperCase()) ||
+            x.numero.toString().includes(query!) ||
+            x.pagina.toString().includes(query!)
+        ) ?? [];
+    });
   }
-
 }

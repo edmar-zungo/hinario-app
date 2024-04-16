@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.ravunana',
-  appName: 'hinarioApp',
+  appName: 'Hinário - Louvai ao Senhor',
   webDir: 'www',
   server: {
     androidScheme: 'https'

@@ -1,5 +1,5 @@
 {
-  "name": "hinarioApp",
+  "name": "Hinário - Louvai ao Senhor",
   "version": "0.0.1",
   "author": "Ramiro Cardoso e Edmar Zungo",
   "homepage": "https://ionicframework.com/",
@@ -51,6 +51,8 @@
     "@types/jasmine": "~5.1.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
+    "@fortawesome/angular-fontawesome": "^0.14.1",
+    "@fortawesome/fontawesome-free": "^6.5.1",
     "eslint": "^7.26.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "30.7.6",

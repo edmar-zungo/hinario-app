@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
+import { IonHeader, IonToolbar, IonButtons,IonMenuButton, IonContent, IonTitle } from '@ionic/angular/standalone';
 import { Mandamento } from 'src/app/model/mandamentos';
 
 @Component({
@@ -9,7 +9,7 @@ import { Mandamento } from 'src/app/model/mandamentos';
   templateUrl: './dez-mandamentos.page.html',
   styleUrls: ['./dez-mandamentos.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule],
+  imports: [IonTitle, IonContent, IonButtons,IonMenuButton, IonToolbar, IonHeader, CommonModule, FormsModule],
 })
 export class DezMandamentosPage {
   dezMandamentos: Mandamento[] = [

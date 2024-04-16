@@ -5,3 +5,7 @@ ion-header{
 ion-searchbar > div{
      border-radius: 5em;
 }
+
+ion-searchbar > div > input:focus{
+     border-color: red;
+}
