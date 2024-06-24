@@ -22,7 +22,7 @@ export class HinoCreateComponent implements OnInit {
   hinoForm!: FormGroup;
   hino!: HinoModel;
   hinoId?: string;
-  linguaValue = Object.keys(Linguas)
+  linguaValue = Object.keys(Linguas);
 
   constructor(
     private formBuider: FormBuilder,
@@ -43,7 +43,7 @@ export class HinoCreateComponent implements OnInit {
       dataActualizacao: [""],
       comentario: [""],
       isFavorito: [false],
-      lingua: ["", Validators.required]
+      lingua: ["", Validators.required],
     });
   }
 
@@ -52,9 +52,7 @@ export class HinoCreateComponent implements OnInit {
       this.hino = this.hinoForm.value;
 
       this.hinoService.createHino(this.hino).subscribe((resp) => {
-
-
-        this.hinoService.getAll().subscribe(()=>{
+        this.hinoService.getAll().subscribe(() => {
           location.reload();
         });
 
@@ -62,12 +60,9 @@ export class HinoCreateComponent implements OnInit {
         this.router.navigate(["/hino/visualizar/", resp.id]);
       });
     }
-
-    
   }
 
   onCancel() {
     this.router.navigate(["/hino"]);
   }
-
 }

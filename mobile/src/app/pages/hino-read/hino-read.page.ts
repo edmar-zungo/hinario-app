@@ -1,7 +1,7 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonHeader, IonToolbar, IonButtons, IonTitle, IonLabel, IonContent, IonNote, IonFab, IonFabButton, IonFooter, IonToast } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonButtons, IonTitle, IonLabel, IonContent, IonNote, IonFab, IonFabButton, IonFooter, IonToast, IonIcon } from '@ionic/angular/standalone';
 import { ActivatedRoute, Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { HinarioService } from 'src/app/services/hinario.service';
 import { HinoModel } from 'src/app/model/hino-model';
@@ -13,7 +13,7 @@ import { ToastController } from '@ionic/angular';
   templateUrl: './hino-read.page.html',
   styleUrls: ['./hino-read.page.scss'],
   standalone: true,
-  imports: [IonFooter, IonFabButton, IonFab, IonNote, IonContent, IonLabel, IonTitle, IonButtons, IonToolbar, IonHeader,IonToast, 
+  imports: [IonFooter, IonFabButton, IonFab, IonNote, IonContent, IonLabel, IonTitle, IonButtons, IonToolbar, IonHeader,IonToast ,IonIcon,
     CommonModule,
     FormsModule,
     RouterLink,
@@ -21,6 +21,7 @@ import { ToastController } from '@ionic/angular';
   ],
 })
 export class HinoReadPage implements OnInit {
+
   hino?: HinoModel;
 
   estrofes: EstrofeModel[] = [];
@@ -111,5 +112,12 @@ export class HinoReadPage implements OnInit {
       this.router.navigate(['/hino-read/', hinoAnterior.id])
 
     })
+  }
+
+  aumentarTamanhoFonte() {
+    const paragrafos = document.getElementsByTagName("p");
+    for(const p in paragrafos){
+      
+    }
   }
 }
