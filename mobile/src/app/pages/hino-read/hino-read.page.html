@@ -48,17 +48,15 @@
   </ion-fab>
 
 
-  <ion-fab slot="fixed" horizontal="end" vertical="bottom">
-    <ion-fab-button (click)="aumentarTamanhoFonte()">
-      <ion-icon class="fa fa-search"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-
-
 </ion-content>
 
 <ion-footer class="ion-no-border">
+  
   <ion-toolbar>
+    <ion-buttons>
+      <ion-button fill="full" size="large" (click)="diminuirTamanhoFonte()"><i class="fa fa-search-minus" aria-hidden="true"></i></ion-button>
+      <ion-button fill="full" size="large" (click)="aumentarTamanhoFonte()"><i class="fa fa-search-plus" aria-hidden="true"></i></ion-button>
+    </ion-buttons>
     <ion-note slot="end" class="pagina">Pág. {{hino?.pagina}}</ion-note>
   </ion-toolbar>
 </ion-footer>

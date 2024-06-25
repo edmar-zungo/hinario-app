@@ -1,7 +1,7 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonHeader, IonToolbar, IonButtons, IonTitle, IonLabel, IonContent, IonNote, IonFab, IonFabButton, IonFooter, IonToast, IonIcon } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonButtons, IonTitle, IonLabel, IonContent, IonNote, IonFab, IonFabButton, IonFooter, IonToast, IonIcon, IonItemGroup, IonButton } from '@ionic/angular/standalone';
 import { ActivatedRoute, Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { HinarioService } from 'src/app/services/hinario.service';
 import { HinoModel } from 'src/app/model/hino-model';
@@ -13,7 +13,7 @@ import { ToastController } from '@ionic/angular';
   templateUrl: './hino-read.page.html',
   styleUrls: ['./hino-read.page.scss'],
   standalone: true,
-  imports: [IonFooter, IonFabButton, IonFab, IonNote, IonContent, IonLabel, IonTitle, IonButtons, IonToolbar, IonHeader,IonToast ,IonIcon,
+  imports: [IonButton, IonFooter, IonFabButton, IonFab, IonNote, IonContent, IonLabel, IonTitle, IonButtons, IonToolbar, IonHeader,IonToast ,IonIcon,IonItemGroup,
     CommonModule,
     FormsModule,
     RouterLink,
@@ -115,9 +115,41 @@ export class HinoReadPage implements OnInit {
   }
 
   aumentarTamanhoFonte() {
-    const paragrafos = document.getElementsByTagName("p");
-    for(const p in paragrafos){
-      
-    }
+    const paragrafos = document.querySelectorAll("p");
+    const titulo = document.querySelectorAll("h4");
+    paragrafos.forEach(p => {
+      const tamanhoActual = window.getComputedStyle(p).fontSize;
+      const novaFontSize = parseFloat(tamanhoActual) + 1;
+
+      p.style.fontSize = novaFontSize + "px"
+    });
+
+    titulo.forEach(h => {
+      const tamanhoActual = window.getComputedStyle(h).fontSize;
+      const novaFontSize = parseFloat(tamanhoActual) + 1;
+
+      h.style.fontSize = novaFontSize + "px"
+    });
+    
+  }
+
+
+  diminuirTamanhoFonte() {
+    const paragrafos = document.querySelectorAll("p");
+    const titulo = document.querySelectorAll("h4");
+    paragrafos.forEach(p => {
+      const tamanhoActual = window.getComputedStyle(p).fontSize;
+      const novaFontSize = parseFloat(tamanhoActual) - 1;
+
+      p.style.fontSize = novaFontSize + "px"
+    });
+
+    titulo.forEach(h => {
+      const tamanhoActual = window.getComputedStyle(h).fontSize;
+      const novaFontSize = parseFloat(tamanhoActual) - 1;
+
+      h.style.fontSize = novaFontSize + "px"
+    });
+    
   }
 }
