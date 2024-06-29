@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule } from "@angular/forms";
 import { ActivatedRoute, Router } from "@angular/router";
 import { HinoService } from "../service/hino.service";
 import { HinoModel } from "../hino-model";
+import { Linguas } from "../linguas";
 
 @Component({
   selector: "app-hino-update",
@@ -15,6 +16,7 @@ export class HinoUpdateComponent implements OnInit {
   hinoForm!: FormGroup;
   hino!: HinoModel;
   isReadOnly: boolean = true;
+  linguaValue = Object.keys(Linguas);
 
   constructor(
     private activatedRoute: ActivatedRoute,

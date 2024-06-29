@@ -44,6 +44,15 @@
     </div>
 
     <div class="col-md-8 col-sm-12 mb-3">
+      <label for="lingua" class="form-label">Língua</label>
+     <select class="form-control" formControlName="lingua" name="lingua" id="lingua" required="true">
+      @for (lingua of linguaValue; track $index) {
+        <option [value]="lingua">{{ lingua }}</option>
+      }
+     </select>
+    </div>
+
+    <div class="col-md-8 col-sm-12 mb-3">
       <label for="autor" class="form-label">Autor</label>
       <input
         type="text"

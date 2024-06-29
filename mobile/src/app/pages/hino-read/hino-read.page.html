@@ -37,15 +37,16 @@
 
 
   <ion-fab slot="fixed" horizontal="start" vertical="center">
-    <ion-fab-button size="small" color="medium" (click)="getHinoAnterior(hino!.id)">
+    <ion-fab-button size="small" (click)="getHinoAnterior(hino!.id)">
       <i class="fas fa-angle-left"></i>
     </ion-fab-button>
   </ion-fab>
   <ion-fab slot="fixed" horizontal="end" vertical="center">
-    <ion-fab-button size="small" color="medium" (click)="getHinoSeguinte(hino!.id)">
+    <ion-fab-button size="small" (click)="getHinoSeguinte(hino!.id)">
       <i class="fas fa-angle-right"></i>
     </ion-fab-button>
   </ion-fab>
+
 
 
 </ion-content>
@@ -54,8 +55,8 @@
   
   <ion-toolbar>
     <ion-buttons>
-      <ion-button fill="full" size="large" (click)="diminuirTamanhoFonte()"><i class="fa fa-search-minus" aria-hidden="true"></i></ion-button>
-      <ion-button fill="full" size="large" (click)="aumentarTamanhoFonte()"><i class="fa fa-search-plus" aria-hidden="true"></i></ion-button>
+      <ion-button fill="full" size="large" color="danger" (click)="diminuirTamanhoFonte()"><i class="fa fa-search-minus" aria-hidden="true"></i></ion-button>
+      <ion-button fill="full" size="large" color="primary" (click)="aumentarTamanhoFonte()"><i class="fa fa-search-plus" aria-hidden="true"></i></ion-button>
     </ion-buttons>
     <ion-note slot="end" class="pagina">Pág. {{hino?.pagina}}</ion-note>
   </ion-toolbar>

@@ -83,6 +83,7 @@ public class HinoService {
             hinoResult.setPagina(hino.getPagina());
             hinoResult.setNumero(hino.getNumero());
             hinoResult.setTitulo(hino.getTitulo());
+            hinoResult.setLingua(hino.getLingua());
 
             saveToFile();
 
