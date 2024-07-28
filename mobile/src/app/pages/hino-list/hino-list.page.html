@@ -4,49 +4,69 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>Hinos</ion-title>
+    <div slot="end">
+      <a (click)="getAllhinosByLinguaFromJSON('PORTUGUES')" class="mr">PT</a>
+      <a (click)="getAllhinosByLinguaFromJSON('KIKONGO_ORIGEM')" class="mr">KO</a>
+      <a (click)="getAllhinosByLinguaFromJSON('KIKONGO_REVISADO')" class="mr">KR</a>
+      <a (click)="getAllhinosByLinguaFromJSON('KINBUMDU')" class="mr">KU</a>
+      <a (click)="getAllhinosByJSON()" class="mr">TD</a>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-list lines="full">
-    <div class="ion-padding"> PORTUGUES </div>
+  @if(filtro === 'todos'){
+    <ion-list lines="full">
+      <div class="ion-padding"> PORTUGUES </div>
+        @for (hino of hinosByJSON; track $index) {
+          @if (hino.lingua === 'PORTUGUES') {
+            <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]" [routerLinkActive]="['router-link-active']">
+              <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label>
+              <ion-label slot="end">{{hino.pagina}}</ion-label>
+            </ion-item>
+          }
+          }
+      <div class="ion-padding">  KIKONGO REVISADO  </div>
       @for (hino of hinosByJSON; track $index) {
-        @if (hino.lingua === 'PORTUGUES') {
-          <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]" [routerLinkActive]="['router-link-active']">
+        @if (hino.lingua === 'KIKONGO_REVISADO') {
+          <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]">
             <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label>
             <ion-label slot="end">{{hino.pagina}}</ion-label>
           </ion-item>
         }
         }
-    <div class="ion-padding">  KIKONGO REVISADO  </div>
+      <div class="ion-padding">  KIKONGO DE ORIGEM  </div>
+      @for (hino of hinosByJSON; track $index) {
+        @if (hino.lingua === 'KIKONGO_ORIGEM') {
+          <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]">
+            <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label>
+            <ion-label slot="end">{{hino.pagina}}</ion-label>
+          </ion-item>
+        }
+        }
+      <div class="ion-padding">  KINBUMDU </div>
+      @for (hino of hinosByJSON; track $index) {
+        @if (hino.lingua === 'KINBUMDU') {
+          <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]">
+            <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label>
+            <ion-label slot="end">{{hino.pagina}}</ion-label>
+          </ion-item>
+        }
+        }
+      
+    </ion-list>
+  } @else {
+
+    <div class="ion-padding">  {{filtro}} </div>
     @for (hino of hinosByJSON; track $index) {
-      @if (hino.lingua === 'KIKONGO_REVISADO') {
+      @if (hino.lingua === filtro) {
         <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]">
           <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label>
           <ion-label slot="end">{{hino.pagina}}</ion-label>
         </ion-item>
       }
       }
-    <div class="ion-padding">  KIKONGO DE ORIGEM  </div>
-    @for (hino of hinosByJSON; track $index) {
-      @if (hino.lingua === 'KIKONGO_ORIGEM') {
-        <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]">
-          <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label>
-          <ion-label slot="end">{{hino.pagina}}</ion-label>
-        </ion-item>
-      }
-      }
-    <div class="ion-padding">  KINBUMDU </div>
-    @for (hino of hinosByJSON; track $index) {
-      @if (hino.lingua === 'KINBUMDU') {
-        <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]">
-          <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label>
-          <ion-label slot="end">{{hino.pagina}}</ion-label>
-        </ion-item>
-      }
-      }
-    
-  </ion-list>
+  }
 
   <ion-fab slot="fixed" horizontal="end" vertical="bottom">
     <ion-fab-button [routerLink]="['/searchPage']" [routerLinkActive]="['router-link-active']">

@@ -1,7 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonHeader, IonToolbar, IonButtons, IonTitle, IonContent, IonList, IonLabel, IonFab, IonIcon, IonMenuButton, IonItem } from '@ionic/angular/standalone';
+import {
+  IonHeader,
+  IonToolbar,
+  IonButtons,
+  IonTitle,
+  IonContent,
+  IonList,
+  IonLabel,
+  IonFab,
+  IonIcon,
+  IonMenuButton,
+  IonItem,
+} from '@ionic/angular/standalone';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { HinarioService } from 'src/app/services/hinario.service';
 import { HinoModel } from 'src/app/model/hino-model';
@@ -11,36 +23,50 @@ import { HinoModel } from 'src/app/model/hino-model';
   templateUrl: './hino-list.page.html',
   styleUrls: ['./hino-list.page.scss'],
   standalone: true,
-  imports: [IonIcon, IonFab, IonLabel, IonList, IonContent, IonTitle, IonButtons, IonToolbar, CommonModule, FormsModule, RouterLink, RouterLinkActive, IonHeader, IonMenuButton, IonItem, ]
+  imports: [
+    IonIcon,
+    IonFab,
+    IonLabel,
+    IonList,
+    IonContent,
+    IonTitle,
+    IonButtons,
+    IonToolbar,
+    CommonModule,
+    FormsModule,
+    RouterLink,
+    RouterLinkActive,
+    IonHeader,
+    IonMenuButton,
+    IonItem,
+  ],
 })
 export class HinoListPage implements OnInit {
-
-  
   hinosByJSON: HinoModel[] = [];
 
-  constructor(private router: Router, private hinarioService: HinarioService) { }
+  filtro: string | null = null;
+  
+  constructor(private router: Router, private hinarioService: HinarioService) {}
 
   ngOnInit() {
-    // this.getAllHinos();
     this.getAllhinosByJSON();
-  
   }
 
-  // getAllHinos(){
-  //   this.hinarioService.getAllHinos().subscribe(resp => {
-  //     this.hinos = resp ?? [];
-    
-  //   })
-  // }
-
-  getAllhinosByJSON(){
-    this.hinarioService.getAllHinoByJSON().subscribe(resp => {
+  getAllhinosByJSON() {
+    this.hinarioService.getAllHinoByJSON().subscribe((resp) => {
+      this.filtro = 'todos';
       this.hinosByJSON = resp ?? [];
-    })
+    });
   }
 
   goToSearchPage() {
     this.router.navigate(['/searchPage']);
-    }
+  }
 
+  getAllhinosByLinguaFromJSON(lingua: 'PORTUGUES' | 'KIKONGO_REVISADO' | 'KIKONGO_ORIGEM' | 'KINBUMDU') {
+    this.filtro = lingua;
+    this.hinarioService.getAllHinoByJSON().subscribe((resp) => {
+      this.hinosByJSON = resp.filter(x => x.lingua === lingua) ?? [];
+    });
+  }
 }
