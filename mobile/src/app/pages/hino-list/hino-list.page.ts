@@ -13,7 +13,7 @@ import {
   IonIcon,
   IonMenuButton,
   IonItem,
-} from '@ionic/angular/standalone';
+  IonPopover, IonButton } from '@ionic/angular/standalone';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { HinarioService } from 'src/app/services/hinario.service';
 import { HinoModel } from 'src/app/model/hino-model';
@@ -23,7 +23,7 @@ import { HinoModel } from 'src/app/model/hino-model';
   templateUrl: './hino-list.page.html',
   styleUrls: ['./hino-list.page.scss'],
   standalone: true,
-  imports: [
+  imports: [IonButton, 
     IonIcon,
     IonFab,
     IonLabel,
@@ -39,6 +39,7 @@ import { HinoModel } from 'src/app/model/hino-model';
     IonHeader,
     IonMenuButton,
     IonItem,
+    IonPopover
   ],
 })
 export class HinoListPage implements OnInit {
