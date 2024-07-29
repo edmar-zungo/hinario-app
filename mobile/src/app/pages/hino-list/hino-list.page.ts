@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Optional } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import {
@@ -13,8 +13,13 @@ import {
   IonIcon,
   IonMenuButton,
   IonItem,
-  IonPopover, IonButton } from '@ionic/angular/standalone';
+  IonPopover,
+  IonButton,
+  IonRouterOutlet,
+} from '@ionic/angular/standalone';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { Platform } from '@ionic/angular';
+import { App } from '@capacitor/app';
 import { HinarioService } from 'src/app/services/hinario.service';
 import { HinoModel } from 'src/app/model/hino-model';
 
@@ -23,7 +28,8 @@ import { HinoModel } from 'src/app/model/hino-model';
   templateUrl: './hino-list.page.html',
   styleUrls: ['./hino-list.page.scss'],
   standalone: true,
-  imports: [IonButton, 
+  imports: [
+    IonButton,
     IonIcon,
     IonFab,
     IonLabel,
@@ -39,15 +45,31 @@ import { HinoModel } from 'src/app/model/hino-model';
     IonHeader,
     IonMenuButton,
     IonItem,
-    IonPopover
+    IonPopover,
+    IonRouterOutlet,
   ],
 })
 export class HinoListPage implements OnInit {
   hinosByJSON: HinoModel[] = [];
 
   filtro: string | null = null;
-  
-  constructor(private router: Router, private hinarioService: HinarioService) {}
+
+  constructor(
+    private router: Router,
+    private hinarioService: HinarioService,
+    private platform: Platform,
+    @Optional() private routerOutlet?: IonRouterOutlet
+  ) {
+    // this.sairDoApp();
+
+    this.platform.backButton.subscribeWithPriority(-1, () => {
+      if (!this.routerOutlet!.canGoBack()) {
+        if (window.confirm('Deseja realmente sair do app?')) {
+          App.exitApp(); // Sair do aplicativo
+        }
+      }
+    });
+  }
 
   ngOnInit() {
     this.getAllhinosByJSON();
@@ -64,10 +86,26 @@ export class HinoListPage implements OnInit {
     this.router.navigate(['/searchPage']);
   }
 
-  getAllhinosByLinguaFromJSON(lingua: 'PORTUGUES' | 'KIKONGO_REVISADO' | 'KIKONGO_ORIGEM' | 'KINBUMDU') {
+  getAllhinosByLinguaFromJSON(
+    lingua: 'PORTUGUES' | 'KIKONGO_REVISADO' | 'KIKONGO_ORIGEM' | 'KINBUMDU'
+  ) {
     this.filtro = lingua;
     this.hinarioService.getAllHinoByJSON().subscribe((resp) => {
-      this.hinosByJSON = resp.filter(x => x.lingua === lingua) ?? [];
+      this.hinosByJSON = resp.filter((x) => x.lingua === lingua) ?? [];
     });
   }
+
+  // sairDoApp() {
+  //   this.platform.ready().then(() => {
+  //     this.platform.backButton.subscribeWithPriority(10, () => {
+  //       if (this.router.url === '/hinos-list') {
+  //         if (window.confirm("Você realmente deseja sair do app?")) {
+  //           App.exitApp(); // Sair do aplicativo
+  //         }
+  //       } else {
+  //         this.router.navigate(['/hinos-list']); // Navegar para a página inicial
+  //       }
+  //     });
+  //   });
+  // }
 }
