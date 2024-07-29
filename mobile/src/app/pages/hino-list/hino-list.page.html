@@ -11,8 +11,8 @@
         <ion-content>
           <ion-list>
             <ion-item [button]="true" [detail]="false" (click)="getAllhinosByLinguaFromJSON('PORTUGUES')">Hinos em Portugues</ion-item>
-            <ion-item [button]="true" [detail]="false" (click)="getAllhinosByLinguaFromJSON('KIKONGO_ORIGEM')">Hinos no Kicongo de Origem</ion-item>
-            <ion-item [button]="true" [detail]="false" (click)="getAllhinosByLinguaFromJSON('KIKONGO_REVISADO')">Hinos no Kicongo Revisado</ion-item>
+            <ion-item [button]="true" [detail]="false" (click)="getAllhinosByLinguaFromJSON('KIKONGO_ORIGEM')">Hinos em Kikongo de Origem</ion-item>
+            <ion-item [button]="true" [detail]="false" (click)="getAllhinosByLinguaFromJSON('KIKONGO_REVISADO')">Hinos em Kikongo Revisado</ion-item>
             <ion-item [button]="true" [detail]="false" (click)="getAllhinosByLinguaFromJSON('KINBUMDU')">Hinos em Kinbumdu</ion-item>
             <ion-item [button]="true" [detail]="false" (click)="getAllhinosByJSON()">Todos os Hinos</ion-item>
     
@@ -20,15 +20,6 @@
         </ion-content>
       </ng-template>
     </ion-popover>
-
-
-    <!-- <div slot="end">
-      <a (click)="getAllhinosByLinguaFromJSON('PORTUGUES')" class="mr">PT</a>
-      <a (click)="getAllhinosByLinguaFromJSON('KIKONGO_ORIGEM')" class="mr">KO</a>
-      <a (click)="getAllhinosByLinguaFromJSON('KIKONGO_REVISADO')" class="mr">KR</a>
-      <a (click)="getAllhinosByLinguaFromJSON('KINBUMDU')" class="mr">KU</a>
-      <a (click)="getAllhinosByJSON()" class="mr">TD</a>
-    </div> -->
   </ion-toolbar>
 </ion-header>
 
@@ -75,7 +66,21 @@
     </ion-list>
   } @else {
 
-    <div class="ion-padding">  {{filtro}} </div>
+   @switch (filtro) {
+     @case ('KINBUMDU') {
+      <div class="ion-padding">  KINBUMDU </div>
+     }
+     @case ('KIKONGO_ORIGEM') {
+      <div class="ion-padding">  KIKONGO DE ORIGEM </div>
+     }
+     @case ('KIKONGO_REVISADO') {
+      <div class="ion-padding">  KIKONGO REVISADO </div>
+     }
+     @case ('PORTUGUES') {
+      <div class="ion-padding">  PORTUGUÊS </div>
+     }
+   }
+   
     @for (hino of hinosByJSON; track $index) {
       @if (hino.lingua === filtro) {
         <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]">
