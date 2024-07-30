@@ -9,7 +9,7 @@ const config: CapacitorConfig = {
   },
   plugins: {
     SplashScreen: {
-      launchShowDuration: 3000,
+      launchShowDuration: 6000,
       launchAutoHide: true,
       launchFadeOutDuration: 3000,
       backgroundColor: "#ffffffff",
@@ -20,9 +20,7 @@ const config: CapacitorConfig = {
       iosSpinnerStyle: "small",
       spinnerColor: "#999999",
       splashFullScreen: true,
-      splashImmersive: true,
-      layoutName: "launch_screen",
-      useDialog: true,
+      splashImmersive: true
     },
   },
 };
