@@ -1,6 +1,6 @@
 # HinarioApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9 and upgraded to Angular 22 (SSR com `@angular/build`, Express 5).
 
 ## Development server
 
