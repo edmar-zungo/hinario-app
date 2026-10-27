@@ -5,11 +5,10 @@ import { EstrofeListComponent } from '../estrofe/estrofe-list/estrofe-list.compo
 import { HinoFavoritoListComponent } from '../hino/hino-favorito-list/hino-favorito-list.component';
 
 @Component({
-  selector: 'app-navbar',
-  standalone: true,
-  imports: [HinoListComponent,HinoFavoritoListComponent,RouterLink, RouterLinkActive],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+    selector: 'app-navbar',
+    imports: [HinoListComponent, HinoFavoritoListComponent, RouterLink, RouterLinkActive],
+    templateUrl: './navbar.component.html',
+    styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
 

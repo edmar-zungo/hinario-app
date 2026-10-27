@@ -8,11 +8,10 @@ import { HinoModel } from '../../hino/hino-model';
 import { HinoService } from '../../hino/service/hino.service';
 
 @Component({
-  selector: 'app-estrofe-update',
-  standalone: true,
-  imports: [ReactiveFormsModule, NgSelectModule],
-  templateUrl: './estrofe-update.component.html',
-  styleUrl: './estrofe-update.component.css'
+    selector: 'app-estrofe-update',
+    imports: [ReactiveFormsModule, NgSelectModule],
+    templateUrl: './estrofe-update.component.html',
+    styleUrl: './estrofe-update.component.css'
 })
 export class EstrofeUpdateComponent {
 

@@ -12,11 +12,10 @@ import { HinoModel } from "../../hino/hino-model";
 import { HinoService } from "../../hino/service/hino.service";
 
 @Component({
-  selector: "app-estrofe-create",
-  standalone: true,
-  imports: [ReactiveFormsModule],
-  templateUrl: "./estrofe-create.component.html",
-  styleUrl: "./estrofe-create.component.css",
+    selector: "app-estrofe-create",
+    imports: [ReactiveFormsModule],
+    templateUrl: "./estrofe-create.component.html",
+    styleUrl: "./estrofe-create.component.css"
 })
 export class EstrofeCreateComponent implements OnInit {
   estrofeForm!: FormGroup;

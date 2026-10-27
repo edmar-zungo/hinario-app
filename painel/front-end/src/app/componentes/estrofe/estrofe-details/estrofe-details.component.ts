@@ -4,11 +4,10 @@ import { ActivatedRoute, RouterLink, RouterLinkActive } from '@angular/router';
 import { EstrofeService } from '../service/estrofe.service';
 
 @Component({
-  selector: 'app-estrofe-details',
-  standalone: true,
-  imports: [RouterLink, RouterLinkActive],
-  templateUrl: './estrofe-details.component.html',
-  styleUrl: './estrofe-details.component.css'
+    selector: 'app-estrofe-details',
+    imports: [RouterLink, RouterLinkActive],
+    templateUrl: './estrofe-details.component.html',
+    styleUrl: './estrofe-details.component.css'
 })
 export class EstrofeDetailsComponent {
 

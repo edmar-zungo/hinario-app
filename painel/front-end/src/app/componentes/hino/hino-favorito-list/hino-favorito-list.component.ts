@@ -4,11 +4,10 @@ import { HinoModel } from '../hino-model';
 import { HinoService } from '../service/hino.service';
 
 @Component({
-  selector: 'app-hino-favorito-list',
-  standalone: true,
-  imports: [RouterLink, RouterLinkActive],
-  templateUrl: './hino-favorito-list.component.html',
-  styleUrl: './hino-favorito-list.component.css'
+    selector: 'app-hino-favorito-list',
+    imports: [RouterLink, RouterLinkActive],
+    templateUrl: './hino-favorito-list.component.html',
+    styleUrl: './hino-favorito-list.component.css'
 })
 export class HinoFavoritoListComponent implements OnInit{
 

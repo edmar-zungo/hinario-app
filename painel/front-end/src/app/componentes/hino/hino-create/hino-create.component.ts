@@ -12,11 +12,10 @@ import { Router } from "@angular/router";
 import { Linguas } from "../linguas";
 
 @Component({
-  selector: "app-hino-create",
-  standalone: true,
-  imports: [ReactiveFormsModule],
-  templateUrl: "./hino-create.component.html",
-  styleUrl: "./hino-create.component.css",
+    selector: "app-hino-create",
+    imports: [ReactiveFormsModule],
+    templateUrl: "./hino-create.component.html",
+    styleUrl: "./hino-create.component.css"
 })
 export class HinoCreateComponent implements OnInit {
   hinoForm!: FormGroup;

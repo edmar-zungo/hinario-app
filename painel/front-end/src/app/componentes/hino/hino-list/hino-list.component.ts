@@ -3,11 +3,10 @@ import { HinoService } from "../service/hino.service";
 import { HinoModel } from "../hino-model";
 import { RouterLink, RouterLinkActive } from "@angular/router";
 @Component({
-  selector: "app-hino-list",
-  standalone: true,
-  imports: [RouterLink, RouterLinkActive],
-  templateUrl: "./hino-list.component.html",
-  styleUrl: "./hino-list.component.css",
+    selector: "app-hino-list",
+    imports: [RouterLink, RouterLinkActive],
+    templateUrl: "./hino-list.component.html",
+    styleUrl: "./hino-list.component.css"
 })
 export class HinoListComponent implements OnInit {
 

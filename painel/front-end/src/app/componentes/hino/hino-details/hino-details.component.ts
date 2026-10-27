@@ -7,11 +7,10 @@ import { EstrofeModel } from '../../estrofe/estrofe-model';
 import { EstrofeService } from '../../estrofe/service/estrofe.service';
 
 @Component({
-  selector: 'app-hino-details',
-  standalone: true,
-  imports: [RouterLink, RouterLinkActive, EstrofeListComponent],
-  templateUrl: './hino-details.component.html',
-  styleUrl: './hino-details.component.css'
+    selector: 'app-hino-details',
+    imports: [RouterLink, RouterLinkActive, EstrofeListComponent],
+    templateUrl: './hino-details.component.html',
+    styleUrl: './hino-details.component.css'
 })
 export class HinoDetailsComponent implements OnInit{
 

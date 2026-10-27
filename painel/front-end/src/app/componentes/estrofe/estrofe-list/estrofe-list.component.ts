@@ -4,11 +4,10 @@ import { EstrofeService } from '../service/estrofe.service';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  selector: 'app-estrofe-list',
-  standalone: true,
-  imports: [RouterLink, RouterLinkActive],
-  templateUrl: './estrofe-list.component.html',
-  styleUrl: './estrofe-list.component.css'
+    selector: 'app-estrofe-list',
+    imports: [RouterLink, RouterLinkActive],
+    templateUrl: './estrofe-list.component.html',
+    styleUrl: './estrofe-list.component.css'
 })
 export class EstrofeListComponent implements OnInit{
 

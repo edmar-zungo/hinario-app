@@ -6,11 +6,10 @@ import { HinoModel } from "../hino-model";
 import { Linguas } from "../linguas";
 
 @Component({
-  selector: "app-hino-update",
-  standalone: true,
-  imports: [ReactiveFormsModule],
-  templateUrl: "./hino-update.component.html",
-  styleUrl: "./hino-update.component.css",
+    selector: "app-hino-update",
+    imports: [ReactiveFormsModule],
+    templateUrl: "./hino-update.component.html",
+    styleUrl: "./hino-update.component.css"
 })
 export class HinoUpdateComponent implements OnInit {
   hinoForm!: FormGroup;
