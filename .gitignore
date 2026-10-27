@@ -31,3 +31,16 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Node / Angular ###
+node_modules/
+dist/
+.angular/
+package-lock.json.tmp
+npm-debug.log*
+
+### Android ###
+mobile/android/.gradle/
+mobile/android/app/build/
+mobile/android/build/
+mobile/local.properties
