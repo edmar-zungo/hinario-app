@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HinoFavoritoListComponent } from './hino-favorito-list.component';
-import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClient, withXhr } from '@angular/common/http';
 import { provideRouter } from '@angular/router';
 
 describe('HinoFavoritoListComponent', () => {
@@ -12,7 +12,7 @@ describe('HinoFavoritoListComponent', () => {
     await TestBed.configureTestingModule({
       imports: [HinoFavoritoListComponent]
     ,
-      providers: [provideHttpClient(), provideRouter([])]})
+      providers: [provideHttpClient(withXhr()), provideRouter([])]})
     .compileComponents();
     
     fixture = TestBed.createComponent(HinoFavoritoListComponent);

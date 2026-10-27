@@ -13,7 +13,7 @@
     <p>
       <a
         class="link-secondary"
-        [routerLink]="['/estrofe/visualizar/', estrofe?.hino?.id]"
+        [routerLink]="['/estrofe/visualizar/', $safeNavigationMigration(estrofe?.hino?.id)]"
         [routerLinkActive]="['router-link-active']"
       >
         {{ estrofe?.hino?.titulo }}
@@ -23,7 +23,7 @@
 
   <div class="">
      <button type="button" class="btn btn-primary me-2" (click)="back()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar</button>
-     <button type="button" class="btn btn-secondary"  [routerLink]="['/estrofe/editar/', estrofe?.id]"
+     <button type="button" class="btn btn-secondary"  [routerLink]="['/estrofe/editar/', $safeNavigationMigration(estrofe?.id)]"
      [routerLinkActive]="['router-link-active']">Editar</button>
    </div>
 </div>

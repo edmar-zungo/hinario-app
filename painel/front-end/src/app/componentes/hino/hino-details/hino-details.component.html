@@ -24,7 +24,7 @@
   </div>
 
   <div class="mb-3">
-    <app-estrofe-list [hinoId]="hino?.id" [estrofes]="estrofes" />
+    <app-estrofe-list [hinoId]="$safeNavigationMigration(hino?.id)" [estrofes]="estrofes" />
   </div>
 
   <div>
@@ -34,7 +34,7 @@
     <button
       type="button"
       class="btn btn-secondary"
-      [routerLink]="['/hino/editar/', hino?.id]"
+      [routerLink]="['/hino/editar/', $safeNavigationMigration(hino?.id)]"
       [routerLinkActive]="['router-link-active']"
     >
       Editar

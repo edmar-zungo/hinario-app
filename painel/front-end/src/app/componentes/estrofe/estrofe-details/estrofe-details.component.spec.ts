@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { EstrofeDetailsComponent } from './estrofe-details.component';
-import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClient, withXhr } from '@angular/common/http';
 import { provideRouter } from '@angular/router';
 
 describe('EstrofeDetailsComponent', () => {
@@ -12,7 +12,7 @@ describe('EstrofeDetailsComponent', () => {
     await TestBed.configureTestingModule({
       imports: [EstrofeDetailsComponent]
     ,
-      providers: [provideHttpClient(), provideRouter([])]})
+      providers: [provideHttpClient(withXhr()), provideRouter([])]})
     .compileComponents();
     
     fixture = TestBed.createComponent(EstrofeDetailsComponent);

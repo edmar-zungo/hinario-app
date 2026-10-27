@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
 import {
   FormBuilder,
   FormGroup,
@@ -15,6 +15,7 @@ import { HinoService } from "../../hino/service/hino.service";
     selector: "app-estrofe-create",
     imports: [ReactiveFormsModule],
     templateUrl: "./estrofe-create.component.html",
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: "./estrofe-create.component.css"
 })
 export class EstrofeCreateComponent implements OnInit {

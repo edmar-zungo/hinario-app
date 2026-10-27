@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute, RouterLink, RouterLinkActive } from '@angular/router';
 import { HinoService } from '../service/hino.service';
 import { HinoModel } from '../hino-model';
@@ -10,6 +10,7 @@ import { EstrofeService } from '../../estrofe/service/estrofe.service';
     selector: 'app-hino-details',
     imports: [RouterLink, RouterLinkActive, EstrofeListComponent],
     templateUrl: './hino-details.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './hino-details.component.css'
 })
 export class HinoDetailsComponent implements OnInit{

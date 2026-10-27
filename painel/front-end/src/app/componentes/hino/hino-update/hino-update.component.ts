@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
 import { FormBuilder, FormGroup, ReactiveFormsModule } from "@angular/forms";
 import { ActivatedRoute, Router } from "@angular/router";
 import { HinoService } from "../service/hino.service";
@@ -9,6 +9,7 @@ import { Linguas } from "../linguas";
     selector: "app-hino-update",
     imports: [ReactiveFormsModule],
     templateUrl: "./hino-update.component.html",
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: "./hino-update.component.css"
 })
 export class HinoUpdateComponent implements OnInit {

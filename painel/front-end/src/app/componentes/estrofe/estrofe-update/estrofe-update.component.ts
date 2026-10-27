@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { EstrofeModel } from '../estrofe-model';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { EstrofeService } from '../service/estrofe.service';
@@ -11,6 +11,7 @@ import { HinoService } from '../../hino/service/hino.service';
     selector: 'app-estrofe-update',
     imports: [ReactiveFormsModule, NgSelectModule],
     templateUrl: './estrofe-update.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './estrofe-update.component.css'
 })
 export class EstrofeUpdateComponent {

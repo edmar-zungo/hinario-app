@@ -39,7 +39,7 @@
             <div class="btn-group">
               <a
                 class="btn btn-warning btn-md"
-                (click)="addFavoritos(hino?.id)"
+                (click)="addFavoritos($safeNavigationMigration(hino?.id))"
                 ><i class="fa fa-star" aria-hidden="true"></i
               ></a>
 

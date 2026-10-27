@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
 import { HinoService } from "../service/hino.service";
 import { HinoModel } from "../hino-model";
 import { RouterLink, RouterLinkActive } from "@angular/router";
@@ -6,6 +6,7 @@ import { RouterLink, RouterLinkActive } from "@angular/router";
     selector: "app-hino-list",
     imports: [RouterLink, RouterLinkActive],
     templateUrl: "./hino-list.component.html",
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: "./hino-list.component.css"
 })
 export class HinoListComponent implements OnInit {

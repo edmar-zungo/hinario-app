@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
 import {
   FormBuilder,
   FormControl,
@@ -15,6 +15,7 @@ import { Linguas } from "../linguas";
     selector: "app-hino-create",
     imports: [ReactiveFormsModule],
     templateUrl: "./hino-create.component.html",
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: "./hino-create.component.css"
 })
 export class HinoCreateComponent implements OnInit {

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { EstrofeModel } from '../estrofe-model';
 import { EstrofeService } from '../service/estrofe.service';
 import { RouterLink, RouterLinkActive } from '@angular/router';
@@ -7,6 +7,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     selector: 'app-estrofe-list',
     imports: [RouterLink, RouterLinkActive],
     templateUrl: './estrofe-list.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './estrofe-list.component.css'
 })
 export class EstrofeListComponent implements OnInit{

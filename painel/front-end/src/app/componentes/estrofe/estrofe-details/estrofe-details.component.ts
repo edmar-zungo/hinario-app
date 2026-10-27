@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { EstrofeModel } from '../estrofe-model';
 import { ActivatedRoute, RouterLink, RouterLinkActive } from '@angular/router';
 import { EstrofeService } from '../service/estrofe.service';
@@ -7,6 +7,7 @@ import { EstrofeService } from '../service/estrofe.service';
     selector: 'app-estrofe-details',
     imports: [RouterLink, RouterLinkActive],
     templateUrl: './estrofe-details.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './estrofe-details.component.css'
 })
 export class EstrofeDetailsComponent {

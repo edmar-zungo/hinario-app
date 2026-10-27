@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClient, withXhr } from '@angular/common/http';
 import { provideRouter } from '@angular/router';
 
 describe('AppComponent', () => {
@@ -8,7 +8,7 @@ describe('AppComponent', () => {
     await TestBed.configureTestingModule({
       imports: [AppComponent],
     
-      providers: [provideHttpClient(), provideRouter([])]}).compileComponents();
+      providers: [provideHttpClient(withXhr()), provideRouter([])]}).compileComponents();
   });
 
   it('should create the app', () => {

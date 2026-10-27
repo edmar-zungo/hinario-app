@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HinoDetailsComponent } from './hino-details.component';
-import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClient, withXhr } from '@angular/common/http';
 import { provideRouter } from '@angular/router';
 
 describe('HinoDetailsComponent', () => {
@@ -12,7 +12,7 @@ describe('HinoDetailsComponent', () => {
     await TestBed.configureTestingModule({
       imports: [HinoDetailsComponent]
     ,
-      providers: [provideHttpClient(), provideRouter([])]})
+      providers: [provideHttpClient(withXhr()), provideRouter([])]})
     .compileComponents();
     
     fixture = TestBed.createComponent(HinoDetailsComponent);

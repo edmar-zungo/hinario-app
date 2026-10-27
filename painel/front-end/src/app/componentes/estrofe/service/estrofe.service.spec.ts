@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { EstrofeService } from './estrofe.service';
-import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClient, withXhr } from '@angular/common/http';
 import { provideRouter } from '@angular/router';
 
 describe('EstrofeService', () => {
@@ -9,7 +9,7 @@ describe('EstrofeService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [provideHttpClient(), provideRouter([])]
+      providers: [provideHttpClient(withXhr()), provideRouter([])]
     });
     service = TestBed.inject(EstrofeService);
   });

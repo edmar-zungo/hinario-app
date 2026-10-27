@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { HinoService } from './hino.service';
-import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClient, withXhr } from '@angular/common/http';
 import { provideRouter } from '@angular/router';
 
 describe('HinoService', () => {
@@ -9,7 +9,7 @@ describe('HinoService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [provideHttpClient(), provideRouter([])]
+      providers: [provideHttpClient(withXhr()), provideRouter([])]
     });
     service = TestBed.inject(HinoService);
   });
