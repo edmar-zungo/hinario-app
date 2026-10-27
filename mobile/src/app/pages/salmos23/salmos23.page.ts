@@ -4,11 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { IonHeader, IonToolbar, IonButtons, IonTitle, IonContent, IonMenuButton } from '@ionic/angular/standalone';
 
 @Component({
-  selector: 'app-salmos23',
-  templateUrl: './salmos23.page.html',
-  styleUrls: ['./salmos23.page.scss'],
-  standalone: true,
-  imports: [IonContent, IonTitle, IonButtons, IonToolbar, IonHeader,IonMenuButton, CommonModule, FormsModule]
+    selector: 'app-salmos23',
+    templateUrl: './salmos23.page.html',
+    styleUrls: ['./salmos23.page.scss'],
+    imports: [IonContent, IonTitle, IonButtons, IonToolbar, IonHeader, IonMenuButton, CommonModule, FormsModule]
 })
 export class Salmos23Page {
 

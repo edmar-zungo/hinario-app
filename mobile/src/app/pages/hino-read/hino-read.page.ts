@@ -9,16 +9,15 @@ import { EstrofeModel } from 'src/app/model/estrofe-model';
 import { ToastController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-hino-read',
-  templateUrl: './hino-read.page.html',
-  styleUrls: ['./hino-read.page.scss'],
-  standalone: true,
-  imports: [IonBackButton, IonButton, IonFooter, IonFabButton, IonFab, IonNote, IonContent, IonLabel, IonTitle, IonButtons, IonToolbar, IonHeader,IonToast ,IonIcon,IonItemGroup,
-    CommonModule,
-    FormsModule,
-    RouterLink,
-    RouterLinkActive,
-  ],
+    selector: 'app-hino-read',
+    templateUrl: './hino-read.page.html',
+    styleUrls: ['./hino-read.page.scss'],
+    imports: [IonBackButton, IonButton, IonFooter, IonFabButton, IonFab, IonNote, IonContent, IonLabel, IonTitle, IonButtons, IonToolbar, IonHeader, IonToast, IonIcon, IonItemGroup,
+        CommonModule,
+        FormsModule,
+        RouterLink,
+        RouterLinkActive,
+    ]
 })
 export class HinoReadPage implements OnInit {
 

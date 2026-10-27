@@ -24,30 +24,29 @@ import { HinarioService } from 'src/app/services/hinario.service';
 import { HinoModel } from 'src/app/model/hino-model';
 
 @Component({
-  selector: 'app-hino-list',
-  templateUrl: './hino-list.page.html',
-  styleUrls: ['./hino-list.page.scss'],
-  standalone: true,
-  imports: [
-    IonButton,
-    IonIcon,
-    IonFab,
-    IonLabel,
-    IonList,
-    IonContent,
-    IonTitle,
-    IonButtons,
-    IonToolbar,
-    CommonModule,
-    FormsModule,
-    RouterLink,
-    RouterLinkActive,
-    IonHeader,
-    IonMenuButton,
-    IonItem,
-    IonPopover,
-    IonRouterOutlet,
-  ],
+    selector: 'app-hino-list',
+    templateUrl: './hino-list.page.html',
+    styleUrls: ['./hino-list.page.scss'],
+    imports: [
+        IonButton,
+        IonIcon,
+        IonFab,
+        IonLabel,
+        IonList,
+        IonContent,
+        IonTitle,
+        IonButtons,
+        IonToolbar,
+        CommonModule,
+        FormsModule,
+        RouterLink,
+        RouterLinkActive,
+        IonHeader,
+        IonMenuButton,
+        IonItem,
+        IonPopover,
+        IonRouterOutlet,
+    ]
 })
 export class HinoListPage implements OnInit {
   hinosByJSON: HinoModel[] = [];

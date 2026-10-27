@@ -5,11 +5,10 @@ import { IonHeader, IonToolbar, IonButtons,IonMenuButton, IonContent, IonTitle }
 import { Mandamento } from 'src/app/model/mandamentos';
 
 @Component({
-  selector: 'app-dez-mandamentos',
-  templateUrl: './dez-mandamentos.page.html',
-  styleUrls: ['./dez-mandamentos.page.scss'],
-  standalone: true,
-  imports: [IonTitle, IonContent, IonButtons,IonMenuButton, IonToolbar, IonHeader, CommonModule, FormsModule],
+    selector: 'app-dez-mandamentos',
+    templateUrl: './dez-mandamentos.page.html',
+    styleUrls: ['./dez-mandamentos.page.scss'],
+    imports: [IonTitle, IonContent, IonButtons, IonMenuButton, IonToolbar, IonHeader, CommonModule, FormsModule]
 })
 export class DezMandamentosPage {
   dezMandamentos: Mandamento[] = [

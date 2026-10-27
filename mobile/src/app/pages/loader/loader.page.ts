@@ -5,11 +5,10 @@ import { IonContent, IonImg } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-loader',
-  templateUrl: './loader.page.html',
-  styleUrls: ['./loader.page.scss'],
-  standalone: true,
-  imports: [IonImg, IonContent, CommonModule, FormsModule]
+    selector: 'app-loader',
+    templateUrl: './loader.page.html',
+    styleUrls: ['./loader.page.scss'],
+    imports: [IonImg, IonContent, CommonModule, FormsModule]
 })
 export class LoaderPage implements OnInit {
 
