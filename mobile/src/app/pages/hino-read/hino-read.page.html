@@ -1,30 +1,36 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button [routerLink]="['/hinos-list']" [routerLinkActive]="['router-link-active']" />
+      <ion-back-button
+        [routerLink]="['/hinos-list']"
+        [routerLinkActive]="['router-link-active']"
+      />
     </ion-buttons>
 
     <ion-title>{{hino?.titulo}}</ion-title>
 
     <ion-label slot="end">
-      <i  *ngIf="liked"
+      @if (liked) {
+      <i
         class="fa fa-star"
         (click)="addOuRemoveDosFavoritos(hino?.id, 'rem')"
-        id="open-toast">
-    </i>
+        id="open-toast"
+      >
+      </i>
+      } @if (!liked) {
       <i
-        *ngIf="!liked"
         class="fa-regular fa-star"
         (click)="addOuRemoveDosFavoritos(hino?.id, 'add')"
         id="open-toast"
       ></i>
+      }
     </ion-label>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
   <ion-note><p class="numero">Nº {{ hino?.numero }}</p></ion-note>
-  <h4 class="titulo"> {{ hino?.titulo }}</h4>
+  <h4 class="titulo">{{ hino?.titulo }}</h4>
   @for (estrofe of estrofes; track $index) { @if (estrofe.refrao) {
   <p class="coro">Coro: {{ estrofe.descricao }}</p>
   } @else{
@@ -35,28 +41,43 @@
   </p>
   } }
 
-
   <ion-fab slot="fixed" horizontal="start" vertical="center">
-    <ion-fab-button size="small" color="medium" (click)="getHinoAnterior(hino!.id)">
+    <ion-fab-button
+      size="small"
+      color="medium"
+      (click)="getHinoAnterior(hino!.id)"
+    >
       <i class="fas fa-angle-left"></i>
     </ion-fab-button>
   </ion-fab>
   <ion-fab slot="fixed" horizontal="end" vertical="center">
-    <ion-fab-button size="small" color="medium" (click)="getHinoSeguinte(hino!.id)">
+    <ion-fab-button
+      size="small"
+      color="medium"
+      (click)="getHinoSeguinte(hino!.id)"
+    >
       <i class="fas fa-angle-right"></i>
     </ion-fab-button>
   </ion-fab>
-
-
-
 </ion-content>
 
 <ion-footer class="ion-no-border">
-  
   <ion-toolbar>
     <ion-buttons>
-      <ion-button fill="full" size="large" color="danger" (click)="diminuirTamanhoFonte()"><i class="fa fa-search-minus" aria-hidden="true"></i></ion-button>
-      <ion-button fill="full" size="large" color="primary" (click)="aumentarTamanhoFonte()"><i class="fa fa-search-plus" aria-hidden="true"></i></ion-button>
+      <ion-button
+        fill="full"
+        size="large"
+        color="danger"
+        (click)="diminuirTamanhoFonte()"
+        ><i class="fa fa-search-minus" aria-hidden="true"></i
+      ></ion-button>
+      <ion-button
+        fill="full"
+        size="large"
+        color="primary"
+        (click)="aumentarTamanhoFonte()"
+        ><i class="fa fa-search-plus" aria-hidden="true"></i
+      ></ion-button>
     </ion-buttons>
     <ion-note slot="end" class="pagina">Pág. {{hino?.pagina}}</ion-note>
   </ion-toolbar>

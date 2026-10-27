@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { FormsModule } from '@angular/forms';
 import {
   IonHeader,
@@ -15,22 +15,21 @@ import { HinoModel } from 'src/app/model/hino-model';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-    selector: 'app-pesquisa',
-    templateUrl: './pesquisa.page.html',
-    styleUrls: ['./pesquisa.page.scss'],
-    imports: [
-        IonBackButton,
-        IonLabel,
-        IonContent,
-        IonToolbar,
-        IonSearchbar,
-        IonHeader,
-        CommonModule,
-        FormsModule,
-        RouterLink,
-        RouterLinkActive,
-        IonItem,
-    ]
+  selector: 'app-pesquisa',
+  templateUrl: './pesquisa.page.html',
+  styleUrls: ['./pesquisa.page.scss'],
+  imports: [
+    IonBackButton,
+    IonLabel,
+    IonContent,
+    IonToolbar,
+    IonSearchbar,
+    IonHeader,
+    FormsModule,
+    RouterLink,
+    RouterLinkActive,
+    IonItem,
+  ],
 })
 export class PesquisaPage {
   hinosResult: HinoModel[] = [];

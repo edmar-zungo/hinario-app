@@ -1,27 +1,60 @@
 import { Component, OnInit, Output } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { FormsModule } from '@angular/forms';
-import { IonHeader, IonToolbar, IonButtons, IonTitle, IonLabel, IonContent, IonNote, IonFab, IonFabButton, IonFooter, IonToast, IonIcon, IonItemGroup, IonButton, IonBackButton } from '@ionic/angular/standalone';
-import { ActivatedRoute, Router, RouterLink, RouterLinkActive } from '@angular/router';
+import {
+  IonHeader,
+  IonToolbar,
+  IonButtons,
+  IonTitle,
+  IonLabel,
+  IonContent,
+  IonNote,
+  IonFab,
+  IonFabButton,
+  IonFooter,
+  IonToast,
+  IonIcon,
+  IonItemGroup,
+  IonButton,
+  IonBackButton,
+} from '@ionic/angular/standalone';
+import {
+  ActivatedRoute,
+  Router,
+  RouterLink,
+  RouterLinkActive,
+} from '@angular/router';
 import { HinarioService } from 'src/app/services/hinario.service';
 import { HinoModel } from 'src/app/model/hino-model';
 import { EstrofeModel } from 'src/app/model/estrofe-model';
 import { ToastController } from '@ionic/angular';
 
 @Component({
-    selector: 'app-hino-read',
-    templateUrl: './hino-read.page.html',
-    styleUrls: ['./hino-read.page.scss'],
-    imports: [IonBackButton, IonButton, IonFooter, IonFabButton, IonFab, IonNote, IonContent, IonLabel, IonTitle, IonButtons, IonToolbar, IonHeader, IonToast, IonIcon, IonItemGroup,
-        CommonModule,
-        FormsModule,
-        RouterLink,
-        RouterLinkActive,
-    ]
+  selector: 'app-hino-read',
+  templateUrl: './hino-read.page.html',
+  styleUrls: ['./hino-read.page.scss'],
+  imports: [
+    IonBackButton,
+    IonButton,
+    IonFooter,
+    IonFabButton,
+    IonFab,
+    IonNote,
+    IonContent,
+    IonLabel,
+    IonTitle,
+    IonButtons,
+    IonToolbar,
+    IonHeader,
+    IonToast,
+    IonIcon,
+    IonItemGroup,
+    FormsModule,
+    RouterLink,
+    RouterLinkActive,
+  ],
 })
 export class HinoReadPage implements OnInit {
-
-
   hino?: HinoModel;
 
   estrofes: EstrofeModel[] = [];
@@ -51,8 +84,6 @@ export class HinoReadPage implements OnInit {
         this.liked = false;
       }
     });
-
-
   }
 
   loadEstrofesPorHino() {
@@ -79,7 +110,7 @@ export class HinoReadPage implements OnInit {
           message: 'Adicionado aos Favoritos',
           color: 'primary',
           duration: 500,
-          position: 'bottom'
+          position: 'bottom',
         });
         break;
       case 'rem':
@@ -87,7 +118,7 @@ export class HinoReadPage implements OnInit {
           message: 'Removido dos Favoritos',
           color: 'danger',
           duration: 500,
-          position: 'bottom'
+          position: 'bottom',
         });
         break;
     }
@@ -95,62 +126,57 @@ export class HinoReadPage implements OnInit {
     await toast.present();
   }
 
-  getHinoSeguinte(hinoId: string | undefined){
-    this.hinarioService.getAllHinoByJSON().subscribe(resp => {
-      const hinoResult = resp.find(x => x.id === hinoId);
-      const indexHino = resp.indexOf( hinoResult!);
+  getHinoSeguinte(hinoId: string | undefined) {
+    this.hinarioService.getAllHinoByJSON().subscribe((resp) => {
+      const hinoResult = resp.find((x) => x.id === hinoId);
+      const indexHino = resp.indexOf(hinoResult!);
       const hinoAseguir = resp[indexHino + 1];
-      this.router.navigate(['/hino-read/', hinoAseguir.id])
-
-    })
+      this.router.navigate(['/hino-read/', hinoAseguir.id]);
+    });
   }
-  getHinoAnterior(hinoId: string | undefined){
-    this.hinarioService.getAllHinoByJSON().subscribe(resp => {
-      const hinoResult = resp.find(x => x.id === hinoId);
-      const indexHino = resp.indexOf( hinoResult!);
+  getHinoAnterior(hinoId: string | undefined) {
+    this.hinarioService.getAllHinoByJSON().subscribe((resp) => {
+      const hinoResult = resp.find((x) => x.id === hinoId);
+      const indexHino = resp.indexOf(hinoResult!);
       const hinoAnterior = resp[indexHino - 1];
-      this.router.navigate(['/hino-read/', hinoAnterior.id])
-
-    })
+      this.router.navigate(['/hino-read/', hinoAnterior.id]);
+    });
   }
 
   aumentarTamanhoFonte() {
-    const paragrafos = document.querySelectorAll("p");
-    const titulo = document.querySelectorAll("h4");
+    const paragrafos = document.querySelectorAll('p');
+    const titulo = document.querySelectorAll('h4');
 
-    paragrafos.forEach(p => {
+    paragrafos.forEach((p) => {
       const tamanhoActual = window.getComputedStyle(p).fontSize;
       const novoTamanhoDeFont = parseFloat(tamanhoActual) + 1;
 
-      p.style.fontSize = novoTamanhoDeFont + "px"
+      p.style.fontSize = novoTamanhoDeFont + 'px';
     });
 
-    titulo.forEach(h => {
+    titulo.forEach((h) => {
       const tamanhoActual = window.getComputedStyle(h).fontSize;
       const novoTamanhoDeFont = parseFloat(tamanhoActual) + 1;
 
-      h.style.fontSize = novoTamanhoDeFont + "px"
+      h.style.fontSize = novoTamanhoDeFont + 'px';
     });
-    
   }
 
-
   diminuirTamanhoFonte() {
-    const paragrafos = document.querySelectorAll("p");
-    const titulo = document.querySelectorAll("h4");
-    paragrafos.forEach(p => {
+    const paragrafos = document.querySelectorAll('p');
+    const titulo = document.querySelectorAll('h4');
+    paragrafos.forEach((p) => {
       const tamanhoActual = window.getComputedStyle(p).fontSize;
       const novoTamanhoDeFont = parseFloat(tamanhoActual) - 1;
 
-      p.style.fontSize = novoTamanhoDeFont + "px"
+      p.style.fontSize = novoTamanhoDeFont + 'px';
     });
 
-    titulo.forEach(h => {
+    titulo.forEach((h) => {
       const tamanhoActual = window.getComputedStyle(h).fontSize;
       const novoTamanhoDeFont = parseFloat(tamanhoActual) - 1;
 
-      h.style.fontSize = novoTamanhoDeFont + "px"
+      h.style.fontSize = novoTamanhoDeFont + 'px';
     });
-    
   }
 }
