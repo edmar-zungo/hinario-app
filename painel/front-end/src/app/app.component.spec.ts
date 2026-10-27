@@ -1,11 +1,14 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { provideHttpClient } from '@angular/common/http';
+import { provideRouter } from '@angular/router';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [AppComponent],
-    }).compileComponents();
+    
+      providers: [provideHttpClient(), provideRouter([])]}).compileComponents();
   });
 
   it('should create the app', () => {
@@ -20,10 +23,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('hinario-app');
   });
 
-  it('should render title', () => {
+  it('should render the navbar', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, hinario-app');
+    expect(compiled.querySelector('app-navbar')).toBeTruthy();
   });
 });

@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HinoCreateComponent } from './hino-create.component';
+import { provideHttpClient } from '@angular/common/http';
+import { provideRouter } from '@angular/router';
 
 describe('HinoCreateComponent', () => {
   let component: HinoCreateComponent;
@@ -9,7 +11,8 @@ describe('HinoCreateComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [HinoCreateComponent]
-    })
+    ,
+      providers: [provideHttpClient(), provideRouter([])]})
     .compileComponents();
     
     fixture = TestBed.createComponent(HinoCreateComponent);
