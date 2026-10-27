@@ -63,7 +63,7 @@ export class HinarioService {
   }
 
   getStorage(): HinoModel[] | [] {
-    return JSON.parse(localStorage.getItem('hinos' || '[]')!);
+    return JSON.parse(localStorage.getItem('hinos') ?? '[]');
   }
 
   setStorage(hinos: HinoModel[] | []){
