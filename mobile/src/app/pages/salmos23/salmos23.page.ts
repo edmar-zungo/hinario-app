@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
 import {
@@ -14,6 +14,7 @@ import {
   selector: 'app-salmos23',
   templateUrl: './salmos23.page.html',
   styleUrls: ['./salmos23.page.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     IonContent,
     IonTitle,

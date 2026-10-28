@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
 import {
@@ -19,6 +19,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   selector: 'app-hinos-favoritos',
   templateUrl: './hinos-favoritos.page.html',
   styleUrls: ['./hinos-favoritos.page.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     IonLabel,
     IonList,

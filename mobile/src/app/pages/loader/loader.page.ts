@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonImg } from '@ionic/angular/standalone';
@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   selector: 'app-loader',
   templateUrl: './loader.page.html',
   styleUrls: ['./loader.page.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [IonImg, IonContent, FormsModule],
 })
 export class LoaderPage implements OnInit {

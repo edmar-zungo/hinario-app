@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
 import {
@@ -15,6 +15,7 @@ import { Mandamento } from 'src/app/model/mandamentos';
   selector: 'app-dez-mandamentos',
   templateUrl: './dez-mandamentos.page.html',
   styleUrls: ['./dez-mandamentos.page.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     IonTitle,
     IonContent,

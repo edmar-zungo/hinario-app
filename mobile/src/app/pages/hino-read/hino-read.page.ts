@@ -1,4 +1,9 @@
-import { Component, OnInit, Output } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Output,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
 import {
@@ -33,6 +38,7 @@ import { ToastController } from '@ionic/angular';
   selector: 'app-hino-read',
   templateUrl: './hino-read.page.html',
   styleUrls: ['./hino-read.page.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     IonBackButton,
     IonButton,

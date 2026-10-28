@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
 import {
@@ -18,6 +18,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   selector: 'app-pesquisa',
   templateUrl: './pesquisa.page.html',
   styleUrls: ['./pesquisa.page.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     IonBackButton,
     IonLabel,

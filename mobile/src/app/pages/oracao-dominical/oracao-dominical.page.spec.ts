@@ -5,11 +5,11 @@ describe('OracaoDominicalPage', () => {
   let component: OracaoDominicalPage;
   let fixture: ComponentFixture<OracaoDominicalPage>;
 
-  beforeEach(async(() => {
+  beforeEach(async () => {
     fixture = TestBed.createComponent(OracaoDominicalPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  }));
+  });
 
   it('should create', () => {
     expect(component).toBeTruthy();

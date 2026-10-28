@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
 import {
@@ -14,6 +14,7 @@ import {
   selector: 'app-credo-apostolico',
   templateUrl: './credo-apostolico.page.html',
   styleUrls: ['./credo-apostolico.page.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     IonContent,
     IonTitle,

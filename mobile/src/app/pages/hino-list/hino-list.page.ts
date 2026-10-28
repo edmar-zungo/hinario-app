@@ -1,4 +1,9 @@
-import { Component, OnInit, Optional } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Optional,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
 import {
@@ -27,6 +32,7 @@ import { HinoModel } from 'src/app/model/hino-model';
   selector: 'app-hino-list',
   templateUrl: './hino-list.page.html',
   styleUrls: ['./hino-list.page.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     IonButton,
     IonIcon,

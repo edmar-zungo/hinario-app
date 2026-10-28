@@ -1,15 +1,22 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideHttpClient } from '@angular/common/http';
+import { provideRouter } from '@angular/router';
+import { provideIonicAngular } from '@ionic/angular/standalone';
+
 import { HinoListPage } from './hino-list.page';
 
 describe('HinoListPage', () => {
   let component: HinoListPage;
   let fixture: ComponentFixture<HinoListPage>;
 
-  beforeEach(async(() => {
+  beforeEach(async () => {
+    TestBed.configureTestingModule({
+      providers: [provideHttpClient(), provideRouter([]), provideIonicAngular()],
+    });
     fixture = TestBed.createComponent(HinoListPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  }));
+  });
 
   it('should create', () => {
     expect(component).toBeTruthy();
