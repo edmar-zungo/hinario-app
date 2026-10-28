@@ -8,7 +8,7 @@ import {
   IonMenuButton,
   IonContent,
   IonTitle,
-} from '@ionic/angular/standalone';
+} from '@ionic/angular';
 import { Mandamento } from 'src/app/model/mandamentos';
 
 @Component({

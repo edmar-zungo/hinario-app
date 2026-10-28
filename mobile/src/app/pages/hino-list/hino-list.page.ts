@@ -21,9 +21,10 @@ import {
   IonPopover,
   IonButton,
   IonRouterOutlet,
-} from '@ionic/angular/standalone';
+  Platform,
+} from '@ionic/angular';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
-import { Platform } from '@ionic/angular';
+
 import { App } from '@capacitor/app';
 import { HinarioService } from 'src/app/services/hinario.service';
 import { HinoModel } from 'src/app/model/hino-model';

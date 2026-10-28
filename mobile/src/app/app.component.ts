@@ -16,7 +16,7 @@ import {
   IonHeader,
   IonFooter,
   IonToolbar,
-} from '@ionic/angular/standalone';
+} from '@ionic/angular';
 
 @Component({
   selector: 'app-root',

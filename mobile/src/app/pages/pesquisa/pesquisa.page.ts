@@ -9,7 +9,7 @@ import {
   IonLabel,
   IonBackButton,
   IonItem,
-} from '@ionic/angular/standalone';
+} from '@ionic/angular';
 import { HinarioService } from 'src/app/services/hinario.service';
 import { HinoModel } from 'src/app/model/hino-model';
 import { RouterLink, RouterLinkActive } from '@angular/router';

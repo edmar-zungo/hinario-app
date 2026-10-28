@@ -1,7 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonImg } from '@ionic/angular/standalone';
+import { IonContent, IonImg } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 @Component({

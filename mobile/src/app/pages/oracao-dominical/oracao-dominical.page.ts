@@ -8,7 +8,7 @@ import {
   IonContent,
   IonTitle,
   IonMenuButton,
-} from '@ionic/angular/standalone';
+} from '@ionic/angular';
 
 @Component({
   selector: 'app-oracao-dominical',

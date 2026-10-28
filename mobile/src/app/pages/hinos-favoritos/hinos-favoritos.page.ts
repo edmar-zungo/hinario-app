@@ -11,7 +11,7 @@ import {
   IonLabel,
   IonItem,
   IonMenuButton,
-} from '@ionic/angular/standalone';
+} from '@ionic/angular';
 import { HinoModel } from 'src/app/model/hino-model';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 

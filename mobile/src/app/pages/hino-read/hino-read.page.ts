@@ -22,7 +22,8 @@ import {
   IonItemGroup,
   IonButton,
   IonBackButton,
-} from '@ionic/angular/standalone';
+  ToastController,
+} from '@ionic/angular';
 import {
   ActivatedRoute,
   Router,
@@ -32,7 +33,6 @@ import {
 import { HinarioService } from 'src/app/services/hinario.service';
 import { HinoModel } from 'src/app/model/hino-model';
 import { EstrofeModel } from 'src/app/model/estrofe-model';
-import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-hino-read',
