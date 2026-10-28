@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { EstrofeModel } from '../estrofe-model';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { EstrofeService } from '../service/estrofe.service';
@@ -14,12 +14,12 @@ import { HinoService } from '../../hino/service/hino.service';
     changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './estrofe-update.component.css'
 })
-export class EstrofeUpdateComponent {
+export class EstrofeUpdateComponent implements OnInit {
 
   estrofeForm!: FormGroup;
   estrofe!: EstrofeModel;
   hinos: HinoModel[] = [];
-  isReadOnly: boolean = true;
+  isReadOnly = true;
 
   constructor(private estrofeService: EstrofeService, private activatedRoute: ActivatedRoute, private router: Router, private formBuilder: FormBuilder, private hinoService: HinoService){}
 

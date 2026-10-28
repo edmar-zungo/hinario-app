@@ -7,7 +7,7 @@ import {
 } from "@angular/forms";
 import { EstrofeModel } from "../estrofe-model";
 import { EstrofeService } from "../service/estrofe.service";
-import { ActivatedRoute, Router } from "@angular/router";
+import { ActivatedRoute } from "@angular/router";
 import { HinoModel } from "../../hino/hino-model";
 import { HinoService } from "../../hino/service/hino.service";
 

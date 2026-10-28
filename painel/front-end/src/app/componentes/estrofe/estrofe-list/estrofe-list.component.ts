@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { EstrofeModel } from '../estrofe-model';
 import { EstrofeService } from '../service/estrofe.service';
 import { RouterLink, RouterLinkActive } from '@angular/router';
@@ -10,16 +10,12 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './estrofe-list.component.css'
 })
-export class EstrofeListComponent implements OnInit{
+export class EstrofeListComponent {
 
   @Input() estrofes?: EstrofeModel[] = [];
   @Input() hinoId? = '';
 
   constructor(private estrofeService: EstrofeService){}
-
-  ngOnInit(): void {
-    
-  }
 
   getAll() {
     this.estrofeService.getAll().subscribe((resp) => {

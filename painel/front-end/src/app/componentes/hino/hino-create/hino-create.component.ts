@@ -1,7 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
 import {
   FormBuilder,
-  FormControl,
   FormGroup,
   ReactiveFormsModule,
   Validators,

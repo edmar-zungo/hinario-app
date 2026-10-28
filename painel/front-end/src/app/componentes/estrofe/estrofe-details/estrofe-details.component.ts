@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { EstrofeModel } from '../estrofe-model';
 import { ActivatedRoute, RouterLink, RouterLinkActive } from '@angular/router';
 import { EstrofeService } from '../service/estrofe.service';
@@ -10,7 +10,7 @@ import { EstrofeService } from '../service/estrofe.service';
     changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './estrofe-details.component.css'
 })
-export class EstrofeDetailsComponent {
+export class EstrofeDetailsComponent implements OnInit {
 
   estrofe!: EstrofeModel;
 

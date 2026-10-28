@@ -15,7 +15,7 @@ import { Linguas } from "../linguas";
 export class HinoUpdateComponent implements OnInit {
   hinoForm!: FormGroup;
   hino!: HinoModel;
-  isReadOnly: boolean = true;
+  isReadOnly = true;
   linguaValue = Object.keys(Linguas);
 
   constructor(
