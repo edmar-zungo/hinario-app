@@ -15,7 +15,7 @@ import java.util.UUID;
 
 @Service
 public class EstrofeService {
-    private final String caminho = "/home/edmar-zungo/Documents/estrofes.json";
+    private final String caminho = "data/estrofes.json";
     private final ObjectMapper mapper = new ObjectMapper();
     List<Estrofe> estrofes;
 
@@ -66,6 +66,9 @@ public class EstrofeService {
         File file = new File(caminho);
 
         if (!file.exists()){
+            if (file.getParentFile() != null) {
+                file.getParentFile().mkdirs();
+            }
             file.createNewFile();
             FileWriter writer = new FileWriter(file);
             writer.write("[]");

@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 @Service
 public class HinoService {
 
-    private final String caminho = "/home/edmar-zungo/Documents/hinario.json";
+    private final String caminho = "data/hinario.json";
 
     private final ObjectMapper mapper = new ObjectMapper();
 
@@ -116,6 +116,9 @@ public class HinoService {
         File file = new File(caminho);
 
         if (!file.exists()){
+            if (file.getParentFile() != null) {
+                file.getParentFile().mkdirs();
+            }
             file.createNewFile();
             FileWriter writer = new FileWriter(file);
             writer.write("[]");
