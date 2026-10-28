@@ -135,6 +135,11 @@ public class PaginaService {
         return mapper.readValue(ficheiro.toFile(), Pagina.class);
     }
 
+    /** Grava a página actualizada (estado, leituras, ...) em `paginas/<n>.json`. */
+    public void atualizar(Pagina pagina) throws IOException {
+        dataFiles.escreverJson(caminhoPagina(pagina.pagina()), pagina);
+    }
+
     /** Página já processada, ainda por gravar. */
     private record Preparada(Pagina pagina, byte[] original, byte[] processada) {
     }

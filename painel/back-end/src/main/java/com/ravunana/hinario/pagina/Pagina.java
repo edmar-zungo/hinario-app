@@ -24,4 +24,16 @@ public record Pagina(
         JsonNode leituras,
         JsonNode divergencias,
         JsonNode blocos) {
+
+    /** Cópia com outro estado (o registo é imutável). */
+    public Pagina comEstado(EstadoPagina novo) {
+        return new Pagina(pagina, hinarioId, imagem, imagemProcessada, hash, novo,
+                nomeOriginal, importadoEm, largura, altura, leituras, divergencias, blocos);
+    }
+
+    /** Cópia com as leituras actualizadas (`leituras.gemini`, `leituras.tesseract`). */
+    public Pagina comLeituras(JsonNode novas) {
+        return new Pagina(pagina, hinarioId, imagem, imagemProcessada, hash, estado,
+                nomeOriginal, importadoEm, largura, altura, novas, divergencias, blocos);
+    }
 }

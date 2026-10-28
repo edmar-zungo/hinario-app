@@ -83,7 +83,7 @@ hinario.dados.dir=            # vazio = pasta data/ do back-end
 | 0 | Preparação (CSS do leitor, README, gitignore, appId, Tesseract, chave) | concluída (ver tarefas em baixo) |
 | 1 | Base do back-end e migração dos dados atuais | concluída |
 | 2 | Importação de páginas | concluída |
-| 3 | Leitura com Gemini (`ModelPool`, fila, quota) | por fazer |
+| 3 | Leitura com Gemini (`ModelPool`, fila, quota) | concluída |
 | 4 | Tesseract e comparação | por fazer |
 | 5 | Estruturação e continuação | por fazer |
 | 6 | Painel: importação e revisão | por fazer |
@@ -146,13 +146,47 @@ Regras úteis:
 - números repetidos no lote, língua desconhecida ou imagem ilegível → `400`;
 - página inexistente em `GET /paginas/{n}` → `404`.
 
-e falha se alterar. Testes: `cd painel/back-end && ./mvnw test`.
+Testes: `cd painel/back-end && ./mvnw test`.
+
+### Leitura com Gemini (Fase 3)
+
+```bash
+# enfileirar uma página para leitura (202 assim que entra na fila):
+curl -X POST http://localhost:8080/paginas/395/ler
+
+# ver a fila, os modelos e as quotas:
+curl http://localhost:8080/fila
+```
+
+O que a leitura faz (PRD 5.x):
+
+- **fila sequencial** por número de página; ao arrancar volta a enfileirar o
+  que ficou em `em_fila` de uma sessão anterior;
+- envia a foto processada com a instrução 5.3 (`src/main/resources/leitura/`)
+  e valida a resposta contra o esquema 5.4 antes de aceitar — a IA **transcreve,
+  nunca edita**;
+- **rotação de modelos** (5.8): cadeia por ordem de preferência, cada um com
+  `tentativas-por-modelo`; 429 de minuto/dia pausa o modelo e passa ao seguinte;
+- **pausa sozinha**: sem cota nenhum, a página fica `pausada_quota` e a fila
+  tenta de novo passado `hinario.fila.retoma-ms` (a quota do dia revista em
+  `quota/estado.json`, fuso `gemini.fuso-quota`);
+- **cache** por `sha256 da imagem + versão do prompt + modelo` (5.8): reler
+  não gasta cota nem chama a API;
+- estados: `em_fila → lida`; erros → `erro_leitura` (400/5xx em todos os
+  modelos) ou `bloqueada_pela_ia`; releitura só de estados anteriores à
+  revisão (`409` para `comparada` em diante).
+
+Config (`application.properties`): `gemini.*` — a chave **só** de
+`GEMINI_API_KEY` (vazia por omissão); com a chave vazia, `POST .../ler` dá
+`409` dizendo o que falta. Os testes não usam a rede.
 
 ### Tarefas da Fase 0 que dependem de ti
 
-1. **Chave no AI Studio**: criar projeto **sem faturação**, gerar a chave e anotar,
+1. **Chave no AI Studio** (agora **necessária** para ler de verdade): criar
+   projeto **sem faturação**, gerar a chave, exportar `GEMINI_API_KEY` e anotar,
    na página de limites do AI Studio, os modelos gratuitos e os seus limites
-   (PRD 5.8). Guardar a chave fora do repositório.
+   (PRD 5.8); confirmar também o portão de qualidade 5.10. Guardar a chave fora
+   do repositório.
 2. **Instalar o Tesseract** (Fase 4, mas já fica feito):
 
 ```bash
