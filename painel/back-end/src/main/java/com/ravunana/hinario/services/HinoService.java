@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 @Service
 public class HinoService {
 
-    private final String caminho = "data/hinario.json";
+    private final String caminho = DataFiles.resolve("hinario.json").getPath();
 
     private final ObjectMapper mapper = new ObjectMapper();
 

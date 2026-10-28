@@ -15,7 +15,7 @@ import java.util.UUID;
 
 @Service
 public class EstrofeService {
-    private final String caminho = "data/estrofes.json";
+    private final String caminho = DataFiles.resolve("estrofes.json").getPath();
     private final ObjectMapper mapper = new ObjectMapper();
     List<Estrofe> estrofes;
 
