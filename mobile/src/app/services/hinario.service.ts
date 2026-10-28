@@ -35,7 +35,7 @@ export class HinarioService {
   }
 
   addOuRemoveDosFavoritos(hinoId: string | undefined) {
-    var hinoResult: HinoModel;
+    let hinoResult: HinoModel;
     this.getAllHinoByJSON().subscribe((resp) => {
       hinoResult = resp.find((x) => x.id === hinoId)!;
       if (!localStorage.getItem('hinos')) {

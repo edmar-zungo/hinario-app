@@ -1,7 +1,6 @@
 import {
   Component,
   OnInit,
-  Output,
   ChangeDetectionStrategy,
 } from '@angular/core';
 
@@ -64,7 +63,7 @@ export class HinoReadPage implements OnInit {
   hino?: HinoModel;
 
   estrofes: EstrofeModel[] = [];
-  liked: boolean = false;
+  liked = false;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -83,7 +82,7 @@ export class HinoReadPage implements OnInit {
 
     this.hinarioService.getAllHinoByJSON().subscribe((resp) => {
       this.hino = resp.find((x) => x.id === hinoId);
-      var hinos: HinoModel[] = JSON.parse(localStorage.getItem('hinos')!);
+      const hinos: HinoModel[] = JSON.parse(localStorage.getItem('hinos')!);
       if (hinos.find((x) => x.id === this.hino!.id)) {
         this.liked = true;
       } else {
@@ -108,7 +107,7 @@ export class HinoReadPage implements OnInit {
   }
 
   async createTost(action: 'add' | 'rem') {
-    var toast;
+    let toast;
 
     switch (action) {
       case 'add':

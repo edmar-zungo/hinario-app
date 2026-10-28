@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
 import {
@@ -34,7 +34,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class PesquisaPage {
   hinosResult: HinoModel[] = [];
-  autoFocus: boolean = true;
+  autoFocus = true;
 
   constructor(private hinarioService: HinarioService) {}
 

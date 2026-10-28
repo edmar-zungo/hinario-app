@@ -38,7 +38,6 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class HinosFavoritosPage implements OnInit {
   hinosFavoritos: HinoModel[] = [];
 
-  constructor() {}
 
   ngOnInit() {
     this.getAllHinos();
