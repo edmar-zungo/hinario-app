@@ -5,3 +5,7 @@
 .btn-warning{
      color: white;
 }
+.descricao {
+     white-space: pre-line;
+     text-align: left;
+}

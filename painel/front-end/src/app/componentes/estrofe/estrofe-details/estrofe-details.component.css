@@ -2,3 +2,8 @@
      display: grid;
      grid-template-columns: 6em 20em;
 }
+.descricao {
+     white-space: pre-line;
+     text-align: left;
+     font-family: inherit;
+}

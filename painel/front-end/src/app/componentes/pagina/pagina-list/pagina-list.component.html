@@ -1,0 +1,107 @@
+<div class="container">
+  <h2>Páginas (importação)</h2>
+  <p class="text-muted">
+    Fotografe as páginas do hinário e importe-as. A foto original fica intacta;
+    a versão processada é gerada automaticamente.
+  </p>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <div class="row g-3 align-items-end">
+        <div class="col-md-5">
+          <label class="form-label" for="ficheiros">Fotos</label>
+          <input
+            type="file"
+            class="form-control"
+            id="ficheiros"
+            accept="image/*"
+            multiple
+            (change)="aoEscolherFicheiros($event)"
+          />
+          <div class="form-text">
+            O número de página é lido do nome do ficheiro (ex.: 0395.jpg).
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label class="form-label" for="hinario">Hinário</label>
+          <select class="form-select" id="hinario" [(ngModel)]="hinarioId">
+            @for (h of hinarios; track h.codigo) {
+              <option [value]="h.codigo">{{ h.nome }}</option>
+            }
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label class="form-label" for="rotacao">Rotação (graus)</label>
+          <select class="form-select" id="rotacao" [(ngModel)]="rotacao">
+            <option [value]="0">0</option>
+            <option [value]="90">90</option>
+            <option [value]="180">180</option>
+            <option [value]="270">270</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <button
+            type="button"
+            class="btn btn-primary w-100"
+            (click)="importar()"
+            [disabled]="enviando || !ficheiros.length"
+          >
+            @if (enviando) {
+              A importar…
+            } @else {
+              Importar
+            }
+          </button>
+        </div>
+      </div>
+
+      @if (mensagem) {
+        <div class="alert alert-success mt-3 mb-0">{{ mensagem }}</div>
+      }
+      @if (erro) {
+        <div class="alert alert-danger mt-3 mb-0">{{ erro }}</div>
+      }
+    </div>
+  </div>
+
+  <div class="float-end mb-3">
+    <button type="button" class="btn btn-primary" (click)="listar()">
+      <i class="fa fa-refresh" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Página</th>
+        <th scope="col">Hinário</th>
+        <th scope="col">Estado</th>
+        <th scope="col">Dimensões</th>
+        <th scope="col">Hash (sha256)</th>
+        <th scope="col">Importada em</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (pagina of paginas; track pagina.pagina) {
+        <tr>
+          <td>{{ pagina.pagina }}</td>
+          <td>{{ pagina.hinarioId }}</td>
+          <td>
+            <span class="badge" [ngClass]="classeEstado(pagina.estado)">
+              {{ pagina.estado }}
+            </span>
+          </td>
+          <td>{{ pagina.largura }} × {{ pagina.altura }}</td>
+          <td class="hash">{{ pagina.hash.slice(7, 19) }}…</td>
+          <td>{{ pagina.importadoEm | date: 'dd/MM/yyyy HH:mm' }}</td>
+        </tr>
+      } @empty {
+        <tr>
+          <td colspan="6" class="text-center text-muted">
+            Ainda não há páginas importadas.
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

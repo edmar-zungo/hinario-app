@@ -5,21 +5,23 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ravunana.hinario.model.Estrofe;
 import org.springframework.stereotype.Service;
 
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.time.LocalDate;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 
 @Service
 public class EstrofeService {
-    private final String caminho = DataFiles.resolve("estrofes.json").getPath();
+    private final Path caminho;
+    private final DataFiles dataFiles;
     private final ObjectMapper mapper = new ObjectMapper();
     List<Estrofe> estrofes;
 
-    public EstrofeService() {
+    public EstrofeService(DataFiles dataFiles) {
+        this.dataFiles = dataFiles;
+        this.caminho = dataFiles.resolve("estrofes.json");
         loadEstrofes();
     }
 
@@ -61,30 +63,16 @@ public class EstrofeService {
         saveToFile();
     }
 
-    private File criarArquivo(String caminho) throws IOException {
-
-        File file = new File(caminho);
-
-        if (!file.exists()){
-            if (file.getParentFile() != null) {
-                file.getParentFile().mkdirs();
-            }
-            file.createNewFile();
-            FileWriter writer = new FileWriter(file);
-            writer.write("[]");
-            writer.flush();
-            writer.close();
-            System.out.println("Criado: " + file.createNewFile());
-        } else {
-            System.out.println("Existe: " + file.createNewFile());
+    private Path criarArquivo(Path caminho) throws IOException {
+        if (!Files.exists(caminho)) {
+            dataFiles.escreverTexto(caminho, "[]");
         }
-
-        return file;
+        return caminho;
     }
 
     private void saveToFile(){
         try {
-            mapper.writerWithDefaultPrettyPrinter().writeValue(new File(caminho), estrofes);
+            dataFiles.escreverJson(caminho, estrofes);
         } catch (IOException e){
             e.printStackTrace();
         }
@@ -92,12 +80,12 @@ public class EstrofeService {
 
     private void loadEstrofes(){
         try {
-            File arquivo = criarArquivo(caminho);
-            if (arquivo.exists()){
-                if (arquivo.length() == 0){
+            Path arquivo = criarArquivo(caminho);
+            if (Files.exists(arquivo)){
+                if (Files.size(arquivo) == 0){
                     Collections.emptyList();
                 }
-                estrofes = mapper.readValue(arquivo, new TypeReference<List<Estrofe>>() {});
+                estrofes = mapper.readValue(arquivo.toFile(), new TypeReference<List<Estrofe>>() {});
             }
 
         } catch (IOException e){

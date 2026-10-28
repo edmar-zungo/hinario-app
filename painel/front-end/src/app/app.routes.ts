@@ -8,6 +8,7 @@ import { EstrofeCreateComponent } from './componentes/estrofe/estrofe-create/est
 import { EstrofeUpdateComponent } from './componentes/estrofe/estrofe-update/estrofe-update.component';
 import { EstrofeDetailsComponent } from './componentes/estrofe/estrofe-details/estrofe-details.component';
 import { HinoFavoritoListComponent } from './componentes/hino/hino-favorito-list/hino-favorito-list.component';
+import { PaginaListComponent } from './componentes/pagina/pagina-list/pagina-list.component';
 
 export const routes: Routes = [
      {path: '', redirectTo: 'hino', pathMatch: 'full'},
@@ -19,6 +20,7 @@ export const routes: Routes = [
      {path: 'estrofe', component: EstrofeListComponent},     
      {path: 'estrofe/create', component: EstrofeCreateComponent},     
      {path: 'estrofe/visualizar/:estrofeId', component: EstrofeDetailsComponent},     
-     {path: 'estrofe/editar/:estrofeId', component: EstrofeUpdateComponent}
-     
+     {path: 'estrofe/editar/:estrofeId', component: EstrofeUpdateComponent},
+     {path: 'paginas', component: PaginaListComponent}
+
 ];

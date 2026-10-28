@@ -26,12 +26,14 @@ ion-content {
 
 .coro {
   text-align: left;
+  white-space: pre-line;
   line-height: 1.5em;
   font-size: 19.2px;
   font-style: italic;
 }
 .estrofe {
-  text-align: justify;
+  text-align: left;
+  white-space: pre-line;
   line-height: 1.5em;
   font-size: 19.2px;
 }

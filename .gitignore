@@ -47,3 +47,12 @@ mobile/local.properties
 
 # dados locais do backend (seed copiado de mobile/src/assets/data)
 painel/back-end/data/
+
+### Chaves / segredos ###
+.env
+.env.*
+!.env.example
+GEMINI_API_KEY*
+
+# pasta de dados local alternativa (PRD secção 2: hinario.dados.dir)
+iera-dados/

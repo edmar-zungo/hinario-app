@@ -5,26 +5,31 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ravunana.hinario.model.Hino;
 import org.springframework.stereotype.Service;
 
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.text.Normalizer;
 import java.time.LocalDate;
 import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
 public class HinoService {
 
-    private final String caminho = DataFiles.resolve("hinario.json").getPath();
+    private final Path caminho;
+    private final DataFiles dataFiles;
 
     private final ObjectMapper mapper = new ObjectMapper();
 
     List<Hino> hinos;
     List<Hino> hinosFavoritos;
 
-    public HinoService(){
+    public HinoService(DataFiles dataFiles){
+        this.dataFiles = dataFiles;
+        this.caminho = dataFiles.resolve("hinario.json");
         this.loadHinos();
         this.loadHinosFavoritos();
     }
@@ -52,11 +57,11 @@ public class HinoService {
 
 
 
-        if (hino.getAutor().equals(null) || hino.getAutor().equals("")){
+        if (hino.getAutor() == null || hino.getAutor().isBlank()){
             hino.setAutor("IERA");
         }
 
-        if (hino.getComentario().equals(null) || hino.getComentario().equals("")){
+        if (hino.getComentario() == null || hino.getComentario().isBlank()){
             hino.setComentario("Nenhum comenatario adicionado");
         }
 
@@ -111,30 +116,16 @@ public class HinoService {
         this.loadHinos();
     }
 
-    private File criarArquivo(String caminho) throws IOException {
-
-        File file = new File(caminho);
-
-        if (!file.exists()){
-            if (file.getParentFile() != null) {
-                file.getParentFile().mkdirs();
-            }
-            file.createNewFile();
-            FileWriter writer = new FileWriter(file);
-            writer.write("[]");
-            writer.flush();
-            writer.close();
-            System.out.println("Criado: " + file.createNewFile());
-        } else {
-            System.out.println("Existe: " + file.createNewFile());
+    private Path criarArquivo(Path caminho) throws IOException {
+        if (!Files.exists(caminho)) {
+            dataFiles.escreverTexto(caminho, "[]");
         }
-
-        return file;
+        return caminho;
     }
 
     private void saveToFile(){
         try {
-            mapper.writerWithDefaultPrettyPrinter().writeValue(new File(caminho), hinos);
+            dataFiles.escreverJson(caminho, hinos);
         } catch (IOException e){
             e.printStackTrace();
         }
@@ -142,12 +133,12 @@ public class HinoService {
 
     private void loadHinos(){
         try {
-            File arquivo = criarArquivo(caminho);
-            if (arquivo.exists()){
-                if (arquivo.length() == 0){
+            Path arquivo = criarArquivo(caminho);
+            if (Files.exists(arquivo)){
+                if (Files.size(arquivo) == 0){
                     Collections.emptyList();
                 }
-                hinos = mapper.readValue(arquivo, new TypeReference<List<Hino>>() {});
+                hinos = mapper.readValue(arquivo.toFile(), new TypeReference<List<Hino>>() {});
             }
 
         } catch (IOException e){
@@ -197,9 +188,25 @@ public List<Hino> getAllFavoritos(){
     }
 
     public List<Hino> pesquisa(String query) throws IOException {
-    var hinos = this.getAllHinos().stream().filter(x -> x.getTitulo().contains(query) || String.valueOf(x.getNumero()).contains(query) || String.valueOf(x.getPagina()).contains(query)).toList();
+        String termo = semAcentos(query);
+        if (termo.isEmpty()) {
+            return this.getAllHinos();
+        }
 
-    return hinos;
+        return this.getAllHinos().stream()
+                .filter(x -> semAcentos(x.getTitulo()).contains(termo)
+                        || String.valueOf(x.getNumero()).contains(termo)
+                        || String.valueOf(x.getPagina()).contains(termo))
+                .toList();
+    }
+
+    /** Minúsculas e sem diacríticos: a pesquisa não depende de acentos. */
+    static String semAcentos(String texto) {
+        if (texto == null) {
+            return "";
+        }
+        String semMarcas = Normalizer.normalize(texto, Normalizer.Form.NFD).replaceAll("\\p{M}+", "");
+        return semMarcas.toLowerCase(Locale.ROOT).trim();
     }
 
 }
