@@ -7,6 +7,7 @@ public record FilaEstado(
         String estado,
         int pendentes,
         boolean geminiDisponivel,
+        boolean tesseractDisponivel,
         boolean quotaEsgotada,
         String retomaAte,
         List<PaginaFila> paginas,

@@ -74,6 +74,8 @@ class LeituraControllerTest {
         registry.add("gemini.modelos", () -> "modelo-teste");
         registry.add("gemini.espera-429-minuto-segundos", () -> "0");
         registry.add("hinario.fila.retoma-ms", () -> "100");
+        // determinístico: sem o binário na máquina, o teste fica só no Gemini
+        registry.add("tesseract.enabled", () -> "false");
     }
 
     @Autowired
@@ -147,6 +149,7 @@ class LeituraControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.estado").exists())
                 .andExpect(jsonPath("$.geminiDisponivel").value(true))
+                .andExpect(jsonPath("$.tesseractDisponivel").value(false))
                 .andExpect(jsonPath("$.modelos[0].modelo").value("modelo-teste"))
                 .andExpect(jsonPath("$.modelos[0].pedidosDia").exists())
                 .andExpect(jsonPath("$.pendentes").exists());

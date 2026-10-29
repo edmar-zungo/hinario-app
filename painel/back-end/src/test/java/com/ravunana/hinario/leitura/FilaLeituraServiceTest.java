@@ -1,5 +1,11 @@
 package com.ravunana.hinario.leitura;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.ravunana.hinario.comparacao.AlfabetoVerificador;
+import com.ravunana.hinario.comparacao.ComparacaoService;
+import com.ravunana.hinario.comparacao.TesseractComando;
+import com.ravunana.hinario.comparacao.TesseractConfig;
+import com.ravunana.hinario.comparacao.TesseractProvider;
 import com.ravunana.hinario.pagina.EstadoPagina;
 import com.ravunana.hinario.pagina.ImagemProcessadora;
 import com.ravunana.hinario.pagina.Pagina;
@@ -29,22 +35,30 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
- * Fila sequencial e estados (PRD Fase 3): `em_fila` → `lida`, quota esgotada
- * → `pausada_quota` **retoma sozinha**, falhas → `erro_leitura` e
- * `bloqueada_pela_ia`.
+ * Fila sequencial e estados (PRD Fase 3 e 4): `em_fila` → `lida` →
+ * `comparada`; quota esgotada → `pausada_quota` **retoma sozinha**; falhas →
+ * `erro_leitura` e `bloqueada_pela_ia` (que segue só com Tesseract).
  */
 class FilaLeituraServiceTest {
+
+    private static final String CABECALHO_TSV =
+            "level\tpage_num\tblock_num\tpar_num\tline_num\tword_num\tleft\ttop\twidth\theight\tconf\ttext\n";
 
     @TempDir
     Path temp;
 
     private DataFiles dataFiles;
     private GeminiConfig config;
+    private TesseractConfig configTesseract;
     private HttpFalso http;
     private RelogioFalso relogio;
     private EstadoQuota quota;
     private PaginaService paginas;
     private FilaLeituraService fila;
+
+    /** Saída do Tesseract falso; null = linhas do esquema 5.4 do teste. */
+    private String tsvTesseract;
+    private boolean falhaTesseract;
 
     @BeforeEach
     void preparar() {
@@ -54,6 +68,8 @@ class FilaLeituraServiceTest {
         config.setModelos(new ArrayList<>(List.of("modelo-a", "modelo-b")));
         config.setTentativasPorModelo(2);
         config.setEspera429MinutoSegundos(0);
+        configTesseract = new TesseractConfig();
+        configTesseract.setEnabled(false); // a maioria dos testes é só Gemini
         http = new HttpFalso();
         relogio = new RelogioFalso();
         quota = new EstadoQuota(dataFiles, config, relogio);
@@ -61,8 +77,18 @@ class FilaLeituraServiceTest {
         GeminiPedido pedido = new GeminiPedido(config, http, new RespostaGeminiValidador());
         ModelPool pool = new ModelPool(config, pedido, quota, cache, new ContextoPagina(dataFiles), dataFiles);
         GeminiProvider gemini = new GeminiProvider(config, pool);
+        TesseractComando comando = (imagem, cfg) -> {
+            if (falhaTesseract) {
+                throw new IOException("binário em falta");
+            }
+            return tsvTesseract == null ? CABECALHO_TSV : tsvTesseract;
+        };
+        TesseractProvider tesseract = new TesseractProvider(comando, configTesseract, dataFiles);
+        ComparacaoService comparacao = new ComparacaoService(dataFiles);
+        AlfabetoVerificador alfabeto = new AlfabetoVerificador(dataFiles);
         paginas = new PaginaService(dataFiles, new ImagemProcessadora());
-        fila = new FilaLeituraService(gemini, config, quota, paginas, dataFiles, 100);
+        fila = new FilaLeituraService(gemini, config, quota, tesseract, comparacao, alfabeto,
+                paginas, dataFiles, 100);
     }
 
     @AfterEach
@@ -102,6 +128,20 @@ class FilaLeituraServiceTest {
         return atual;
     }
 
+    private static String tsv(String... linhas) {
+        StringBuilder sb = new StringBuilder(CABECALHO_TSV);
+        int numeroLinha = 1;
+        for (String linha : linhas) {
+            int numeroPalavra = 1;
+            for (String palavra : linha.split(" ")) {
+                sb.append("5\t1\t1\t1\t").append(numeroLinha).append('\t').append(numeroPalavra++)
+                        .append("\t0\t0\t10\t10\t90\t").append(palavra).append('\n');
+            }
+            numeroLinha++;
+        }
+        return sb.toString();
+    }
+
     @Test
     void lePaginaEEmficheiroLida() throws Exception {
         importar(1);
@@ -115,6 +155,74 @@ class FilaLeituraServiceTest {
         assertEquals("modelo-a", lida.leituras().path("gemini").path("modelo").asText());
         assertEquals("ok", lida.leituras().path("gemini").path("tentativas").get(0).path("resultado").asText());
         assertTrue(lida.leituras().path("gemini").path("resposta").path("blocos").isArray());
+        assertTrue(lida.leituras().path("gemini").path("validacao").path("alfabeto").isArray());
+    }
+
+    @Test
+    void comTesseractComparaEFicaComparada() throws Exception {
+        configTesseract.setEnabled(true);
+        tsvTesseract = tsv("M’ uhukunii aJesus.", "[?] kuanza");
+        importar(10);
+        http.responder(RespostasGemini.okValida(10));
+        fila.arrancar();
+        fila.enfileirar(10);
+
+        Pagina comparada = esperarEstado(10, EstadoPagina.COMPARADA);
+        JsonNode linhasTesseract = comparada.leituras().path("tesseract").path("linhas");
+        assertEquals(2, linhasTesseract.size());
+        assertEquals(0.9, linhasTesseract.get(0).path("confianca").asDouble());
+
+        JsonNode divergencias = comparada.divergencias();
+        assertEquals(1, divergencias.size());
+        assertEquals("so_pontuacao", divergencias.get(0).path("tipo").asText());
+        assertEquals("M’ uhukunii aJesus", divergencias.get(0).path("gemini").asText());
+        assertEquals("M’ uhukunii aJesus.", divergencias.get(0).path("tesseract").asText());
+        assertEquals(1, divergencias.get(0).path("bloco").asInt());
+        assertEquals(0, divergencias.get(0).path("linha").asInt());
+    }
+
+    @Test
+    void falhaDoTesseractNaoImpedeAGemini() throws Exception {
+        configTesseract.setEnabled(true);
+        falhaTesseract = true;
+        importar(11);
+        http.responder(RespostasGemini.okValida(11));
+        fila.arrancar();
+        fila.enfileirar(11);
+
+        Pagina lida = esperarEstado(11, EstadoPagina.LIDA);
+        assertTrue(lida.leituras().path("tesseract").path("erro").isTextual());
+        assertTrue(lida.divergencias() == null || lida.divergencias().isEmpty());
+        assertTrue(lida.leituras().path("gemini").path("resposta").path("blocos").isArray());
+    }
+
+    @Test
+    void modoSoTesseractLemSemGemini() throws Exception {
+        config.setEnabled(false);
+        configTesseract.setEnabled(true);
+        tsvTesseract = tsv("M’ uhukunii aJesus", "[?] kuanza");
+        importar(12);
+        fila.arrancar();
+
+        // sem chave e com Gemini desactivado, o Tesseract chega para enfileirar
+        fila.enfileirar(12);
+        Pagina lida = esperarEstado(12, EstadoPagina.LIDA);
+        assertEquals(2, lida.leituras().path("tesseract").path("linhas").size());
+        assertTrue(lida.leituras().path("gemini").isMissingNode());
+    }
+
+    @Test
+    void bloqueadaPelaIaSegueSoComTesseract() throws Exception {
+        configTesseract.setEnabled(true);
+        tsvTesseract = tsv("apenas tesseract");
+        importar(13);
+        http.responder(RespostasGemini.bloqueada(), RespostasGemini.bloqueada());
+        fila.arrancar();
+        fila.enfileirar(13);
+
+        Pagina bloqueada = esperarEstado(13, EstadoPagina.BLOQUEADA_PELA_IA);
+        assertEquals("apenas tesseract",
+                bloqueada.leituras().path("tesseract").path("linhas").get(0).path("texto").asText());
     }
 
     @Test
@@ -238,6 +346,7 @@ class FilaLeituraServiceTest {
         assertEquals(0, estado.pendentes());
         assertEquals("ociosa", estado.estado());
         assertTrue(estado.geminiDisponivel());
+        assertTrue(!estado.tesseractDisponivel());
         assertEquals(2, estado.modelos().size());
         assertEquals("modelo-a", estado.modelos().get(0).modelo());
     }

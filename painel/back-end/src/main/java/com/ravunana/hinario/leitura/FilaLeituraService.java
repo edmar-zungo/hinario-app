@@ -3,6 +3,9 @@ package com.ravunana.hinario.leitura;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.ravunana.hinario.comparacao.AlfabetoVerificador;
+import com.ravunana.hinario.comparacao.ComparacaoService;
+import com.ravunana.hinario.comparacao.TesseractProvider;
 import com.ravunana.hinario.pagina.EstadoPagina;
 import com.ravunana.hinario.pagina.Pagina;
 import com.ravunana.hinario.pagina.PaginaService;
@@ -29,9 +32,10 @@ import java.util.TreeSet;
  * Fila sequencial de leitura (PRD 5.8 "Fila" e secção 7): um pedido de cada
  * vez, prioridade por número de página.
  *
- * Estados: `em_fila` → `lida`; com quota esgotada as páginas ficam
- * `pausada_quota` e **retomam sozinhas**; falhas definitivas vão para
- * `erro_leitura` ou `bloqueada_pela_ia`.
+ * Estados: `em_fila` → `lida` → `comparada` (com as duas leituras);
+ * com quota esgotada as páginas ficam `pausada_quota` e **retomam sozinhas**;
+ * falhas definitivas vão para `erro_leitura` ou `bloqueada_pela_ia` (que
+ * "segue só com Tesseract", PRD 5.6).
  */
 @Service
 public class FilaLeituraService {
@@ -47,6 +51,9 @@ public class FilaLeituraService {
     private final GeminiProvider gemini;
     private final GeminiConfig configGemini;
     private final EstadoQuota quota;
+    private final TesseractProvider tesseract;
+    private final ComparacaoService comparacao;
+    private final AlfabetoVerificador alfabeto;
     private final PaginaService paginas;
     private final DataFiles dataFiles;
     private final long retomaMs;
@@ -56,11 +63,15 @@ public class FilaLeituraService {
     private volatile boolean quotaEsgotada;
 
     public FilaLeituraService(GeminiProvider gemini, GeminiConfig configGemini, EstadoQuota quota,
-                              PaginaService paginas, DataFiles dataFiles,
+                              TesseractProvider tesseract, ComparacaoService comparacao,
+                              AlfabetoVerificador alfabeto, PaginaService paginas, DataFiles dataFiles,
                               @Value("${hinario.fila.retoma-ms:15000}") long retomaMs) {
         this.gemini = gemini;
         this.configGemini = configGemini;
         this.quota = quota;
+        this.tesseract = tesseract;
+        this.comparacao = comparacao;
+        this.alfabeto = alfabeto;
         this.paginas = paginas;
         this.dataFiles = dataFiles;
         this.retomaMs = Math.max(50, retomaMs);
@@ -77,10 +88,10 @@ public class FilaLeituraService {
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,
                     "não foi possível ler a página " + numero + ": " + e.getMessage());
         }
-        if (!gemini.disponivel()) {
+        if (!gemini.disponivel() && !tesseract.disponivel()) {
             throw new ResponseStatusException(HttpStatus.CONFLICT, configGemini.isEnabled()
-                    ? "GEMINI_API_KEY não definida — leitura indisponível"
-                    : "Gemini desactivado (gemini.enabled=false)");
+                    ? "GEMINI_API_KEY não definida e Tesseract indisponível — leitura indisponível"
+                    : "Gemini desactivado e Tesseract indisponível");
         }
         if (!LECIVEIS.contains(pagina.estado())) {
             throw new ResponseStatusException(HttpStatus.CONFLICT,
@@ -125,13 +136,13 @@ public class FilaLeituraService {
                     pausado ? q.getPausadoAte() : null, q.getPedidosMinuto(), q.getPedidosDia()));
         });
 
-        String estado = !gemini.disponivel() ? "indisponivel"
+        String estado = !gemini.disponivel() && !tesseract.disponivel() ? "indisponivel"
                 : quotaEsgotada || pendentes.stream().anyMatch(p -> "pausada_quota".equals(p.estado()))
                         ? "pausada_quota"
                         : pendentes.isEmpty() ? "ociosa" : "a_processar";
         Instant retoma = quota.proximaRetoma();
-        return new FilaEstado(estado, pendentes.size(), gemini.disponivel(), quotaEsgotada,
-                retoma == null ? null : retoma.toString(), pendentes, modelos);
+        return new FilaEstado(estado, pendentes.size(), gemini.disponivel(), tesseract.disponivel(),
+                quotaEsgotada, retoma == null ? null : retoma.toString(), pendentes, modelos);
     }
 
     /** Arranca a fila no arranque da aplicação (retoma o que ficou `em_fila`). */
@@ -185,7 +196,7 @@ public class FilaLeituraService {
                 }
             }
 
-            if (quota.primeiroDisponivel() == null) {
+            if (gemini.disponivel() && quota.primeiroDisponivel() == null) {
                 // PRD 5.8.5: a fila pára, as páginas ficam pausada_quota,
                 // e retoma sozinha quando a quota voltar
                 quotaEsgotada = true;
@@ -216,17 +227,16 @@ public class FilaLeituraService {
             return;
         }
 
+        if (!gemini.disponivel()) {
+            // modo só-Tesseract (PRD 5.9)
+            gravar(pagina, null, null);
+            return;
+        }
+
         try {
             LeituraResultado resultado = gemini.ler(pagina);
-            try {
-                Pagina lida = pagina
-                        .comLeituras(comLeituras(pagina.leituras(), geminiJson(resultado, null)))
-                        .comEstado(EstadoPagina.LIDA);
-                paginas.atualizar(lida);
-                quotaEsgotada = false;
-            } catch (IOException e) {
-                // disco falhou depois da leitura: a página fica como estava
-            }
+            quotaEsgotada = false;
+            gravar(pagina, resultado, null);
         } catch (QuotaEsgotadaExcecao e) {
             quotaEsgotada = true;
             try {
@@ -241,13 +251,8 @@ public class FilaLeituraService {
                 trava.notifyAll();
             }
         } catch (BloqueadaExcecao e) {
-            try {
-                paginas.atualizar(pagina
-                        .comLeituras(comLeituras(pagina.leituras(), geminiJson(null, e)))
-                        .comEstado(EstadoPagina.BLOQUEADA_PELA_IA));
-            } catch (IOException ignorada) {
-                // estado fica como estava; tenta na próxima leitura
-            }
+            // PRD 5.6: bloqueada_pela_ia "segue só com Tesseract"
+            gravar(pagina, null, e);
         } catch (LeituraExcecao e) {
             try {
                 paginas.atualizar(pagina
@@ -256,6 +261,61 @@ public class FilaLeituraService {
             } catch (IOException ignorada) {
                 // idem
             }
+        }
+    }
+
+    /**
+     * Grava a página com as leituras disponíveis: Tesseract em paralelo quando
+     * existir (PRD fluxo 2); com as duas leituras, compara e passa a
+     * `comparada`. O Gemini nunca é bloqueio único do Tesseract.
+     */
+    private void gravar(Pagina pagina, LeituraResultado leituraGemini, LeituraExcecao falhaGemini) {
+        boolean soTesseract = leituraGemini == null && falhaGemini == null;
+        ObjectNode leituras = dataFiles.mapper().createObjectNode();
+        if (pagina.leituras() != null && pagina.leituras().isObject()) {
+            pagina.leituras().fields().forEachRemaining(c -> leituras.set(c.getKey(), c.getValue()));
+        }
+        if (leituraGemini != null || falhaGemini != null) {
+            leituras.set("gemini", geminiJson(leituraGemini, falhaGemini));
+        }
+
+        EstadoPagina estado = leituraGemini != null ? EstadoPagina.LIDA
+                : falhaGemini instanceof BloqueadaExcecao ? EstadoPagina.BLOQUEADA_PELA_IA
+                : soTesseract ? EstadoPagina.LIDA
+                : EstadoPagina.ERRO_LEITURA;
+        ArrayNode divergencias = null;
+
+        if (tesseract.disponivel()) {
+            try {
+                LeituraResultado leituraTesseract = tesseract.ler(pagina);
+                leituras.set("tesseract", tesseractJson(leituraTesseract));
+                if (leituraGemini != null) {
+                    divergencias = comparacao.comparar(leituraGemini.resposta(), leituraTesseract.resposta());
+                    estado = EstadoPagina.COMPARADA;
+                }
+            } catch (LeituraExcecao e) {
+                // o segundo leitor falhou: a página fica com a leitura principal
+                ObjectNode erro = leituras.putObject("tesseract");
+                erro.putArray("linhas");
+                erro.put("erro", e.getMessage() == null ? "falha do Tesseract" : e.getMessage());
+            }
+        }
+
+        if (leituraGemini != null) {
+            ObjectNode geminiNo = (ObjectNode) leituras.get("gemini");
+            ObjectNode validacao = geminiNo.putObject("validacao");
+            validacao.set("alfabeto", alfabeto.verificarResposta(leituraGemini.resposta()));
+        }
+
+        try {
+            Pagina nova = pagina.comLeituras(leituras);
+            if (leituraGemini != null) {
+                nova = nova.comDivergencias(divergencias == null
+                        ? dataFiles.mapper().createArrayNode() : divergencias);
+            }
+            paginas.atualizar(nova.comEstado(estado));
+        } catch (IOException e) {
+            // disco falhou depois da leitura: a página fica como estava
         }
     }
 
@@ -336,6 +396,16 @@ public class FilaLeituraService {
             registo.put("origem", t.origem());
         }
         return gemini;
+    }
+
+    /** {@code leituras.tesseract} no formato do PRD 3.2: {linhas, quando}. */
+    private ObjectNode tesseractJson(LeituraResultado resultado) {
+        ObjectNode no = dataFiles.mapper().createObjectNode();
+        no.set("linhas", resultado.resposta().get("linhas"));
+        if (!resultado.tentativas().isEmpty()) {
+            no.put("quando", resultado.tentativas().get(0).quando());
+        }
+        return no;
     }
 
     private static void dormir(long ms) {

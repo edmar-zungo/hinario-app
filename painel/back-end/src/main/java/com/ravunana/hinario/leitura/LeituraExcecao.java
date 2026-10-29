@@ -15,6 +15,11 @@ public class LeituraExcecao extends Exception {
         this.tentativas = tentativas == null ? List.of() : List.copyOf(tentativas);
     }
 
+    /** Falha sem tentativas registadas (por exemplo o Tesseract local). */
+    public LeituraExcecao(String mensagem) {
+        this(mensagem, List.of());
+    }
+
     public List<LeituraResultado.Tentativa> getTentativas() {
         return tentativas;
     }

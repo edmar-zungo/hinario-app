@@ -19,7 +19,7 @@ docs/       → documentação (PRD, esquema de export)
 | Java | 17+ | back-end |
 | Maven | 3.8+ (ou `./mvnw`) | back-end |
 | Node.js | 20+ | painel e mobile |
-| Tesseract OCR | 5.x + `por.traineddata` | só a partir da Fase 4 (comparação) |
+| Tesseract OCR | 5.x + `por.traineddata` | Fase 4 (comparação) — **necessário** para comparar |
 | Chave Gemini | variável `GEMINI_API_KEY` | só a partir da Fase 3 (extração) |
 
 ## Como correr
@@ -84,7 +84,7 @@ hinario.dados.dir=            # vazio = pasta data/ do back-end
 | 1 | Base do back-end e migração dos dados atuais | concluída |
 | 2 | Importação de páginas | concluída |
 | 3 | Leitura com Gemini (`ModelPool`, fila, quota) | concluída |
-| 4 | Tesseract e comparação | por fazer |
+| 4 | Tesseract e comparação | concluída |
 | 5 | Estruturação e continuação | por fazer |
 | 6 | Painel: importação e revisão | por fazer |
 | 7 | Exportação e comparação com o JSON atual | por fazer |
@@ -180,6 +180,35 @@ Config (`application.properties`): `gemini.*` — a chave **só** de
 `GEMINI_API_KEY` (vazia por omissão); com a chave vazia, `POST .../ler` dá
 `409` dizendo o que falta. Os testes não usam a rede.
 
+### Tesseract e comparação (Fase 4)
+
+O mesmo `POST /paginas/{n}/ler` passa a correr os **dois leitores**: depois do
+Gemini, o Tesseract lê a imagem processada em local e o back-end **compara**
+as duas leituras (PRD 5.7.3):
+
+- alinhamento das linhas por distância de edição e classificação de cada par:
+  `igual`, `so_acento`, `so_pontuacao`, `divergente` — **qualquer diferença**
+  fica em `divergencias` da página, com o texto dos dois lados;
+- a página passa a `comparada`; se o Gemini falhar mas o Tesseract ler, a
+  página fica com a leitura local (`bloqueada_pela_ia` "segue só com
+  Tesseract", PRD 5.6);
+- o alfabeto é verificado (5.7.2): caracteres fora do conjunto conhecido
+  ficam marcados em `leituras.gemini.validacao.alfabeto` — **nunca removidos**;
+- `gemini.enabled=false` ⇒ modo só-Tesseract: a fila continua a funcionar e as
+  páginas ficam `lida` com `leituras.tesseract`;
+- se o binário não estiver instalado, a leitura principal não falha: a página
+  fica `lida` com `leituras.tesseract.erro`.
+
+Config (`application.properties`): `tesseract.enabled`, `tesseract.idioma`
+(`por`), `tesseract.binario`, `tesseract.datapath` (vazio = `TESSDATA_PREFIX`
+do sistema), `tesseract.psm`, `tesseract.timeout-segundos`.
+
+**Decisão registada** (28/10/2026): o Tesseract corre por `ProcessBuilder`
+sobre o binário do sistema, em vez de Tess4J — mesma escolha da Fase 2
+(Java2D em vez de JavaCV): zero dependências nativas no Maven; o motor é
+requisito da máquina de qualquer forma. `GET /fila` passou a incluir
+`tesseractDisponivel`.
+
 ### Tarefas da Fase 0 que dependem de ti
 
 1. **Chave no AI Studio** (agora **necessária** para ler de verdade): criar
@@ -187,7 +216,9 @@ Config (`application.properties`): `gemini.*` — a chave **só** de
    na página de limites do AI Studio, os modelos gratuitos e os seus limites
    (PRD 5.8); confirmar também o portão de qualidade 5.10. Guardar a chave fora
    do repositório.
-2. **Instalar o Tesseract** (Fase 4, mas já fica feito):
+2. **Instalar o Tesseract** (necessário desde a Fase 4 para a comparação;
+   sem ele, as páginas ficam só com a leitura do Gemini e
+   `leituras.tesseract.erro`):
 
 ```bash
 sudo apt-get install -y tesseract-ocr tesseract-ocr-por

@@ -36,4 +36,10 @@ public record Pagina(
         return new Pagina(pagina, hinarioId, imagem, imagemProcessada, hash, estado,
                 nomeOriginal, importadoEm, largura, altura, novas, divergencias, blocos);
     }
+
+    /** Cópia com as divergências da comparação (PRD 5.7.3). */
+    public Pagina comDivergencias(JsonNode novas) {
+        return new Pagina(pagina, hinarioId, imagem, imagemProcessada, hash, estado,
+                nomeOriginal, importadoEm, largura, altura, leituras, novas, blocos);
+    }
 }
