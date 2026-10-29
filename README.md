@@ -86,7 +86,7 @@ hinario.dados.dir=            # vazio = pasta data/ do back-end
 | 3 | Leitura com Gemini (`ModelPool`, fila, quota) | concluída |
 | 4 | Tesseract e comparação | concluída |
 | 5 | Estruturação e continuação | concluída |
-| 6 | Painel: importação e revisão | por fazer |
+| 6 | Painel: importação e revisão | concluída |
 | 7 | Exportação e comparação com o JSON atual | por fazer |
 | 8 | Constituição | por fazer |
 | 9 | IERA App (redesign do mobile) | por fazer |
@@ -239,6 +239,40 @@ O que a estruturação faz (PRD 5.7):
 Aceitação testada (`EstruturaServiceTest`): o par 394/395 gera o hino 42
 completo e o hino 43 ligado às duas páginas (395 a abrir na estrofe 2, sem
 confirmação); buracos de sequência ficam `confirmar: true` em vez de juntos.
+
+### Painel: importação e revisão (Fase 6)
+
+A secção **OCR** do painel (`http://localhost:4200/paginas`) mostra a fila e
+as quotas (`GET /fila` — aviso quando a quota esgotada, pausas por modelo) e
+acções por página: **Ler** (importada/erro), **Rever** (comparada em diante).
+
+O ecrã de revisão (`/paginas/revisar/{n}`) tem três painéis:
+
+- **lista de páginas** com estado (Ctrl+←/→ ou botões navegam entre páginas);
+- **foto com zoom** (a versão processada que os leitores viram; caixa
+  "Original" mostra o ficheiro intacto);
+- **editor de linhas** com a estrutura do hino: cada linha mostra o texto a
+  corrigir com a divergência do Tesseract ao lado (`divergente` a vermelho,
+  `so_acento`/`so_pontuacao` a amarelo), linhas com `[?]` e `duvidas` em
+  evidência, recuo visível e tipo de bloco editável (estrofe/coro/bloco sem
+  número). Há **paleta de carateres** (á é í ó ú â ê ô ã õ ç ò ń ’) que
+  insere no cursor e **modo de texto inteiro** (o número de linhas nunca
+  muda: uma linha impressa = uma linha).
+- **Atalhos**: `Ctrl+Enter` confirmar · `Ctrl+M` marcar coro · `Ctrl+R`
+  recuo (ciclo 0→1→2) · `Ctrl+←/→` página anterior/seguinte.
+
+Endpoints novos (PRD secção 7):
+
+- `PUT /paginas/{n}/linhas` — grava os blocos corrigidos (tipos válidos,
+  recuo 0..2, texto normalizado para NFC) e passa a página a `em_revisao`;
+- `POST /paginas/{n}/confirmar` — marca todas as linhas `revisto: true` e a
+  página a `confirmada`;
+- `GET /paginas/{n}/imagem[?original=true]` — a foto para o painel (a
+  original continua intacta em disco).
+
+Regra de ouro aplicada e testada (`RevisaoServiceTest`): corrigir **nunca**
+toca em `leituras` — o texto original do Gemini/Tesseract fica preservado no
+ficheiro da página.
 
 ### Tarefas da Fase 0 que dependem de ti
 

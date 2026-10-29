@@ -1,12 +1,14 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { PaginaModel } from '../pagina-model';
 import { PaginaService } from '../service/pagina.service';
+import { FilaService, FilaEstadoModel } from '../service/fila.service';
 
 @Component({
   selector: 'app-pagina-list',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './pagina-list.component.html',
   changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './pagina-list.component.css'
@@ -14,6 +16,7 @@ import { PaginaService } from '../service/pagina.service';
 export class PaginaListComponent implements OnInit {
 
   paginas: PaginaModel[] = [];
+  fila?: FilaEstadoModel;
   ficheiros: File[] = [];
   hinarioId = 'kkr';
   rotacao = 0;
@@ -29,7 +32,7 @@ export class PaginaListComponent implements OnInit {
     { codigo: 'kmb', nome: 'Hinário Kimbundu' }
   ];
 
-  constructor(private paginaService: PaginaService) {}
+  constructor(private paginaService: PaginaService, private filaService: FilaService) {}
 
   ngOnInit(): void {
     this.listar();
@@ -38,6 +41,10 @@ export class PaginaListComponent implements OnInit {
   listar() {
     this.paginaService.listar().subscribe(resp => {
       this.paginas = resp ?? [];
+    });
+    this.filaService.estado().subscribe({
+      next: estado => this.fila = estado,
+      error: () => this.fila = undefined
     });
   }
 
@@ -69,6 +76,20 @@ export class PaginaListComponent implements OnInit {
       error: (err) => {
         this.enviando = false;
         this.erro = err?.error?.erro ?? err?.message ?? 'Falha ao importar as fotos.';
+      }
+    });
+  }
+
+  ler(numero: number) {
+    this.mensagem = '';
+    this.erro = '';
+    this.paginaService.ler(numero).subscribe({
+      next: () => {
+        this.mensagem = `Página ${numero} na fila de leitura.`;
+        this.listar();
+      },
+      error: (err) => {
+        this.erro = err?.error?.erro ?? err?.message ?? 'Falha ao enfileirar.';
       }
     });
   }

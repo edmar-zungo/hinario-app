@@ -1,0 +1,186 @@
+<div class="container-fluid revisao">
+  <div class="row g-0">
+
+    <!-- Painel 1: lista de páginas -->
+    <aside class="col-3 lista border-end">
+      <div class="p-3 border-bottom d-flex justify-content-between align-items-center">
+        <strong>Páginas</strong>
+        <a class="btn btn-sm btn-outline-primary" routerLink="/paginas">Importar</a>
+      </div>
+      <ul class="list-group list-group-flush">
+        @for (p of paginas; track p.pagina) {
+          <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+              [class.active]="p.pagina === numero"
+              (click)="carregar(p.pagina)">
+            <span>Página {{ p.pagina }}</span>
+            <span class="badge" [ngClass]="classeEstado(p.estado)">{{ p.estado }}</span>
+          </li>
+        }
+      </ul>
+    </aside>
+
+    <!-- Painel 2: foto com zoom -->
+    <section class="col-4 foto border-end">
+      <div class="p-2 border-bottom d-flex gap-2 align-items-center">
+        <button class="btn btn-sm btn-outline-secondary" (click)="reduzir()" title="Reduzir (Ctrl+scroll não)">−</button>
+        <span class="small text-muted">{{ escala * 100 | number: '1.0-0' }}%</span>
+        <button class="btn btn-sm btn-outline-secondary" (click)="ampliar()" title="Ampliar">+</button>
+        <div class="form-check ms-2">
+          <input class="form-check-input" type="checkbox" id="original"
+                 [(ngModel)]="mostrarOriginal">
+          <label class="form-check-label small" for="original">Original</label>
+        </div>
+      </div>
+      <div class="foto-scroll p-2 text-center">
+        @if (pagina) {
+          <img [src]="paginasService.imagemUrl(pagina.pagina, mostrarOriginal)"
+               alt="Foto da página {{ pagina.pagina }}"
+               [style.width.px]="pagina.largura * escala"
+               [style.maxWidth]="'none'">
+        } @else {
+          <p class="text-muted mt-5">Escolha uma página à esquerda.</p>
+        }
+      </div>
+    </section>
+
+    <!-- Painel 3: editor de linhas -->
+    <section class="col-5 editor">
+      <div class="p-3 border-bottom">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+          <h5 class="mb-0">
+            @if (pagina) {
+              Página {{ pagina.pagina }} · {{ pagina.hinarioId }}
+              <span class="badge" [ngClass]="classeEstado(pagina.estado)">{{ pagina.estado }}</span>
+            }
+          </h5>
+          <div class="btn-group btn-group-sm">
+            <button class="btn btn-outline-secondary" (click)="anterior()" title="Ctrl+←">← Anterior</button>
+            <button class="btn btn-outline-secondary" (click)="proxima()" title="Ctrl+→">Seguinte →</button>
+          </div>
+        </div>
+
+        @if (mensagem) {
+          <div class="alert alert-success py-1 mt-2 mb-0 small">{{ mensagem }}</div>
+        }
+        @if (erro) {
+          <div class="alert alert-danger py-1 mt-2 mb-0 small">{{ erro }}</div>
+        }
+        @if (pagina && !pagina.blocos?.length) {
+          <div class="alert alert-info py-1 mt-2 mb-0 small">
+            Esta página ainda não tem estrutura.
+            @if (pagina.estado === 'comparada' || pagina.estado === 'lida') {
+              <button class="btn btn-sm btn-outline-info ms-2" (click)="estruturar()">Estruturar</button>
+            }
+          </div>
+        }
+      </div>
+
+      @if (pagina?.blocos?.length) {
+        <div class="p-2 border-bottom d-flex flex-wrap gap-1 align-items-center">
+          <span class="small text-muted me-1">Inserir:</span>
+          @for (c of paleta; track c) {
+            <button class="btn btn-sm btn-light border carater" (click)="inserir(c)"
+                    [title]="'Inserir ' + c">{{ c }}</button>
+          }
+          <span class="small text-muted ms-3">Atalhos: Ctrl+Enter confirmar · Ctrl+M coro · Ctrl+R recuo</span>
+        </div>
+
+        <div class="editor-scroll p-3">
+          @if (!modoTexto) {
+            <div class="mb-2">
+              <button class="btn btn-sm btn-outline-secondary" (click)="entrarEmTextoInteiro()">
+                Editar em texto inteiro
+              </button>
+            </div>
+            @for (bloco of pagina.blocos; track $index; let bi = $index) {
+              <div class="bloco mb-3 border rounded p-2"
+                   [class.bloco-coro]="bloco.tipo === 'coro'"
+                   [class.bloco-duvida]="bloco.ligacao?.confirmar || bloco.sequenciaSuspeita"
+                   (focusin)="focar(bi, -1)">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <strong class="small">{{ tituloBloco(bloco) }}</strong>
+                  <div class="d-flex gap-1 align-items-center">
+                    @if (bloco.tipo !== 'titulo_hino') {
+                      <select class="form-select form-select-sm tipo" [(ngModel)]="bloco.tipo"
+                              (focusin)="focar(bi, -1)" title="Tipo de bloco">
+                        <option value="estrofe">estrofe</option>
+                        <option value="coro">coro</option>
+                        <option value="bloco_sem_numero">bloco sem número</option>
+                      </select>
+                    }
+                    @if (bloco.incompleta) {
+                      <span class="badge bg-warning text-dark">incompleta</span>
+                    }
+                    @if (bloco.possivelCoro) {
+                      <span class="badge bg-info text-dark">possível coro</span>
+                    }
+                    @if (bloco.sequenciaSuspeita) {
+                      <span class="badge bg-danger">sequência?</span>
+                    }
+                    @if (bloco.ligacao?.confirmar) {
+                      <span class="badge bg-danger"
+                            title="Terminou em {{ bloco.ligacao?.estrofeAnterior }}, abriu em {{ bloco.ligacao?.encontrado }} — confirme antes de juntar">
+                        ligação?</span>
+                    }
+                  </div>
+                </div>
+
+                @if (bloco.titulo !== null && bloco.titulo !== undefined) {
+                  <input class="form-control form-control-sm mb-2" [(ngModel)]="bloco.titulo"
+                         placeholder="Título do hino" (focusin)="focar(bi, -1)">
+                }
+
+                @if (bloco.duvidas?.length) {
+                  <div class="alert alert-warning py-1 px-2 small mb-2">
+                    @for (d of bloco.duvidas; track $index) { <div>⚠ {{ d }}</div> }
+                  </div>
+                }
+
+                @for (linha of bloco.linhas; track $index) {
+                  <div class="linha d-flex align-items-center gap-2 mb-1"
+                       [class.linha-divergente]="divergencia(bi, $index) !== undefined">
+                    <span class="badge recuo-indice text-secondary border" [title]="'Recuo ' + linha.recuo">
+                      {{ linha.recuo === 0 ? '—' : '→'.repeat(linha.recuo) }}
+                    </span>
+                    <input class="form-control form-control-sm texto"
+                           [(ngModel)]="linha.texto"
+                           (focus)="focar(bi, $index)"
+                           [class.border-danger]="temPontoInterrogacao(linha.texto)">
+                    @if (temPontoInterrogacao(linha.texto)) {
+                      <span class="badge bg-warning text-dark" title="Linha com dúvida do leitor">[?]</span>
+                    }
+                    @if (divergencia(bi, $index); as d) {
+                      <span class="badge" [ngClass]="{
+                             'bg-danger': d.tipo === 'divergente',
+                             'bg-warning text-dark': d.tipo === 'so_acento' || d.tipo === 'so_pontuacao'
+                           }"
+                           [title]="'Tesseract: ' + d.tesseract">{{ d.tipo }}</span>
+                    }
+                  </div>
+                }
+              </div>
+            }
+          } @else {
+            <div class="mb-2 d-flex gap-2">
+              <button class="btn btn-sm btn-primary" (click)="aplicarTextoInteiro()">Aplicar texto</button>
+              <button class="btn btn-sm btn-outline-secondary" (click)="modoTexto = false">Cancelar</button>
+            </div>
+            <textarea class="form-control font-monospace" rows="18"
+                      [(ngModel)]="textoInteiro"></textarea>
+          }
+        </div>
+
+        <div class="p-2 border-top d-flex gap-2">
+          <button class="btn btn-primary" (click)="salvar()" [disabled]="salvando">
+            Gravar correções
+          </button>
+          <button class="btn btn-success" (click)="confirmar()"
+                  [disabled]="salvando || pagina?.estado === 'confirmada'"
+                  title="Ctrl+Enter">
+            Confirmar (revisto)
+          </button>
+        </div>
+      }
+    </section>
+  </div>
+</div>

@@ -1,9 +1,29 @@
 <div class="container">
-  <h2>Páginas (importação)</h2>
+  <h2>OCR: páginas</h2>
   <p class="text-muted">
     Fotografe as páginas do hinário e importe-as. A foto original fica intacta;
-    a versão processada é gerada automaticamente.
+    a versão processada é gerada automaticamente. Depois de importar, leia com
+    Gemini + Tesseract e revise no ecrã de revisão.
   </p>
+
+  @if (fila?.quotaEsgotada) {
+    <div class="alert alert-warning">
+      Quota esgotada, retoma às {{ fila?.retomaAte ?? '—' }}.
+      A fila continua sozinha.
+    </div>
+  }
+  @if (fila; as f) {
+    <div class="mb-3 small text-muted">
+      Fila: <strong>{{ f.estado }}</strong> · {{ f.pendentes }} pendente(s) ·
+      Gemini {{ f.geminiDisponivel ? 'disponível' : 'indisponível' }} ·
+      Tesseract {{ f.tesseractDisponivel ? 'disponível' : 'não instalado' }}
+      @for (m of f.modelos; track m.modelo) {
+        @if (m.pausado) {
+          · <span class="text-danger">{{ m.modelo }} pausado até {{ m.pausadoAte }}</span>
+        }
+      }
+    </div>
+  }
 
   <div class="card mb-4">
     <div class="card-body">
@@ -79,6 +99,7 @@
         <th scope="col">Dimensões</th>
         <th scope="col">Hash (sha256)</th>
         <th scope="col">Importada em</th>
+        <th scope="col">Acções</th>
       </tr>
     </thead>
     <tbody>
@@ -94,10 +115,27 @@
           <td>{{ pagina.largura }} × {{ pagina.altura }}</td>
           <td class="hash">{{ pagina.hash.slice(7, 19) }}…</td>
           <td>{{ pagina.importadoEm | date: 'dd/MM/yyyy HH:mm' }}</td>
+          <td class="acoes">
+            @if (pagina.estado === 'importada' || pagina.estado === 'erro_leitura'
+                 || pagina.estado === 'pausada_quota') {
+              <button class="btn btn-sm btn-outline-primary" (click)="ler(pagina.pagina)">
+                Ler
+              </button>
+            }
+            @if (pagina.estado === 'estruturada' || pagina.estado === 'em_revisao'
+                 || pagina.estado === 'confirmada') {
+              <a class="btn btn-sm btn-primary"
+                 [routerLink]="['/paginas/revisar', pagina.pagina]">Rever</a>
+            }
+            @if (pagina.estado === 'comparada') {
+              <a class="btn btn-sm btn-outline-secondary"
+                 [routerLink]="['/paginas/revisar', pagina.pagina]">Rever</a>
+            }
+          </td>
         </tr>
       } @empty {
         <tr>
-          <td colspan="6" class="text-center text-muted">
+          <td colspan="7" class="text-center text-muted">
             Ainda não há páginas importadas.
           </td>
         </tr>

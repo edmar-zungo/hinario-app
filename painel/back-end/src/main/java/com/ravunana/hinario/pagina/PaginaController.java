@@ -1,5 +1,6 @@
 package com.ravunana.hinario.pagina;
 
+import com.ravunana.hinario.services.DataFiles;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +14,8 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -34,9 +37,11 @@ public class PaginaController {
     private static final Pattern DIGITOS = Pattern.compile("(\\d+)");
 
     private final PaginaService paginas;
+    private final DataFiles dataFiles;
 
-    public PaginaController(PaginaService paginas) {
+    public PaginaController(PaginaService paginas, DataFiles dataFiles) {
         this.paginas = paginas;
+        this.dataFiles = dataFiles;
     }
 
     @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
@@ -59,6 +64,26 @@ public class PaginaController {
     @GetMapping("/{numero}")
     public ResponseEntity<Pagina> obter(@PathVariable int numero) throws IOException {
         return ResponseEntity.ok(paginas.obter(numero));
+    }
+
+    /**
+     * A foto para o ecrã de revisão (Fase 6). Por omissão a versão processada
+     * (a que os leitores viram); com {@code original=true}, o ficheiro intacto.
+     */
+    @GetMapping("/{numero}/imagem")
+    public ResponseEntity<byte[]> imagem(
+            @PathVariable int numero,
+            @RequestParam(value = "original", defaultValue = "false") boolean original) throws IOException {
+
+        Pagina pagina = paginas.obter(numero);
+        String relativo = original ? pagina.imagem() : pagina.imagemProcessada();
+        Path ficheiro = dataFiles.resolve(relativo).normalize();
+        if (!ficheiro.startsWith(dataFiles.raiz()) || !Files.isRegularFile(ficheiro)) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "imagem em falta");
+        }
+        MediaType tipo = relativo.toLowerCase().endsWith(".png")
+                ? MediaType.IMAGE_PNG : MediaType.IMAGE_JPEG;
+        return ResponseEntity.ok().contentType(tipo).body(Files.readAllBytes(ficheiro));
     }
 
     private static List<PaginaService.PedidoImportacao> emparelhar(

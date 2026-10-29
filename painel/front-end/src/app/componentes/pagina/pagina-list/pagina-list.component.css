@@ -6,3 +6,11 @@
   font-family: monospace;
   font-size: 0.85em;
 }
+
+.acoes {
+  white-space: nowrap;
+}
+
+.acoes .btn + .btn {
+  margin-left: 0.25rem;
+}
