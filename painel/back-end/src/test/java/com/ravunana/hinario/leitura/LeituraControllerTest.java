@@ -160,4 +160,37 @@ class LeituraControllerTest {
         mvc.perform(multipart("/paginas/999/ler"))
                 .andExpect(status().isNotFound());
     }
+
+    @Test
+    void postEstruturarMontaBlocosDaPaginaComparada() throws Exception {
+        com.fasterxml.jackson.databind.ObjectMapper mapper = new com.fasterxml.jackson.databind.ObjectMapper();
+        com.fasterxml.jackson.databind.node.ObjectNode resposta = mapper.createObjectNode();
+        com.fasterxml.jackson.databind.node.ObjectNode bloco = resposta.putArray("blocos").addObject();
+        bloco.put("tipo", "estrofe");
+        bloco.putNull("numeroHino");
+        bloco.putNull("titulo");
+        bloco.put("numeroEstrofe", 1);
+        bloco.put("italico", false);
+        bloco.put("continuacaoDeBlocoAnterior", false);
+        bloco.putArray("linhas").addObject().put("texto", "Ngana Jezu, nga mu zola,").put("recuo", 0);
+        bloco.putArray("duvidas");
+        com.fasterxml.jackson.databind.node.ObjectNode leituras = mapper.createObjectNode();
+        leituras.putObject("gemini").set("resposta", resposta);
+        paginas.atualizar(new Pagina(60, "kmb", "imagens/original/0060.jpg",
+                "imagens/processada/0060.jpg", "sha256:60",
+                com.ravunana.hinario.pagina.EstadoPagina.COMPARADA, "0060.jpg",
+                "2026-10-28T10:00:00Z", 100, 80, leituras, null, null));
+
+        mvc.perform(multipart("/paginas/60/estruturar"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.estado").value("estruturada"))
+                .andExpect(jsonPath("$.blocos[0].tipo").value("estrofe"))
+                .andExpect(jsonPath("$.blocos[0].linhas[0].texto").value("Ngana Jezu, nga mu zola,"));
+    }
+
+    @Test
+    void postEstruturarPaginaInexistenteDá404() throws Exception {
+        mvc.perform(multipart("/paginas/999/estruturar"))
+                .andExpect(status().isNotFound());
+    }
 }

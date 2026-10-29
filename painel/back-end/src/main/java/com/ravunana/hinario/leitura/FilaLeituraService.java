@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.ravunana.hinario.comparacao.AlfabetoVerificador;
 import com.ravunana.hinario.comparacao.ComparacaoService;
 import com.ravunana.hinario.comparacao.TesseractProvider;
+import com.ravunana.hinario.estrutura.EstruturaService;
 import com.ravunana.hinario.pagina.EstadoPagina;
 import com.ravunana.hinario.pagina.Pagina;
 import com.ravunana.hinario.pagina.PaginaService;
@@ -54,6 +55,7 @@ public class FilaLeituraService {
     private final TesseractProvider tesseract;
     private final ComparacaoService comparacao;
     private final AlfabetoVerificador alfabeto;
+    private final EstruturaService estruturas;
     private final PaginaService paginas;
     private final DataFiles dataFiles;
     private final long retomaMs;
@@ -64,7 +66,8 @@ public class FilaLeituraService {
 
     public FilaLeituraService(GeminiProvider gemini, GeminiConfig configGemini, EstadoQuota quota,
                               TesseractProvider tesseract, ComparacaoService comparacao,
-                              AlfabetoVerificador alfabeto, PaginaService paginas, DataFiles dataFiles,
+                              AlfabetoVerificador alfabeto, EstruturaService estruturas,
+                              PaginaService paginas, DataFiles dataFiles,
                               @Value("${hinario.fila.retoma-ms:15000}") long retomaMs) {
         this.gemini = gemini;
         this.configGemini = configGemini;
@@ -72,6 +75,7 @@ public class FilaLeituraService {
         this.tesseract = tesseract;
         this.comparacao = comparacao;
         this.alfabeto = alfabeto;
+        this.estruturas = estruturas;
         this.paginas = paginas;
         this.dataFiles = dataFiles;
         this.retomaMs = Math.max(50, retomaMs);
@@ -314,6 +318,14 @@ public class FilaLeituraService {
                         ? dataFiles.mapper().createArrayNode() : divergencias);
             }
             paginas.atualizar(nova.comEstado(estado));
+            if (estado == EstadoPagina.COMPARADA) {
+                // fluxo 4.3: o sistema compara e propõe a estrutura
+                try {
+                    estruturas.estruturar(pagina.pagina());
+                } catch (Exception ignorada) {
+                    // estruturação falhou: a página fica comparada
+                }
+            }
         } catch (IOException e) {
             // disco falhou depois da leitura: a página fica como estava
         }

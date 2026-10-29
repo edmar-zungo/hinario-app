@@ -42,4 +42,10 @@ public record Pagina(
         return new Pagina(pagina, hinarioId, imagem, imagemProcessada, hash, estado,
                 nomeOriginal, importadoEm, largura, altura, leituras, novas, blocos);
     }
+
+    /** Cópia com a estrutura da página (PRD Fase 5: hinos, estrofes, coro). */
+    public Pagina comBlocos(JsonNode novos) {
+        return new Pagina(pagina, hinarioId, imagem, imagemProcessada, hash, estado,
+                nomeOriginal, importadoEm, largura, altura, leituras, divergencias, novos);
+    }
 }

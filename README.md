@@ -85,7 +85,7 @@ hinario.dados.dir=            # vazio = pasta data/ do back-end
 | 2 | Importação de páginas | concluída |
 | 3 | Leitura com Gemini (`ModelPool`, fila, quota) | concluída |
 | 4 | Tesseract e comparação | concluída |
-| 5 | Estruturação e continuação | por fazer |
+| 5 | Estruturação e continuação | concluída |
 | 6 | Painel: importação e revisão | por fazer |
 | 7 | Exportação e comparação com o JSON atual | por fazer |
 | 8 | Constituição | por fazer |
@@ -208,6 +208,37 @@ sobre o binário do sistema, em vez de Tess4J — mesma escolha da Fase 2
 (Java2D em vez de JavaCV): zero dependências nativas no Maven; o motor é
 requisito da máquina de qualquer forma. `GET /fila` passou a incluir
 `tesseractDisponivel`.
+
+### Estruturação e continuação (Fase 5)
+
+Depois de a página ficar `comparada`, o back-end monta a **proposta de
+estrutura** (5.7.4–5.7.6) e grava-a em `blocos` do `paginas/<n>.json`,
+passando a página a `estruturada` — automático, sem novo pedido:
+
+```bash
+# releitura/estruturação explícita (só de comparada/estruturada):
+curl -X POST http://localhost:8080/paginas/395/estruturar
+```
+
+O que a estruturação faz (PRD 5.7):
+
+- blocos de arranque `titulo_hino`, `estrofe`, `coro`, `bloco_sem_numero`,
+  sempre com as **linhas verbatim** da leitura — o texto nunca é alterado;
+- **coro proposto** (5.7.6): `bloco_sem_numero` entre estrofes numeradas com
+  itálico ou recuo vira `coro` com `possivelCoro`; sem isso fica por
+  classificar, **nunca juntado por suposição**;
+- **ligação entre páginas** (5.7.4): se a página seguinte continuar, o bloco
+  abre com o hino/estrofe da anterior e `ligacao.confirmar` só fica `true`
+  quando a sequência não fecha (terminou em N−1, abriu em N+2, ou não há
+  contexto) — nesse caso **fica marcado para revisão**, sem juntar;
+- **estrofes incompletas**: quando a página seguinte continua a mesma estrofe,
+  a da anterior é marcada `incompleta` (a revisão humana decide a divisão);
+- múltiplos hinos numa página e hinos que começam no fim de uma página são
+  suportados (`hinoAberto`, `continuaDoAnterior`).
+
+Aceitação testada (`EstruturaServiceTest`): o par 394/395 gera o hino 42
+completo e o hino 43 ligado às duas páginas (395 a abrir na estrofe 2, sem
+confirmação); buracos de sequência ficam `confirmar: true` em vez de juntos.
 
 ### Tarefas da Fase 0 que dependem de ti
 

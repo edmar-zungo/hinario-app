@@ -6,6 +6,8 @@ import com.ravunana.hinario.comparacao.ComparacaoService;
 import com.ravunana.hinario.comparacao.TesseractComando;
 import com.ravunana.hinario.comparacao.TesseractConfig;
 import com.ravunana.hinario.comparacao.TesseractProvider;
+import com.ravunana.hinario.estrutura.EstruturaService;
+import com.ravunana.hinario.estrutura.Estruturador;
 import com.ravunana.hinario.pagina.EstadoPagina;
 import com.ravunana.hinario.pagina.ImagemProcessadora;
 import com.ravunana.hinario.pagina.Pagina;
@@ -87,8 +89,9 @@ class FilaLeituraServiceTest {
         ComparacaoService comparacao = new ComparacaoService(dataFiles);
         AlfabetoVerificador alfabeto = new AlfabetoVerificador(dataFiles);
         paginas = new PaginaService(dataFiles, new ImagemProcessadora());
+        EstruturaService estruturas = new EstruturaService(new Estruturador(), paginas);
         fila = new FilaLeituraService(gemini, config, quota, tesseract, comparacao, alfabeto,
-                paginas, dataFiles, 100);
+                estruturas, paginas, dataFiles, 100);
     }
 
     @AfterEach
@@ -159,7 +162,7 @@ class FilaLeituraServiceTest {
     }
 
     @Test
-    void comTesseractComparaEFicaComparada() throws Exception {
+    void comTesseractComparaEFicaEstruturada() throws Exception {
         configTesseract.setEnabled(true);
         tsvTesseract = tsv("M’ uhukunii aJesus.", "[?] kuanza");
         importar(10);
@@ -167,18 +170,28 @@ class FilaLeituraServiceTest {
         fila.arrancar();
         fila.enfileirar(10);
 
-        Pagina comparada = esperarEstado(10, EstadoPagina.COMPARADA);
-        JsonNode linhasTesseract = comparada.leituras().path("tesseract").path("linhas");
+        // comparada → estruturada automática (fluxo 4.3)
+        Pagina estruturada = esperarEstado(10, EstadoPagina.ESTRUTURADA);
+        JsonNode linhasTesseract = estruturada.leituras().path("tesseract").path("linhas");
         assertEquals(2, linhasTesseract.size());
         assertEquals(0.9, linhasTesseract.get(0).path("confianca").asDouble());
 
-        JsonNode divergencias = comparada.divergencias();
+        JsonNode divergencias = estruturada.divergencias();
         assertEquals(1, divergencias.size());
         assertEquals("so_pontuacao", divergencias.get(0).path("tipo").asText());
         assertEquals("M’ uhukunii aJesus", divergencias.get(0).path("gemini").asText());
         assertEquals("M’ uhukunii aJesus.", divergencias.get(0).path("tesseract").asText());
         assertEquals(1, divergencias.get(0).path("bloco").asInt());
         assertEquals(0, divergencias.get(0).path("linha").asInt());
+
+        // a estrutura vem do esquema 5.4 do teste: título + estrofe com 2 linhas
+        JsonNode blocos = estruturada.blocos();
+        assertEquals(2, blocos.size());
+        assertEquals("titulo_hino", blocos.get(0).path("tipo").asText());
+        assertEquals(12, blocos.get(0).path("numeroHino").asInt());
+        assertEquals("estrofe", blocos.get(1).path("tipo").asText());
+        assertEquals(1, blocos.get(1).path("numeroEstrofe").asInt());
+        assertEquals("M’ uhukunii aJesus", blocos.get(1).path("linhas").get(0).path("texto").asText());
     }
 
     @Test
