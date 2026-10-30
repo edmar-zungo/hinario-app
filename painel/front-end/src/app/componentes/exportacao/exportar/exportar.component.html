@@ -1,0 +1,92 @@
+<div class="container">
+  <h2>Exportar hinário</h2>
+  <p class="text-muted">
+    Valida e grava <code>export/hinario-&lt;id&gt;.json</code> só com as linhas
+    revistas. Se algo bloqueia (bloco por classificar, estrofe incompleta,
+    espaços a mais, numeração com buracos), o ficheiro não é gravado — corrija
+    na revisão e volte a exportar.
+    <a routerLink="/comparar">Comparar com o JSON actual</a> antes de exportar.
+  </p>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <div class="row g-3 align-items-end">
+        <div class="col-md-5">
+          <label class="form-label" for="hinario">Hinário</label>
+          <select class="form-select" id="hinario" [(ngModel)]="hinarioId">
+            @for (h of hinarios; track h.codigo) {
+              <option [value]="h.codigo">{{ h.nome }}</option>
+            }
+          </select>
+        </div>
+        <div class="col-md-3">
+          <button
+            type="button"
+            class="btn btn-primary w-100"
+            (click)="exportar()"
+            [disabled]="exportando"
+          >
+            @if (exportando) {
+              A exportar…
+            } @else {
+              Exportar
+            }
+          </button>
+        </div>
+      </div>
+
+      @if (erro) {
+        <div class="alert alert-danger mt-3 mb-0">{{ erro }}</div>
+      }
+    </div>
+  </div>
+
+  @if (resultados.length) {
+    @for (r of resultados; track r.ficheiro) {
+      <div class="card mb-3">
+        <div
+          class="card-header d-flex justify-content-between align-items-center"
+          [ngClass]="r.gerado ? 'bg-success text-white' : 'bg-danger text-white'"
+        >
+          <span>
+            @if (r.gerado) {
+              <i class="fa fa-check" aria-hidden="true"></i>
+              {{ r.ficheiro }}
+            } @else {
+              <i class="fa fa-times" aria-hidden="true"></i>
+              {{ r.ficheiro }} — não gerado
+            }
+          </span>
+          <span class="small">
+            {{ r.hinos }} hino(s) · {{ r.estrofes }} estrofe(s) ·
+            {{ r.coros }} coro(s)
+          </span>
+        </div>
+        <div class="card-body">
+          @if (r.erros.length) {
+            <h6 class="text-danger">Erros (bloqueiam a exportação)</h6>
+            <ul class="mb-3">
+              @for (e of r.erros; track e) {
+                <li class="text-danger">{{ e }}</li>
+              }
+            </ul>
+          }
+          @if (r.avisos.length) {
+            <h6 class="text-warning-emphasis">Avisos</h6>
+            <ul class="mb-0">
+              @for (a of r.avisos; track a) {
+                <li class="text-warning-emphasis">{{ a }}</li>
+              }
+            </ul>
+          }
+          @if (!r.erros.length && !r.avisos.length) {
+            <span class="text-success">
+              <i class="fa fa-check" aria-hidden="true"></i>
+              Tudo validado — ficheiro pronto para o mobile.
+            </span>
+          }
+        </div>
+      </div>
+    }
+  }
+</div>

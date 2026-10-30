@@ -1,0 +1,10 @@
+.actual {
+  font-family: var(--bs-font-monospace);
+  white-space: pre-wrap;
+}
+
+.nova {
+  font-family: var(--bs-font-monospace);
+  white-space: pre-wrap;
+  background: #f8f9fa;
+}

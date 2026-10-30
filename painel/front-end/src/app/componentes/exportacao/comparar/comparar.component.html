@@ -1,0 +1,117 @@
+<div class="container">
+  <h2>Comparar hino</h2>
+  <p class="text-muted">
+    Compara a leitura nova (páginas confirmadas no painel) com o JSON actual
+    (<code>hinario.json</code>). Serve para corrigir erros da migração e preencher
+    hinos incompletos — só compara, nunca altera texto.
+    <a routerLink="/exportar">Exportar</a> depois de corrigir.
+  </p>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <div class="row g-3 align-items-end">
+        <div class="col-md-6">
+          <label class="form-label" for="hino">Hino</label>
+          <select class="form-select" id="hino" [(ngModel)]="hinoId">
+            <option value="">Escolha um hino…</option>
+            @for (h of hinos; track h.id) {
+              <option [value]="h.id">
+                {{ nomeLingua(h.lingua) }} · {{ h.numero }} — {{ h.titulo }}
+              </option>
+            }
+          </select>
+        </div>
+        <div class="col-md-3">
+          <button
+            type="button"
+            class="btn btn-primary w-100"
+            (click)="comparar()"
+            [disabled]="comparando || !hinoId"
+          >
+            @if (comparando) {
+              A comparar…
+            } @else {
+              Comparar
+            }
+          </button>
+        </div>
+      </div>
+
+      @if (erro) {
+        <div class="alert alert-danger mt-3 mb-0">{{ erro }}</div>
+      }
+    </div>
+  </div>
+
+  @if (comparacao; as c) {
+    <div class="card mb-4">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <span>
+          <strong>{{ c.lingua }} · {{ c.numero }} — {{ c.titulo }}</strong>
+        </span>
+        <span>
+          @if (c.temLeituraNova) {
+            <span class="badge bg-success">com leitura nova</span>
+          } @else {
+            <span class="badge bg-secondary">sem leitura nova</span>
+          }
+        </span>
+      </div>
+      <div class="card-body">
+        <p class="mb-3">
+          <strong>{{ c.linhasIguais }}</strong> linha(s) iguais ·
+          <strong>{{ c.diferencas.length }}</strong> diferença(s)
+        </p>
+
+        @if (!c.temLeituraNova) {
+          <div class="alert alert-info">
+            Ainda não há páginas confirmadas deste hino no painel.
+            Leia e revise as páginas para gerar a leitura nova.
+          </div>
+        }
+
+        @if (c.diferencas.length) {
+          <table class="table table-sm align-middle">
+            <thead>
+              <tr>
+                <th scope="col">Tipo</th>
+                <th scope="col">Actual (JSON)</th>
+                <th scope="col">Nova (leitura)</th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (d of c.diferencas; track $index) {
+                <tr>
+                  <td>
+                    <span class="badge" [ngClass]="classeTipo(d.tipo)">
+                      {{ legenda(d.tipo) }}
+                    </span>
+                  </td>
+                  <td class="actual">
+                    @if (d.actual !== null) {
+                      {{ d.actual }}
+                    } @else {
+                      <span class="text-muted">—</span>
+                    }
+                  </td>
+                  <td class="nova">
+                    @if (d.nova !== null) {
+                      {{ d.nova }}
+                    } @else {
+                      <span class="text-muted">—</span>
+                    }
+                  </td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        } @else if (c.temLeituraNova) {
+          <div class="alert alert-success mb-0">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            Nenhuma diferença — a leitura nova coincide com o JSON actual.
+          </div>
+        }
+      </div>
+    </div>
+  }
+</div>

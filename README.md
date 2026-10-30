@@ -87,7 +87,7 @@ hinario.dados.dir=            # vazio = pasta data/ do back-end
 | 4 | Tesseract e comparação | concluída |
 | 5 | Estruturação e continuação | concluída |
 | 6 | Painel: importação e revisão | concluída |
-| 7 | Exportação e comparação com o JSON atual | por fazer |
+| 7 | Exportação e comparação com o JSON atual | concluída |
 | 8 | Constituição | por fazer |
 | 9 | IERA App (redesign do mobile) | por fazer |
 
@@ -273,6 +273,48 @@ Endpoints novos (PRD secção 7):
 Regra de ouro aplicada e testada (`RevisaoServiceTest`): corrigir **nunca**
 toca em `leituras` — o texto original do Gemini/Tesseract fica preservado no
 ficheiro da página.
+
+### Exportação e comparação (Fase 7)
+
+`POST /exportar` (com `hinarioId` opcional; sem parâmetro, todos os que têm
+páginas `confirmada`) monta o hinário a partir da estrutura revisada e grava
+`data/export/hinario-<id>.json` no esquema novo (`docs/esquema-export.md`):
+
+- entram **só** as linhas com `revisto: true`;
+- estrofe que continua na página seguinte é **juntada** (uma linha impressa =
+  uma linha; a divisão de página não é de poesia) — o par 394/395 fecha o hino
+  42 completo;
+- o `id` (UUID) e o `autor` vêm do `hinario.json` actual, para os favoritos
+  continuarem a servir; hino novo recebe UUID novo e autor `IERA`;
+- `bloco_sem_numero` por classificar, estrofe marcada incompleta no fim,
+  espaços a mais, buracos de sequência e números repetidos **bloqueiam** a
+  exportação (o ficheiro não é gravado até o humano corrigir na revisão);
+- NFC validado.
+
+`GET /comparar/{hinoId}` compara a leitura nova (páginas confirmadas) com o
+JSON actual (`hinario.json` + `estrofes.json`), reutilizando o alinhamento e o
+classificador da Fase 4. As diferenças saem classificadas — `divergente`,
+`so_acento`, `so_pontuacao`, `so_na_leitura`, `so_no_novo` — para corrigir
+erros da migração e preencher hinos incompletos. Só compara, nunca altera
+texto.
+
+No painel (`http://localhost:4200`):
+
+- `/exportar` — escolhe o hinário, exporta e mostra, por hinário, os erros que
+  bloquearam e os avisos;
+- `/comparar` — escolhe um hino e vê, linha a linha, o actual contra a leitura
+  nova, com as diferenças coloridas.
+
+Testes (`ExportacaoServiceTest`, `ComparacaoHinoServiceTest`): 394/395 exporta
+o hino 42 completo com o UUID do JSON actual; só linhas revistas entram;
+`bloco_sem_numero`/incompleta/espaços a mais bloqueiam; sem páginas
+confirmadas diz o que falta; sem código exporta todos; a comparação marca
+`so_acento` como não-divergente, alinha linha a linha com referência
+(bloco/linha) e devolve 404 para hino inexistente.
+
+Compatibilidade com o leitor mobile (round-trip do JSON exportado, UUIDs dos
+favoritos) fica para a Fase 9, quando o mobile passar a ler o esquema novo —
+o backend já preserva os UUIDs e valida o esquema, como cobrem os testes.
 
 ### Tarefas da Fase 0 que dependem de ti
 
