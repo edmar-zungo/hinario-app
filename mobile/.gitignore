@@ -66,3 +66,8 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Garantir SEMPRE a inclusão dos ficheiros JSON dos hinos e dados
+!src/assets/data/
+!src/assets/data/**
+!src/assets/data/*.json
