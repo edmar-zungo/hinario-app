@@ -1,0 +1,75 @@
+.status-badge {
+  margin-right: 12px;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.status-card {
+  margin: 0 0 1.5rem 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.header-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: var(--ion-color-primary, #3880ff);
+}
+
+.aviso-bloqueio {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: rgba(var(--ion-color-warning-rgb, 255, 196, 9), 0.12);
+  border-left: 4px solid var(--ion-color-warning, #ffc409);
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+
+  i {
+    font-size: 1.1rem;
+    color: #b78103;
+    margin-top: 2px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #493302;
+  }
+}
+
+.detalhes {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ion-color-medium, #666666);
+  margin: 0;
+}
+
+.secao-titulo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 1.5rem 0 0.5rem 0;
+  color: var(--ion-text-color, #222);
+}
+
+.estrutura-list {
+  border-radius: 10px;
+  overflow: hidden;
+
+  ion-item {
+    --padding-start: 12px;
+    --inner-padding-end: 12px;
+  }
+
+  .text-muted {
+    color: var(--ion-color-medium, #888);
+    font-size: 0.9rem;
+  }
+}

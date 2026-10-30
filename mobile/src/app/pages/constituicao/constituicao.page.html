@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Constituição</ion-title>
+    <ion-badge slot="end" color="warning" class="status-badge">Fase 8</ion-badge>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card class="status-card">
+    <ion-card-header>
+      <div class="header-with-icon">
+        <i class="fa fa-scroll card-icon" aria-hidden="true"></i>
+        <div>
+          <ion-card-title>Constituição da IERA</ion-card-title>
+          <ion-card-subtitle>Igreja Evangélica Reformada de Angola</ion-card-subtitle>
+        </div>
+      </div>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="aviso-bloqueio">
+        <i class="fa fa-clock" aria-hidden="true"></i>
+        <p>
+          <strong>A aguardar ficheiros oficiais:</strong> Esta secção está preparada e aguarda a revisão e aprovação final dos ficheiros estruturados da Constituição da IERA (Fase 8 do plano).
+        </p>
+      </div>
+      <p class="detalhes">
+        Assim que os documentos forem homologados, este separador disponibilizará a leitura integral, navegação por títulos e artigos e pesquisa rápida em modo 100% offline.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <h3 class="secao-titulo">Estrutura Prevista</h3>
+  <ion-list lines="full" class="estrutura-list">
+    @for (item of estruturaPrevista; track $index) {
+      <ion-item>
+        <ion-label>
+          <h3>{{ item.titulo }}</h3>
+          <p>{{ item.artigos }}</p>
+        </ion-label>
+        <i class="fa fa-lock-alt text-muted" slot="end" aria-hidden="true"></i>
+      </ion-item>
+    }
+  </ion-list>
+</ion-content>

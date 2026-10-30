@@ -1,13 +1,101 @@
-div{
-     margin-top: 0;
-     font-size: 1em;
-     font-weight: 900;
-     color: #ffff;
-     background-color: hsl(59, 85%, 50%);
-     padding-top: .4em;
-     padding-bottom: .4em;
+.btn-ir-numero {
+  --color: var(--ion-color-primary, #3880ff);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.2px;
 }
 
-.mr{
-    padding-right: 20px;
+.segment-toolbar {
+  --min-height: 44px;
+  padding: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+
+  ion-segment {
+    --background: transparent;
+  }
+
+  ion-segment-button {
+    --color: #64748b;
+    --color-checked: var(--ion-color-primary, #3880ff);
+    --indicator-color: var(--ion-color-primary, #3880ff);
+    font-size: 0.82rem;
+    font-weight: 600;
+    min-height: 42px;
+  }
+}
+
+.loading-state,
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  padding: 2rem;
+  text-align: center;
+  color: var(--ion-color-medium, #666);
+
+  .empty-icon {
+    font-size: 2.5rem;
+    color: #94a3b8;
+    margin-bottom: 1rem;
+  }
+}
+
+.hinos-list {
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
+.hino-item {
+  --padding-start: 14px;
+  --inner-padding-end: 14px;
+  --min-height: 56px;
+
+  .hino-num-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    background: rgba(var(--ion-color-primary-rgb, 56, 128, 255), 0.08);
+    margin-right: 12px;
+
+    .hino-num {
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--ion-color-primary, #3880ff);
+    }
+  }
+
+  .hino-info {
+    margin: 8px 0;
+
+    .hino-titulo {
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: var(--ion-text-color, #1e293b);
+      margin: 0;
+      line-height: 1.35;
+    }
+
+    .hino-lingua-tag {
+      font-size: 0.78rem;
+      color: var(--ion-color-medium, #64748b);
+      margin: 3px 0 0 0;
+    }
+  }
+
+  .hino-meta {
+    .hino-pagina {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #94a3b8;
+    }
+  }
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
 }

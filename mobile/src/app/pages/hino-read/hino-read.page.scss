@@ -1,75 +1,262 @@
 @font-face {
   font-family: "RobotoR";
-  src: url("../../../assets/fonts/Roboto-Regular.ttf") format("ttf");
+  src: url("../../../assets/fonts/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "RobotoB";
-  src: url("../../../assets/fonts/Roboto-Bold.ttf") format("ttf");
+  src: url("../../../assets/fonts/Roboto-Bold.ttf") format("truetype");
 }
 
-ion-title,
-.titulo {
+/* Temas do Leitor */
+.tema-claro {
+  --ion-background-color: #ffffff;
+  --ion-text-color: #1f2937;
+  --coro-bg: #f8fafc;
+  --coro-border: #3b82f6;
+  --estrofe-num-color: #2563eb;
+  --meta-color: #64748b;
+  --footer-bg: #f8fafc;
+}
+
+.tema-sepia {
+  --ion-background-color: #f7f1e5;
+  --ion-text-color: #3d2f1f;
+  --coro-bg: #ede3d1;
+  --coro-border: #b45309;
+  --estrofe-num-color: #92400e;
+  --meta-color: #786450;
+  --footer-bg: #ede3d1;
+}
+
+.tema-escuro {
+  --ion-background-color: #121820;
+  --ion-text-color: #e2e8f0;
+  --coro-bg: #1e2633;
+  --coro-border: #60a5fa;
+  --estrofe-num-color: #93c5fd;
+  --meta-color: #94a3b8;
+  --footer-bg: #18202c;
+}
+
+.toolbar-num {
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.toolbar-sub {
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.header-icon {
+  font-size: 1.15rem;
+  color: var(--ion-color-medium, #666);
+}
+
+.fav-button {
+  .fav-active {
+    color: #eab308;
+    font-size: 1.25rem;
+  }
+  .fav-inactive {
+    color: var(--ion-color-medium, #666);
+    font-size: 1.25rem;
+  }
+}
+
+.leitor-content {
+  font-family: "Roboto", "RobotoR", -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.poesia-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem 3rem 1.25rem;
+}
+
+/* Cabeçalho do Hino */
+.hino-cabecalho {
   text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(125, 125, 125, 0.15);
 
+  .meta-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+
+    .badge-numero {
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 12px;
+    }
+
+    .meta-pagina {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--meta-color);
+    }
+  }
+
+  .hino-titulo {
+    font-size: 1.45rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin: 0.5rem 0 0.25rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .hino-autor {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--meta-color);
+    margin: 0;
+  }
 }
 
-ion-content {
-  font-family: "RobotoR", sans-serif;
-}
-
-.titulo,
-.coro {
-  font-weight: 900;
-  font-family: "RobotoB", sans-serif;
-}
-
-.coro {
-  text-align: left;
+/* Linhas e Recuos */
+.linha-poesia {
+  font-size: var(--leitor-font-size, 19px);
+  line-height: 1.55;
   white-space: pre-line;
-  line-height: 1.5em;
-  font-size: 19.2px;
+  min-height: 1.3em;
+}
+
+.recuo-0 {
+  margin-left: 0;
+}
+
+.recuo-1 {
+  margin-left: 1.5rem;
+}
+
+.recuo-2 {
+  margin-left: 3rem;
+}
+
+/* Estrofes */
+.bloco-estrofe {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.75rem;
+
+  .estrofe-num {
+    font-size: calc(var(--leitor-font-size, 19px) * 0.95);
+    font-weight: 800;
+    color: var(--estrofe-num-color);
+    width: 2.2rem;
+    flex-shrink: 0;
+    padding-top: 1px;
+  }
+
+  .estrofe-linhas {
+    flex: 1;
+  }
+}
+
+/* Coro */
+.bloco-coro {
+  background: var(--coro-bg);
+  border-left: 4px solid var(--coro-border);
+  padding: 0.85rem 1rem 0.85rem 1.25rem;
+  border-radius: 0 10px 10px 0;
+  margin: 1.5rem 0 2rem 0;
   font-style: italic;
-}
-.estrofe {
-  text-align: left;
-  white-space: pre-line;
-  line-height: 1.5em;
-  font-size: 19.2px;
+
+  .coro-tag {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--coro-border);
+    margin-bottom: 0.5rem;
+    display: inline-block;
+  }
+
+  .coro-linhas {
+    .linha-poesia {
+      font-weight: 500;
+    }
+  }
 }
 
-ion-toast {
-  color: white;
+/* Navegação Anterior / Seguinte */
+.navegacao-hinos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(125, 125, 125, 0.15);
+
+  .nav-hino-btn {
+    --border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .nav-separador {
+    font-size: 0.8rem;
+    color: var(--meta-color);
+    text-align: center;
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 
-.estrofe-note {
-  font-size: 16px;
-  margin-right: 0.1em;
+/* Rodapé com tamanho de fonte */
+.leitor-footer {
+  .footer-toolbar {
+    --background: var(--footer-bg);
+    border-top: 1px solid rgba(125, 125, 125, 0.12);
+    min-height: 48px;
+  }
+
+  .footer-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1.25rem;
+
+    .tamanho-indicador {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--meta-color);
+      min-width: 44px;
+      text-align: center;
+    }
+
+    .footer-a-minus {
+      font-size: 0.95rem;
+      margin-right: 2px;
+    }
+
+    .footer-a-plus {
+      font-size: 1.25rem;
+      margin-right: 2px;
+    }
+
+    .small-badge {
+      font-size: 0.65rem;
+    }
+  }
 }
 
-.pagina {
-  margin-right: 2em;
-  color: #120af9;
-}
-
-ion-label {
-  margin-right: 1em;
-  font-size: 19.2px;
-  color: hsl(58, 100%, 50%);
-}
-
-.numero {
-  color: #120af9;
-  font-weight: 900;
-}
-
-
-ion-fab-button{
-  opacity: 20%;
-  
-}
-
-ion-button{
-  padding:10px;
-  font-size: 1.5em;
-}
+.mr-1 { margin-right: 0.25rem; }
+.mr-2 { margin-right: 0.5rem; }
+.ml-1 { margin-left: 0.25rem; }
+.text-warning { color: #f59e0b; }
+.text-sepia { color: #b45309; }
+.text-dark { color: #64748b; }
+.text-primary { color: var(--ion-color-primary, #3880ff); }

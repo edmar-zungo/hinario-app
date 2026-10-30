@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideIonicAngular } from '@ionic/angular';
 import { Salmos23Page } from './salmos23.page';
 
 describe('Salmos23Page', () => {
@@ -6,6 +7,9 @@ describe('Salmos23Page', () => {
   let fixture: ComponentFixture<Salmos23Page>;
 
   beforeEach(async () => {
+    TestBed.configureTestingModule({
+      providers: [provideIonicAngular()],
+    });
     fixture = TestBed.createComponent(Salmos23Page);
     component = fixture.componentInstance;
     fixture.detectChanges();

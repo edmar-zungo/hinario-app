@@ -1,4 +1,6 @@
 {
+  "name": "IERA App",
+  "short_name": "IERA App",
   "icons": [
     {
       "src": "assets/icons/icon-48.webp",

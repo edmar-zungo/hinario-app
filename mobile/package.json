@@ -1,5 +1,5 @@
 {
-  "name": "Hinário - Louvai ao Senhor (IERA)",
+  "name": "iera-app",
   "version": "0.0.1",
   "author": "Ramiro Cardoso e Edmar Zungo",
   "homepage": "https://ionicframework.com/",
@@ -27,6 +27,7 @@
     "@capacitor/core": "^8.5.3",
     "@capacitor/haptics": "^8.0.2",
     "@capacitor/keyboard": "^8.0.6",
+    "@capacitor/preferences": "^8.0.1",
     "@capacitor/splash-screen": "^8.0.2",
     "@capacitor/status-bar": "^8.0.4",
     "@fortawesome/angular-fontawesome": "^5.1.0",

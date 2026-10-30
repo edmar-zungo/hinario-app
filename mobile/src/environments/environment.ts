@@ -4,6 +4,10 @@
 
 export const environment = {
   production: false,
+  hinarioPorUrl: "./assets/data/hinario-por.json",
+  hinarioKkoUrl: "./assets/data/hinario-kko.json",
+  hinarioKkrUrl: "./assets/data/hinario-kkr.json",
+  hinarioKmbUrl: "./assets/data/hinario-kmb.json",
   apiHinoUrl: "./assets/data/hinario.json",
   apiEstrofesUrl: "./assets/data/estrofes.json"
 };

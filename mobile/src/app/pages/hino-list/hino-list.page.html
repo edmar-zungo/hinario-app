@@ -1,99 +1,79 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
+
     <ion-title>Hinos</ion-title>
 
-     <ion-icon class="fa fa-ellipsis-v mr" slot="end" id="popover-button"></ion-icon>
-    <ion-popover trigger="popover-button" [dismissOnSelect]="true">
-      <ng-template>
-        <ion-content>
-          <ion-list>
-            <ion-item [button]="true" [detail]="false" (click)="getAllhinosByLinguaFromJSON('PORTUGUES')">Hinos em Portugues</ion-item>
-            <ion-item [button]="true" [detail]="false" (click)="getAllhinosByLinguaFromJSON('KIKONGO_ORIGEM')">Hinos em Kikongo de Origem</ion-item>
-            <ion-item [button]="true" [detail]="false" (click)="getAllhinosByLinguaFromJSON('KIKONGO_REVISADO')">Hinos em Kikongo Revisado</ion-item>
-            <ion-item [button]="true" [detail]="false" (click)="getAllhinosByLinguaFromJSON('KINBUMDU')">Hinos em Kinbumdu</ion-item>
-            <ion-item [button]="true" [detail]="false" (click)="getAllhinosByJSON()">Todos os Hinos</ion-item>
-    
-          </ion-list>
-        </ion-content>
-      </ng-template>
-    </ion-popover>
+    <ion-buttons slot="end">
+      <!-- Ação Rápida Ir ao nº -->
+      <ion-button (click)="abrirIrAoNumero()" class="btn-ir-numero">
+        <i class="fa fa-arrow-down-1-9 mr-1" aria-hidden="true"></i>
+        <span>Ir ao nº</span>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <!-- Segmentos por Língua / Hinário -->
+  <ion-toolbar class="segment-toolbar">
+    <ion-segment
+      [value]="filtro"
+      (ionChange)="onFiltroChange($event)"
+      [scrollable]="true"
+      mode="md"
+    >
+      <ion-segment-button value="todos">
+        <ion-label>Todos</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="por">
+        <ion-label>Português</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="kkr">
+        <ion-label>Kikongo (Rev)</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="kko">
+        <ion-label>Kikongo (Orig)</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="kmb">
+        <ion-label>Kimbundu</ion-label>
+      </ion-segment-button>
+    </ion-segment>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  @if(filtro === 'todos'){
-    <ion-list lines="full">
-      <div class="ion-padding"> PORTUGUÊS </div>
-        @for (hino of hinosByJSON; track $index) {
-          @if (hino.lingua === 'PORTUGUES') {
-            <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]" [routerLinkActive]="['router-link-active']">
-              <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label>
-              <ion-label slot="end">{{hino.pagina}}</ion-label>
-            </ion-item>
-          }
-          }
-      <div class="ion-padding">  KIKONGO REVISADO  </div>
-      @for (hino of hinosByJSON; track $index) {
-        @if (hino.lingua === 'KIKONGO_REVISADO') {
-          <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]">
-            <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label>
-            <ion-label slot="end">{{hino.pagina}}</ion-label>
-          </ion-item>
-        }
-        }
-      <div class="ion-padding">  KIKONGO DE ORIGEM  </div>
-      @for (hino of hinosByJSON; track $index) {
-        @if (hino.lingua === 'KIKONGO_ORIGEM') {
-          <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]">
-            <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label>
-            <ion-label slot="end">{{hino.pagina}}</ion-label>
-          </ion-item>
-        }
-        }
-      <div class="ion-padding">  KINBUMDU </div>
-      @for (hino of hinosByJSON; track $index) {
-        @if (hino.lingua === 'KINBUMDU') {
-          <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]">
-            <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label>
-            <ion-label slot="end">{{hino.pagina}}</ion-label>
-          </ion-item>
-        }
-        }
-      
-    </ion-list>
+  @if (carregando) {
+    <div class="loading-state">
+      <p>A carregar hinários...</p>
+    </div>
   } @else {
+    <ion-list lines="full" class="hinos-list">
+      @for (hino of hinosExibidos; track hino.id) {
+        <ion-item [button]="true" [routerLink]="['/hino-read', hino.id]" class="hino-item">
+          <div class="hino-num-box" slot="start">
+            <span class="hino-num">{{ hino.numero }}</span>
+          </div>
 
-   @switch (filtro) {
-     @case ('KINBUMDU') {
-      <div class="ion-padding">  KINBUMDU </div>
-     }
-     @case ('KIKONGO_ORIGEM') {
-      <div class="ion-padding">  KIKONGO DE ORIGEM </div>
-     }
-     @case ('KIKONGO_REVISADO') {
-      <div class="ion-padding">  KIKONGO REVISADO </div>
-     }
-     @case ('PORTUGUES') {
-      <div class="ion-padding">  PORTUGUÊS </div>
-     }
-   }
-   
-    @for (hino of hinosByJSON; track $index) {
-      @if (hino.lingua === filtro) {
-        <ion-item [button]="true" [routerLink]="['/hino-read/', hino.id]">
-          <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label>
-          <ion-label slot="end">{{hino.pagina}}</ion-label>
+          <ion-label class="hino-info">
+            <h2 class="hino-titulo">{{ hino.titulo }}</h2>
+            @if (filtro === 'todos') {
+              <p class="hino-lingua-tag">{{ hino.hinarioNome }}</p>
+            }
+          </ion-label>
+
+          @if (hino.pagina) {
+            <div class="hino-meta" slot="end">
+              <span class="hino-pagina">Pág. {{ hino.pagina }}</span>
+            </div>
+          }
         </ion-item>
+      } @empty {
+        <div class="empty-state">
+          <i class="fa fa-book-open empty-icon" aria-hidden="true"></i>
+          <p>Nenhum hino encontrado neste hinário.</p>
+        </div>
       }
-      }
+    </ion-list>
   }
-
-  <ion-fab slot="fixed" horizontal="end" vertical="bottom">
-    <ion-fab-button [routerLink]="['/searchPage']" [routerLinkActive]="['router-link-active']">
-      <ion-icon class="fa fa-search"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
 </ion-content>

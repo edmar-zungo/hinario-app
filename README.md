@@ -88,8 +88,8 @@ hinario.dados.dir=            # vazio = pasta data/ do back-end
 | 5 | Estruturação e continuação | concluída |
 | 6 | Painel: importação e revisão | concluída |
 | 7 | Exportação e comparação com o JSON atual | concluída |
-| 8 | Constituição | por fazer |
-| 9 | IERA App (redesign do mobile) | por fazer |
+| 8 | Constituição | aguarda ficheiros oficiais (placeholder criado) |
+| 9 | IERA App (redesign do mobile) | concluída |
 
 ### Migração (Fase 1)
 
@@ -312,9 +312,32 @@ confirmadas diz o que falta; sem código exporta todos; a comparação marca
 `so_acento` como não-divergente, alinha linha a linha com referência
 (bloco/linha) e devolve 404 para hino inexistente.
 
-Compatibilidade com o leitor mobile (round-trip do JSON exportado, UUIDs dos
-favoritos) fica para a Fase 9, quando o mobile passar a ler o esquema novo —
-o backend já preserva os UUIDs e valida o esquema, como cobrem os testes.
+### Constituição (Fase 8)
+
+Aguardando receção dos ficheiros oficiais da Constituição da IERA para importação e estruturação. Foi implementado o placeholder elegante com a rota `/tabs/constituicao` no mobile para integração imediata assim que os dados estiverem disponíveis.
+
+### IERA App — Redesign do Mobile (Fase 9)
+
+A aplicação móvel foi completamente redesenhada e alinhada com o esquema novo de exportação (`hinario-*.json`):
+
+- **Identidade e Configuração**: Renomeada para **IERA App**, `appId: com.ravunana.iera` no `capacitor.config.ts`, `build.gradle` e `strings.xml`.
+- **Esquema Export e Dados**: Modelos TypeScript em `hino-export.model.ts` alinhados com o esquema novo; `hinario-por.json`, `hinario-kko.json`, `hinario-kkr.json`, `hinario-kmb.json` em `mobile/src/assets/data/`.
+- **Navegação por Separadores (Tabs)**:
+  - 📖 **Hinos**: Lista filtrável por hinário com segmentação por língua e modal "Ir ao nº" directo;
+  - 🔍 **Pesquisa**: Busca global e por língua, sem distinção de acentos (`removerAcentos()`), com atalho numérico;
+  - ⭐ **Favoritos**: Gestão reativa de favoritos com contagem e remoção direta;
+  - 📜 **Constituição**: Separador dedicado com aviso do estado de digitalização.
+- **Leitor de Poesia Modernizado (`/hino-read/:id`)**:
+  - Renderização fiel de blocos com recuo (`recuo-0`, `recuo-1`, `recuo-2`) e destaque de coros (`tipo === 'coro'`);
+  - Navegação fluida para hino anterior e seguinte dentro da mesma coletânea;
+  - Temas de leitura: **Claro**, **Sépia** e **Escuro**, persistidos em `@capacitor/preferences`;
+  - Controlo de tamanho de fonte (`A-` / `A+`, 14px a 28px) persistido entre sessões;
+  - Toggle de favoritos em tempo real diretamente na barra de leitura.
+- **Armazenamento e Performance**:
+  - Favoritos armazenados por `id` em `@capacitor/preferences` com chave `'favoritos_ids'`;
+  - Migração transparente e automática dos favoritos antigos do `localStorage`;
+  - Carregamento único dos hinários em memória com cache RxJS (`shareReplay(1)`) no `HinarioService`;
+  - Correção dos formatos de fontes locais `@font-face` para `format("truetype")`.
 
 ### Tarefas da Fase 0 que dependem de ti
 

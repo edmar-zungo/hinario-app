@@ -1,23 +1,53 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Hinos Favoritos</ion-title>
+    <ion-title>Favoritos</ion-title>
+    @if (hinosFavoritos.length > 0) {
+      <ion-badge slot="end" color="primary" class="fav-count-badge">
+        {{ hinosFavoritos.length }}
+      </ion-badge>
+    }
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-list lines="full">
-    @for (hinoFavorito of hinosFavoritos; track $index) {
-      <ion-item  [button]="true" [routerLink]="['/hino-read/', hinoFavorito.id]">
-        <ion-label>{{hinoFavorito.numero}}. {{hinoFavorito.titulo}} </ion-label>
-        <ion-label slot="end" class="icon-star"> <i class="fa fa-star"></i> </ion-label>
-      </ion-item>
-    } @empty {
-      <div class="ion-padding">
-        <p>Nenhum hino adicionado aos Favoritos!</p>
-      </div>
-    }
-  </ion-list>
+  @if (carregando) {
+    <div class="loading-state">
+      <p>A carregar favoritos...</p>
+    </div>
+  } @else {
+    <ion-list lines="full" class="favoritos-list">
+      @for (hino of hinosFavoritos; track hino.id) {
+        <ion-item [button]="true" [routerLink]="['/hino-read', hino.id]" class="favorito-item">
+          <div class="hino-num-box" slot="start">
+            <span class="hino-num">{{ hino.numero }}</span>
+          </div>
+
+          <ion-label>
+            <h2 class="hino-titulo">{{ hino.titulo }}</h2>
+            <p class="hino-sub">{{ hino.hinarioNome }}</p>
+          </ion-label>
+
+          <ion-button
+            fill="clear"
+            slot="end"
+            (click)="removerFavorito($event, hino.id)"
+            class="star-remove-btn"
+            title="Remover dos favoritos"
+          >
+            <i class="fa fa-star star-icon" aria-hidden="true"></i>
+          </ion-button>
+        </ion-item>
+      } @empty {
+        <div class="empty-state">
+          <i class="fa-regular fa-star empty-icon" aria-hidden="true"></i>
+          <h3>Sem Favoritos</h3>
+          <p>Ainda não adicionou nenhum hino aos favoritos.</p>
+          <small>Toque na estrela no canto superior do leitor enquanto lê um hino para guardá-lo aqui.</small>
+        </div>
+      }
+    </ion-list>
+  }
 </ion-content>

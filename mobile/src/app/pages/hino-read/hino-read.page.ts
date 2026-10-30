@@ -1,9 +1,11 @@
 import {
   Component,
   OnInit,
+  OnDestroy,
   ChangeDetectionStrategy,
+  ChangeDetectorRef,
 } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import {
   IonHeader,
@@ -13,25 +15,19 @@ import {
   IonLabel,
   IonContent,
   IonNote,
-  IonFab,
-  IonFabButton,
   IonFooter,
-  IonToast,
-  IonIcon,
-  IonItemGroup,
   IonButton,
   IonBackButton,
+  IonBadge,
+  IonPopover,
+  IonList,
+  IonItem,
   ToastController,
 } from '@ionic/angular';
-import {
-  ActivatedRoute,
-  Router,
-  RouterLink,
-  RouterLinkActive,
-} from '@angular/router';
-import { HinarioService } from 'src/app/services/hinario.service';
-import { HinoModel } from 'src/app/model/hino-model';
-import { EstrofeModel } from 'src/app/model/estrofe-model';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { HinarioService, TemaLeitor } from 'src/app/services/hinario.service';
+import { HinoExport } from 'src/app/model/hino-export.model';
 
 @Component({
   selector: 'app-hino-read',
@@ -39,11 +35,10 @@ import { EstrofeModel } from 'src/app/model/estrofe-model';
   styleUrls: ['./hino-read.page.scss'],
   changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
+    CommonModule,
     IonBackButton,
     IonButton,
     IonFooter,
-    IonFabButton,
-    IonFab,
     IonNote,
     IonContent,
     IonLabel,
@@ -51,137 +46,121 @@ import { EstrofeModel } from 'src/app/model/estrofe-model';
     IonButtons,
     IonToolbar,
     IonHeader,
-    IonToast,
-    IonIcon,
-    IonItemGroup,
+    IonBadge,
+    IonPopover,
+    IonList,
+    IonItem,
     FormsModule,
-    RouterLink,
-    RouterLinkActive,
   ],
 })
-export class HinoReadPage implements OnInit {
-  hino?: HinoModel;
+export class HinoReadPage implements OnInit, OnDestroy {
+  hino?: HinoExport;
+  anterior?: HinoExport;
+  seguinte?: HinoExport;
 
-  estrofes: EstrofeModel[] = [];
   liked = false;
+  fontSize = 19;
+  tema: TemaLeitor = 'claro';
+
+  private routeSub?: Subscription;
+  private favSub?: Subscription;
 
   constructor(
     private activatedRoute: ActivatedRoute,
     private hinarioService: HinarioService,
     private toastController: ToastController,
-    private router: Router
+    private router: Router,
+    private cdr: ChangeDetectorRef
   ) {}
 
   ngOnInit() {
-    this.loadHino();
-    this.loadEstrofesPorHino();
-  }
+    this.carregarPreferencias();
 
-  loadHino() {
-    const hinoId = this.activatedRoute.snapshot.params['hinoId'];
+    this.routeSub = this.activatedRoute.params.subscribe((params) => {
+      const hinoId = params['hinoId'];
+      if (hinoId) {
+        this.carregarHino(hinoId);
+      }
+    });
 
-    this.hinarioService.getAllHinoByJSON().subscribe((resp) => {
-      this.hino = resp.find((x) => x.id === hinoId);
-      const hinos: HinoModel[] = JSON.parse(localStorage.getItem('hinos')!);
-      if (hinos.find((x) => x.id === this.hino!.id)) {
-        this.liked = true;
-      } else {
-        this.liked = false;
+    this.favSub = this.hinarioService.favoritos$.subscribe((favIds) => {
+      if (this.hino) {
+        this.liked = favIds.includes(this.hino.id);
+        this.cdr.markForCheck();
       }
     });
   }
 
-  loadEstrofesPorHino() {
-    const hinoId = this.activatedRoute.snapshot.params['hinoId'];
+  ngOnDestroy() {
+    this.routeSub?.unsubscribe();
+    this.favSub?.unsubscribe();
+  }
 
-    this.hinarioService.getAllEstrofesByJSON().subscribe((resp) => {
-      this.estrofes = resp.filter((x) => x.hino?.id === hinoId) ?? [];
+  async carregarPreferencias() {
+    this.fontSize = await this.hinarioService.getLeitorFontSize();
+    this.tema = await this.hinarioService.getLeitorTema();
+    this.cdr.markForCheck();
+  }
+
+  carregarHino(hinoId: string) {
+    this.hinarioService.getHinoById(hinoId).subscribe(async (hino) => {
+      this.hino = hino;
+      if (hino) {
+        this.liked = await this.hinarioService.isFavorito(hino.id);
+        this.carregarAdjacentes(hino.id);
+      }
+      this.cdr.markForCheck();
     });
   }
 
-  addOuRemoveDosFavoritos(hinoId: string | undefined, action: 'add' | 'rem') {
-    this.hinarioService.addOuRemoveDosFavoritos(hinoId);
-
-    this.createTost(action);
-    this.loadHino();
+  carregarAdjacentes(hinoId: string) {
+    this.hinarioService.getAdjacentHinos(hinoId).subscribe((adj) => {
+      this.anterior = adj.anterior;
+      this.seguinte = adj.seguinte;
+      this.cdr.markForCheck();
+    });
   }
 
-  async createTost(action: 'add' | 'rem') {
-    let toast;
+  async alternarFavorito() {
+    if (!this.hino) return;
+    const novoEstado = await this.hinarioService.toggleFavorito(this.hino.id);
+    this.liked = novoEstado;
 
-    switch (action) {
-      case 'add':
-        toast = await this.toastController.create({
-          message: 'Adicionado aos Favoritos',
-          color: 'primary',
-          duration: 500,
-          position: 'bottom',
-        });
-        break;
-      case 'rem':
-        toast = await this.toastController.create({
-          message: 'Removido dos Favoritos',
-          color: 'danger',
-          duration: 500,
-          position: 'bottom',
-        });
-        break;
-    }
-
+    const toast = await this.toastController.create({
+      message: novoEstado ? 'Adicionado aos Favoritos' : 'Removido dos Favoritos',
+      color: novoEstado ? 'success' : 'medium',
+      duration: 1200,
+      position: 'bottom',
+    });
     await toast.present();
+    this.cdr.markForCheck();
   }
 
-  getHinoSeguinte(hinoId: string | undefined) {
-    this.hinarioService.getAllHinoByJSON().subscribe((resp) => {
-      const hinoResult = resp.find((x) => x.id === hinoId);
-      const indexHino = resp.indexOf(hinoResult!);
-      const hinoAseguir = resp[indexHino + 1];
-      this.router.navigate(['/hino-read/', hinoAseguir.id]);
-    });
-  }
-  getHinoAnterior(hinoId: string | undefined) {
-    this.hinarioService.getAllHinoByJSON().subscribe((resp) => {
-      const hinoResult = resp.find((x) => x.id === hinoId);
-      const indexHino = resp.indexOf(hinoResult!);
-      const hinoAnterior = resp[indexHino - 1];
-      this.router.navigate(['/hino-read/', hinoAnterior.id]);
-    });
+  irParaHino(outroHino?: HinoExport) {
+    if (outroHino) {
+      this.router.navigate(['/hino-read', outroHino.id]);
+    }
   }
 
-  aumentarTamanhoFonte() {
-    const paragrafos = document.querySelectorAll('p');
-    const titulo = document.querySelectorAll('h4');
-
-    paragrafos.forEach((p) => {
-      const tamanhoActual = window.getComputedStyle(p).fontSize;
-      const novoTamanhoDeFont = parseFloat(tamanhoActual) + 1;
-
-      p.style.fontSize = novoTamanhoDeFont + 'px';
-    });
-
-    titulo.forEach((h) => {
-      const tamanhoActual = window.getComputedStyle(h).fontSize;
-      const novoTamanhoDeFont = parseFloat(tamanhoActual) + 1;
-
-      h.style.fontSize = novoTamanhoDeFont + 'px';
-    });
+  async aumentarFonte() {
+    if (this.fontSize < 36) {
+      this.fontSize += 1.5;
+      await this.hinarioService.setLeitorFontSize(this.fontSize);
+      this.cdr.markForCheck();
+    }
   }
 
-  diminuirTamanhoFonte() {
-    const paragrafos = document.querySelectorAll('p');
-    const titulo = document.querySelectorAll('h4');
-    paragrafos.forEach((p) => {
-      const tamanhoActual = window.getComputedStyle(p).fontSize;
-      const novoTamanhoDeFont = parseFloat(tamanhoActual) - 1;
+  async diminuirFonte() {
+    if (this.fontSize > 13) {
+      this.fontSize -= 1.5;
+      await this.hinarioService.setLeitorFontSize(this.fontSize);
+      this.cdr.markForCheck();
+    }
+  }
 
-      p.style.fontSize = novoTamanhoDeFont + 'px';
-    });
-
-    titulo.forEach((h) => {
-      const tamanhoActual = window.getComputedStyle(h).fontSize;
-      const novoTamanhoDeFont = parseFloat(tamanhoActual) - 1;
-
-      h.style.fontSize = novoTamanhoDeFont + 'px';
-    });
+  async definirTema(novoTema: TemaLeitor) {
+    this.tema = novoTema;
+    await this.hinarioService.setLeitorTema(novoTema);
+    this.cdr.markForCheck();
   }
 }

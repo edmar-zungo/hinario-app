@@ -15,6 +15,6 @@ export class LoaderPage implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    setTimeout(() => this.router.navigate(['/hinos-list']), 1500);
+    setTimeout(() => this.router.navigate(['/tabs/hinos']), 1500);
   }
 }

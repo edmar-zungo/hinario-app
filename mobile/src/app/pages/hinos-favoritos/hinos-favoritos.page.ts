@@ -1,5 +1,11 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
-
+import {
+  Component,
+  OnInit,
+  OnDestroy,
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+} from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import {
   IonHeader,
@@ -11,9 +17,13 @@ import {
   IonLabel,
   IonItem,
   IonMenuButton,
+  IonButton,
+  IonBadge,
 } from '@ionic/angular';
-import { HinoModel } from 'src/app/model/hino-model';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { HinarioService } from 'src/app/services/hinario.service';
+import { HinoExport } from 'src/app/model/hino-export.model';
 
 @Component({
   selector: 'app-hinos-favoritos',
@@ -21,29 +31,55 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrls: ['./hinos-favoritos.page.scss'],
   changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
-    IonLabel,
-    IonList,
-    IonTitle,
-    IonButtons,
-    IonToolbar,
-    IonContent,
-    IonHeader,
-    IonMenuButton,
-    IonItem,
+    CommonModule,
     FormsModule,
     RouterLink,
-    RouterLinkActive,
+    IonHeader,
+    IonContent,
+    IonToolbar,
+    IonButtons,
+    IonTitle,
+    IonList,
+    IonLabel,
+    IonItem,
+    IonMenuButton,
+    IonButton,
+    IonBadge,
   ],
 })
-export class HinosFavoritosPage implements OnInit {
-  hinosFavoritos: HinoModel[] = [];
+export class HinosFavoritosPage implements OnInit, OnDestroy {
+  hinosFavoritos: HinoExport[] = [];
+  carregando = true;
 
+  private favSub?: Subscription;
+
+  constructor(
+    private hinarioService: HinarioService,
+    private cdr: ChangeDetectorRef
+  ) {}
 
   ngOnInit() {
-    this.getAllHinos();
+    this.carregarFavoritos();
   }
 
-  getAllHinos() {
-    this.hinosFavoritos = JSON.parse(localStorage.getItem('hinos')!);
+  ngOnDestroy() {
+    this.favSub?.unsubscribe();
+  }
+
+  carregarFavoritos() {
+    this.carregando = true;
+    this.favSub = this.hinarioService.favoritos$.subscribe(() => {
+      this.hinarioService.getHinosFavoritos().subscribe((hinos) => {
+        this.hinosFavoritos = hinos;
+        this.carregando = false;
+        this.cdr.markForCheck();
+      });
+    });
+  }
+
+  removerFavorito(event: Event, hinoId: string) {
+    event.stopPropagation();
+    event.preventDefault();
+    this.hinarioService.toggleFavorito(hinoId);
   }
 }

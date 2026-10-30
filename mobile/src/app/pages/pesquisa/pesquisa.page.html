@@ -1,26 +1,107 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-back-button default-href="/hinos-list" slot="start" />
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-searchbar
       show-clear-button="always"
-      placeholder="Hino, número ou página..."
-      [debounce]="1000"
-      (ionInput)="pesquisaOnJSON($event.target.value?.toString())"
-      (ionClear)="setVezio()"
-      [autofocus]="autoFocus"
+      placeholder="Pesquisar sem acentos, estrofe, nº..."
+      [debounce]="250"
+      (ionInput)="onSearchInput($event)"
+      (ionClear)="limparPesquisa()"
+      [autofocus]="false"
+      class="custom-searchbar"
     ></ion-searchbar>
+  </ion-toolbar>
+
+  <!-- Filtro por Hinário / Língua -->
+  <ion-toolbar class="segment-toolbar">
+    <ion-segment
+      [value]="filtroLingua"
+      (ionChange)="onFiltroLinguaChange($event)"
+      [scrollable]="true"
+      mode="md"
+    >
+      <ion-segment-button value="todos">
+        <ion-label>Todos</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="por">
+        <ion-label>Português</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="kkr">
+        <ion-label>Kikongo (Rev)</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="kko">
+        <ion-label>Kikongo (Orig)</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="kmb">
+        <ion-label>Kimbundu</ion-label>
+      </ion-segment-button>
+    </ion-segment>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  @for (hino of hinosResult; track $index) {
-  <ion-item
-    [button]="true"
-    [routerLink]="['/hino-read/', hino.id]"
-    lines="full"
-  >
-    <ion-label>{{hino.numero}}. {{hino.titulo}}</ion-label>
-    <ion-label slot="end">{{hino.pagina}}</ion-label>
-  </ion-item>
+  <!-- Atalho directo "Ir ao nº" se foi digitado um número -->
+  @if (numeroDigitado !== null) {
+    <div class="atalho-ir-numero" (click)="irDirectoAoNumero(numeroDigitado)">
+      <div class="atalho-content">
+        <i class="fa fa-bolt atalho-icon" aria-hidden="true"></i>
+        <div>
+          <strong>Ir directamente ao Hino nº {{ numeroDigitado }}</strong>
+          <p>Toque para abrir o hino com este número</p>
+        </div>
+      </div>
+      <i class="fa fa-chevron-right text-primary" aria-hidden="true"></i>
+    </div>
+  }
+
+  <!-- Resultados da Pesquisa -->
+  @if (termoPesquisa) {
+    <div class="resultados-meta">
+      <span>{{ hinosResult.length }} {{ hinosResult.length === 1 ? 'resultado' : 'resultados' }} para "{{ termoPesquisa }}"</span>
+    </div>
+
+    <ion-list lines="full" class="resultados-list">
+      @for (hino of hinosResult; track hino.id) {
+        <ion-item [button]="true" [routerLink]="['/hino-read', hino.id]" class="resultado-item">
+          <div class="hino-num-box" slot="start">
+            <span class="hino-num">{{ hino.numero }}</span>
+          </div>
+
+          <ion-label>
+            <h2 class="hino-titulo">{{ hino.titulo }}</h2>
+            <p class="hino-sub">{{ hino.hinarioNome }}</p>
+          </ion-label>
+
+          @if (hino.pagina) {
+            <span class="hino-pagina" slot="end">Pág. {{ hino.pagina }}</span>
+          }
+        </ion-item>
+      } @empty {
+        @if (!pesquisando) {
+          <div class="empty-state">
+            <i class="fa fa-search-minus empty-icon" aria-hidden="true"></i>
+            <p>Nenhum hino encontrado para "{{ termoPesquisa }}".</p>
+            <small>Experimente procurar sem acentos ou apenas pelo número.</small>
+          </div>
+        }
+      }
+    </ion-list>
+  } @else {
+    <!-- Estado Inicial / Dicas de Pesquisa -->
+    <div class="dicas-container">
+      <div class="dica-card">
+        <i class="fa fa-lightbulb dica-icon" aria-hidden="true"></i>
+        <h3>Pesquisa Inteligente</h3>
+        <p>A pesquisa ignora acentos, cedilhas e maiúsculas. Pode procurar por:</p>
+        <ul>
+          <li><strong>Número do hino:</strong> ex. <em>42</em> ou <em>383</em></li>
+          <li><strong>Palavras do título:</strong> ex. <em>Jezu</em>, <em>Nzambi</em>, <em>Senhor</em></li>
+          <li><strong>Trechos das estrofes ou coro:</strong> ex. <em>Muxima</em>, <em>salvação</em></li>
+          <li><strong>Página do hinário impresso:</strong> ex. <em>394</em></li>
+        </ul>
+      </div>
+    </div>
   }
 </ion-content>
