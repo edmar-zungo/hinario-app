@@ -69,3 +69,63 @@
   font-weight: bold;
   font-style: normal;
 }
+
+/* ==========================================================================
+   Temas do Leitor – aplicados no body pelo HinarioService
+   ========================================================================== */
+.tema-claro {
+  --leitor-bg: #ffffff;
+  --leitor-text: #1f2937;
+  --coro-bg: #f8fafc;
+  --coro-border: #3b82f6;
+  --estrofe-num-color: #2563eb;
+  --meta-color: #64748b;
+  --footer-bg: #f8fafc;
+}
+
+.tema-sepia {
+  --leitor-bg: #f7f1e5;
+  --leitor-text: #3d2f1f;
+  --coro-bg: #ede3d1;
+  --coro-border: #b45309;
+  --estrofe-num-color: #92400e;
+  --meta-color: #786450;
+  --footer-bg: #ede3d1;
+
+  ion-content.leitor-content,
+  .leitor-content {
+    --ion-background-color: #f7f1e5;
+    --ion-text-color: #3d2f1f;
+  }
+
+  ion-footer.leitor-footer {
+    --ion-toolbar-background: #ede3d1;
+  }
+}
+
+.tema-escuro {
+  --leitor-bg: #121820;
+  --leitor-text: #e2e8f0;
+  --coro-bg: #1e2633;
+  --coro-border: #60a5fa;
+  --estrofe-num-color: #93c5fd;
+  --meta-color: #94a3b8;
+  --footer-bg: #18202c;
+
+  ion-content.leitor-content,
+  .leitor-content {
+    --ion-background-color: #121820;
+    --ion-text-color: #e2e8f0;
+  }
+
+  ion-footer.leitor-footer {
+    --ion-toolbar-background: #18202c;
+  }
+}
+
+/* Texto justificado – evitar espaçamento excessivo na última linha */
+.paragrafo-texto,
+.texto {
+  text-align-last: left;
+  hyphens: auto;
+}

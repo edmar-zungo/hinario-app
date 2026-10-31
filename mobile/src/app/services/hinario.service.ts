@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, forkJoin, map, Observable, of, shareReplay, tap } from 'rxjs';
+import { DOCUMENT } from '@angular/common';
+import { Inject } from '@angular/core';
 import { Preferences } from '@capacitor/preferences';
 import { environment } from 'src/environments/environment';
 import { HinarioExport, HinoExport } from '../model/hino-export.model';
@@ -25,8 +27,15 @@ export class HinarioService {
   private favoritosSubject = new BehaviorSubject<string[]>([]);
   public favoritos$ = this.favoritosSubject.asObservable();
 
-  constructor(private http: HttpClient) {
+  private temaSubject = new BehaviorSubject<TemaLeitor>('claro');
+  public tema$ = this.temaSubject.asObservable();
+
+  constructor(
+    private http: HttpClient,
+    @Inject(DOCUMENT) private document: Document
+  ) {
     this.inicializarFavoritos();
+    this.inicializarTema();
   }
 
   /**
@@ -358,9 +367,23 @@ export class HinarioService {
         key: PREF_TEMA_KEY,
         value: tema,
       });
+      this.aplicarTemaNoBody(tema);
+      this.temaSubject.next(tema);
     } catch (e) {
       console.warn('Erro ao guardar tema do leitor:', e);
     }
+  }
+
+  private async inicializarTema(): Promise<void> {
+    const tema = await this.getLeitorTema();
+    this.aplicarTemaNoBody(tema);
+    this.temaSubject.next(tema);
+  }
+
+  private aplicarTemaNoBody(tema: TemaLeitor): void {
+    const body = this.document.body;
+    body.classList.remove('tema-claro', 'tema-sepia', 'tema-escuro');
+    body.classList.add(`tema-${tema}`);
   }
 
   /* ==========================================================================

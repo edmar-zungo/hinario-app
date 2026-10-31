@@ -138,6 +138,7 @@
 
 .indice-grupo {
   --background: transparent;
+  background: transparent;
   margin-bottom: 2rem;
 }
 
@@ -150,27 +151,28 @@
   align-items: baseline;
   gap: 0.5rem;
   padding: 0.75rem 1rem 0.4rem;
-  background: var(--ion-color-step-50, #f4f5f8);
+  background: var(--ion-color-primary, #3880ff);
 
   .parte-numero {
     font-size: 0.78rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.4px;
-    color: var(--ion-color-primary, #3880ff);
+    color: rgba(255, 255, 255, 0.75);
     white-space: nowrap;
   }
 
   .parte-titulo {
-    font-size: 0.82rem;
-    font-weight: 600;
-    color: var(--ion-text-color, #222);
+    font-size: 0.86rem;
+    font-weight: 700;
+    color: #ffffff;
   }
 }
 
 .capitulo-item {
-  --background: var(--ion-color-step-25, #fafafa);
+  --background: var(--ion-item-background, var(--ion-background-color, #fff));
   --padding-start: 12px;
+  border-left: 3px solid var(--ion-color-primary, #3880ff);
 
   h3 {
     font-size: 0.88rem;
@@ -179,7 +181,7 @@
 }
 
 .capitulo-conteudo {
-  background: var(--ion-background-color, #fff);
+  background: var(--ion-item-background, var(--ion-background-color, #fff));
 }
 
 .sec-cabecalho {
@@ -188,11 +190,14 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.3px;
-  color: var(--ion-color-medium-shade, #555);
-  background: var(--ion-color-step-50, #f4f5f8);
+  color: var(--ion-color-primary, #3880ff);
+  border-left: 3px solid var(--ion-color-primary, #3880ff);
+  background: var(--ion-background-color, #fff);
+  margin: 0.25rem 0;
 }
 
 .unidade-item {
+  --background: var(--ion-item-background, var(--ion-background-color, #fff));
   --padding-start: 16px;
   --inner-padding-end: 12px;
 

@@ -84,17 +84,12 @@
         </div>
       </ion-card-header>
       <ion-card-content>
-        <div class="meta-chips">
+      <div class="meta-chips">
           <ion-badge color="light">{{ constituicao?.partes?.length }} partes</ion-badge>
           <ion-badge color="light">{{ totalCapitulos }} capítulos</ion-badge>
           <ion-badge color="light">{{ constituicao?.totalArtigos }} artigos</ion-badge>
-          @if (constituicao?.paginasFonte) {
-            <ion-badge color="light">{{ constituicao?.paginasFonte }} páginas</ion-badge>
-          }
         </div>
-        @if (constituicao?.fonte) {
-          <p class="fonte">Fonte: {{ constituicao?.fonte }}</p>
-        }
+        <p class="fonte">CONSTITUIÇÃO DA IERA.pdf</p>
       </ion-card-content>
     </ion-card>
 
