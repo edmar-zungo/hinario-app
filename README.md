@@ -88,7 +88,7 @@ hinario.dados.dir=            # vazio = pasta data/ do back-end
 | 5 | Estruturação e continuação | concluída |
 | 6 | Painel: importação e revisão | concluída |
 | 7 | Exportação e comparação com o JSON atual | concluída |
-| 8 | Constituição | aguarda ficheiros oficiais (placeholder criado) |
+| 8 | Constituição | concluída |
 | 9 | IERA App (redesign do mobile) | concluída |
 
 ### Migração (Fase 1)
@@ -314,7 +314,31 @@ confirmadas diz o que falta; sem código exporta todos; a comparação marca
 
 ### Constituição (Fase 8)
 
-Aguardando receção dos ficheiros oficiais da Constituição da IERA para importação e estruturação. Foi implementado o placeholder elegante com a rota `/tabs/constituicao` no mobile para integração imediata assim que os dados estiverem disponíveis.
+A Constituição da IERA está integrada na app a partir da transcrição oficial
+(`docs/constituicao_iera_v2.json`, schema 2.0, 69 páginas do PDF emendado de
+15-10-2023).
+
+- **Geração**: `node docs/gerar-constituicao.mjs` transforma a transcrição em
+  `mobile/src/assets/data/constituicao.json` — texto verbatim (regra de ouro,
+  só normalização NFC e estrutura), notas editoriais do Word excluídas e
+  **IDs compostos** (`I-art-1`, `II-art-7`, `III-art-3`) porque a numeração de
+  artigos repete-se entre as três partes. O script valida a contagem (129
+  artigos) e a unicidade dos IDs e falha se a fonte divergir.
+- **Conteúdo**: 3 partes (Estatutos, Regulamento da Ordem Interna, Declaração
+  da Fé), 31 capítulos, 11 secções, 129 artigos, prémbulo, introdução e
+  apêndice das Emendas (1979, 2006, 2013, 2023).
+- **App**: `ConstituicaoService` (carregamento único em memória, cache RxJS,
+  pesquisa sem acentos com excerto de contexto); tab **Constituição** com
+  metadados, índice navegável (partes → capítulos → secções → artigos) e
+  pesquisa; leitor `/constituicao-read/:unidadeId` com blocos legais
+  (n.º, alíneas, §§, departamentos/sectores), navegação anterior/seguinte e
+  os mesmos temas/tamanho de letra do leitor de hinos.
+- **Pendência humana (PRD 9.4)**: a revisão e aprovação do texto por um
+  responsável da igreja mantém-se como último passo antes de publicar a app;
+  a transcrição de origem já veio verificada automaticamente.
+
+Para regenerar após qualquer emenda futura: editar/actualizar a transcrição em
+`docs/`, correr o script e revalidar os 129 artigos.
 
 ### IERA App — Redesign do Mobile (Fase 9)
 
@@ -326,7 +350,7 @@ A aplicação móvel foi completamente redesenhada e alinhada com o esquema novo
   - 📖 **Hinos**: Lista filtrável por hinário com segmentação por língua e modal "Ir ao nº" directo;
   - 🔍 **Pesquisa**: Busca global e por língua, sem distinção de acentos (`removerAcentos()`), com atalho numérico;
   - ⭐ **Favoritos**: Gestão reativa de favoritos com contagem e remoção direta;
-  - 📜 **Constituição**: Separador dedicado com aviso do estado de digitalização.
+  - 📜 **Constituição**: Índice navegável das 3 partes (129 artigos) e pesquisa sem acentos, tudo offline.
 - **Leitor de Poesia Modernizado (`/hino-read/:id`)**:
   - Renderização fiel de blocos com recuo (`recuo-0`, `recuo-1`, `recuo-2`) e destaque de coros (`tipo === 'coro'`);
   - Navegação fluida para hino anterior e seguinte dentro da mesma coletânea;

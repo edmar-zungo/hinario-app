@@ -1,47 +1,190 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>Constituição</ion-title>
-    <ion-badge slot="end" color="warning" class="status-badge">Fase 8</ion-badge>
+    @if (constituicao) {
+      <ion-badge slot="end" color="primary" class="total-badge">
+        {{ constituicao.totalArtigos }} artigos
+      </ion-badge>
+    }
+  </ion-toolbar>
+
+  <ion-toolbar class="search-toolbar">
+    <ion-searchbar
+      show-clear-button="always"
+      placeholder="Pesquisar artigos sem acentos..."
+      [debounce]="250"
+      (ionInput)="onSearchInput($event)"
+      (ionClear)="limparPesquisa()"
+      [autofocus]="false"
+      class="custom-searchbar"
+    ></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
-  <ion-card class="status-card">
-    <ion-card-header>
-      <div class="header-with-icon">
-        <i class="fa fa-scroll card-icon" aria-hidden="true"></i>
-        <div>
-          <ion-card-title>Constituição da IERA</ion-card-title>
-          <ion-card-subtitle>Igreja Evangélica Reformada de Angola</ion-card-subtitle>
-        </div>
-      </div>
-    </ion-card-header>
-    <ion-card-content>
-      <div class="aviso-bloqueio">
-        <i class="fa fa-clock" aria-hidden="true"></i>
-        <p>
-          <strong>A aguardar ficheiros oficiais:</strong> Esta secção está preparada e aguarda a revisão e aprovação final dos ficheiros estruturados da Constituição da IERA (Fase 8 do plano).
-        </p>
-      </div>
-      <p class="detalhes">
-        Assim que os documentos forem homologados, este separador disponibilizará a leitura integral, navegação por títulos e artigos e pesquisa rápida em modo 100% offline.
-      </p>
-    </ion-card-content>
-  </ion-card>
+<ion-content [fullscreen]="true">
+  @if (carregando) {
+    <div class="estado-central">
+      <ion-spinner name="crescent"></ion-spinner>
+      <p>A carregar a Constituição...</p>
+    </div>
+  } @else if (erro) {
+    <div class="estado-central estado-erro">
+      <i class="fa fa-exclamation-triangle estado-icone" aria-hidden="true"></i>
+      <p>Não foi possível carregar o ficheiro da Constituição.</p>
+      <small>Verifique que o ficheiro constituição.json está incluído na aplicação.</small>
+    </div>
+  } @else if (termo) {
+    <div class="resultados-meta">
+      <span>
+        {{ resultados.length }}
+        {{ resultados.length === 1 ? 'resultado' : 'resultados' }} para "{{ termo }}"
+      </span>
+    </div>
 
-  <h3 class="secao-titulo">Estrutura Prevista</h3>
-  <ion-list lines="full" class="estrutura-list">
-    @for (item of estruturaPrevista; track $index) {
-      <ion-item>
-        <ion-label>
-          <h3>{{ item.titulo }}</h3>
-          <p>{{ item.artigos }}</p>
-        </ion-label>
-        <i class="fa fa-lock-alt text-muted" slot="end" aria-hidden="true"></i>
-      </ion-item>
-    }
-  </ion-list>
+    <ion-list lines="full" class="resultados-list">
+      @for (resultado of resultados; track resultado.unidade.id) {
+        <ion-item
+          [button]="true"
+          [routerLink]="['/constituicao-read', resultado.unidade.id]"
+          class="resultado-item"
+        >
+          <ion-label class="ion-text-wrap">
+            <h2>
+              {{ resultado.unidade.rotulo }}
+              @if (resultado.unidade.titulo !== resultado.unidade.rotulo) {
+                — {{ resultado.unidade.titulo }}
+              }
+            </h2>
+            <p class="resultado-contexto">{{ resultado.unidade.contexto }}</p>
+            <p class="resultado-trecho">{{ resultado.trecho }}</p>
+          </ion-label>
+        </ion-item>
+      } @empty {
+        @if (!pesquisando) {
+          <div class="empty-state">
+            <i class="fa fa-search-minus empty-icon" aria-hidden="true"></i>
+            <p>Nenhum artigo encontrado para "{{ termo }}".</p>
+            <small>Experimente procurar sem acentos, por exemplo "sede" ou "assembleia".</small>
+          </div>
+        }
+      }
+    </ion-list>
+  } @else {
+    <ion-card class="meta-card">
+      <ion-card-header>
+        <div class="header-with-icon">
+          <i class="fa fa-scroll card-icon" aria-hidden="true"></i>
+          <div>
+            <ion-card-title>{{ constituicao?.titulo }}</ion-card-title>
+            <ion-card-subtitle>Igreja Evangélica Reformada de Angola</ion-card-subtitle>
+          </div>
+        </div>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="meta-chips">
+          <ion-badge color="light">{{ constituicao?.partes?.length }} partes</ion-badge>
+          <ion-badge color="light">{{ totalCapitulos }} capítulos</ion-badge>
+          <ion-badge color="light">{{ constituicao?.totalArtigos }} artigos</ion-badge>
+          @if (constituicao?.paginasFonte) {
+            <ion-badge color="light">{{ constituicao?.paginasFonte }} páginas</ion-badge>
+          }
+        </div>
+        @if (constituicao?.fonte) {
+          <p class="fonte">Fonte: {{ constituicao?.fonte }}</p>
+        }
+      </ion-card-content>
+    </ion-card>
+
+    <h3 class="secao-titulo">Índice</h3>
+
+    <ion-accordion-group class="indice-grupo">
+      @for (parte of constituicao?.partes; track parte.id) {
+        <div class="parte-bloco">
+          <div class="parte-cabecalho">
+            <span class="parte-numero">Parte {{ parte.numero }}</span>
+            <span class="parte-titulo">{{ parte.titulo }}</span>
+          </div>
+
+          @for (frontal of parte.textosFrontal; track frontal.id) {
+            <ion-item
+              [button]="true"
+              [routerLink]="['/constituicao-read', frontal.id]"
+              lines="full"
+              class="unidade-item frontal-item"
+            >
+              <i class="fa fa-book-open item-icone" slot="start" aria-hidden="true"></i>
+              <ion-label>
+                <h3>{{ frontal.titulo }}</h3>
+              </ion-label>
+            </ion-item>
+          }
+
+          @for (capitulo of parte.capitulos; track capitulo.id) {
+            <ion-accordion [value]="capitulo.id">
+              <ion-item slot="header" detail="false" lines="full" class="capitulo-item">
+                <ion-label class="ion-text-wrap">
+                  <h3>Cap. {{ capitulo.numero }} — {{ capitulo.titulo }}</h3>
+                </ion-label>
+              </ion-item>
+              <div slot="content" class="capitulo-conteudo">
+                @for (artigo of capitulo.artigos; track artigo.id) {
+                  <ion-item
+                    [button]="true"
+                    [routerLink]="['/constituicao-read', artigo.id]"
+                    lines="full"
+                    class="unidade-item"
+                  >
+                    <ion-label class="ion-text-wrap">
+                      <h3>{{ artigo.rotulo }} — {{ artigo.titulo }}</h3>
+                    </ion-label>
+                  </ion-item>
+                }
+                @for (seccao of capitulo.seccoes; track seccao.id) {
+                  <div class="sec-cabecalho">
+                    Secção {{ seccao.numero }} — {{ seccao.titulo }}
+                  </div>
+                  @for (artigo of seccao.artigos; track artigo.id) {
+                    <ion-item
+                      [button]="true"
+                      [routerLink]="['/constituicao-read', artigo.id]"
+                      lines="full"
+                      class="unidade-item seccao-item"
+                    >
+                      <ion-label class="ion-text-wrap">
+                        <h3>{{ artigo.rotulo }} — {{ artigo.titulo }}</h3>
+                      </ion-label>
+                    </ion-item>
+                  }
+                }
+              </div>
+            </ion-accordion>
+          }
+        </div>
+      }
+
+      @for (apendice of constituicao?.apendices; track apendice.id) {
+        <div class="parte-bloco">
+          <div class="parte-cabecalho">
+            <span class="parte-numero">Apêndice</span>
+            <span class="parte-titulo">{{ apendice.titulo }}</span>
+          </div>
+          <ion-item
+            [button]="true"
+            [routerLink]="['/constituicao-read', apendice.id]"
+            lines="full"
+            class="unidade-item frontal-item"
+          >
+            <i class="fa fa-gavel item-icone" slot="start" aria-hidden="true"></i>
+            <ion-label>
+              <h3>{{ apendice.titulo }}</h3>
+              <p>Emendas constitucionais</p>
+            </ion-label>
+          </ion-item>
+        </div>
+      }
+    </ion-accordion-group>
+  }
 </ion-content>

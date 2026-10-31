@@ -8,6 +8,7 @@ export const environment = {
   hinarioKkoUrl: "./assets/data/hinario-kko.json",
   hinarioKkrUrl: "./assets/data/hinario-kkr.json",
   hinarioKmbUrl: "./assets/data/hinario-kmb.json",
+  constituicaoUrl: "./assets/data/constituicao.json",
   apiHinoUrl: "./assets/data/hinario.json",
   apiEstrofesUrl: "./assets/data/estrofes.json"
 };

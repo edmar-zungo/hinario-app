@@ -48,6 +48,13 @@ export const routes: Routes = [
       import('./pages/hino-read/hino-read.page').then((m) => m.HinoReadPage),
   },
   {
+    path: 'constituicao-read/:unidadeId',
+    loadComponent: () =>
+      import('./pages/constituicao-read/constituicao-read.page').then(
+        (m) => m.ConstituicaoReadPage
+      ),
+  },
+  {
     path: 'dez-mandamentos',
     loadComponent: () =>
       import('./pages/dez-mandamentos/dez-mandamentos.page').then(

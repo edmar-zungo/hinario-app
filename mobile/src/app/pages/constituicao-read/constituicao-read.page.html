@@ -1,0 +1,138 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/constituicao"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>
+      <span class="toolbar-num">{{ unidade?.rotulo }}</span>
+      <span class="toolbar-sub">{{ unidade?.contexto }}</span>
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button id="tema-trigger-const" fill="clear" size="small">
+        <i class="fa fa-palette header-icon" aria-hidden="true"></i>
+      </ion-button>
+      <ion-popover trigger="tema-trigger-const" [dismissOnSelect]="true">
+        <ng-template>
+          <ion-content>
+            <ion-list lines="full">
+              <ion-item button (click)="definirTema('claro')">
+                <i class="fa fa-sun text-warning mr-2" aria-hidden="true"></i>
+                <ion-label>Tema Claro</ion-label>
+                @if (tema === 'claro') { <i class="fa fa-check text-primary" slot="end"></i> }
+              </ion-item>
+              <ion-item button (click)="definirTema('sepia')">
+                <i class="fa fa-book-open text-sepia mr-2" aria-hidden="true"></i>
+                <ion-label>Tema Sépia (Leitura)</ion-label>
+                @if (tema === 'sepia') { <i class="fa fa-check text-primary" slot="end"></i> }
+              </ion-item>
+              <ion-item button (click)="definirTema('escuro')">
+                <i class="fa fa-moon text-dark mr-2" aria-hidden="true"></i>
+                <ion-label>Tema Escuro</ion-label>
+                @if (tema === 'escuro') { <i class="fa fa-check text-primary" slot="end"></i> }
+              </ion-item>
+            </ion-list>
+          </ion-content>
+        </ng-template>
+      </ion-popover>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" [ngClass]="'tema-' + tema" class="leitor-content">
+  @if (naoEncontrada) {
+    <div class="estado-central">
+      <i class="fa fa-exclamation-triangle estado-icone" aria-hidden="true"></i>
+      <p>Unidade não encontrada na Constituição.</p>
+      <ion-button fill="outline" size="small" routerLink="/tabs/constituicao">
+        <i class="fa fa-arrow-left mr-1" aria-hidden="true"></i>
+        Voltar ao índice
+      </ion-button>
+    </div>
+  } @else {
+    <div class="const-container" [style.--leitor-font-size.px]="fontSize">
+      <div class="const-cabecalho">
+        <div class="meta-row">
+          <ion-badge color="primary" class="badge-rotulo">{{ unidade?.rotulo }}</ion-badge>
+          @if (unidade?.tipo === 'artigo' && unidade?.artigo?.paginaInicio) {
+            <span class="meta-pagina">Pág. {{ unidade.artigo.paginaInicio }}</span>
+          }
+        </div>
+        <h1 class="const-titulo">{{ unidade?.titulo }}</h1>
+        <p class="const-contexto">{{ unidade?.contexto }}</p>
+      </div>
+
+      @if (unidade?.tipo === 'texto' && unidade?.paragrafos) {
+        <div class="const-paragrafos">
+          @for (paragrafo of unidade.paragrafos; track $index) {
+            <p class="paragrafo-texto">{{ paragrafo }}</p>
+          }
+        </div>
+      } @else {
+        <div class="const-blocos">
+          @for (linha of linhas; track $index) {
+            <div class="linha-bloco" [ngClass]="'nivel-' + linha.nivel + ' tipo-' + linha.tipo">
+              @if (linha.marcador) {
+                <span class="marcador">{{ linha.marcador }}</span>
+              }
+              <span class="texto">{{ linha.texto }}</span>
+            </div>
+          }
+        </div>
+      }
+
+      <div class="navegacao-unidades">
+        <ion-button
+          fill="outline"
+          size="small"
+          [disabled]="!anterior"
+          (click)="irParaUnidade(anterior)"
+          class="nav-unidade-btn"
+        >
+          <i class="fa fa-chevron-left mr-1" aria-hidden="true"></i>
+          @if (anterior) {
+            <span>{{ anterior.rotulo }}</span>
+          } @else {
+            <span>Início</span>
+          }
+        </ion-button>
+
+        <span class="nav-separador">Constituição</span>
+
+        <ion-button
+          fill="outline"
+          size="small"
+          [disabled]="!seguinte"
+          (click)="irParaUnidade(seguinte)"
+          class="nav-unidade-btn"
+        >
+          @if (seguinte) {
+            <span>{{ seguinte.rotulo }}</span>
+          } @else {
+            <span>Fim</span>
+          }
+          <i class="fa fa-chevron-right ml-1" aria-hidden="true"></i>
+        </ion-button>
+      </div>
+    </div>
+  }
+</ion-content>
+
+<ion-footer class="ion-no-border leitor-footer" [ngClass]="'tema-' + tema">
+  <ion-toolbar class="footer-toolbar">
+    <div class="footer-controls">
+      <ion-button fill="clear" size="small" (click)="diminuirFonte()" title="Diminuir texto">
+        <i class="fa fa-font footer-a-minus" aria-hidden="true"></i>
+        <i class="fa fa-minus small-badge" aria-hidden="true"></i>
+      </ion-button>
+
+      <span class="tamanho-indicador">{{ fontSize | number:'1.0-0' }}px</span>
+
+      <ion-button fill="clear" size="small" (click)="aumentarFonte()" title="Aumentar texto">
+        <i class="fa fa-font footer-a-plus" aria-hidden="true"></i>
+        <i class="fa fa-plus small-badge" aria-hidden="true"></i>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

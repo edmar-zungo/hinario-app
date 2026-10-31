@@ -32,27 +32,51 @@ build/
 ### VS Code ###
 .vscode/
 
-### Node / Angular ###
+### Node / Angular / Ionic ###
 node_modules/
 dist/
+www/
 .angular/
 package-lock.json.tmp
 npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 ### Android ###
 mobile/android/.gradle/
 mobile/android/app/build/
 mobile/android/build/
+mobile/android/capacitor-cordova-android-plugins/
 mobile/local.properties
+**/local.properties
+*.apk
+*.aab
 
-# dados locais do backend (seed copiado de mobile/src/assets/data)
+# Pastas de dados locais / runtime / OCR
+data/
 painel/back-end/data/
+iera-dados/
+
+# Garantir SEMPRE a inclusão dos ficheiros JSON dos hinos e assets da aplicação
+!mobile/src/assets/data/
+!mobile/src/assets/data/**
+!**/assets/data/*.json
+!**/assets/data/**/*.json
 
 ### Chaves / segredos ###
 .env
 .env.*
 !.env.example
 GEMINI_API_KEY*
+*.pem
+*.key
+*.keystore
+*.jks
 
-# pasta de dados local alternativa (PRD secção 2: hinario.dados.dir)
-iera-dados/
+### Logs e SO ###
+*.log
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
