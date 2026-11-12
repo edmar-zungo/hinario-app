@@ -7,8 +7,8 @@ import com.fasterxml.jackson.databind.JsonNode;
  * {@code paginas/<n>.json}.
  *
  * Os caminhos de imagem são relativos à pasta de dados. {@code leituras},
- * {@code divergencias} e {@code blocos} ficam vazios na importação e são
- * preenchidos nas fases seguintes (Gemini, Tesseract, revisão).
+ * {@code divergencias} e {@code blocos} ficam vazios na importação e os
+ * blocos são preenchidos nas fases seguintes (Groq e revisão).
  */
 public record Pagina(
         int pagina,
@@ -31,7 +31,7 @@ public record Pagina(
                 nomeOriginal, importadoEm, largura, altura, leituras, divergencias, blocos);
     }
 
-    /** Cópia com as leituras actualizadas (`leituras.gemini`, `leituras.tesseract`). */
+    /** Cópia com as leituras actualizadas (`leituras.groq`). */
     public Pagina comLeituras(JsonNode novas) {
         return new Pagina(pagina, hinarioId, imagem, imagemProcessada, hash, estado,
                 nomeOriginal, importadoEm, largura, altura, novas, divergencias, blocos);

@@ -4,7 +4,7 @@ import java.util.List;
 
 /**
  * Todos os modelos bloquearam a resposta: a página fica
- * {@code bloqueada_pela_ia} e na Fase 4 segue só com Tesseract (PRD 5.6).
+ * {@code bloqueada_pela_ia} até uma releitura manual.
  */
 public class BloqueadaExcecao extends LeituraExcecao {
 

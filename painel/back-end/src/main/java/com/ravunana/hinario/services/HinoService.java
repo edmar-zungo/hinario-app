@@ -85,6 +85,7 @@ public class HinoService {
             hinoResult.setComentario(hino.getComentario());
             hinoResult.setAutor(hino.getAutor());
             hinoResult.setFavorito(hino.getIsFavorito());
+            hinoResult.setRevisado(hino.isRevisado());
             hinoResult.setPagina(hino.getPagina());
             hinoResult.setNumero(hino.getNumero());
             hinoResult.setTitulo(hino.getTitulo());

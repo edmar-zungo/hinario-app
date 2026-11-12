@@ -63,6 +63,17 @@ public class EstrofeService {
         saveToFile();
     }
 
+    public void substituirEstrofesDoHino(UUID hinoId, List<Estrofe> novas) {
+        estrofes.removeIf(e -> e.getHino() != null && hinoId.equals(e.getHino().getId()));
+        for (Estrofe nova : novas) {
+            if (nova.getId() == null) {
+                nova.setId(UUID.randomUUID());
+            }
+            estrofes.add(nova);
+        }
+        saveToFile();
+    }
+
     private Path criarArquivo(Path caminho) throws IOException {
         if (!Files.exists(caminho)) {
             dataFiles.escreverTexto(caminho, "[]");

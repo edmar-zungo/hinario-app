@@ -97,9 +97,14 @@
 
 .paragrafo-texto {
   font-size: var(--leitor-font-size, 17px);
-  line-height: 1.65;
+  line-height: 1.68;
   margin: 0 0 1.1rem;
   text-align: justify;
+  text-justify: inter-word;
+  text-align-last: left;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  word-break: break-word;
 }
 
 .linha-bloco {
@@ -119,15 +124,18 @@
 
   .texto {
     flex: 1;
-    text-align: justify;
+    text-align: left;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-break: break-word;
   }
 
   &.nivel-1 {
-    margin-left: 1.4rem;
+    margin-left: 1.2rem;
   }
 
   &.nivel-2 {
-    margin-left: 2.8rem;
+    margin-left: 2.2rem;
   }
 
   &.tipo-departamento {
@@ -139,6 +147,7 @@
       text-transform: uppercase;
       letter-spacing: 0.02em;
       font-size: calc(var(--leitor-font-size, 17px) * 0.95);
+      text-align: left;
     }
   }
 

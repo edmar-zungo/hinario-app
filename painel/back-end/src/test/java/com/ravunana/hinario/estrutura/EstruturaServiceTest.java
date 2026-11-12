@@ -92,6 +92,23 @@ class EstruturaServiceTest {
     }
 
     @Test
+    void aindaEstruturaLeiturasGuardadasNoFormatoAnterior() throws Exception {
+        ObjectNode leituras = MAPPER.createObjectNode();
+        ObjectNode resposta = resposta();
+        estrofe(resposta, 1, false, "texto legado");
+        leituras.putObject("gemini").set("resposta", resposta);
+        Pagina pagina = new Pagina(8, "kmb", "imagens/original/0008.jpg",
+                "imagens/processada/0008.jpg", "sha256:8", EstadoPagina.COMPARADA,
+                "0008.jpg", "2026-10-28T10:00:00Z", 100, 80, leituras, null, null);
+        paginas.atualizar(pagina);
+
+        Pagina estruturada = estruturas.estruturar(8);
+
+        assertEquals("texto legado", estruturada.blocos().get(0).path("linhas").get(0)
+                .path("texto").asText());
+    }
+
+    @Test
     void par394e395GeraHinoCompletoELigacaoValida() throws Exception {
         // 394: hino 42 completo + início do hino 43 (estrofe 1)
         ObjectNode r394 = resposta();

@@ -1,8 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, forkJoin, map, Observable, of, shareReplay, tap } from 'rxjs';
-import { DOCUMENT } from '@angular/common';
-import { Inject } from '@angular/core';
 import { Preferences } from '@capacitor/preferences';
 import { environment } from 'src/environments/environment';
 import { HinarioExport, HinoExport } from '../model/hino-export.model';
@@ -31,8 +29,7 @@ export class HinarioService {
   public tema$ = this.temaSubject.asObservable();
 
   constructor(
-    private http: HttpClient,
-    @Inject(DOCUMENT) private document: Document
+    private http: HttpClient
   ) {
     this.inicializarFavoritos();
     this.inicializarTema();
@@ -91,6 +88,7 @@ export class HinarioService {
         tap((hinarios) => {
           this.hinariosEmMemoria = hinarios;
           this.todosHinosEmMemoria = hinarios.flatMap((h) => h.hinos);
+          this.construirIndicePesquisa(this.todosHinosEmMemoria);
         }),
         shareReplay(1)
       );
@@ -158,61 +156,75 @@ export class HinarioService {
     );
   }
 
+  private searchIndex: { hino: HinoExport; searchString: string }[] = [];
+
+  private construirIndicePesquisa(hinos: HinoExport[]): void {
+    this.searchIndex = hinos.map((hino) => {
+      const parts: string[] = [
+        hino.numero.toString(),
+        hino.pagina ? hino.pagina.toString() : '',
+        HinarioService.removerAcentos(hino.titulo),
+        hino.autor ? HinarioService.removerAcentos(hino.autor) : '',
+      ];
+
+      if (hino.blocos) {
+        for (const bloco of hino.blocos) {
+          if (bloco.linhas) {
+            for (const linha of bloco.linhas) {
+              if (linha.texto) {
+                parts.push(HinarioService.removerAcentos(linha.texto));
+              }
+            }
+          }
+        }
+      }
+
+      return {
+        hino,
+        searchString: parts.join(' '),
+      };
+    });
+  }
+
   /**
-   * Pesquisa sem acentos no número, página, título e texto das estrofes/coros
+   * Pesquisa otimizada sem acentos no número, página, título e estrofes/coro
    */
   pesquisar(termo: string, lingua?: string): Observable<HinoExport[]> {
-    const termoNormalizado = HinarioService.removerAcentos(termo);
+    const termoNormalizado = HinarioService.removerAcentos(termo).trim();
     if (!termoNormalizado) {
       return of([]);
     }
 
-    const fonte$ = lingua && lingua !== 'todos'
-      ? this.getHinosByLingua(lingua)
-      : this.getAllHinosExport();
+    const filtrar = () => {
+      const cod = lingua && lingua !== 'todos' ? (LINGUA_MAP[lingua] || lingua) : null;
+      const resultados: HinoExport[] = [];
 
-    return fonte$.pipe(
-      map((hinos) =>
-        hinos.filter((hino) => {
-          // Número exacto ou contido
-          if (hino.numero.toString().includes(termoNormalizado)) {
-            return true;
+      for (let i = 0; i < this.searchIndex.length; i++) {
+        const item = this.searchIndex[i];
+        if (cod && item.hino.lingua !== cod) {
+          continue;
+        }
+        if (item.searchString.includes(termoNormalizado)) {
+          resultados.push(item.hino);
+          if (resultados.length >= 80) {
+            break; // Limite de 80 resultados para máxima fluidez e resposta imediata
           }
-          // Página
-          if (hino.pagina && hino.pagina.toString().includes(termoNormalizado)) {
-            return true;
-          }
-          // Título sem acentos
-          const tituloNorm = HinarioService.removerAcentos(hino.titulo);
-          if (tituloNorm.includes(termoNormalizado)) {
-            return true;
-          }
-          // Autor
-          if (hino.autor) {
-            const autorNorm = HinarioService.removerAcentos(hino.autor);
-            if (autorNorm.includes(termoNormalizado)) {
-              return true;
-            }
-          }
-          // Texto das estrofes / coro
-          if (hino.blocos) {
-            for (const bloco of hino.blocos) {
-              if (bloco.linhas) {
-                for (const linha of bloco.linhas) {
-                  if (
-                    HinarioService.removerAcentos(linha.texto).includes(
-                      termoNormalizado
-                    )
-                  ) {
-                    return true;
-                  }
-                }
-              }
-            }
-          }
-          return false;
-        })
-      )
+        }
+      }
+      return resultados;
+    };
+
+    if (this.searchIndex.length > 0) {
+      return of(filtrar());
+    }
+
+    return this.getAllHinosExport().pipe(
+      map((hinos) => {
+        if (this.searchIndex.length === 0) {
+          this.construirIndicePesquisa(hinos);
+        }
+        return filtrar();
+      })
     );
   }
 
@@ -381,9 +393,11 @@ export class HinarioService {
   }
 
   private aplicarTemaNoBody(tema: TemaLeitor): void {
-    const body = this.document.body;
-    body.classList.remove('tema-claro', 'tema-sepia', 'tema-escuro');
-    body.classList.add(`tema-${tema}`);
+    if (typeof document !== 'undefined') {
+      const body = document.body;
+      body.classList.remove('tema-claro', 'tema-sepia', 'tema-escuro');
+      body.classList.add(`tema-${tema}`);
+    }
   }
 
   /* ==========================================================================

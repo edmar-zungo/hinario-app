@@ -3,19 +3,22 @@ package com.ravunana.hinario.leitura;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.ravunana.hinario.pagina.Pagina;
 import com.ravunana.hinario.services.DataFiles;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Rotação de modelos do Gemini (PRD 5.8 e Anexo A):
+ * Rotação e repetição do modelo Groq:
  *
  * 1. primeiro modelo da cadeia que não está pausado;
  * 2. 429 por minuto: espera e repete no mesmo modelo até
- *    {@code gemini.tentativas-por-modelo}, depois pausa-o brevemente e passa
+ *    {@code groq.tentativas-por-modelo}, depois pausa-o brevemente e passa
  *    ao seguinte;
  * 3. 429 por dia: pausa o modelo até ao reinício diário e passa ao seguinte;
  * 4. 503/erro temporário: espera crescente e repete, depois passa;
@@ -29,6 +32,8 @@ import java.util.List;
  */
 @Component
 public class ModelPool {
+
+    private static final Logger log = LoggerFactory.getLogger(ModelPool.class);
 
     private final GeminiConfig config;
     private final GeminiPedido pedido;
@@ -51,7 +56,7 @@ public class ModelPool {
         OK, BLOQUEADO, PAUSADO_DIA, FALHA
     }
 
-    private record ResultadoModelo(Fim fim, JsonNode resposta) {
+    private record ResultadoModelo(Fim fim, JsonNode resposta, String erro) {
     }
 
     public LeituraResultado ler(Pagina pagina) throws LeituraExcecao {
@@ -67,6 +72,7 @@ public class ModelPool {
         int tentados = 0;
         int bloqueados = 0;
         int falhas = 0;
+        String ultimoErro = null;
         for (String modelo : config.getModelos()) {
             if (quota.pausado(modelo)) {
                 continue;
@@ -75,6 +81,9 @@ public class ModelPool {
             ResultadoModelo resultado = tentarModelo(modelo, pagina.hash(), jpeg, contextoTexto, tentativas);
             if (resultado.fim() == Fim.OK) {
                 return new LeituraResultado("gemini", modelo, tentativas, resultado.resposta());
+            }
+            if (resultado.erro() != null && !resultado.erro().isBlank()) {
+                ultimoErro = modelo + ": " + resultado.erro();
             }
             if (resultado.fim() == Fim.BLOQUEADO) {
                 bloqueados++;
@@ -91,7 +100,8 @@ public class ModelPool {
             throw new QuotaEsgotadaExcecao(tentativas);
         }
         if (falhas > 0) {
-            throw new LeituraExcecao("falha de leitura em todos os modelos da cadeia", tentativas);
+            String detalhe = ultimoErro == null ? "" : ": " + ultimoErro;
+            throw new LeituraExcecao("falha de leitura em todos os modelos da cadeia" + detalhe, tentativas);
         }
         if (bloqueados > 0) {
             throw new BloqueadaExcecao(tentativas);
@@ -112,7 +122,7 @@ public class ModelPool {
                 JsonNode guardada = cache.resposta(chave);
                 if (guardada != null) {
                     tentativas.add(LeituraResultado.Tentativa.cache(modelo, "ok"));
-                    return new ResultadoModelo(Fim.OK, guardada);
+                    return new ResultadoModelo(Fim.OK, guardada, null);
                 }
             }
             try {
@@ -120,55 +130,58 @@ public class ModelPool {
                 JsonNode resposta = pedido.pedir(modelo, jpeg, contextoTexto);
                 cache.guardar(chave, modelo, resposta);
                 tentativas.add(LeituraResultado.Tentativa.api(modelo, "ok"));
-                return new ResultadoModelo(Fim.OK, resposta);
+                return new ResultadoModelo(Fim.OK, resposta, null);
             } catch (GeminiApiExcecao e) {
+                log.warn("Falha no modelo {} ({}, HTTP {}): {}",
+                        modelo, e.getTipo(), e.getStatus(), e.getMessage());
                 switch (e.getTipo()) {
                     case QUOTA_DIARIA:
                         tentativas.add(LeituraResultado.Tentativa.api(modelo, "429"));
                         quota.pausarAteReinicioDiario(modelo);
-                        return new ResultadoModelo(Fim.PAUSADO_DIA, null);
+                        return new ResultadoModelo(Fim.PAUSADO_DIA, null, e.getMessage());
                     case QUOTA_MINUTO:
                         tentativas.add(LeituraResultado.Tentativa.api(modelo, "429"));
                         if (++tentativas429 >= limite) {
                             // pausa curta: evita martelar o mesmo modelo a cada página
                             quota.pausarMinuto(modelo, config.getEspera429MinutoSegundos());
-                            return new ResultadoModelo(Fim.FALHA, null);
+                            return new ResultadoModelo(Fim.FALHA, null, e.getMessage());
                         }
                         if (!dormir(config.getEspera429MinutoSegundos())) {
-                            return new ResultadoModelo(Fim.FALHA, null);
+                            return new ResultadoModelo(Fim.FALHA, null, e.getMessage());
                         }
                         break;
                     case TEMPORARIO:
                         tentativas.add(LeituraResultado.Tentativa.api(modelo, "erro"));
                         if (++temporarios >= limite) {
-                            return new ResultadoModelo(Fim.FALHA, null);
+                            return new ResultadoModelo(Fim.FALHA, null, e.getMessage());
                         }
-                        if (!dormir(config.getEspera429MinutoSegundos() * temporarios)) {
-                            return new ResultadoModelo(Fim.FALHA, null);
+                        if (!dormir(Math.min(2, config.getEspera429MinutoSegundos()))) {
+                            return new ResultadoModelo(Fim.FALHA, null, e.getMessage());
                         }
                         break;
                     case RESPOSTA_INVALIDA:
                         tentativas.add(LeituraResultado.Tentativa.api(modelo, "erro"));
                         if (++invalidas > 1) {
                             // 5.6: repetir uma vez no mesmo modelo, depois passar
-                            return new ResultadoModelo(Fim.FALHA, null);
+                            return new ResultadoModelo(Fim.FALHA, null, e.getMessage());
                         }
                         break;
                     case BLOQUEADO:
                         tentativas.add(LeituraResultado.Tentativa.api(modelo, "bloqueado"));
-                        return new ResultadoModelo(Fim.BLOQUEADO, null);
+                        return new ResultadoModelo(Fim.BLOQUEADO, null, e.getMessage());
                     case ERRO:
                     default:
                         tentativas.add(LeituraResultado.Tentativa.api(modelo, "erro"));
-                        return new ResultadoModelo(Fim.FALHA, null);
+                        return new ResultadoModelo(Fim.FALHA, null, e.getMessage());
                 }
             }
         }
     }
 
     private byte[] imagem(Pagina pagina) throws LeituraExcecao {
+        Path caminho = dataFiles.resolve(pagina.imagemProcessada());
         try {
-            return Files.readAllBytes(dataFiles.resolve(pagina.imagemProcessada()));
+            return Files.readAllBytes(caminho);
         } catch (IOException e) {
             throw new LeituraExcecao("imagem processada em falta para a página "
                     + pagina.pagina() + ": " + e.getMessage(), List.of());

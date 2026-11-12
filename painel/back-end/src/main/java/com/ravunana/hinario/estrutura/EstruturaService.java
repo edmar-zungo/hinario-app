@@ -25,7 +25,7 @@ public class EstruturaService {
 
     /** Só páginas já lidas/comparadas é que se estruturam (repetível). */
     private static final Set<EstadoPagina> ESTRUTURAVEIS = EnumSet.of(
-            EstadoPagina.COMPARADA, EstadoPagina.ESTRUTURADA);
+            EstadoPagina.LIDA, EstadoPagina.COMPARADA, EstadoPagina.ESTRUTURADA);
 
     private final Estruturador estruturador;
     private final PaginaService paginas;
@@ -51,7 +51,7 @@ public class EstruturaService {
         JsonNode resposta = respostaGemini(pagina);
         if (resposta == null) {
             throw new ResponseStatusException(HttpStatus.CONFLICT,
-                    "página sem leitura do Gemini para estruturar");
+                    "página sem leitura Gemini para estruturar");
         }
 
         ContextoHino contexto = contextoAnterior(numero);
@@ -78,8 +78,16 @@ public class EstruturaService {
         if (pagina.leituras() == null || !pagina.leituras().isObject()) {
             return null;
         }
-        JsonNode resposta = pagina.leituras().path("gemini").path("resposta");
+        JsonNode resposta = respostaLeitura(pagina);
         return resposta.isObject() ? resposta : null;
+    }
+
+    private static JsonNode respostaLeitura(Pagina pagina) {
+        JsonNode leitura = pagina.leituras().path("gemini");
+        if (leitura.isMissingNode()) {
+            leitura = pagina.leituras().path("groq");
+        }
+        return leitura.path("resposta");
     }
 
     private ContextoHino contextoAnterior(int numero) {
@@ -97,8 +105,9 @@ public class EstruturaService {
 
     private boolean proximoContinua(int numero) {
         try {
-            JsonNode blocos = paginas.obter(numero + 1).leituras()
-                    .path("gemini").path("blocos");
+            Pagina seguinte = paginas.obter(numero + 1);
+            JsonNode resposta = respostaLeitura(seguinte);
+            JsonNode blocos = resposta.path("blocos");
             return blocos.isArray() && !blocos.isEmpty()
                     && blocos.get(0).path("continuacaoDeBlocoAnterior").asBoolean(false);
         } catch (Exception ignorada) {

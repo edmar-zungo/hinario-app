@@ -11,7 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 /**
- * Contexto enviado junto da imagem (PRD 5.5).
+ * Contexto compacto enviado junto da imagem.
  *
  * Serve só para o modelo marcar {@code continuacaoDeBlocoAnterior}: **nunca**
  * é usado para preencher texto (a validação da ligação é na Fase 5, PRD 5.7.4).
@@ -28,18 +28,15 @@ public class ContextoPagina {
     public String construir(Pagina pagina) {
         Linguas lingua = Linguas.porCodigo(pagina.hinarioId());
         StringBuilder contexto = new StringBuilder();
-        contexto.append("Contexto (NÃO transcrever; serve só para o campo \"continuacaoDeBlocoAnterior\"):\n");
-        contexto.append("- Esta é a página ").append(pagina.pagina())
-                .append(" do hinário \"").append(lingua.getNome()).append("\".\n");
+        contexto.append("Página ").append(pagina.pagina()).append(", ")
+                .append(lingua.getCodigo()).append(". ");
         HinoAberto aberto = hinoAbertoNaPaginaAnterior(pagina.pagina());
         if (aberto == null) {
-            contexto.append("- Não há hino aberto da página anterior.\n");
+            contexto.append("Sem continuação anterior.");
         } else {
-            contexto.append("- Hino aberto no fim da página anterior: nº ").append(aberto.numeroHino())
-                    .append(", \"").append(aberto.titulo()).append("\", última estrofe: ")
-                    .append(aberto.ultimaEstrofe()).append(".\n");
+            contexto.append("Continuação: hino ").append(aberto.numeroHino())
+                    .append(", estrofe ").append(aberto.ultimaEstrofe()).append(". ");
         }
-        contexto.append("Transcreve apenas o que vês na imagem, seguindo as regras.");
         return contexto.toString();
     }
 
@@ -54,7 +51,11 @@ public class ContextoPagina {
         }
         try {
             JsonNode anterior = dataFiles.mapper().readTree(ficheiro.toFile());
-            JsonNode resposta = anterior.path("leituras").path("gemini").path("resposta");
+            JsonNode leituras = anterior.path("leituras");
+            JsonNode resposta = leituras.path("gemini").path("resposta");
+            if (resposta.isMissingNode()) {
+                resposta = leituras.path("groq").path("resposta");
+            }
             JsonNode blocos = resposta.path("blocos");
             if (!blocos.isArray() || blocos.isEmpty()) {
                 return null;

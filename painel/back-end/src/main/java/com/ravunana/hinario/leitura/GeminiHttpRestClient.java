@@ -1,9 +1,13 @@
 package com.ravunana.hinario.leitura;
 
 import org.springframework.http.MediaType;
+import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
 import org.springframework.web.client.RestClientResponseException;
+
+import java.nio.charset.StandardCharsets;
+import java.time.Duration;
 
 /**
  * Implementação real do {@link GeminiHttp} com o RestClient do Spring
@@ -17,7 +21,10 @@ public class GeminiHttpRestClient implements GeminiHttp {
 
     public GeminiHttpRestClient(GeminiConfig config) {
         this.config = config;
-        this.restClient = RestClient.builder().build();
+        SimpleClientHttpRequestFactory factory = new SimpleClientHttpRequestFactory();
+        factory.setConnectTimeout(Duration.ofSeconds(10));
+        factory.setReadTimeout(Duration.ofSeconds(35));
+        this.restClient = RestClient.builder().requestFactory(factory).build();
     }
 
     @Override
@@ -25,15 +32,16 @@ public class GeminiHttpRestClient implements GeminiHttp {
         String uri = config.getUrlBase().replaceAll("/$", "")
                 + "/v1beta/models/" + modelo + ":generateContent";
         try {
-            String corpo = restClient.post()
+            byte[] corpo = restClient.post()
                     .uri(uri)
                     .header("x-goog-api-key", config.getApiKey())
+                    .accept(MediaType.APPLICATION_JSON)
                     .contentType(MediaType.APPLICATION_JSON)
                     .body(corpoJson)
                     .retrieve()
-                    .toEntity(String.class)
+                    .toEntity(byte[].class)
                     .getBody();
-            return new Resposta(200, corpo == null ? "" : corpo);
+            return new Resposta(200, corpo == null ? "" : new String(corpo, StandardCharsets.UTF_8));
         } catch (RestClientResponseException e) {
             return new Resposta(e.getStatusCode().value(), e.getResponseBodyAsString());
         } catch (RuntimeException e) {

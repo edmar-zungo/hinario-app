@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Alinhamento linha a linha por distância de edição (PRD 5.7.3): programação
+ * Alinhamento linha a linha por distância de edição: programação
  * dinâmica estilo Needleman-Wunsch, com emparelhamento fraco penalizado para
  * não forçar juntar linhas que nada têm a ver.
  */
 public class AlinhamentoLinhas {
 
     /** Par alinhado: índices em cada lado; -1 = linha só de um dos lados. */
-    public record Par(int gemini, int tesseract) {
+    public record Par(int actual, int nova) {
     }
 
     /** Só se emparelha a partir desta semelhança; abaixo, são omissões de um lado. */
@@ -20,10 +20,10 @@ public class AlinhamentoLinhas {
     /** Custo de cada linha que não encontra par (inserção/omissão). */
     static final double OMISSAO = 0.2;
 
-    /** Devolve os pares pela ordem das linhas do Gemini. */
-    public List<Par> alinhar(List<String> gemini, List<String> tesseract) {
-        int n = gemini.size();
-        int m = tesseract.size();
+    /** Devolve os pares pela ordem da versão actual. */
+    public List<Par> alinhar(List<String> actual, List<String> nova) {
+        int n = actual.size();
+        int m = nova.size();
         double[][] pontos = new double[n + 1][m + 1];
         int[][] veio = new int[n + 1][m + 1]; // 0 = diagonal, 1 = cima, 2 = esquerda
         for (int i = 1; i <= n; i++) {
@@ -36,14 +36,14 @@ public class AlinhamentoLinhas {
         }
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= m; j++) {
-                double sim = similaridade(gemini.get(i - 1), tesseract.get(j - 1));
+                double sim = similaridade(actual.get(i - 1), nova.get(j - 1));
                 double diagonal = pontos[i - 1][j - 1] + (sim >= LIMITE ? sim : sim - 1.0);
                 double cima = pontos[i - 1][j] - OMISSAO;
                 double esquerda = pontos[i][j - 1] - OMISSAO;
                 double melhor = Math.max(diagonal, Math.max(cima, esquerda));
                 pontos[i][j] = melhor;
-                // em empate, prefere-se a diagonal e depois consumir do Tesseract,
-                // para as linhas só do Gemini saírem primeiro na lista
+                // em empate, prefere-se a diagonal e depois consumir da versão nova,
+                // para as linhas só do actual saírem primeiro na lista
                 veio[i][j] = melhor == diagonal ? 0 : melhor == esquerda ? 2 : 1;
             }
         }

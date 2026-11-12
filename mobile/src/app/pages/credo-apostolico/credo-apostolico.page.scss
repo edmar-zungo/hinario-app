@@ -1,11 +1,133 @@
-.titulo{
-     text-align: center;
-     font-weight: 900;
+.liturgico-content {
+  --background: var(--ion-background-color);
 }
 
-p{
-     line-height: 1.5em;
-     text-align: justify;
-     text-indent: 1.5em;
-     font-size: 1em;
+.liturgico-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* Hero Header */
+.hero-header {
+  text-align: center;
+  padding: 1.5rem 1rem 1.75rem;
+  margin-bottom: 1.5rem;
+  border-radius: 16px;
+  background: var(--ion-item-background, #ffffff);
+  border: 1px solid var(--ion-border-color, #e2e8f0);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+
+  .hero-icon-box {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 0.85rem;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.credo-color {
+      background: rgba(235, 68, 90, 0.12);
+      color: #e11d48;
+    }
+
+    .hero-icon {
+      font-size: 1.6rem;
+    }
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0 0 0.35rem;
+    color: var(--ion-text-color, #0f172a);
+    letter-spacing: -0.02em;
+  }
+
+  .hero-sub {
+    font-size: 0.85rem;
+    color: var(--ion-color-medium, #64748b);
+    margin: 0 0 0.85rem;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    background: var(--ion-color-step-50, #f1f5f9);
+    color: #e11d48;
+  }
+}
+
+/* Credo Cards */
+.credo-card {
+  padding: 1.25rem 1.25rem 1.4rem;
+  border-radius: 16px;
+  background: var(--ion-item-background, #ffffff);
+  border: 1px solid var(--ion-border-color, #e2e8f0);
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+
+  .credo-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--ion-color-step-100, #e2e8f0);
+
+    .artigo-pill {
+      display: inline-block;
+      min-width: 26px;
+      height: 26px;
+      line-height: 26px;
+      text-align: center;
+      border-radius: 8px;
+      background: rgba(225, 29, 72, 0.1);
+      color: #e11d48;
+      font-weight: 800;
+      font-size: 0.78rem;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ion-text-color, #0f172a);
+    }
+  }
+
+  .credo-paragrafo {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--ion-text-color, #1e293b);
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-break: break-word;
+  }
+
+  .credo-amen {
+    margin-top: 1rem;
+    text-align: right;
+
+    span {
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 20px;
+      background: var(--ion-color-step-50, #f1f5f9);
+      color: var(--ion-color-primary, #3880ff);
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+  }
 }

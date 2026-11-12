@@ -26,6 +26,7 @@ public class Hino {
     private String comentario;
 
     private boolean isFavorito;
+    private boolean revisado;
     private Linguas lingua;
 
     public UUID getId() {
@@ -101,6 +102,14 @@ public class Hino {
     }
     public Linguas getLingua() {
         return lingua;
+    }
+
+    public boolean isRevisado() {
+        return revisado;
+    }
+
+    public void setRevisado(boolean revisado) {
+        this.revisado = revisado;
     }
 
     public void setLingua(Linguas lingua) {

@@ -1,6 +1,6 @@
 # IERA App — Hinário (repositório único)
 
-Ferramenta de extração de hinários por IA (Gemini) + Tesseract, painel de revisão e app mobile.
+Ferramenta de extração de hinários por IA (Groq), comparação com o JSON actual, painel de revisão e app mobile.
 Especificação: [`docs/IERA-App_PRD-MVP.md`](docs/IERA-App_PRD-MVP.md) (prevalece sobre o resto).
 
 ## Estrutura
@@ -19,8 +19,7 @@ docs/       → documentação (PRD, esquema de export)
 | Java | 17+ | back-end |
 | Maven | 3.8+ (ou `./mvnw`) | back-end |
 | Node.js | 20+ | painel e mobile |
-| Tesseract OCR | 5.x + `por.traineddata` | Fase 4 (comparação) — **necessário** para comparar |
-| Chave Gemini | variável `GEMINI_API_KEY` | só a partir da Fase 3 (extração) |
+| Chave Groq | variável `GROQ_API_KEY` | leitura OCR |
 
 ## Como correr
 
@@ -72,7 +71,7 @@ hinario.dados.dir=            # vazio = pasta data/ do back-end
 
 ## Segredos
 
-- A chave da API do Gemini vive **só** na variável de ambiente `GEMINI_API_KEY`
+- A chave da API Groq vive **só** na variável de ambiente `GROQ_API_KEY`
   (nunca no código, nunca no repositório, nunca no painel Angular).
 - `.gitignore` cobre `.env*`, chaves avulsas e a pasta `iera-dados/`.
 
@@ -80,11 +79,11 @@ hinario.dados.dir=            # vazio = pasta data/ do back-end
 
 | Fase | Conteúdo | Estado |
 |---|---|---|
-| 0 | Preparação (CSS do leitor, README, gitignore, appId, Tesseract, chave) | concluída (ver tarefas em baixo) |
+| 0 | Preparação (CSS do leitor, README, gitignore, appId, chave) | concluída (ver tarefas em baixo) |
 | 1 | Base do back-end e migração dos dados atuais | concluída |
 | 2 | Importação de páginas | concluída |
-| 3 | Leitura com Gemini (`ModelPool`, fila, quota) | concluída |
-| 4 | Tesseract e comparação | concluída |
+| 3 | Leitura com Groq (`ModelPool`, fila, quota) | concluída |
+| 4 | Comparação da leitura revista com o JSON actual | concluída |
 | 5 | Estruturação e continuação | concluída |
 | 6 | Painel: importação e revisão | concluída |
 | 7 | Exportação e comparação com o JSON atual | concluída |
@@ -148,7 +147,7 @@ Regras úteis:
 
 Testes: `cd painel/back-end && ./mvnw test`.
 
-### Leitura com Gemini (Fase 3)
+### Leitura OCR com Groq
 
 ```bash
 # enfileirar uma página para leitura (202 assim que entra na fila):
@@ -162,57 +161,43 @@ O que a leitura faz (PRD 5.x):
 
 - **fila sequencial** por número de página; ao arrancar volta a enfileirar o
   que ficou em `em_fila` de uma sessão anterior;
-- envia a foto processada com a instrução 5.3 (`src/main/resources/leitura/`)
-  e valida a resposta contra o esquema 5.4 antes de aceitar — a IA **transcreve,
+- envia a foto processada à API compatível com OpenAI (`/chat/completions`) e
+  valida a resposta JSON antes de aceitar — a IA **transcreve,
   nunca edita**;
-- **rotação de modelos** (5.8): cadeia por ordem de preferência, cada um com
-  `tentativas-por-modelo`; 429 de minuto/dia pausa o modelo e passa ao seguinte;
+- repete chamadas temporariamente recusadas e respeita respostas 429;
 - **pausa sozinha**: sem cota nenhum, a página fica `pausada_quota` e a fila
   tenta de novo passado `hinario.fila.retoma-ms` (a quota do dia revista em
-  `quota/estado.json`, fuso `gemini.fuso-quota`);
+  `quota/estado.json`);
 - **cache** por `sha256 da imagem + versão do prompt + modelo` (5.8): reler
   não gasta cota nem chama a API;
-- estados: `em_fila → lida`; erros → `erro_leitura` (400/5xx em todos os
-  modelos) ou `bloqueada_pela_ia`; releitura só de estados anteriores à
-  revisão (`409` para `comparada` em diante).
+- após a resposta da API, a página é estruturada automaticamente para revisão;
+- erros → `erro_leitura` ou `bloqueada_pela_ia`; releitura só de estados
+  anteriores à revisão (`409` para páginas confirmadas).
 
-Config (`application.properties`): `gemini.*` — a chave **só** de
-`GEMINI_API_KEY` (vazia por omissão); com a chave vazia, `POST .../ler` dá
-`409` dizendo o que falta. Os testes não usam a rede.
+Configuração (`application.properties`), substituível por variáveis de
+ambiente: `GROQ_API_KEY`, `GROQ_BASE_URL`, `GROQ_OCR_MODEL`,
+`GROQ_OCR_MAX_IMAGES`, `GROQ_OCR_MAX_PDF_PAGES`,
+`GROQ_OCR_MAX_COMPLETION_TOKENS`, `GROQ_OCR_MAX_PROMPT_WORDS` e
+`GROQ_OCR_MAX_IMAGE_BYTES`. A chave não é incluída no repositório; sem ela,
+`POST .../ler` responde `409`. O motor envia uma imagem processada por página
+(até ao máximo configurado). A interface atual só importa imagens; o limite de
+páginas PDF fica configurável, mas não existe importação de PDF nesta versão.
+Para executar localmente, defina `GROQ_API_KEY` no ambiente do processo do
+back-end. Os testes não usam a rede.
 
-### Tesseract e comparação (Fase 4)
+### Comparação com o hinário actual em arquivo
 
-O mesmo `POST /paginas/{n}/ler` passa a correr os **dois leitores**: depois do
-Gemini, o Tesseract lê a imagem processada em local e o back-end **compara**
-as duas leituras (PRD 5.7.3):
-
-- alinhamento das linhas por distância de edição e classificação de cada par:
-  `igual`, `so_acento`, `so_pontuacao`, `divergente` — **qualquer diferença**
-  fica em `divergencias` da página, com o texto dos dois lados;
-- a página passa a `comparada`; se o Gemini falhar mas o Tesseract ler, a
-  página fica com a leitura local (`bloqueada_pela_ia` "segue só com
-  Tesseract", PRD 5.6);
-- o alfabeto é verificado (5.7.2): caracteres fora do conjunto conhecido
-  ficam marcados em `leituras.gemini.validacao.alfabeto` — **nunca removidos**;
-- `gemini.enabled=false` ⇒ modo só-Tesseract: a fila continua a funcionar e as
-  páginas ficam `lida` com `leituras.tesseract`;
-- se o binário não estiver instalado, a leitura principal não falha: a página
-  fica `lida` com `leituras.tesseract.erro`.
-
-Config (`application.properties`): `tesseract.enabled`, `tesseract.idioma`
-(`por`), `tesseract.binario`, `tesseract.datapath` (vazio = `TESSDATA_PREFIX`
-do sistema), `tesseract.psm`, `tesseract.timeout-segundos`.
-
-**Decisão registada** (28/10/2026): o Tesseract corre por `ProcessBuilder`
-sobre o binário do sistema, em vez de Tess4J — mesma escolha da Fase 2
-(Java2D em vez de JavaCV): zero dependências nativas no Maven; o motor é
-requisito da máquina de qualquer forma. `GET /fila` passou a incluir
-`tesseractDisponivel`.
+O OCR usa exclusivamente a resposta da API Groq; não há execução local de OCR.
+Depois de rever e confirmar as páginas, a
+página **Comparar** (`/comparar`) alinha a transcrição nova com o conteúdo
+actual de `hinario.json` e `estrofes.json`, mostrando as diferenças sem
+alterar nenhum dos lados. A leitura da IA fica guardada em
+`leituras.groq.resposta`.
 
 ### Estruturação e continuação (Fase 5)
 
-Depois de a página ficar `comparada`, o back-end monta a **proposta de
-estrutura** (5.7.4–5.7.6) e grava-a em `blocos` do `paginas/<n>.json`,
+Depois da leitura da IA, o back-end monta a **proposta de estrutura** e
+grava-a em `blocos` do `paginas/<n>.json`,
 passando a página a `estruturada` — automático, sem novo pedido:
 
 ```bash
@@ -244,16 +229,14 @@ confirmação); buracos de sequência ficam `confirmar: true` em vez de juntos.
 
 A secção **OCR** do painel (`http://localhost:4200/paginas`) mostra a fila e
 as quotas (`GET /fila` — aviso quando a quota esgotada, pausas por modelo) e
-acções por página: **Ler** (importada/erro), **Rever** (comparada em diante).
+acções por página: **Ler** (importada/erro), **Rever** (leitura disponível).
 
 O ecrã de revisão (`/paginas/revisar/{n}`) tem três painéis:
 
 - **lista de páginas** com estado (Ctrl+←/→ ou botões navegam entre páginas);
-- **foto com zoom** (a versão processada que os leitores viram; caixa
+- **foto com zoom** (a versão processada enviada à API; caixa
   "Original" mostra o ficheiro intacto);
-- **editor de linhas** com a estrutura do hino: cada linha mostra o texto a
-  corrigir com a divergência do Tesseract ao lado (`divergente` a vermelho,
-  `so_acento`/`so_pontuacao` a amarelo), linhas com `[?]` e `duvidas` em
+- **editor de linhas** com a transcrição Groq: linhas com `[?]` e `duvidas` em
   evidência, recuo visível e tipo de bloco editável (estrofe/coro/bloco sem
   número). Há **paleta de carateres** (á é í ó ú â ê ô ã õ ç ò ń ’) que
   insere no cursor e **modo de texto inteiro** (o número de linhas nunca
@@ -271,7 +254,7 @@ Endpoints novos (PRD secção 7):
   original continua intacta em disco).
 
 Regra de ouro aplicada e testada (`RevisaoServiceTest`): corrigir **nunca**
-toca em `leituras` — o texto original do Gemini/Tesseract fica preservado no
+toca em `leituras` — o texto original da Groq fica preservado no
 ficheiro da página.
 
 ### Exportação e comparação (Fase 7)
@@ -365,20 +348,9 @@ A aplicação móvel foi completamente redesenhada e alinhada com o esquema novo
 
 ### Tarefas da Fase 0 que dependem de ti
 
-1. **Chave no AI Studio** (agora **necessária** para ler de verdade): criar
-   projeto **sem faturação**, gerar a chave, exportar `GEMINI_API_KEY` e anotar,
-   na página de limites do AI Studio, os modelos gratuitos e os seus limites
-   (PRD 5.8); confirmar também o portão de qualidade 5.10. Guardar a chave fora
+1. **Chave Groq** (necessária para ler de verdade): gerar a chave no painel
+   Groq e exportar `GROQ_API_KEY` no ambiente do back-end. Guardar a chave fora
    do repositório.
-2. **Instalar o Tesseract** (necessário desde a Fase 4 para a comparação;
-   sem ele, as páginas ficam só com a leitura do Gemini e
-   `leituras.tesseract.erro`):
-
-```bash
-sudo apt-get install -y tesseract-ocr tesseract-ocr-por
-tesseract --version
-```
-
-3. **`appId` da IERA App** (decisão registada): `com.ravunana.iera`.
+2. 2. **`appId` da IERA App** (decisão registada): `com.ravunana.iera`.
    Aplica-se ao projeto Android na Fase 9 (renomear a app), para não partir
    o build atual.

@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
@@ -7,9 +7,40 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
-  <h4 class="titulo">O SENHOR É O MEU PASTOR (Salmos 23)</h4>
-  @for (salmo of salmos23; track $index) {
-    <p>{{ salmo }}</p>
-  }
+<ion-content [fullscreen]="true" class="liturgico-content">
+  <div class="liturgico-container">
+    <!-- Hero Header -->
+    <div class="hero-header">
+      <div class="hero-icon-box salmos-color">
+        <i class="fa fa-mountain hero-icon" aria-hidden="true"></i>
+      </div>
+      <h1 class="hero-title">O Bom Pastor</h1>
+      <p class="hero-sub">Salmo de David — O cântico da confiança e providência</p>
+      <div class="hero-badge">
+        <i class="fa fa-scroll" aria-hidden="true"></i>
+        <span>Salmos 23:1-6</span>
+      </div>
+    </div>
+
+    <!-- Lista de Versículos -->
+    <div class="versiculos-list">
+      @for (salmo of salmos23; track $index) {
+        <div class="versiculo-card">
+          <div class="versiculo-num">
+            <span>{{ $index + 1 }}</span>
+          </div>
+          <div class="versiculo-body">
+            <p class="versiculo-texto">{{ salmo }}</p>
+          </div>
+        </div>
+      }
+    </div>
+
+    <!-- Mensagem de Conforto -->
+    <div class="salmos-conclusao">
+      <i class="fa fa-dove conclusao-icon" aria-hidden="true"></i>
+      <p>«A paz de Deus que excede todo o entendimento guardará os vossos corações.»</p>
+    </div>
+  </div>
 </ion-content>
+

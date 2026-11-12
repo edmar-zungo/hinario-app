@@ -1,22 +1,67 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Oração Domincal</ion-title>
+    <ion-title>Oração Dominical</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
-  <h4 class="titulo">ORAÇÃO DOMNICAL</h4>
-  <p>
-    Pai-nosso, que estás nos céus, Santificado seja o teu Nome; Venha o teu
-    Reino; Seja feita a tua vontade, assim na terra como no céu; O pão-nosso de
-    cada dia nos dá hoje; perdoa- nos as nossas dívidas, assim como também
-    perdoamos aos nossos devedores; e não nos deixes cair em tentação; mas
-    livra-nos do mal; Porque o Teu é Reino, e o Poder e a Glória, para sempre.
-    Amem!
-  </p>
+<ion-content [fullscreen]="true" class="liturgico-content">
+  <div class="liturgico-container">
+    <!-- Hero Header -->
+    <div class="hero-header">
+      <div class="hero-icon-box oracao-color">
+        <i class="fa fa-praying-hands hero-icon" aria-hidden="true"></i>
+      </div>
+      <h1 class="hero-title">A Oração Dominical</h1>
+      <p class="hero-sub">A oração ensinada por Jesus aos Seus discípulos</p>
+      <div class="hero-badge">
+        <i class="fa fa-book-bible" aria-hidden="true"></i>
+        <span>S. Mateus 6:9-13</span>
+      </div>
+    </div>
 
-  <small>(Ev.S.Mateus 6:9-13)</small>
+    <!-- Oração em Versículos Devocionais -->
+    <div class="oracao-card">
+      <div class="oracao-estrofe">
+        <span class="oracao-marcador">I</span>
+        <p class="oracao-linha destaque">Pai nosso, que estás nos céus, santificado seja o Teu nome;</p>
+      </div>
+
+      <div class="oracao-estrofe">
+        <span class="oracao-marcador">II</span>
+        <p class="oracao-linha">Venha o Teu Reino;</p>
+      </div>
+
+      <div class="oracao-estrofe">
+        <span class="oracao-marcador">III</span>
+        <p class="oracao-linha">Seja feita a Tua vontade, assim na terra como no céu;</p>
+      </div>
+
+      <div class="oracao-estrofe">
+        <span class="oracao-marcador">IV</span>
+        <p class="oracao-linha">O pão nosso de cada dia dá-nos hoje;</p>
+      </div>
+
+      <div class="oracao-estrofe">
+        <span class="oracao-marcador">V</span>
+        <p class="oracao-linha">E perdoa-nos as nossas dívidas, assim como nós temos perdoado aos nossos devedores;</p>
+      </div>
+
+      <div class="oracao-estrofe">
+        <span class="oracao-marcador">VI</span>
+        <p class="oracao-linha">E não nos deixes cair em tentação, mas livra-nos do mal;</p>
+      </div>
+
+      <!-- Doxologia -->
+      <div class="oracao-doxologia">
+        <p class="doxologia-texto">
+          Porque Teu é o Reino, o Poder e a Glória para sempre.
+        </p>
+        <span class="oracao-amen">Amém!</span>
+      </div>
+    </div>
+  </div>
 </ion-content>
+

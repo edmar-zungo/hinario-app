@@ -34,7 +34,7 @@ class AlinhamentoLinhasTest {
     }
 
     @Test
-    void linhaSoDoTesseractFicaComoOmissaoDoOutroLado() {
+    void linhaSoDaVersaoNovaFicaComoOmissaoDoOutroLado() {
         var pares = alinhamento.alinhar(java.util.List.of("a"), java.util.List.of("a", "z"));
         assertEquals(new AlinhamentoLinhas.Par(-1, 1), pares.get(1));
     }

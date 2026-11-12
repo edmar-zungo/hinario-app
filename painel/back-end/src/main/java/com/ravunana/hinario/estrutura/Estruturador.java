@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.springframework.stereotype.Component;
 
 /**
- * Montagem determinística dos blocos do Gemini (5.4) na estrutura da página
+ * Montagem determinística dos blocos da resposta OCR na estrutura da página
  * (PRD Fase 5):
  *
  * - `titulo_hino` inicia um hino; blocos sem título no início continuam o hino

@@ -35,8 +35,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 /**
  * `POST /paginas/{n}/ler` e `GET /fila` de ponta a ponta (PRD secção 7) com
- * um servidor simulado da API do Gemini: a foto entra, a fila lê e a página
- * fica `lida`.
+ * um servidor simulado da API Groq: a foto entra, a fila lê e estrutura
+ * sem depender de um motor OCR local.
  */
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -73,9 +73,6 @@ class LeituraControllerTest {
         registry.add("gemini.url-base", () -> URL_BASE);
         registry.add("gemini.modelos", () -> "modelo-teste");
         registry.add("gemini.espera-429-minuto-segundos", () -> "0");
-        registry.add("hinario.fila.retoma-ms", () -> "100");
-        // determinístico: sem o binário na máquina, o teste fica só no Gemini
-        registry.add("tesseract.enabled", () -> "false");
     }
 
     @Autowired
@@ -83,14 +80,6 @@ class LeituraControllerTest {
 
     @Autowired
     PaginaService paginas;
-
-    @Autowired
-    FilaLeituraService fila;
-
-    @BeforeEach
-    void garantirFila() {
-        fila.arrancar();
-    }
 
     private static byte[] foto() throws IOException {
         BufferedImage imagem = new BufferedImage(50, 40, BufferedImage.TYPE_INT_RGB);
@@ -113,46 +102,20 @@ class LeituraControllerTest {
         return numero;
     }
 
-    private Pagina esperarLida(int numero) throws Exception {
-        long limite = System.currentTimeMillis() + 8000;
-        Pagina atual = null;
-        while (System.currentTimeMillis() < limite) {
-            atual = paginas.obter(numero);
-            if (atual.estado() == com.ravunana.hinario.pagina.EstadoPagina.LIDA) {
-                return atual;
-            }
-            Thread.sleep(100);
-        }
-        assertEquals(com.ravunana.hinario.pagina.EstadoPagina.LIDA, atual.estado());
-        return atual;
-    }
-
     @Test
-    void postLerDevolve202EPaginaFicaLida() throws Exception {
+    void postLerDevolve200EPaginaFicaEstruturada() throws Exception {
         int numero = importarPagina(50);
 
         mvc.perform(multipart("/paginas/" + numero + "/ler"))
-                .andExpect(status().isAccepted())
+                .andExpect(status().isOk())
                 .andExpect(jsonPath("$.pagina").value(50))
-                .andExpect(jsonPath("$.estado").value("em_fila"));
+                .andExpect(jsonPath("$.estado").value("estruturada"));
 
-        Pagina lida = esperarLida(numero);
+        Pagina lida = paginas.obter(numero);
         assertEquals("modelo-teste", lida.leituras().path("gemini").path("modelo").asText());
         assertTrue(lida.leituras().path("gemini").path("resposta").path("blocos").isArray());
         assertEquals("api", lida.leituras().path("gemini").path("tentativas")
                 .get(0).path("origem").asText());
-    }
-
-    @Test
-    void getFilaMostraEstadoEQuotasPorModelo() throws Exception {
-        mvc.perform(get("/fila"))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.estado").exists())
-                .andExpect(jsonPath("$.geminiDisponivel").value(true))
-                .andExpect(jsonPath("$.tesseractDisponivel").value(false))
-                .andExpect(jsonPath("$.modelos[0].modelo").value("modelo-teste"))
-                .andExpect(jsonPath("$.modelos[0].pedidosDia").exists())
-                .andExpect(jsonPath("$.pendentes").exists());
     }
 
     @Test

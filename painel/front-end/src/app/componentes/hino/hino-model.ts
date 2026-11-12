@@ -11,5 +11,6 @@ export interface HinoModel {
      dataActualizacao: Date,
      comentario: string,
      isFavorito: boolean,
-     lingua: Linguas
+     lingua: Linguas,
+     revisado?: boolean
 }

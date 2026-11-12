@@ -93,8 +93,8 @@ public class ComparacaoHinoService {
         List<String> textosNova = ladosNova.stream().map(Lado::texto).toList();
 
         for (AlinhamentoLinhas.Par par : alinhamento.alinhar(textosActual, textosNova)) {
-            Lado a = par.gemini() >= 0 ? ladosActual.get(par.gemini()) : null;
-            Lado n = par.tesseract() >= 0 ? ladosNova.get(par.tesseract()) : null;
+            Lado a = par.actual() >= 0 ? ladosActual.get(par.actual()) : null;
+            Lado n = par.nova() >= 0 ? ladosNova.get(par.nova()) : null;
             String tipo;
             if (a == null) {
                 tipo = "so_no_novo";

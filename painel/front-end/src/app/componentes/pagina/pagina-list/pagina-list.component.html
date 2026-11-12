@@ -2,28 +2,10 @@
   <h2>OCR: páginas</h2>
   <p class="text-muted">
     Fotografe as páginas do hinário e importe-as. A foto original fica intacta;
-    a versão processada é gerada automaticamente. Depois de importar, leia com
-    Gemini + Tesseract e revise no ecrã de revisão.
+    depois de importar, a página é extraída diretamente com o Gemini e aberta para
+    revisão. Para gerar o JSON final do hinário, use
+    <a routerLink="/exportar">Exportar</a>.
   </p>
-
-  @if (fila?.quotaEsgotada) {
-    <div class="alert alert-warning">
-      Quota esgotada, retoma às {{ fila?.retomaAte ?? '—' }}.
-      A fila continua sozinha.
-    </div>
-  }
-  @if (fila; as f) {
-    <div class="mb-3 small text-muted">
-      Fila: <strong>{{ f.estado }}</strong> · {{ f.pendentes }} pendente(s) ·
-      Gemini {{ f.geminiDisponivel ? 'disponível' : 'indisponível' }} ·
-      Tesseract {{ f.tesseractDisponivel ? 'disponível' : 'não instalado' }}
-      @for (m of f.modelos; track m.modelo) {
-        @if (m.pausado) {
-          · <span class="text-danger">{{ m.modelo }} pausado até {{ m.pausadoAte }}</span>
-        }
-      }
-    </div>
-  }
 
   <div class="card mb-4">
     <div class="card-body">
@@ -111,6 +93,9 @@
             <span class="badge" [ngClass]="classeEstado(pagina.estado)">
               {{ pagina.estado }}
             </span>
+            @if (pagina.leituras?.gemini?.erro) {
+              <div class="small text-danger mt-1">{{ pagina.leituras?.gemini?.erro }}</div>
+            }
           </td>
           <td>{{ pagina.largura }} × {{ pagina.altura }}</td>
           <td class="hash">{{ pagina.hash.slice(7, 19) }}…</td>
@@ -122,7 +107,7 @@
                 Ler
               </button>
             }
-            @if (pagina.estado === 'estruturada' || pagina.estado === 'em_revisao'
+            @if (pagina.estado === 'lida' || pagina.estado === 'estruturada' || pagina.estado === 'em_revisao'
                  || pagina.estado === 'confirmada') {
               <a class="btn btn-sm btn-primary"
                  [routerLink]="['/paginas/revisar', pagina.pagina]">Rever</a>
@@ -143,3 +128,117 @@
     </tbody>
   </table>
 </div>
+
+@if (modalExtracaoAberta) {
+  <div class="modal fade show d-block" tabindex="-1" role="dialog" aria-modal="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Extração com Gemini</h5>
+          @if (!extraindo) {
+            <button type="button" class="btn-close" aria-label="Fechar" (click)="fecharModal()"></button>
+          }
+        </div>
+        <div class="modal-body">
+          <p class="mb-2">{{ faseModal }}</p>
+          <div class="progress mb-3" style="height: 20px;">
+            <div
+              class="progress-bar progress-bar-striped"
+              [class.progress-bar-animated]="extraindo"
+              role="progressbar"
+              [style.width.%]="progressoExtracao"
+              [attr.aria-valuenow]="progressoExtracao"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              {{ progressoExtracao }}%
+            </div>
+          </div>
+
+          @if (itensExtracao.length) {
+            <ul class="list-group">
+              @for (item of itensExtracao; track item.pagina) {
+                <li class="list-group-item d-flex justify-content-between align-items-center gap-2">
+                  <div>
+                    <strong>Página {{ item.pagina }}</strong>
+                    @if (item.detalhe) {
+                      <div class="small text-danger">{{ item.detalhe }}</div>
+                    }
+                  </div>
+                  <div>
+                    @switch (item.estado) {
+                      @case ('aguardar') {
+                        <span class="badge bg-secondary">A aguardar</span>
+                      }
+                      @case ('extraindo') {
+                        <span class="badge bg-info text-dark">A extrair…</span>
+                      }
+                      @case ('concluida') {
+                        <a
+                          class="btn btn-sm btn-primary"
+                          [routerLink]="['/paginas/revisar', item.pagina]"
+                          (click)="fecharModal()"
+                        >
+                          Rever
+                        </a>
+                      }
+                      @case ('erro') {
+                        <span class="badge bg-danger">Erro</span>
+                      }
+                    }
+                  </div>
+                </li>
+              }
+            </ul>
+          }
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" [disabled]="extraindo" (click)="fecharModal()">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-backdrop fade show"></div>
+}
+
+@if (modalAvisoRevisadoAberta) {
+  <div class="modal fade show d-block" tabindex="-1" role="dialog" aria-modal="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Hinos já revistos</h5>
+          <button
+            type="button"
+            class="btn-close"
+            aria-label="Fechar"
+            (click)="cancelarImportacaoRevisada()"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-2">
+            {{ paginasJaRevisadas.length === 1
+              ? 'A seguinte página já foi revista anteriormente:'
+              : 'As seguintes páginas já foram revistas anteriormente:' }}
+          </p>
+          <p class="fw-semibold mb-2">
+            Página(s): {{ paginasJaRevisadas.join(', ') }}
+          </p>
+          <p class="text-muted small mb-0">
+            Deseja prosseguir com o envio e iniciar a extração novamente?
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" (click)="cancelarImportacaoRevisada()">
+            Cancelar
+          </button>
+          <button type="button" class="btn btn-warning" (click)="confirmarImportacaoMesmoAssim()">
+            Extrair mesmo assim
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-backdrop fade show"></div>
+}

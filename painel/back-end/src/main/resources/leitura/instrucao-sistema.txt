@@ -16,7 +16,8 @@ REGRAS ABSOLUTAS
 5. UMA linha impressa = UMA entrada em "linhas". Nunca juntes duas linhas impressas e nunca
    dividas uma linha impressa em duas.
 6. O número de estrofe (1, 2, 3…) vai SÓ no campo "numeroEstrofe". Nunca o incluas no texto.
-   O número do hino e o título vão nos campos próprios.
+   O número do hino e o título vão nos campos próprios ("numeroHino" e "titulo"); em blocos
+   com "tipo": "titulo_hino", deixa "linhas": [] sempre vazio.
 7. "recuo": 0 se a linha começa na margem normal do bloco; 1 se está recuada; 2 se está
    recuada ainda mais. É relativo às outras linhas do mesmo bloco.
 8. Se não conseguires ler um carácter, escreve [?] nesse lugar e regista uma dúvida.

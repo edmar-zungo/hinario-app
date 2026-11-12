@@ -10,85 +10,109 @@
           </div>
         </div>
 
-        <ion-list id="inbox-list">
+        <ion-list id="inbox-list" class="sidebar-list">
           <ion-list-header>Navegação</ion-list-header>
 
           <ion-menu-toggle auto-hide="true">
             <ion-item
-              lines="full"
+              lines="none"
+              class="sidebar-item"
               [routerLink]="['/tabs/hinos']"
               [routerLinkActive]="['router-link-active']"
             >
-              <i aria-hidden="true" class="fa fa-book menu-icon"></i>
+              <div class="sidebar-icon-box bg-hinos" slot="start">
+                <i aria-hidden="true" class="fa fa-book"></i>
+              </div>
               <ion-label>Hinos</ion-label>
             </ion-item>
 
             <ion-item
-              lines="full"
+              lines="none"
+              class="sidebar-item"
               [routerLink]="['/tabs/pesquisa']"
               [routerLinkActive]="['router-link-active']"
             >
-              <i aria-hidden="true" class="fa fa-search menu-icon"></i>
+              <div class="sidebar-icon-box bg-pesquisa" slot="start">
+                <i aria-hidden="true" class="fa fa-search"></i>
+              </div>
               <ion-label>Pesquisa</ion-label>
             </ion-item>
 
             <ion-item
-              lines="full"
+              lines="none"
+              class="sidebar-item"
               [routerLink]="['/tabs/favoritos']"
               [routerLinkActive]="['router-link-active']"
             >
-              <i aria-hidden="true" class="fa fa-star menu-icon text-warning"></i>
+              <div class="sidebar-icon-box bg-favoritos" slot="start">
+                <i aria-hidden="true" class="fa fa-star"></i>
+              </div>
               <ion-label>Favoritos</ion-label>
             </ion-item>
 
             <ion-item
-              lines="full"
+              lines="none"
+              class="sidebar-item"
               [routerLink]="['/tabs/constituicao']"
               [routerLinkActive]="['router-link-active']"
             >
-              <i aria-hidden="true" class="fa fa-scroll menu-icon"></i>
+              <div class="sidebar-icon-box bg-constituicao" slot="start">
+                <i aria-hidden="true" class="fa fa-scroll"></i>
+              </div>
               <ion-label>Constituição</ion-label>
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
 
-        <ion-list id="textos-liturgicos-list">
+        <ion-list id="textos-liturgicos-list" class="sidebar-list">
           <ion-list-header>Textos Litúrgicos</ion-list-header>
 
           <ion-menu-toggle auto-hide="true">
             <ion-item
-              lines="full"
+              lines="none"
+              class="sidebar-item"
               [routerLink]="['/dez-mandamentos']"
               [routerLinkActive]="['router-link-active']"
             >
-              <i aria-hidden="true" class="fa fa-handshake-alt menu-icon"></i>
+              <div class="sidebar-icon-box bg-mandamentos" slot="start">
+                <i aria-hidden="true" class="fa fa-list-ol"></i>
+              </div>
               <ion-label>10 Mandamentos</ion-label>
             </ion-item>
 
             <ion-item
-              lines="full"
+              lines="none"
+              class="sidebar-item"
               [routerLink]="['/credo-apostolico']"
               [routerLinkActive]="['router-link-active']"
             >
-              <i aria-hidden="true" class="fa fa-hand-holding-heart menu-icon"></i>
+              <div class="sidebar-icon-box bg-credo" slot="start">
+                <i aria-hidden="true" class="fa fa-cross"></i>
+              </div>
               <ion-label>Credo Apostólico</ion-label>
             </ion-item>
 
             <ion-item
-              lines="full"
+              lines="none"
+              class="sidebar-item"
               [routerLink]="['/oracao-dominical']"
               [routerLinkActive]="['router-link-active']"
             >
-              <i aria-hidden="true" class="fa fa-praying-hands menu-icon"></i>
+              <div class="sidebar-icon-box bg-oracao" slot="start">
+                <i aria-hidden="true" class="fa fa-praying-hands"></i>
+              </div>
               <ion-label>Oração Dominical</ion-label>
             </ion-item>
 
             <ion-item
-              lines="full"
+              lines="none"
+              class="sidebar-item"
               [routerLink]="['/salmos23']"
               [routerLinkActive]="['router-link-active']"
             >
-              <i aria-hidden="true" class="fa fa-mountain menu-icon"></i>
+              <div class="sidebar-icon-box bg-salmos" slot="start">
+                <i aria-hidden="true" class="fa fa-mountain"></i>
+              </div>
               <ion-label>Salmos 23</ion-label>
             </ion-item>
           </ion-menu-toggle>

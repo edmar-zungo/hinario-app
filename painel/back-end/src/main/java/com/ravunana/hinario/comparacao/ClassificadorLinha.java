@@ -17,9 +17,9 @@ public class ClassificadorLinha {
             '-', '–', '—', '…', '/', '’', '‘', '“', '”', '*', '«', '»');
 
     /** {@code igual} | {@code so_acento} | {@code so_pontuacao} | {@code divergente}. */
-    public String classificar(String gemini, String tesseract) {
-        String a = Normalizer.normalize(gemini == null ? "" : gemini, Normalizer.Form.NFC).trim();
-        String b = Normalizer.normalize(tesseract == null ? "" : tesseract, Normalizer.Form.NFC).trim();
+    public String classificar(String actual, String nova) {
+        String a = Normalizer.normalize(actual == null ? "" : actual, Normalizer.Form.NFC).trim();
+        String b = Normalizer.normalize(nova == null ? "" : nova, Normalizer.Form.NFC).trim();
         if (a.equals(b)) {
             return "igual";
         }

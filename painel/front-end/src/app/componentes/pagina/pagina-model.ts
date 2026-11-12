@@ -10,7 +10,6 @@ export interface PaginaModel {
   largura: number;
   altura: number;
   leituras?: LeiturasModel;
-  divergencias?: DivergenciaModel[];
   blocos?: BlocoModel[];
 }
 
@@ -18,20 +17,9 @@ export interface LeiturasModel {
   gemini?: {
     resposta?: { blocos?: BlocoModel[] };
     modelo?: string;
+    erro?: string;
     validacao?: { alfabeto?: { desconhecidos?: string[] } };
   };
-  tesseract?: {
-    linhas?: { texto: string; confianca: number }[];
-    erro?: string;
-  };
-}
-
-export interface DivergenciaModel {
-  tipo: string;
-  gemini: string;
-  tesseract: string;
-  bloco: number;
-  linha: number;
 }
 
 export interface BlocoModel {

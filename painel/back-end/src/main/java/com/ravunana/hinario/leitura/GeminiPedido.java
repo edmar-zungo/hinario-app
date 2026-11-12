@@ -194,6 +194,7 @@ public class GeminiPedido {
 
         ObjectNode linhas = propsBloco.putObject("linhas");
         linhas.put("type", "ARRAY");
+        linhas.put("description", "Array vazio [] quando tipo=titulo_hino; linhas impressas nos restantes tipos.");
         ObjectNode itemLinha = linhas.putObject("items");
         itemLinha.put("type", "OBJECT");
         ObjectNode propsLinha = itemLinha.putObject("properties");

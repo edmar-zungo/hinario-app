@@ -173,54 +173,24 @@ ion-item.selected {
   --color: var(--ion-color-primary);
 }
 
-/**
-MY CSS
-*/
-
-.fa-book{
-  color: rgb(242, 31, 31);
-}
-
-.fa-star{
-  color:yellow;
-}
-
-.fa-handshake-alt{
-  color: blue;
-}
-.fa-hand-holding-heart{
-  color: #69b2f5;
-}
-
-.fa-praying-hands{
-  color: #835612;
-  
-}
-.fa-mountain{
-  color: #17ac17;
-}
-
-.footer{
-  padding-top: 3%;
-  padding-bottom: 3%;
-  box-shadow: none;
-  text-align: center;
-  border-top: 1px #7e581ec9 solid;
-}
+/* ==========================================================================
+   IERA Sidebar Modern Styling
+   ========================================================================== */
 
 .menu-header-box {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 20px 16px 14px 16px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  gap: 14px;
+  padding: 24px 18px 18px;
+  border-bottom: 1px solid var(--ion-border-color, #e2e8f0);
+  background: var(--ion-item-background);
 
   .menu-logo {
     width: 48px;
     height: 48px;
-    border-radius: 10px;
+    border-radius: 12px;
     object-fit: cover;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   }
 
   .menu-title-wrap {
@@ -228,30 +198,125 @@ MY CSS
       font-size: 1.25rem;
       font-weight: 800;
       margin: 0;
-      color: var(--ion-text-color, #1e293b);
-      letter-spacing: 0.3px;
+      color: var(--ion-text-color, #0f172a);
+      letter-spacing: -0.01em;
     }
 
     .menu-app-sub {
       font-size: 0.8rem;
       margin: 2px 0 0 0;
       color: var(--ion-color-medium, #64748b);
-      font-style: italic;
+      font-weight: 500;
     }
   }
 }
 
-.menu-icon {
-  font-size: 1.15rem;
-  width: 26px;
-  margin-right: 12px;
+.sidebar-list {
+  padding: 12px 10px;
+
+  ion-list-header {
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ion-color-medium, #64748b);
+    padding: 10px 14px 4px;
+    min-height: auto;
+  }
 }
 
-small {
-  font-style: normal;
-  font-weight: 500;
-  color: var(--ion-color-medium, #64748b);
-  line-height: 1.4;
-  display: block;
+.sidebar-item {
+  --padding-start: 10px;
+  --padding-end: 12px;
+  --inner-padding-end: 8px;
+  --min-height: 46px;
+  margin: 3px 0;
+  border-radius: 10px;
+  --background: transparent;
+  transition: all 0.15s ease;
+
+  ion-label {
+    font-size: 0.94rem;
+    font-weight: 600;
+    color: var(--ion-text-color, #1e293b);
+    margin-left: 8px;
+  }
+
+  &.router-link-active {
+    --background: rgba(var(--ion-color-primary-rgb, 56, 128, 255), 0.12);
+
+    ion-label {
+      color: var(--ion-color-primary, #3880ff);
+      font-weight: 700;
+    }
+  }
 }
+
+/* Badges de Ícones Modernos */
+.sidebar-icon-box {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+
+  &.bg-hinos {
+    background: rgba(56, 128, 255, 0.14);
+    color: #2563eb;
+  }
+
+  &.bg-pesquisa {
+    background: rgba(139, 92, 246, 0.14);
+    color: #7c3aed;
+  }
+
+  &.bg-favoritos {
+    background: rgba(245, 158, 11, 0.14);
+    color: #d97706;
+  }
+
+  &.bg-constituicao {
+    background: rgba(16, 185, 129, 0.14);
+    color: #059669;
+  }
+
+  &.bg-mandamentos {
+    background: rgba(37, 99, 235, 0.14);
+    color: #1d4ed8;
+  }
+
+  &.bg-credo {
+    background: rgba(225, 29, 72, 0.14);
+    color: #e11d48;
+  }
+
+  &.bg-oracao {
+    background: rgba(14, 165, 233, 0.14);
+    color: #0284c7;
+  }
+
+  &.bg-salmos {
+    background: rgba(5, 150, 105, 0.14);
+    color: #047857;
+  }
+}
+
+.footer {
+  padding: 16px 14px;
+  box-shadow: none;
+  text-align: center;
+  border-top: 1px solid var(--ion-border-color, #e2e8f0);
+  background: var(--ion-item-background);
+
+  small {
+    font-size: 0.74rem;
+    color: var(--ion-color-medium, #64748b);
+    line-height: 1.45;
+    display: block;
+    font-weight: 500;
+  }
+}
+
 
