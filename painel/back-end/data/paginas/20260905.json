@@ -1,0 +1,291 @@
+{
+  "pagina" : 20260905,
+  "hinarioId" : "por",
+  "imagem" : "imagens/original/20260905.jpg",
+  "imagemProcessada" : "imagens/processada/20260905.jpg",
+  "hash" : "sha256:1ae98550e7bfd5aa180745418c94bb90a9239312cd8a38f01b242bc4fafa6d93",
+  "estado" : "confirmada",
+  "nomeOriginal" : "IMG_20260905_083539_1.jpg",
+  "importadoEm" : "2026-11-15T12:42:58.364847300Z",
+  "largura" : 2000,
+  "altura" : 1506,
+  "leituras" : {
+    "gemini" : {
+      "modelo" : "gemini-3.5-flash",
+      "resposta" : {
+        "blocos" : [ {
+          "tipo" : "titulo_hino",
+          "linhas" : [ ],
+          "numeroHino" : 1,
+          "titulo" : "QUANDO EU PERDER O CAMINHO"
+        }, {
+          "tipo" : "estrofe",
+          "linhas" : [ {
+            "texto" : "Quando eu perder o caminho,",
+            "recuo" : 0
+          }, {
+            "texto" : "Jesus me defenda.",
+            "recuo" : 1
+          }, {
+            "texto" : "Em casa e no caminho,",
+            "recuo" : 0
+          }, {
+            "texto" : "Jesus me defenda.",
+            "recuo" : 1
+          } ],
+          "italico" : false,
+          "numeroEstrofe" : 1
+        }, {
+          "tipo" : "bloco_sem_numero",
+          "linhas" : [ {
+            "texto" : "Coro. Jesus Defensor, Jesus Salvador,",
+            "recuo" : 0
+          }, {
+            "texto" : "Quando estiver tentado, Jesus me",
+            "recuo" : 1
+          }, {
+            "texto" : "[defenda.",
+            "recuo" : 2
+          } ],
+          "italico" : true
+        }, {
+          "tipo" : "estrofe",
+          "linhas" : [ {
+            "texto" : "Se Satanás me tentar,",
+            "recuo" : 0
+          }, {
+            "texto" : "Jesus me defenda.",
+            "recuo" : 1
+          }, {
+            "texto" : "Quando eu não tiver força,",
+            "recuo" : 0
+          }, {
+            "texto" : "Jesus me defenda.",
+            "recuo" : 1
+          } ],
+          "italico" : false,
+          "numeroEstrofe" : 2
+        }, {
+          "tipo" : "estrofe",
+          "linhas" : [ {
+            "texto" : "Seguirei meu redentor,",
+            "recuo" : 0
+          }, {
+            "texto" : "Jesus me defenda,",
+            "recuo" : 1
+          }, {
+            "texto" : "seja luz ou sejam trevas,",
+            "recuo" : 0
+          }, {
+            "texto" : "Jesus me defenda.",
+            "recuo" : 1
+          } ],
+          "italico" : false,
+          "numeroEstrofe" : 3
+        }, {
+          "tipo" : "titulo_hino",
+          "linhas" : [ ],
+          "numeroHino" : 2,
+          "titulo" : "OUÇO A BENIGNA VOZ"
+        }, {
+          "tipo" : "estrofe",
+          "linhas" : [ {
+            "texto" : "Ouço a benigna voz",
+            "recuo" : 0
+          }, {
+            "texto" : "De Cristo, o Redentor;",
+            "recuo" : 1
+          }, {
+            "texto" : "Chama-me para a salvação,",
+            "recuo" : 0
+          }, {
+            "texto" : "Fruto do Seu amor.",
+            "recuo" : 1
+          } ],
+          "italico" : false,
+          "numeroEstrofe" : 1
+        } ],
+        "cabecalhoPagina" : "EVANGELIZAÇÃO",
+        "numeroPaginaImpresso" : 22
+      },
+      "tentativas" : [ {
+        "modelo" : "gemini-3.5-flash",
+        "resultado" : "ok",
+        "quando" : "2026-11-15T12:43:18.804819800Z",
+        "origem" : "api"
+      } ],
+      "validacao" : {
+        "alfabeto" : [ ]
+      }
+    }
+  },
+  "divergencias" : [ ],
+  "blocos" : [ {
+    "tipo" : "titulo_hino",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 1,
+    "titulo" : "QUANDO EU PERDER O CAMINHO",
+    "numeroEstrofe" : null,
+    "ligacao" : null,
+    "linhas" : [ ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "estrofe",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 1,
+    "titulo" : null,
+    "numeroEstrofe" : 1,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Quando eu perder o caminho,",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Jesus me defenda.",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Em casa e no caminho,",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Jesus me defenda.",
+      "recuo" : 0,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "coro",
+    "italico" : true,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : true,
+    "numeroHino" : 1,
+    "titulo" : null,
+    "numeroEstrofe" : null,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Coro. Jesus Defensor, Jesus Salvador,",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Quando estiver tentado, Jesus me",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "defenda.",
+      "recuo" : 2,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "estrofe",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 1,
+    "titulo" : null,
+    "numeroEstrofe" : 2,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Se Satanás me tentar,",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Jesus me defenda.",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Quando eu não tiver força,",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Jesus me defenda.",
+      "recuo" : 0,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "estrofe",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 1,
+    "titulo" : null,
+    "numeroEstrofe" : 3,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Seguirei meu redentor,",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Jesus me defenda,",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "seja luz ou sejam trevas,",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Jesus me defenda.",
+      "recuo" : 0,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "titulo_hino",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 2,
+    "titulo" : "OUÇO A BENIGNA VOZ",
+    "numeroEstrofe" : null,
+    "ligacao" : null,
+    "linhas" : [ ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "estrofe",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 2,
+    "titulo" : null,
+    "numeroEstrofe" : 1,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Ouço a benigna voz",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "De Cristo, o Redentor;",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Chama-me para a salvação,",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Fruto do Seu amor.",
+      "recuo" : 0,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  } ]
+}

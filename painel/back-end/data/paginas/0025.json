@@ -1,0 +1,311 @@
+{
+  "pagina" : 25,
+  "hinarioId" : "por",
+  "imagem" : "imagens/original/0025.jpg",
+  "imagemProcessada" : "imagens/processada/0025.jpg",
+  "hash" : "sha256:0a8b89f3d9f3fde452478d2619b1618c4347545d5aba2a58ea52a5ff969a06cf",
+  "estado" : "confirmada",
+  "nomeOriginal" : "IMG_20260905_083740_1.jpg",
+  "importadoEm" : "2026-11-15T13:06:55.192916Z",
+  "largura" : 2000,
+  "altura" : 1506,
+  "leituras" : {
+    "gemini" : {
+      "modelo" : "gemini-3.5-flash",
+      "resposta" : {
+        "blocos" : [ {
+          "tipo" : "estrofe",
+          "linhas" : [ {
+            "texto" : "Avante! Avante! oh crente!",
+            "recuo" : 0
+          }, {
+            "texto" : "Com passo triunfal!",
+            "recuo" : 0
+          }, {
+            "texto" : "Hoje há combate horrendo!",
+            "recuo" : 0
+          }, {
+            "texto" : "Mui cedo a paz final!",
+            "recuo" : 0
+          }, {
+            "texto" : "Então, eternamente",
+            "recuo" : 0
+          }, {
+            "texto" : "Bendito o Vencedor,",
+            "recuo" : 0
+          }, {
+            "texto" : "Por Deus vitoriado",
+            "recuo" : 0
+          }, {
+            "texto" : "Com Cristo, o Salvador.",
+            "recuo" : 0
+          } ],
+          "numeroEstrofe" : 3
+        }, {
+          "tipo" : "titulo_hino",
+          "linhas" : [ ],
+          "numeroHino" : 5,
+          "titulo" : "TODO AQUELE QUE OUVE"
+        }, {
+          "tipo" : "estrofe",
+          "linhas" : [ {
+            "texto" : "Todo aquele que ouve, queira proclamar",
+            "recuo" : 0
+          }, {
+            "texto" : "Salvação de graça para o que aceitar.",
+            "recuo" : 0
+          }, {
+            "texto" : "Possam todos este som alegre ouvir:",
+            "recuo" : 0
+          }, {
+            "texto" : "«Todo aquele que quer, é vir!»",
+            "recuo" : 0
+          } ],
+          "numeroEstrofe" : 1
+        }, {
+          "tipo" : "bloco_sem_numero",
+          "linhas" : [ {
+            "texto" : "Coro. Todo aquele que quer! Todo aquele",
+            "recuo" : 0
+          }, {
+            "texto" : "[que quer!",
+            "recuo" : 1
+          }, {
+            "texto" : "Possa todo o pródigo esta nova ouvir:",
+            "recuo" : 0
+          }, {
+            "texto" : "Que seu Pai celeste o quer em casa ver",
+            "recuo" : 0
+          }, {
+            "texto" : "«Todo aquele que quer, é vir!»",
+            "recuo" : 0
+          } ],
+          "italico" : false
+        }, {
+          "tipo" : "estrofe",
+          "linhas" : [ {
+            "texto" : "«Todo aquele que quer» não deve demorar;",
+            "recuo" : 0
+          }, {
+            "texto" : "Eis a porta aberta, já podeis entrar;",
+            "recuo" : 0
+          }, {
+            "texto" : "É Jesus que ao Pai vos quer introduzir!",
+            "recuo" : 0
+          }, {
+            "texto" : "«Todo aquele que quer, é vir»»",
+            "recuo" : 0
+          } ],
+          "numeroEstrofe" : 2
+        }, {
+          "tipo" : "estrofe",
+          "linhas" : [ {
+            "texto" : "«Todo aquele que quer» logo o conseguirá;",
+            "recuo" : 0
+          }, {
+            "texto" : "«Todo aquele que quer» por provas passará!",
+            "recuo" : 0
+          }, {
+            "texto" : "«Todo aquele que quer» pode o céu possuir,",
+            "recuo" : 0
+          }, {
+            "texto" : "«Todo aquele que quer, é vir!»",
+            "recuo" : 0
+          } ],
+          "numeroEstrofe" : 3
+        } ],
+        "cabecalhoPagina" : null,
+        "numeroPaginaImpresso" : 25
+      },
+      "tentativas" : [ {
+        "modelo" : "gemini-3.5-flash",
+        "resultado" : "ok",
+        "quando" : "2026-11-15T13:08:03.940458300Z",
+        "origem" : "api"
+      } ],
+      "validacao" : {
+        "alfabeto" : [ ]
+      }
+    }
+  },
+  "divergencias" : [ ],
+  "blocos" : [ {
+    "tipo" : "estrofe",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 4,
+    "titulo" : null,
+    "numeroEstrofe" : 3,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Avante! Avante! oh crente!",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Com passo triunfal!",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Hoje há combate horrendo!",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Mui cedo a paz final!",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Então, eternamente",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Bendito o Vencedor,",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Por Deus vitoriado",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Com Cristo, o Salvador.",
+      "recuo" : 0,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "titulo_hino",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 5,
+    "titulo" : "TODO AQUELE QUE OUVE",
+    "numeroEstrofe" : null,
+    "ligacao" : null,
+    "linhas" : [ ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "estrofe",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 5,
+    "titulo" : null,
+    "numeroEstrofe" : 1,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Todo aquele que ouve, queira proclamar",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Salvação de graça para o que aceitar.",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Possam todos este som alegre ouvir:",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "«Todo aquele que quer, é vir!»",
+      "recuo" : 0,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "coro",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : true,
+    "numeroHino" : 5,
+    "titulo" : null,
+    "numeroEstrofe" : null,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Coro. Todo aquele que quer! Todo aquele",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "que quer!",
+      "recuo" : 2,
+      "revisto" : true
+    }, {
+      "texto" : "Possa todo o pródigo esta nova ouvir:",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Que seu Pai celeste o quer em casa ver",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "«Todo aquele que quer, é vir!»",
+      "recuo" : 0,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "estrofe",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 5,
+    "titulo" : null,
+    "numeroEstrofe" : 2,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "«Todo aquele que quer» não deve demorar;",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Eis a porta aberta, já podeis entrar;",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "É Jesus que ao Pai vos quer introduzir!",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "«Todo aquele que quer, é vir»»",
+      "recuo" : 0,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "estrofe",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 5,
+    "titulo" : null,
+    "numeroEstrofe" : 3,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "«Todo aquele que quer» logo o conseguirá;",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "«Todo aquele que quer» por provas passará!",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "«Todo aquele que quer» pode o céu possuir,",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "«Todo aquele que quer, é vir!»",
+      "recuo" : 0,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  } ]
+}

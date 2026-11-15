@@ -50,9 +50,9 @@ public class PaginaController {
             @RequestParam(value = "pagina", required = false) Integer pagina,
             @RequestParam(value = "paginas", required = false) String numeros,
             @RequestParam("hinarioId") String hinarioId,
-            @RequestParam(value = "rotacao", defaultValue = "0") double rotacao) {
+            @RequestParam(value = "rotacao", defaultValue = "0") double rotacao) throws IOException {
 
-        List<Pagina> importadas = paginas.importar(emparelhar(ficheiros, pagina, numeros), hinarioId, rotacao);
+        List<Pagina> importadas = paginas.importar(emparelhar(ficheiros, pagina, numeros, paginas), hinarioId, rotacao);
         return ResponseEntity.status(HttpStatus.CREATED).body(importadas);
     }
 
@@ -87,7 +87,7 @@ public class PaginaController {
     }
 
     private static List<PaginaService.PedidoImportacao> emparelhar(
-            List<MultipartFile> ficheiros, Integer pagina, String numeros) {
+            List<MultipartFile> ficheiros, Integer pagina, String numeros, PaginaService paginas) throws IOException {
 
         if (ficheiros == null || ficheiros.isEmpty()) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "nenhum ficheiro submetido");
@@ -100,7 +100,7 @@ public class PaginaController {
         } else {
             numerosResolvidos = new ArrayList<>();
             for (MultipartFile ficheiro : ficheiros) {
-                numerosResolvidos.add(numeroDoNome(ficheiro.getOriginalFilename()));
+                numerosResolvidos.add(paginas.proximoNumeroTemporario() + numerosResolvidos.size());
             }
         }
         if (numerosResolvidos.size() != ficheiros.size()) {

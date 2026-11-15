@@ -52,12 +52,18 @@ mobile/local.properties
 *.apk
 *.aab
 
-# Pastas de dados locais / runtime / OCR
-data/
-painel/back-end/data/
+# Pastas temporárias de runtime / cache / quota
 iera-dados/
+painel/back-end/data/cache/
+painel/back-end/data/quota/
 
 # Garantir SEMPRE a inclusão dos ficheiros JSON dos hinos e assets da aplicação
+!painel/back-end/data/
+!painel/back-end/data/*.json
+!painel/back-end/data/paginas/
+!painel/back-end/data/paginas/**
+!painel/back-end/data/imagens/
+!painel/back-end/data/imagens/**
 !mobile/src/assets/data/
 !mobile/src/assets/data/**
 !**/assets/data/*.json

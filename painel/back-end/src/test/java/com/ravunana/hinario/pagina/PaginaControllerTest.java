@@ -75,7 +75,7 @@ class PaginaControllerTest {
     }
 
     @Test
-    void importaLoteOrdenadoEPorNomeDoFicheiro() throws Exception {
+    void importaLoteSemNumeroUsaNumerosTemporarios() throws Exception {
         byte[] conteudo = imagem(40, 30);
         MockMultipartFile um = new MockMultipartFile("ficheiros", "0396.jpg", "image/jpeg", conteudo);
         MockMultipartFile dois = new MockMultipartFile("ficheiros", "0395.jpg", "image/jpeg", conteudo);
@@ -83,8 +83,8 @@ class PaginaControllerTest {
         mvc.perform(multipart("/paginas").file(um).file(dois).param("hinarioId", "por"))
                 .andExpect(status().isCreated())
                 .andExpect(jsonPath("$.length()").value(2))
-                .andExpect(jsonPath("$[0].pagina").value(395))
-                .andExpect(jsonPath("$[1].pagina").value(396));
+                .andExpect(jsonPath("$[0].pagina").value(900001))
+                .andExpect(jsonPath("$[1].pagina").value(900002));
     }
 
     @Test
@@ -98,7 +98,7 @@ class PaginaControllerTest {
     @Test
     void rejeitaFicheiroQueNaoEImagem() throws Exception {
         MockMultipartFile lixo = new MockMultipartFile("ficheiros", "a.jpg", "image/jpeg",
-                "não sou imagem".getBytes());
+                "nÃ£o sou imagem".getBytes());
 
         mvc.perform(multipart("/paginas").file(lixo).param("pagina", "2").param("hinarioId", "kmb"))
                 .andExpect(status().isBadRequest());

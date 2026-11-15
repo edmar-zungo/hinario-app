@@ -15,6 +15,7 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.time.Instant;
@@ -133,6 +134,48 @@ public class PaginaService {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "página " + numero + " não importada");
         }
         return mapper.readValue(ficheiro.toFile(), Pagina.class);
+    }
+
+    private static final int BASE_TEMPORARIA = 900_000;
+
+    /** Devolve o próximo número temporário disponível (acima de {@value BASE_TEMPORARIA}). */
+    public int proximoNumeroTemporario() throws IOException {
+        int maior = BASE_TEMPORARIA;
+        for (Pagina p : listar()) {
+            if (p.pagina() > maior) {
+                maior = p.pagina();
+            }
+        }
+        return maior + 1;
+    }
+
+    /**
+     * Renomeia uma página (JSON e ficheiros de imagem) para o número extraído
+     * da imagem, substituindo ficheiros anteriores se esse número já existir.
+     */
+    public Pagina renomear(Pagina atual, int novoNumero) throws IOException {
+        if (novoNumero < 1 || novoNumero == atual.pagina()) {
+            atualizar(atual);
+            return atual;
+        }
+        String ext = extensao(new byte[0], atual.imagem());
+        String novaImagem = "imagens/original/" + String.format("%04d.%s", novoNumero, ext);
+        String novaProcessada = "imagens/processada/" + String.format("%04d.jpg", novoNumero);
+
+        moverSeExistir(dataFiles.resolve(atual.imagem()), dataFiles.resolve(novaImagem));
+        moverSeExistir(dataFiles.resolve(atual.imagemProcessada()), dataFiles.resolve(novaProcessada));
+        Files.deleteIfExists(caminhoPagina(atual.pagina()));
+
+        Pagina renomeada = atual.comNumeroECaminhos(novoNumero, novaImagem, novaProcessada);
+        atualizar(renomeada);
+        return renomeada;
+    }
+
+    private static void moverSeExistir(Path origem, Path destino) throws IOException {
+        if (Files.isRegularFile(origem) && !origem.equals(destino)) {
+            Files.createDirectories(destino.getParent());
+            Files.move(origem, destino, StandardCopyOption.REPLACE_EXISTING);
+        }
     }
 
     /** Grava a página actualizada (estado, leituras, ...) em `paginas/<n>.json`. */

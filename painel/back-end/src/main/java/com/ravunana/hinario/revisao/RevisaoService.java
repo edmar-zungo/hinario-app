@@ -4,6 +4,10 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.ravunana.hinario.enums.Linguas;
+import com.ravunana.hinario.exportacao.BlocoNovo;
+import com.ravunana.hinario.exportacao.HinarioNovo;
+import com.ravunana.hinario.exportacao.HinoNovo;
+import com.ravunana.hinario.exportacao.LinhaNovo;
 import com.ravunana.hinario.model.Estrofe;
 import com.ravunana.hinario.model.Hino;
 import com.ravunana.hinario.pagina.EstadoPagina;
@@ -205,6 +209,49 @@ public class RevisaoService {
             }
             estrofes.substituirEstrofesDoHino(hino.getId(), novasEstrofes);
         }
+        atualizarFicheiroHinarioLingua(lingua);
+    }
+
+    private void atualizarFicheiroHinarioLingua(Linguas lingua) throws IOException {
+        List<Hino> daLingua = new ArrayList<>();
+        for (Hino h : hinos.getAllHinos()) {
+            if (h.getId() != null && h.getLingua() == lingua) {
+                daLingua.add(h);
+            }
+        }
+        daLingua.sort(java.util.Comparator.comparingLong(Hino::getPagina)
+                .thenComparingLong(Hino::getNumero)
+                .thenComparing(h -> String.valueOf(h.getId())));
+
+        Map<java.util.UUID, List<Estrofe>> porHino = new LinkedHashMap<>();
+        for (Estrofe e : estrofes.getAllEstrofes()) {
+            if (e.getHino() != null && e.getHino().getId() != null) {
+                porHino.computeIfAbsent(e.getHino().getId(), k -> new ArrayList<>()).add(e);
+            }
+        }
+
+        List<HinoNovo> hinosNovos = new ArrayList<>(daLingua.size());
+        for (Hino h : daLingua) {
+            List<Estrofe> listaEstrofes = porHino.getOrDefault(h.getId(), List.of());
+            List<BlocoNovo> blocos = new ArrayList<>(listaEstrofes.size());
+            for (Estrofe e : listaEstrofes) {
+                String texto = e.getDescricao() == null ? "" : e.getDescricao();
+                List<LinhaNovo> linhas = java.util.Arrays.stream(texto.split("\n", -1))
+                        .map(LinhaNovo::de)
+                        .toList();
+                blocos.add(e.isRefrao()
+                        ? BlocoNovo.coro(linhas)
+                        : BlocoNovo.estrofe((int) e.getNumero(), linhas));
+            }
+            hinosNovos.add(new HinoNovo(
+                    h.getId(), h.getNumero(), h.getPagina(), h.getTitulo(), h.getAutor(), blocos));
+        }
+
+        HinarioNovo hinarioNovo = new HinarioNovo(
+                lingua.getCodigo(), lingua.getCodigo(), lingua.getNome(),
+                java.time.Instant.now().toString(), hinosNovos);
+        dataFiles.escreverJson(
+                dataFiles.resolve("hinario-" + lingua.getCodigo() + ".json"), hinarioNovo);
     }
 
     /** Estrutura enviada pelo painel: tipos válidos, recuo 0..2, texto NFC. */

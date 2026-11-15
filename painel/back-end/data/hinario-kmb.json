@@ -1,0 +1,3622 @@
+{
+  "id" : "kmb",
+  "lingua" : "kmb",
+  "nome" : "Hinário Kimbundu",
+  "geradoEm" : "2026-10-30T11:39:01.458194144Z",
+  "hinos" : [ {
+    "id" : "078248bc-39ae-4a3e-945b-6a2c42b4ed0f",
+    "numero" : 383,
+    "pagina" : 30,
+    "titulo" : "Kana ki kuenie ukamba",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Kana ki kuenie ukarnba Kal'ukamba ua Jezu. Muene ua tu tumu et'uoso",
+        "recuo" : 0
+      }, {
+        "texto" : "Ku di beka kia ko kue. Muxima se ua ku neme, Ni malamba ni ngongo,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nde kua Ngana, u mu arnbele, loso kia uala naiu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Se ua buila, se ua tate, Ni jipaxi ni uoma; Jezu muene disuamenu",
+        "recuo" : 0
+      }, {
+        "texto" : "Mu dielele muene ngo, Se makamba me ma ku xia. Nde, ka mu ambele-",
+        "recuo" : 0
+      }, {
+        "texto" : "kiu ue; Muene u ku bana uembu, Uizala ni henda ie.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Jezu dikamba dia kidi: Kidi, tua ki mono kia, Kioso kiejile kuambata",
+        "recuo" : 0
+      }, {
+        "texto" : "o itux' ietu ioso. Maning'e ua ma texile, Mixim'etu n' i zedie; Muene u",
+        "recuo" : 0
+      }, {
+        "texto" : "tu bana mueniu, Mueniu se 'zubilu die.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "ad968393-9a44-4896-9eb0-d64b6bcb9009",
+    "numero" : 38,
+    "pagina" : 300,
+    "titulo" : "Kuejile dikota kua ngana jezu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Kuejile dikota kua Ngana Jezu, Kuibula o njila ia mueniu uenio. Jezu ua",
+        "recuo" : 0
+      }, {
+        "texto" : "mu vutuila o kidi kie, Uixi, «a ku vuale di'.» Mua bingi ku mi vuala",
+        "recuo" : 0
+      }, {
+        "texto" : "di', Mua bingi ku mi vuala di', Kia kidi, ki kale mu bita naku,Kia ku",
+        "recuo" : 0
+      }, {
+        "texto" : "mi vuaia di'",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ivenu ni muanu, mu an'a Ada, Kia longa m'okulu Nganietu Jezu. O",
+        "recuo" : 0
+      }, {
+        "texto" : "njimbu ie lelu ia mi sange kia, Ia ku mi vuala di'.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ua kinga kua Ngana kuzediua kue, Kua kala ne kia, kana di' lamba",
+        "recuo" : 0
+      }, {
+        "texto" : "die, O mueniu ki uabue se ua u indi pe, Kale a ku vuale di'.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "ldidi ia diulu ia ngene ia io: Oso a bulukila kua Ngana Jezti.",
+        "recuo" : 0
+      }, {
+        "texto" : "16 ua ten a ioso, o Nzumbi ie ngoMuene u ku vuala di'",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "1f54f0e1-1f33-4b86-9ea2-3abff46cb754",
+    "numero" : 39,
+    "pagina" : 301,
+    "titulo" : "Ng'ambele maka ma kristu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ng'ambele maka ma Kristu, A ie ku muxima kia; Ene a kola kinene",
+        "recuo" : 0
+      }, {
+        "texto" : "A muloloko, tare! Zuela kia biluka mutu Ni kuiza boxi pe kia,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kulondekeza jihenda Ku aku'etuxi oe kia",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ng'ambele kia tululuka, Ka texi mutu, tatel Muene ni mak' ajikuka",
+        "recuo" : 0
+      }, {
+        "texto" : "Oso ua exana kia; Ngana Jezu muk' atexi Uoso pe uiza ko kue Ua di",
+        "recuo" : 0
+      }, {
+        "texto" : "xikina ituxi, N'etaia kixanu kie.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ng'ambele kioso kia didi Mu 'bata dia'kua Bele: Sanzal'oio ia ditunu",
+        "recuo" : 0
+      }, {
+        "texto" : "Henda ja Ngana Jezu, Lelu ue iu dila dingi",
+        "recuo" : 0
+      }, {
+        "texto" : "16 a kaiela ituxi - Ala kubana dikunda Henda ia Ngana Jezu,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ng'ambele kia tale hadi, Kala kambudi, tatel, A mu nienge ku diklusu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ua fuil' akuetuxi kia. Ngana, tamanu kindala Ngi dibakula ko kue. Henda",
+        "recuo" : 0
+      }, {
+        "texto" : "ie ki iene mbambe, U ngi tambula ko kue.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "e36f22b9-4d3d-4793-9bdd-e36acf9b8c83",
+    "numero" : 40,
+    "pagina" : 302,
+    "titulo" : "Jezu mon'a nzambi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Jezu Mon' a Nzambi, 'Kamba ni pang' ietu Muene ua mi kula kia; Zenu",
+        "recuo" : 0
+      }, {
+        "texto" : "pe kua Jezu.",
+        "recuo" : 0
+      }, {
+        "texto" : "Uoso a mu xikana! Uoso u mu xikana! Uau jinga ni mueniu, o mueniu ua",
+        "recuo" : 0
+      }, {
+        "texto" : "Nzambi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ió u tambula mueniu, Ua bana Jezu Kristu, U zola jingurna je,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ni atu oso mu ngongo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Uoso u ta ituxi, Kala luua ni henda: Hanji ua xala 'rnbika, Mubika ua",
+        "recuo" : 0
+      }, {
+        "texto" : "ituxi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ituxi ia jibile, Jezu o Mubuludi, Ua tundile mu diulu, Kututa",
+        "recuo" : 0
+      }, {
+        "texto" : "malamb'etu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Ambulenu ituxi, Xikanenu kua Jezu, Bingenu o Nzumbi ie, Ku mi bana",
+        "recuo" : 0
+      }, {
+        "texto" : "kutena.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "9b177ead-8111-45d7-acc7-7e7e02c851a5",
+    "numero" : 41,
+    "pagina" : 303,
+    "titulo" : "Ngi ku banel'ahi, ngana ?",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ngi ku bangel'ahi, Ngana? Kioso ki uamb'eie; Mukutu ua buila, iu teketa",
+        "recuo" : 0
+      }, {
+        "texto" : "ue, Ngi kana kubanga vondali ie: Kioso ki uamb'eie. Eie, Ngana! Eie,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngana! Eie, Ngana, u zuela; Ngi kana kubanga vondadi ie: Eie, Ngana,",
+        "recuo" : 0
+      }, {
+        "texto" : "u zuela.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Kuebi, Ngana, u ngi tuma? Kuoso ku uamb'eie; Inama ngi te-iu mu",
+        "recuo" : 0
+      }, {
+        "texto" : "njila ie, Kabasa nga dielela nguzu ie: Kuoso ku uamb'eie.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ng'ima ibundu iahi pe, I uind'eie, Ngana? Momuami ioso ni mueniu",
+        "recuo" : 0
+      }, {
+        "texto" : "kia, Nga i beka, nga i lumbila kia kokue: Ioso, Ngana, i'eie.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Vondadi ie iahi, Ngana, Mornuami, ngi hule ie? Akuetu mu ngongo a",
+        "recuo" : 0
+      }, {
+        "texto" : "sote ni ia! Kikutu ni eie o plomesa ie: U ngi dis'eie.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "c91b3978-5f35-4e50-94f4-fa24e78ebfe0",
+    "numero" : 42,
+    "pagina" : 304,
+    "titulo" : "ku mulenga ue za",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ku mulenga ue za, tu di sungietu, ba, Kuma Mesene ietu ua tuamena",
+        "recuo" : 0
+      }, {
+        "texto" : "kia; Huiii ie i bokone, tu fuluke ue, Pala tu kumbidile mu kimuanu kie.",
+        "recuo" : 0
+      }, {
+        "texto" : "Kidi kie, suina bat Kidi kie, samba ue; Kumbidila pe o kuxikana kue,",
+        "recuo" : 0
+      }, {
+        "texto" : "'Te ki vutuka Ngana ie .",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ku mulenga ue sai kia kubanga iza; Mu kuixana akuetuxi m' uhukunii",
+        "recuo" : 0
+      }, {
+        "texto" : "ua, Sai-ku akua diniota ku mukau iu; Za, tu a beke ku menia ma Ngana",
+        "recuo" : 0
+      }, {
+        "texto" : "Jezu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ku mulenga ue sai kia ku xindila ue, O kukuata kutonga kibatu ki-",
+        "recuo" : 0
+      }, {
+        "texto" : "kie, Kakilunga ka atu akua mundu ió; Ne-ku anda kuia na kua Ngana",
+        "recuo" : 0
+      }, {
+        "texto" : "Jezu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Alu kinga fiiele ua soko-bu kia, Ku a jirnbuila o njila ia mueniu iuna;",
+        "recuo" : 0
+      }, {
+        "texto" : "Eie pe, ki ual-okio, ua lalama ngo, Ni jitumba ja nete ngue ku a longa",
+        "recuo" : 0
+      }, {
+        "texto" : "io.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Kala p'londo a soneke pe dijina die, Bana ue tutu ie pala izale ue;",
+        "recuo" : 0
+      }, {
+        "texto" : "Xinganeka kia lekela Ngana Jezu; Kia kukola o njimbu mundu uos'u.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 6,
+      "linhas" : [ {
+        "texto" : "Eme ngala polondo, a soneke kia: lma ioso i xale ni ilalu ina:",
+        "recuo" : 0
+      }, {
+        "texto" : "Nga tambula ujitu kua Ngana Jezu, Inda ngi mu bikila mu mueniu",
+        "recuo" : 0
+      }, {
+        "texto" : "ueniu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "6af8e137-58bb-448f-81b9-7a069d0c1c83",
+    "numero" : 43,
+    "pagina" : 305,
+    "titulo" : "Ivenu ngonge ia ngana",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "lvenu ngonge ia Ngana, Njimbu iambote ia kubuluka, Eza kia ku i tula",
+        "recuo" : 0
+      }, {
+        "texto" : "mundu, Ku ani'ozange a jixi joso: Kua Jezu.",
+        "recuo" : 0
+      }, {
+        "texto" : "Muene ua tumina iso, Bulu ni mu ngongo ioso: Jezu ngo,",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "3a5b680d-ed75-43cd-9071-f2a7d98ecda3",
+    "numero" : 44,
+    "pagina" : 307,
+    "titulo" : "Masoladi masoladi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Masoladi, masoladi, Ngana Jezu, ma Ngana Jesú, Nguma ietu ia tu zemba,",
+        "recuo" : 0
+      }, {
+        "texto" : "diabu. iingietu, ki tu lembue, Sob' etu Jezu, U /endesa jinga oso,",
+        "recuo" : 0
+      }, {
+        "texto" : "Aia mu iua ne.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Nguma ietu se ukola, Ni kifuxi kie; Ngana ietu muene'kota, Ni jianju",
+        "recuo" : 0
+      }, {
+        "texto" : "je.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Diabu uandala ku tu dia, Mieniu ietu ue: Ua rnesena ku tu kuata",
+        "recuo" : 0
+      }, {
+        "texto" : "Mu mibetu ie.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ngana Nzambi 'Kamba dietu, Ka tu ambula ue, U tu bana nguzu ioso,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ni tu lende kia.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "An'a diabu a di fula, Ken'u zediua: An' a Nzambi ene alunga, O ungana",
+        "recuo" : 0
+      }, {
+        "texto" : "ua.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "007782c6-74ca-480a-9ca3-033aba1c21af",
+    "numero" : 45,
+    "pagina" : 308,
+    "titulo" : "Zenu ana-ndenge, zenu kua jezu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Zenu ana-ndenge, zenu kua Jezu,ló, uafuile ku dik'lusu pal'enu; O",
+        "recuo" : 0
+      }, {
+        "texto" : "ana-ndenge, muene u'exana: Zenu kua Jezu kiá. Zenu, zenu, kua Muadi",
+        "recuo" : 0
+      }, {
+        "texto" : "Jezu, Zenu, zenu, kua Muadi Jezu, ló uafuile ku dik'lusu pai'enu;",
+        "recuo" : 0
+      }, {
+        "texto" : "Zenu kua Jezu ki«.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ki mu Ialeke-pe, izenu lelu; Kana-ku njila iengi iia ku diulu; O ana-",
+        "recuo" : 0
+      }, {
+        "texto" : "ndenge, muene u'a zola: Zenu kua Jezu kia.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Zola ana-ndenge, Jezu ua ki ambe; Uanda ku mi beka ku ixi iauaba;",
+        "recuo" : 0
+      }, {
+        "texto" : "Uanda ku mi bana mueniu ua bulu: Zenu, kua Jezu, kia.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "lvua ki a m'ixana, Zenu kual'eme: Kana-ku din1i ua mi zola kiki;",
+        "recuo" : 0
+      }, {
+        "texto" : "Henda ie ki ienie ni dizubilu: Zenu kua Jezu kia.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "76d45e12-52af-44a0-8a1a-7c89f1b1ea6b",
+    "numero" : 46,
+    "pagina" : 308,
+    "titulo" : "Ngana usendela tundeia tue",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ngana u sendela tundeia tue, Uandala tu benia mu usuku pe; Mu",
+        "recuo" : 0
+      }, {
+        "texto" : "ngong'umu muene sai kitombe kie: Eie u kandeia, ni eme ue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Dianga ku bambuka tubia tua Jezu, Se tua fefetela ki mu'ibila io:",
+        "recuo" : 0
+      }, {
+        "texto" : "Muene ualu tala se tua difu ne; Eie u kandeia, ni eme ue",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Kuene kuoso pe tu muiketu ngo, Hota je viula m'ukexilu iu: Tuandu",
+        "recuo" : 0
+      }, {
+        "texto" : "tebununa ku usuku ue, Eie u kandeia, ni eme ue.",
+        "recuo" : 0
+      }, {
+        "texto" : "Nga solo kia kukaiela Jezu; (3 vezes) Ngi kala jinga kia fiele.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ngeha o mundu; nga sange Jezu; (3 vezes) Ngi kala jinga kia fiele.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Ngala kimba.di kia mueniu uami; (3 vezes) Ngi kala jinga kia fiele.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 6,
+      "linhas" : [ {
+        "texto" : "Ngala kimbadi kia maku mami; (3 vezes) Ngi kala jinga kia fiele.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 7,
+      "linhas" : [ {
+        "texto" : "Ngala kimbadi kia dimi diarni: (3 vezes) Ngi kala jinga kia fiele .",
+        "recuo" : 0
+      }, {
+        "texto" : "inama iami, kitadi kiami, etc.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "bdcbfcb3-c459-4b7e-85c9-9a31e70bd772",
+    "numero" : 47,
+    "pagina" : 309,
+    "titulo" : "Dikamba dia ana-ndenge",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "ikamba di' ana-ndenge, Jezu Mubuludi, Tu kale u'etu baba, Kabila ka",
+        "recuo" : 0
+      }, {
+        "texto" : "mboie: Tumbudi rue tu inge Ni hcnda ni kiJi, Tua bingi k u tu ban a,",
+        "recuo" : 0
+      }, {
+        "texto" : "Muxima uaiuka.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ijila ie iaiuka, Tu longe ku i zola; Ni kioso ki ku 'ibila, Tu katule-kiu",
+        "recuo" : 0
+      }, {
+        "texto" : "kia. O makutanga moso, Tuala namu lelu, Tu longese e' muene Nzambi",
+        "recuo" : 0
+      }, {
+        "texto" : "ietu ia mbote.",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngala ni ng'Iasa, ng'lasa, Mu muxima iu, Mu muxima iu, mu muxima",
+        "recuo" : 0
+      }, {
+        "texto" : "iu, Ngala ni ng'lasa, ng'Iasa mu muxima iu lzuua ioso kia.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Henda ia Jezu Kristu, etc.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Uembu ua Ngana Nzambi, etc.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Kana-ku dingi kuela Mu muxima iu, etc.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "f9327b5c-dd7f-40cf-9c20-2931777b552e",
+    "numero" : 48,
+    "pagina" : 310,
+    "titulo" : "Madibesa kala mvula ",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Madibesa kala rnvula, Ivua dijimbuilu die; Ng'lasa i tunda kua Ngana,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kubanduluka ku'an'e: Madibesd kala mvula, Nokesa Ngan 'obia die;",
+        "recuo" : 0
+      }, {
+        "texto" : "Mbundu ngo ia tu sukila, Tua bing! mvula kokue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Dibia die di ku muxima Mbutu mu divulu die, Kuala ni mavu ma",
+        "recuo" : 0
+      }, {
+        "texto" : "rnbote, Sai kusabuka kue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Mvula ijila mu isanga, lene ia mateka kia, Mvula pe imisa kiengi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kuima kue kua dibesa,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Tuinda idima ivula Mabia ma Ngana enia: Akuni n'abongolodi Oso",
+        "recuo" : 0
+      }, {
+        "texto" : "kuzediua kua.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Mvula inoke, Mvula ie ia mabesa. Kioso kia range kibita, Tuala",
+        "recuo" : 0
+      }, {
+        "texto" : "kukinga Jezu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "8c6e3df2-5f3d-461e-a211-df0a8fae3730",
+    "numero" : 49,
+    "pagina" : 311,
+    "titulo" : "Mundo'oso ua texikile mua vundu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Mundu' oso ua texikile mua vundu, Jezu rnukengeji ua mundu!",
+        "recuo" : 0
+      }, {
+        "texto" : "Kala muania iu ua zelesele-mu, Jezu mukengeji ua mundu.",
+        "recuo" : 0
+      }, {
+        "texto" : "Zenu kua Mukengeji ueniu, Ua ngi muikina mua vund omo;",
+        "recuo" : 0
+      }, {
+        "texto" : "Nga fuile mesu, nga mono kia: Jezu mukengeji ua mundu!",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Uoso uenda ne ka mone kuvunda, Jezu mukengeji ua mundu!",
+        "recuo" : 0
+      }, {
+        "texto" : "Ki tu mu kaiela, tu sanga ng'Iasa, Jezu mukengeji ua mundul",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Jingadiama joso, mua jika mesu, Jezu mukengeji ua mundu!",
+        "recuo" : 0
+      }, {
+        "texto" : "lzenu kua muene, a m'ilule kia, Jezu mukengeji ua mundu!",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Kuna ku diulu ki kua bingi muania, Jezu mukengeji ua mundu!",
+        "recuo" : 0
+      }, {
+        "texto" : "Kuene kuazele ni kuluendela kue, Jezu mukengeji ua mundu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "c451729d-45f1-413c-a9dc-48c5bcef9ead",
+    "numero" : 50,
+    "pagina" : 312,
+    "titulo" : "Tala ku bandela, bekela kia",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tala ku bandela, ii bekela kia, Kuala ni kidimbu: mueniu ki uabue;",
+        "recuo" : 0
+      }, {
+        "texto" : "lta ia Jehova ia mateka kia: Sai makuenze baba andala kulua ue,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ta/a ku bandela, ii bekela kia, Sai-ku ni kidimbu, mueniu ki uabue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ita ia bangarna, ita ia Jezu, Kulua ni kitombe, ni ituxi ue; Uoso",
+        "recuo" : 0
+      }, {
+        "texto" : "uamesena kubakata ue, Mata ma dik'lusu, ioso ui xia pe.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Sai pe kia alembua kuxia ima ia, Exi ki tu tena kuambata dik'lus';",
+        "recuo" : 0
+      }, {
+        "texto" : "Maji pange, ivua, se uitaia ue, Kuila, ngi di ambata, sai kitundu kie.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Mueza kubokona mu ukuenze iu, Pala kukaiela mueniu ki uabue; Ivua",
+        "recuo" : 0
+      }, {
+        "texto" : "pe kia zuela komandande iu: Xisa ima ioso, u sofelele ue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Eme ngala baba, soneka, Jezu! Ngi bokone moxi ni ngi lende kia:",
+        "recuo" : 0
+      }, {
+        "texto" : "Se ngifua pe n'eie, mueniu kuna sai, A ngl tuika kia, Kristu, o dik 'Iusu",
+        "recuo" : 0
+      }, {
+        "texto" : "die!",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "99e669a8-cb17-4b91-96d9-4439c9bee3d9",
+    "numero" : 51,
+    "pagina" : 314,
+    "titulo" : "Ivua njimbu iambote ",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ivua njirnbu iambote, E' ngenji ia Jezu, Ualu niunga mu ngong'",
+        "recuo" : 0
+      }, {
+        "texto" : "umu; Mubuludi ue uiza, Zangula mesu me, Uiza di'ni ungana ue.",
+        "recuo" : 0
+      }, {
+        "texto" : "Ju uiza, Ngana Jezu iu uiza di'. Oxi iiii i toloka pe; Ni jihadi Jaso Janda",
+        "recuo" : 0
+      }, {
+        "texto" : "kubua kid, Kiza Jezu ni ungana ue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ni jimbila jokulu, Ja 'ngenji jafu kia, Ji jikuka ku dizui die; Ni jimidi",
+        "recuo" : 0
+      }, {
+        "texto" : "ja zeka, Mu uoma ua Jezu, Mu ngong' umu ji kala di.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ndandu jetu mua Jezu Tua menekena di'; Tuirnba jinga o fuma ie: Atu",
+        "recuo" : 0
+      }, {
+        "texto" : "oso a buluka, Ku jixi joso kia, U tu beka ku 'bata die.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "9a4d39c3-bd4e-4fc8-8b9b-ce2c973294a9",
+    "numero" : 52,
+    "pagina" : 315,
+    "titulo" : "Tu jingenji ja jezu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tu jingenji ja Jezu, 'Ngenji je, 'ngenji je, Tu enda njil' ileba pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mbambe diulu. Tua i kane, ox'iina, Ox' iina, ox' iina, Kua tu king' akuetu",
+        "recuo" : 0
+      }, {
+        "texto" : "ua, Ene bulu.",
+        "recuo" : 0
+      }, {
+        "texto" : "Tuimba pe, Mesene, Njil'iii tu i enda ne. Bulu o jianju je, Anju je, 'anju",
+        "recuo" : 0
+      }, {
+        "texto" : "je, Ji tu kauidila ue Bu dibitu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ne tua huha'kanga die 'Kanga die, 'kanga die, Tu end a ni kutana pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Tuimbi-dienu. U enda njil' ii ua lungu-e, Ua lungu-e, ua lungu-e, Nguaie",
+        "recuo" : 0
+      }, {
+        "texto" : "kuenda, a kadie, Lekelenu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Mu ngong' umu, kaxi die, Kaxi die, kaxi die, Diene ni ma'klusu me;",
+        "recuo" : 0
+      }, {
+        "texto" : "Tu ambatienu. Uala kuna, 'ngongo jaii, 'Ngongo jaii, 'ngongo jaii, Koko",
+        "recuo" : 0
+      }, {
+        "texto" : "'lau dia kidi sai; Dielelenu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "564ac63c-9e2e-4f74-a8d4-39957f0c414c",
+    "numero" : 53,
+    "pagina" : 316,
+    "titulo" : "Ngana jezu uanda kuiza kulungisa",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ngana Jezu uanda kuiza kulungisa ng'leja ie, Ni xibata ia dikanu u jimuna",
+        "recuo" : 0
+      }, {
+        "texto" : "'nguma je, Ni jianju janda kuiza ku mu kuatekesa ue; Jezu iu uiza di'.",
+        "recuo" : 0
+      }, {
+        "texto" : "Gloria, gloria aleluia! Gloria, gloria aleluial Gloria, gloria aleluial Jezu iu",
+        "recuo" : 0
+      }, {
+        "texto" : "uiza di'!",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ni dikumbi ni tetembua ioso jandu suama ue, Ni milundu ni matadi",
+        "recuo" : 0
+      }, {
+        "texto" : "iandu lenga polo ie; Ni kalunga ni jingiji joso ji kukuta ue, Mu kuivua",
+        "recuo" : 0
+      }, {
+        "texto" : "dizui die.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Oxi ioso iandu botomoka kia bu polo ie, Ni matubia ma jinjinda",
+        "recuo" : 0
+      }, {
+        "texto" : "mandu zuba ioso ue; lvua, eie mukua ituxi, uandu suama dingi kue'",
+        "recuo" : 0
+      }, {
+        "texto" : "Kulenga polo ie?",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Azedi a mixima anda kuivua dizui die, Andu kauidila Ngana ni ngalasa",
+        "recuo" : 0
+      }, {
+        "texto" : "ioso pe, N'a bokone ua ku fesa ia ukaza ua Mon'e, - K'ukaza ua Jezu,",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "162ec91f-4ebd-4544-8386-caaf27b2b7ec",
+    "numero" : 54,
+    "pagina" : 316,
+    "titulo" : "Kiza anju uandu xika koloneta ia jezu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "K'iza anju uandu xika koloneta ia Jezu Kitangana boxi kianda kubua ue,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ni'kusambu'a bongoloka, oso a buluka kia; N'a ng'ixane ue, ng'itaia",
+        "recuo" : 0
+      }, {
+        "texto" : "«Ingi mon'e».",
+        "recuo" : 0
+      }, {
+        "texto" : "Kia ng 'ixana ... ue, ng 'itaia,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kia ng'ixana ue, ng'itaia, «Ngi mon'e».",
+        "recuo" : 0
+      }, {
+        "texto" : "Kia ng'ixana ... ue, ng'itaia,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kia ng'ixana ue, ng'itaia, «Ngi mon'e».",
+        "recuo" : 0
+      }, {
+        "texto" : "Kia ng'ixana ue, ng'itaia,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kia ng 'ixana ue, ng 'itaia, «Ngi man 'e»,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Mu kimene kiokio tuandu fukunuka mua Jezu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mu uzonda ue, tu sanguluka ne:",
+        "recuo" : 0
+      }, {
+        "texto" : "Ni azele o mixima a bixila ue ko kue: Kia ng'ixana ue, ng'itaia, «Ngi",
+        "recuo" : 0
+      }, {
+        "texto" : "mori'e».",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "O ku fesa ie ku diulu, tuandu bongoloka ne, Ni k'ukaza ua Jezu, tu",
+        "recuo" : 0
+      }, {
+        "texto" : "kala ue;",
+        "recuo" : 0
+      }, {
+        "texto" : "Ni jipange jetu ja tuamena, tuandu sanga di'; Kia ng'ixana ue, ng'itaia,",
+        "recuo" : 0
+      }, {
+        "texto" : "«Ngi mon'e».",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "126e229e-c033-4c92-8cce-c794f55da3ea",
+    "numero" : 55,
+    "pagina" : 317,
+    "titulo" : "Ngana jezu nga mu zola",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ngana Jezu nga mu zola, Mueniu uami nga mu be; Njila ioso ngala",
+        "recuo" : 0
+      }, {
+        "texto" : "kuenda, A ngendese jinga rie.",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngenda ne, ngenda ne; Ngenda ne, ngenda ne; Njila ioso ngala kuenda;",
+        "recuo" : 0
+      }, {
+        "texto" : "A ngendese jinga ne.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ki ngi kala ni kuxila, ni kuzanga mueniu iu; Nga mesena pe kuzela,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ku enda jinga ni Jezu, nga mesena pe kuzela, Ni Jezu, ni Jezu, Ni Jezu, ni",
+        "recuo" : 0
+      }, {
+        "texto" : "Jezu,· Kuenda jinga ni Jezu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Mu kalunga, ngi zaule, Ngi dielela 'koue die; Mu dibitu dia jikuka,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngana ngi bokona ne.",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngiia ne, ngiia ne, Ngiia ne, ngiia ne; Mu dibitu dia jikuka,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngana ngi bokona ne.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "0135aacf-6c5a-48fc-8db4-a24e2b19aaf5",
+    "numero" : 56,
+    "pagina" : 318,
+    "titulo" : "Xinganeka ku mbanza kuna",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Xinganeka ku mbanza kuna, Bu kizanga ki benia maie, Kualu kemba",
+        "recuo" : 0
+      }, {
+        "texto" : "jihule jikola, Alu nanga ni Ngana Jezu, Ox'ina, ox'ina, Xinganeka ku oxi",
+        "recuo" : 0
+      }, {
+        "texto" : "iina.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "O makamba ma bixila kia: Lembalala kuzediua kua: Ala kuimba mu",
+        "recuo" : 0
+      }, {
+        "texto" : "mbanza ia Ngana, la iudika mu kutena kue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Nga ka mona o polo ia Jezu, Nga ka kala ne kia monzo ie; Kiene kiua",
+        "recuo" : 0
+      }, {
+        "texto" : "kia ka bua jingongo, Nga ka tunga ni Kristu muenio.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Selu, selu, nga kala ko kue, Njila iami kua kambe ibue; Ngana ualu",
+        "recuo" : 0
+      }, {
+        "texto" : "ngi kinga kuenioko, Inda ngiia kukala ne kia",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "7f6fa2c1-72cf-43e0-965a-eb669e91f45d",
+    "numero" : 57,
+    "pagina" : 318,
+    "titulo" : "Ngan'etu ku diulu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ngan'etu ku diulu, Tata ietu kia: Ng'ivue, nga ku diondo, Eme ngi mon'e:",
+        "recuo" : 0
+      }, {
+        "texto" : "Uoma ua ngi kuata, Ua dijina die; Eie u Nzambi ukola, Eie ubeka ue,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Kuoso, kuoso ngiia, Ne-ku kididi, Kia ku ku suamena, Kuxia mesu me;",
+        "recuo" : 0
+      }, {
+        "texto" : "Kixi ko' ku diulu, Kixi box' aba, Uene ididi ioso, Eie ubeka ue,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ioso i ngi banga, I ngi banza ue, Eie m'okulu omo, Ua i 'jiia kia. Ioso",
+        "recuo" : 0
+      }, {
+        "texto" : "i uandala, Ku ila ua soko e: Uava nguzu ioso, Eie ubeka ue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ngana, nga ku bingi, O kutena kue, Pala kana dingi Ngi xia njila ie;",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngi loloke ioso, Ngi zeJese kia, Hinu u ngi beke Ku dibata die.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "b5c42ba0-4ab3-4e44-a47b-db084616355d",
+    "numero" : 58,
+    "pagina" : 319,
+    "titulo" : "Ngana jezu muene 'kamba dietu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ngana Jezu Muene 'Kamba dietu. Jezu ngo, Jezu ngo, Iu ua tu sake",
+        "recuo" : 0
+      }, {
+        "texto" : "mixima ietu, Jezu ng6, Jezu ngó. Jezu ngo, Muene ua tu ijiia; U tu endesa",
+        "recuo" : 0
+      }, {
+        "texto" : "mu mueniu iu; Kana-ku dingi dikamba diengi; Jezu ngo, Jezu ngo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Jezu k' ungana ue ua xikama, Jezu ngc, Jezu ngo. Hanji muxima ue",
+        "recuo" : 0
+      }, {
+        "texto" : "ua batama. Jezu, ngo, Jezu, ngo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Mu ola joso Iu ua zukama, Jezu ngo, Jezu ngo. Kuenda ni uoma ue",
+        "recuo" : 0
+      }, {
+        "texto" : "kia tu fuama; Jezu ngo, Jezu ngo",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Henda ia nanii ujitu 'avulu? la Jezu, Jezu ngo. Nanii u tu bana kibidi",
+        "recuo" : 0
+      }, {
+        "texto" : "bulu? Jezu ngo, Jezu ngo.",
+        "recuo" : 0
+      }, {
+        "texto" : "Jezu 'Kamba dia dikota! Jezu 'Kamba dia dikota! Tua mu ixana, uivua",
+        "recuo" : 0
+      }, {
+        "texto" : "kia, U tu kuatekesa kia, Jezu 'Kamba dia dikota' Jezu 'Kamba dia dikota!",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "8160cd8d-b19a-42da-83a8-7be8477ac07a",
+    "numero" : 59,
+    "pagina" : 320,
+    "titulo" : "Nga di beka kua jezu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Nga di beka kua Jezu, Nga di beka kua Jezu, Nga di beka ku Jezu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Eme ngi mon'e.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Jezu ua ngi jituna, Jezu ua ngi jituna, Jezu ua ngi jituna, Eme ngi mon'e.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Jezu ua ngi bulula, Eme ngi rnon'e.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Pata joso ja ngi bu, Eme ngi mon'e.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Nga dielela plomessa, Eme ngi mone",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 6,
+      "linhas" : [ {
+        "texto" : "Nginda ngi mu ximana,",
+        "recuo" : 0
+      }, {
+        "texto" : "Erne ngi mon'e.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "18026ac1-93e2-4bd2-b449-edfcbb424d4d",
+    "numero" : 60,
+    "pagina" : 321,
+    "titulo" : "Nga xikana kua jezu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Nga xikana kua Jezu Muene Mubuludi'ami, Ua fuile ku ngi kula, Nga",
+        "recuo" : 0
+      }, {
+        "texto" : "mu tambulula kia. Nga dielela kua Jezu Jezu ngo, ubeka ue, Tunde kiki,",
+        "recuo" : 0
+      }, {
+        "texto" : "izuua ioso, Nga dietela kua Jezu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Nga te jinga ituxi; Kiki O rnalamba me, Mala ku ngi kuata kia, Ngi",
+        "recuo" : 0
+      }, {
+        "texto" : "xikana pe Jezu,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "ltuxi ia bingi pe, Ku i sokesa ni mueniu; Mueniu uami ki u tene, Ua",
+        "recuo" : 0
+      }, {
+        "texto" : "ngi bela mueniu ue",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ki ngi dielela dingi, Ku ikalakalu iami; Jene ioso nga i xie, Nga xikana",
+        "recuo" : 0
+      }, {
+        "texto" : "ngo Jezu",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Nzumbi ia Nzambi ueza kia, Kidi ku muxima'ami; Muene Nzumbi ia",
+        "recuo" : 0
+      }, {
+        "texto" : "kidi, Muene Mbangi ia Jezu,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 6,
+      "linhas" : [ {
+        "texto" : "Ng'Iasa, ngala ku i sanga, Xi: ngalasa ia Jezu: Uambe ku tu bana-iu;",
+        "recuo" : 0
+      }, {
+        "texto" : "Ng'las' iii inanga pe",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "8b44806a-fb93-45c5-b818-458519a2bf08",
+    "numero" : 61,
+    "pagina" : 323,
+    "titulo" : "Nzambi mua kristu ua zola ba ",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Nzambi mua Kristu ua tu zola ba, · Uate kikutu ua tumu Mori'e,",
+        "recuo" : 0
+      }, {
+        "texto" : ".hi ua tu fuila ku 'klusu dina!Talenu Henda le, Talenu Henda le, Talenu",
+        "recuo" : 0
+      }, {
+        "texto" : "Henda le, Iu ua tu fuila ku 'klusa dina, Talenu Henda le.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Zenu mu diuane Hend'a Jezu! «Eme ngi njila, ngi kidi tar'e»",
+        "recuo" : 0
+      }, {
+        "texto" : "Mueniu ki uabua ki kale kokue; Lolenu Henda le.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ngana iii kinga iu kuixana ue, Xisa ufusa, itaia kokue; Tambula",
+        "recuo" : 0
+      }, {
+        "texto" : "mueniu muloloko ue, Nda u buluk.e kia.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Sai kizuua pe, Jezu iu uize, Ku'ambata Ng'leja, o dibanga die, Polo",
+        "recuo" : 0
+      }, {
+        "texto" : "ni polo tua kala ne kia, Ni kuirnba Furna le.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Tana-ku Ngana! Ukolal Amen! Tua ku tondela, tua ximana ue;",
+        "recuo" : 0
+      }, {
+        "texto" : "Kiki tua bixila ku mbanza le, Koleunu Fuma le.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 0,
+      "linhas" : [ {
+        "texto" : "NGANA, MABUKU MAVULU",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "47f69730-0baf-446a-a8b7-b51c11eaf248",
+    "numero" : 62,
+    "pagina" : 323,
+    "titulo" : "Ngana, mabuku mavulu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ngana, mabuku mavulu, Tua tare ni uoma ue, O diulu diezala ifuke,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mukudi kana-ku ngo: Ki kia ku kuatela 'kima? Kiki u zeka kieb'? Tu",
+        "recuo" : 0
+      }, {
+        "texto" : "boba, Mesene, tua diondo! .Tua diondo, rate, late!",
+        "recuo" : 0
+      }, {
+        "texto" : "Mabuku n 'item bu i ng 'ivua ue, Ngi Jezu. Ne mbe kalunga ka teme pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Undanda ua atu ua bonzo ue. Ka tena kutexe ulungu iu U ngala kuendela",
+        "recuo" : 0
+      }, {
+        "texto" : "ku mundu iu Mukondo uenu uandu 'bue; Paze sai! paze sai! Musanza u",
+        "recuo" : 0
+      }, {
+        "texto" : "ngi tumaka ue, Ngi Jezu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ngana, talesa jipaxi, Ja nzala ni t uxi ue; Jingongo joso ja ngi kondo,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nga diondo, ng'ahule kia: Muxima ua buila ni uorna, Ngeza ko kue,' Jesu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngi lembua, Mesene nga diondo ! Ngo diondo, late, late!",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Eua, Mesene, tana-ku! lfuke iabue, iabue: Ngana, nga sange kunioha,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mukonda dia dizui die. Xala ni eme, o Ngana, Ngi kale ngi mon'e;",
+        "recuo" : 0
+      }, {
+        "texto" : "Mukonda nga bingi kubita Bu fundu ia mbila ue.",
+        "recuo" : 0
+      }, {
+        "texto" : "2 Nga dielela mak'a Nzambi, Ku ng'endesa njila ie,",
+        "recuo" : 0
+      }, {
+        "texto" : "Sai kizuua nga bixila, He u ngi ba lau die.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Uembu uahi, kuivua moxi, O umbangi ua Jezu; Ne mu hadi, huiii iza,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mak'a Nzambi kidi kia,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Ivua 'hanj; kamba diami Mak'a fuama mueniu ue: Ioso boxi iandu-",
+        "recuo" : 0
+      }, {
+        "texto" : "xala: Kianda kuiza kurabi die.",
+        "recuo" : 0
+      }, {
+        "texto" : "Kristu mukua henda, Mubuludi ue: Uejiia ima loso, ua ku ijiia ue.",
+        "recuo" : 0
+      }, {
+        "texto" : "Ua zukama jinga, uivua, dizui die. Uenda kia ni uoma, se Jezu uala ne?",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "ce22555b-d833-4cd6-9266-f0e6335bf04e",
+    "numero" : 64,
+    "pagina" : 324,
+    "titulo" : "Zenu axilani tu ximan",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Zenu, axikani, tu ximana 'jina die, Tuimba ni muxima uoso o kikoue",
+        "recuo" : 0
+      }, {
+        "texto" : "kie; Tuimba ni kukola, mundu uoso n'a kivue, Tua buluka kidi kie.",
+        "recuo" : 0
+      }, {
+        "texto" : "Ivenu-kiu, makuenze ma Jezu, Ituxi ioso iololoke kia. Ku milundu ni",
+        "recuo" : 0
+      }, {
+        "texto" : "mu'alunga kolenu kidiTua buluka, kidi kie",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Zakelenu makuenze tuluenu ita ie. Talenu kifuxi diabu, nguma ietu",
+        "recuo" : 0
+      }, {
+        "texto" : "iÓ; Se tulua ne mu kusamba ni kulanga ue, Tua buluka kidi kie.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Sulukenu, tu zukame ku diklusu die, Furna ia mu ngongo tu i kitienu",
+        "recuo" : 0
+      }, {
+        "texto" : "kingo Jezu muene Kabitangu -ua tu tuarnena, Tua buluka kidi kie.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "fb42e6de-39a2-40de-b53d-164588a7ef0e",
+    "numero" : 65,
+    "pagina" : 325,
+    "titulo" : "Tu ximanietu mabuludi io",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tu ximanietu Mubuludi Ió, Ua lunduluile o maniinga me; Uos' u",
+        "recuo" : 0
+      }, {
+        "texto" : "dielela kua Ngana Jezu, Mueniu ki ua bue sai.",
+        "recuo" : 0
+      }, {
+        "texto" : "Maka ml, maka me, Tua xaieta no, Kidi kie, kidi kie, ua ki tange kia,",
+        "recuo" : 0
+      }, {
+        "texto" : "'Vos' u dielela kua Ngana Jezu, \"Mueniu ki ua bue sai.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ituxi ietu o kimbamba kie, :MiJonga ietu muene ua i soko-e,tua bind",
+        "recuo" : 0
+      }, {
+        "texto" : "umuka mu kudionda kue, uene Ngana Jezu,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "xana oso kuiza kia ko kue; Kutexe m1i,.pmuene ka tene; Os' oso a",
+        "recuo" : 0
+      }, {
+        "texto" : "dielela mu kufua kue, Mueniu ki ua bue sai.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "a427fae9-63fe-461b-9cbc-59b82ac03c92",
+    "numero" : 66,
+    "pagina" : 326,
+    "titulo" : "Enu akuetu tuimbildienu dia",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Enu akuetu tuimbidienu kia, Muimbu iu ua kumuangana, Tua di",
+        "recuo" : 0
+      }, {
+        "texto" : "xalesa ni Ngana; Tua dielela ku di mona di' Tu di mona di', tu di mona",
+        "recuo" : 0
+      }, {
+        "texto" : "di', 'Te tu ka di mona ni Jezu: Tu di. mona di', tu di mona di',",
+        "recuo" : 0
+      }, {
+        "texto" : "Nzambi ietu a mi bake kia",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Nzambi ietu a mi bake kia, ·- A mi bane di' kilunji, Kia ku kala jifiele;",
+        "recuo" : 0
+      }, {
+        "texto" : "A mi bake mu kuzela ue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Nzambi ieru a mi bake kia, Ku inukala ua dinianga, Ku mukondo ni",
+        "recuo" : 0
+      }, {
+        "texto" : "jihele, A mi konde kia ni kiadi kie,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Nzambi ietu a mi bake kia, Mua fuama kukolokota, Mu ku samba ni",
+        "recuo" : 0
+      }, {
+        "texto" : "ku dionda; A mi bake mu dijina die",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Nzambi ietu a mi bake kia, Tu dielela ku di sanga, He mu diulu mba",
+        "recuo" : 0
+      }, {
+        "texto" : "mu ngongo,",
+        "recuo" : 0
+      }, {
+        "texto" : "A mi endese pe mu paze ie.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "0a3a3d99-25f8-4be7-a0b0-3cc6d21b8b85",
+    "numero" : 67,
+    "pagina" : 327,
+    "titulo" : "Nga ' a jezu nga mu zola",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ngana Jezu nga mu zola, Mueniu uami nga mu be; Njila ioso, ngala",
+        "recuo" : 0
+      }, {
+        "texto" : "kuenda, A ngendese [inga ne.",
+        "recuo" : 0
+      }, {
+        "texto" : "ngenda ne, ngenda ne, ngenda ne; lla 'ioso ngala kuenda,",
+        "recuo" : 0
+      }, {
+        "texto" : "ngendese jingo ne.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "ki ngi kala ni kuxila, Ni kuzanga mueniu iu; ,Nga mesena pe kuzela,",
+        "recuo" : 0
+      }, {
+        "texto" : "enda jinga ni Jezu . Ni Jezu, ni Jezu, Ni Jezu,..,ni Jezu; Nga mesena pe",
+        "recuo" : 0
+      }, {
+        "texto" : "kuzela,Kuendli-a ni Jezu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Mu kalunga, ngi zaule,ngi dielele koue die mu dibitu dia jikuka,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngana ne ngi bokona ne",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngiia ne, ngiia ni.,",
+        "recuo" : 0
+      }, {
+        "texto" : "·Ngiia ne ngiia ne;",
+        "recuo" : 0
+      }, {
+        "texto" : "Mu dibitu dia jikuka ,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngana ngi bokona ne.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "74cab365-41a3-4e69-b8c5-b6da6fd7ada7",
+    "numero" : 1,
+    "pagina" : 357,
+    "titulo" : "Ngana nzambi muene ukola ngo",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ngana Nzambi muene ukola ngo, A di ximane 'jina dieniidi!",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngana ietu muene ukola ngo , A mu fumanese ku'atu oso. Banenu",
+        "recuo" : 0
+      }, {
+        "texto" : "diximanu dia kidi, Kua Nzambi ietu imbenu kia. Ngana Jezu muene",
+        "recuo" : 0
+      }, {
+        "texto" : "ukóla ngo; A mu fumanese ku'atu oso.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ngana ietu o kuiuka kue! Kua muene ki kuene o katungu. Ngana ietu",
+        "recuo" : 0
+      }, {
+        "texto" : "o kuiuka kue! Utuminu ue pal'etuoso.",
+        "recuo" : 0
+      }, {
+        "texto" : "kiandu kie kiezal ni benda; Kutena kue, ó Ngana Jezu! Ngana ietu o",
+        "recuo" : 0
+      }, {
+        "texto" : "kuiuka kue! Ucuminu ue pal'etuoso.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Kidi, kid, henda ia kale!",
+        "recuo" : 0
+      }, {
+        "texto" : "Uejiia ioso , uivua ue ioso; Kidi, kidi, henda iahi ngo! Kiambatele ituxi",
+        "recuo" : 0
+      }, {
+        "texto" : "ia mundu. Sumbala ku diklusu dianeme Hanji ua zolo jinguma je. Kidi",
+        "recuo" : 0
+      }, {
+        "texto" : "kiene, henda iahi ngo ! Kiambatele ituxi ia mundu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "3b228cc2-ff6a-4b54-82e5-04dd375c29e0",
+    "numero" : 2,
+    "pagina" : 358,
+    "titulo" : "Ngana nzambi ukola",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ngana Nzambi Ukola, U Nzambi ia jinzambi, Selu mu kimene Tuimbila",
+        "recuo" : 0
+      }, {
+        "texto" : "fuma ie. Eie u Nzambi ia kidi, Kana-ku Nzambi iengi: Tata, Mona.",
+        "recuo" : 0
+      }, {
+        "texto" : "Nzumbi, Ei'u Nzambi imoxi ngo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ngana Nzambi Ukola, Kuvunda kua, ku sueka Kate akue'tuxi, Ka mona",
+        "recuo" : 0
+      }, {
+        "texto" : "fuma ie. E' Mubangi uetu, Mubangi a ima ioso , Eie ua kexile,",
+        "recuo" : 0
+      }, {
+        "texto" : "u kala, ua kale",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ngana Nzambi Ukena, Jianju ji ku imbila, Oso ala bulu, A beza 'jina",
+        "recuo" : 0
+      }, {
+        "texto" : "die; Etu uetu boxi, Tu tuana tue tua kidi. Tua te-mu pe dizui, Mu",
+        "recuo" : 0
+      }, {
+        "texto" : "diximanu die.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ngana Nzambi Ukola, etc. ( Repete-se N. 0 1)",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "1090dbf7-e402-4709-ba7a-652f82742262",
+    "numero" : 3,
+    "pagina" : 359,
+    "titulo" : "Ximana nzambi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ximana Nzambi, Ua tu bana Mon'e, Ku diklusu uafue, Uaii kua Tata",
+        "recuo" : 0
+      }, {
+        "texto" : "ie. Aleluial Mubuludi! Aleluia! Amen; Aleluia! Ua tu kula; Ximana",
+        "recuo" : 0
+      }, {
+        "texto" : "Nzambi!",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Tu ximana ue, Nzumbi Ikola ua te, Kuendes a Mon' e Kate ku 'bata die",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ximanenu ue, O Kambudi Jezu; Ni kalunga ni kufua, Ua ambata ue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Tu tanienu ue, Jezu iu uiza di', Ni jianju je kuambata, O ng'Ieja ie.",
+        "recuo" : 0
+      }, {
+        "texto" : "Tu turnise, Ngana, kia, O mvula ia dibesa die, Tua ku bingi, tua ku",
+        "recuo" : 0
+      }, {
+        "texto" : "diondo, Ngana, tu be mueniu ue!",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "93df24bf-56f0-4f1e-a5e9-9cb2dc966ed3",
+    "numero" : 4,
+    "pagina" : 360,
+    "titulo" : "Ngi ximana ngana nzambi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ngi ximana Ngana Nzambi, Ua ngi bana mueniu uami,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kiosuiki ngala mu ngongo; O k'iza kizuua kiami, Kia kutula mukutu iu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nga ka mu ximana bulu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ua tu idikiza henda ie, Mu mbote je ja tu bana Kua ia aiuka, n'aiiba;",
+        "recuo" : 0
+      }, {
+        "texto" : "Ka tu xile mu malamba, Jezu pe ua tu sumbila, Muloloko ni ufolo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ua zediua o mutu ió Ua dielela kua Nzambi ietu, Uene ni kutena",
+        "recuo" : 0
+      }, {
+        "texto" : "kuoso: o kidi kie kia kale kia: o nguzu ie ku a bulula, Atu oso a tena ku",
+        "recuo" : 0
+      }, {
+        "texto" : "i loal.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ngi mu ximana jinga kia, Mukonda kia ngi fuamena O kutumbula",
+        "recuo" : 0
+      }, {
+        "texto" : "mbote ie; Ne mbe ki bing' hanji ngi fua, Nga ka mu mona polo ie:",
+        "recuo" : 0
+      }, {
+        "texto" : "Ni nga ka kale jinga ne.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "7dda29da-6812-4a8b-a097-ebb7df7ee3e8",
+    "numero" : 5,
+    "pagina" : 361,
+    "titulo" : "Iza kia u nzumbi ia nzambi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Iza kia, u Nzumbi ia Nzambi, U Ngimbise henda ie; 'Zuua ioso",
+        "recuo" : 0
+      }, {
+        "texto" : "ngene naiu, Ngi dixiba naiu kie? Ngi longese muimbu uobe, Uala kuimba",
+        "recuo" : 0
+      }, {
+        "texto" : "hule je: Ia ku diulu a ximane Mubuludi ua, Jezu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "An'a Nzambi mu xahulu, Kia toluele nguma ja, A zanguile kiditadi",
+        "recuo" : 0
+      }, {
+        "texto" : "Mbangi ie, U Ngunza ia; 'Tadi dia dikuatekesu, A di Iuka 'jina d1e.",
+        "recuo" : 0
+      }, {
+        "texto" : "Kiene ue ngi banga jinga, Mbangi ia jimbote je.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Nga kexile mu iluezu, Nga bolele mu ituxi: Mon'e pe mu ngi bulula,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ua tudile mueniu ue. 'Kongo diami dia ituxi Muene ua di jirnune: 'Kongo",
+        "recuo" : 0
+      }, {
+        "texto" : "diami dia jihenda Nuka· dia ka buila pe.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Mbudi ii' ia jimbidile, Jezu ua ngi soto pe: Ua ng'ambata bu isuxi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ua ngi tula m'onzo ie, Tambule muxima, uami, Maku ni inama ue:",
+        "recuo" : 0
+      }, {
+        "texto" : "Kondeka-iu, Ngana iami, Nuka dingi ngi ku xie.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "54bf40d3-42d2-4c7b-8545-21638e507427",
+    "numero" : 6,
+    "pagina" : 362,
+    "titulo" : "Ize nzambi nzumbi ia mbote",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "lze Nzambi, Nzumbi ia Mbote, Dizui dia mueniu, Tonesa mixima ietu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kuivua maka me. Nzumbi ia Nzambi ! Uize ungana ue; Tu ivue, Ngana,",
+        "recuo" : 0
+      }, {
+        "texto" : "tua ku diondo, Bane henda ie.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ize ku tu kuatekesa, Tu bane mueniu, Tu muikine mua vundu, U",
+        "recuo" : 0
+      }, {
+        "texto" : "zelese-mu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ize Nzarnbi, Nzumbi ia Mbote, Ku tu tekula, Tu longe o kidi kioso,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ki ban'ufolo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ize Nzambi, Nzumbi ia Mbote, Ku tu tenesa, U te ku mixima ietu",
+        "recuo" : 0
+      }, {
+        "texto" : "O kidimbu kie.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Ize, tualu kinga baba, Ize kindala, Uike mu mixima iet u, Tubia tua",
+        "recuo" : 0
+      }, {
+        "texto" : "henda.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "27945e36-bcd4-4595-a287-a1845d3424d5",
+    "numero" : 7,
+    "pagina" : 363,
+    "titulo" : "Nzumbi ikola ize kia",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Nzumbi Ikola ize kia, Kuenda ni tuana Tue; Tuenda ni Iukuaku lue , Tu",
+        "recuo" : 0
+      }, {
+        "texto" : "jingenji, kidi kie. Sangutuisa ngenji ie, Mu ku kuivua dizui die;",
+        "recuo" : 0
+      }, {
+        "texto" : "U mu endese mueniu ue, Kate ku dibata die.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Kamba dietu ueza kia, Kumuikina atu ia: Nuka u tu xisa· ngo ,",
+        "recuo" : 0
+      }, {
+        "texto" : "U tu endesa kua Jezu. Mu jinguma box' aba, Muene u zukama di', Ku tu",
+        "recuo" : 0
+      }, {
+        "texto" : "endesa jinga ne.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Tualu kinga dizui die, Ku tu ixana kuiza ue; Ize kia ni tubia rue,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kuzelesa Ng'leja ie. Honga ia kitombe ngo Tu zauka ni Jezu;",
+        "recuo" : 0
+      }, {
+        "texto" : "Tu bixila kiua ne, He tu mona polo ie.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "4c8991f3-a134-4703-bbc9-7cb1435d0cd2",
+    "numero" : 8,
+    "pagina" : 364,
+    "titulo" : "Mukua ituxi, a ku ixana",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Mukua ituxi, a ku ixana. Lenga, lelu ulaji ue: Jezu ua kula oso",
+        "recuo" : 0
+      }, {
+        "texto" : "Ni maniinga me.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ivua dizui dia Nzambi, Dia ku ixana di' ko kue; Vutuka dingi, mona,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ku dibata die.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ngama Jezu u loloka, Ujimuna ituxi ie: U ku tambula dingi, Mu kilunga",
+        "recuo" : 0
+      }, {
+        "texto" : "kie,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Muene u ku zelesa, N'a ku bana Nzumbi ie; Pange, lusolo lelu Lenga",
+        "recuo" : 0
+      }, {
+        "texto" : "di' ko kue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Ku dibata ku diulu Nga mesena kuia ne; Jezu ili uiza dingi • Ku tu",
+        "recuo" : 0
+      }, {
+        "texto" : "ambata ue",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "8d4f1718-c0c5-407c-bae7-0a850033855a",
+    "numero" : 9,
+    "pagina" : 365,
+    "titulo" : "Lelu, lelu, tu imbidienu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Lelu, lelu, tu imbidienu, Diximanu dia Jezu; O ungana ni ujitu, Ua mu",
+        "recuo" : 0
+      }, {
+        "texto" : "fuama muene ngo: Bulu, boxi, jixi joso, Muene Ngana ubeka ue.",
+        "recuo" : 0
+      }, {
+        "texto" : "Kibamueniu pe kia mundu, Pange ia, dikamba dia.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Tiumbidienu, kia touala, Tumbulenu henda ie; Kioso ki atundu-e ku",
+        "recuo" : 0
+      }, {
+        "texto" : "diulu, Kudibanga mutu box': Ua suku-ku ku uadima, Ni ku pax' ia kufua",
+        "recuo" : 0
+      }, {
+        "texto" : "kue, Kuma pe ua fukunuka, Kubulula ua soko-e,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Tu imba jinga, tu imbidienu, Tu bandienu akunji e, O jisandu ni jianju",
+        "recuo" : 0
+      }, {
+        "texto" : "A tanese 'jina die. Kolokota kuxikana, Hinu ki bua mueniu iu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Tua ka sanga 'pange jetu, A bixila kua Jezu,",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "0dcbfe7f-148f-4f2d-bb10-51f5f44f9774",
+    "numero" : 10,
+    "pagina" : 366,
+    "titulo" : "Zenu, muivue mak'ambote",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Zenu, muivue mak' ambote, A Jezu mu Beleme; Kia mu vuala mona",
+        "recuo" : 0
+      }, {
+        "texto" : "ndenge, Mon'a Nzambi pe; O jianju ja mu imbila, Te tubila tueza ue;",
+        "recuo" : 0
+      }, {
+        "texto" : "A mu sanga, a mu beza, Em ba fuma ie. Tangelenu mundu oso",
+        "recuo" : 0
+      }, {
+        "texto" : "Mak'ambote a Soba ia: Ngama Jezu, Mubuludi, A mu vuala kia.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Mutu uala ni malamba, Ivua hanji maka ia: Tala muelu ua jikuka,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kristu ueza kia. Za, bokone ku ufolo, Sakidila mbote je; Lelu a mu vuala",
+        "recuo" : 0
+      }, {
+        "texto" : "kidi, Mubuludi ue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Sakidila, sanguluka, U ximane 'jina die; Paze, paze se 'zubilu,",
+        "recuo" : 0
+      }, {
+        "texto" : "O dilau die. Balumuka, tu mu imbile, Ueza kia ni henda ie; Maku e lelu",
+        "recuo" : 0
+      }, {
+        "texto" : "a jikuka, Kristu kamba die.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "afee48f2-9bba-45b7-840d-750c19179d37",
+    "numero" : 11,
+    "pagina" : 367,
+    "titulo" : "Tetembua iendesa jinganga",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tetembua iendesa jinganga, Kate bu 'bata die; I zenzama kia mu",
+        "recuo" : 0
+      }, {
+        "texto" : "Beleme, Kia uvadiue ue: A mu ivu muenexi ukola, A sange mona iu;",
+        "recuo" : 0
+      }, {
+        "texto" : "U kula ni ana jindenge; Dijina die Jezu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Sumbala enio adiakimi, A xila undenge ue, Ang'a mu bakuila imbamba,",
+        "recuo" : 0
+      }, {
+        "texto" : "la fuama ukota ue. Etu pe, kizuua kia lelu, Tu beka ujitu uahi? Tu beka",
+        "recuo" : 0
+      }, {
+        "texto" : "mixima ni mieniu, Kua Ngana ietu kia,",
+        "recuo" : 0
+      }, {
+        "texto" : "1 Zeka, Kamona Jezu, Mu kidilu kia jingombe, Mueza jingolokela, Jianju",
+        "recuo" : 0
+      }, {
+        "texto" : "ja kuata kuimba, Muimba ua ngalasa, Kia zekele Jezu, ua mu lange",
+        "recuo" : 0
+      }, {
+        "texto" : "Madia, Ni jianju ja diulu ja mu lange ue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Zeka kiambote, zeka Jezu. Gloria mu diulu, paze mu ngongo,",
+        "recuo" : 0
+      }, {
+        "texto" : "Zeka, Jezu. Kondona malamba me, Mukondo uabu-ku kia, Lu ua tolola ni",
+        "recuo" : 0
+      }, {
+        "texto" : "henda ie. Nioha kiambote, Jezu; Zeka, zeka, Nioha kiambote, Kamona",
+        "recuo" : 0
+      }, {
+        "texto" : "Jezu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "50d6f425-c06e-4264-b315-b37281798822",
+    "numero" : 12,
+    "pagina" : 368,
+    "titulo" : "Noel uadianga jianju kia",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Noel uadianga jianju kia, Embile ku abidi ku mukau kuna Kua kexi mu",
+        "recuo" : 0
+      }, {
+        "texto" : "kuinga jirnbudi ja; Tala, anju ji tula ni kuimba kua, Noel, Noel, Noel,",
+        "recuo" : 0
+      }, {
+        "texto" : "Noel, Jezu Soba ia Israel.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Anju ja tudile njirnbu ia, Kuma Ngana Jezu a mu vuala kia, Exi, «Mu",
+        "recuo" : 0
+      }, {
+        "texto" : "ngongo ioso uembu ue Ua tokala muaxaxi ka atu e.»",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Abidi a di zuelesa pe, Exi, « Tuia kindala ku Beleme. »",
+        "recuo" : 0
+      }, {
+        "texto" : "Ni mu kusota mu usuku iu A sange kididi bua zeka Jezu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Abidi oso a mu beza ua, Kuma Ngana Jezu Muene Soba ia.",
+        "recuo" : 0
+      }, {
+        "texto" : "'Mu kuvutuka di'ku mbudi ja, Ene endele ni kuimba muimbu ua",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "7f83490b-637b-47a3-88ee-e50c979eaef0",
+    "numero" : 13,
+    "pagina" : 369,
+    "titulo" : "Moxi diami ng'lasa ia jezu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Moxi diami ng'lasa ia Jezu! Ng'lasa ia Jezu! Ng'lasa ia Jezul Moxi",
+        "recuo" : 0
+      }, {
+        "texto" : "diarni ng'lasa ia Jezul Ng'lasa ia Jezu, Jezu! 'Jina die diauaba, 'jina dia",
+        "recuo" : 0
+      }, {
+        "texto" : "Jezu, Ua ngi bana nguzu, Kuenda jinga njila ie.Moxi diami ng'lasa ia Jezu! Ng'lasa ia Jezu! Ng'lasa ia Jezul ",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "0d779882-b7a9-4416-8aaf-e44e408611e0",
+    "numero" : 14,
+    "pagina" : 369,
+    "titulo" : "Tal' abidi a jimbudi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tal'abidi a jimbudi Alu Jang' ilunga ia, Anju anga i tuluka, I bixila",
+        "recuo" : 0
+      }, {
+        "texto" : "mbandu ia: eza ni kubenia kuoso, Uix', « lvenu, mundu uoso, Lelu m'oxi'",
+        "recuo" : 0
+      }, {
+        "texto" : "a Beleme Mueza Mubuludi ue, Lelu m'oxi' a Beleme, Mueza Mubuludi",
+        "recuo" : 0
+      }, {
+        "texto" : "ue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ki mu kale pe ni pata, Sai-ku kijimbuete kie; Mu kidilu kia jingombe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Muene muala muanza ue. Ki 'kifuxi kia jianju, Kieza mu tondela Nzambi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Exi, «Furna ioso ie; Lelu kueza uembu ue; Ni mu'axaxi k 'atu e Lelu",
+        "recuo" : 0
+      }, {
+        "texto" : "kueza uembu ue.»",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "b0d41adc-b12f-41d9-9fa3-2e12045a204d",
+    "numero" : 15,
+    "pagina" : 369,
+    "titulo" : "Gloria kua io! gloria kua io!",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Gloria kua 16! Gloria kua 16! Ngana Jezu a Mu vuala! Tuimba pe kia",
+        "recuo" : 0
+      }, {
+        "texto" : "ni anju je, O diximanu dikola; Ngana Jezul Ngana Jezu! Ueza kubuisa",
+        "recuo" : 0
+      }, {
+        "texto" : "kitombel Kubuluka kueza kia, Mu ngalasa ie! Ngana, tana-ku! Ua tu",
+        "recuo" : 0
+      }, {
+        "texto" : "bekel' ufolo! Tua sakidila, Nzambi ua zol' an'e!",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngama Jezu! Ngama Jezu! Ngama Jezu a Mu vuala! Puma i ie pe ko kue!",
+        "recuo" : 0
+      }, {
+        "texto" : "Kabasa mueniu sail",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Nzambi ua be Mukudi iu, Etu pe tua sakidila! Nzambi ua be Mukudi",
+        "recuo" : 0
+      }, {
+        "texto" : "iu, Ua tu kuatela o henda! Jinzambi sai, javulu kia, Etu tuejiia Imoxi:",
+        "recuo" : 0
+      }, {
+        "texto" : "Uoso ua tu be Mori'e Muene Nzambi ngo ! Tala Kamona! Mon'a Jehova",
+        "recuo" : 0
+      }, {
+        "texto" : "ueza! Ua tu bekela, Mueniu mu henda ie!",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "4b62d81b-4f51-449e-888c-acebe16b8060",
+    "numero" : 16,
+    "pagina" : 370,
+    "titulo" : "Zenu ko kuami",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Zenu ko kuami, muala ni malamba, Uoso ua buila mu muxima ue,",
+        "recuo" : 0
+      }, {
+        "texto" : "Tata ku diulu, muene ua ku zola; Zenu ko kuami, eme Nzambi ie.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Zenu ko kuami, uoso ua dielela Mueniu ku diulu ni Mubidi ue;",
+        "recuo" : 0
+      }, {
+        "texto" : "Kidi, ngalasa nuka i bue dingi, Meimbu uobe u tu bana ue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Zenu ko kuami; uoso ua bindama, Erne Jehova, nga ku ixana kia;",
+        "recuo" : 0
+      }, {
+        "texto" : "Nga ku jikuila njila ue ia diulu. Zenu ko kuami, tu bokone kia.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Zenu ko kuami, enu an'a ndenge, Ni minzangala, n'adiakimi ue;",
+        "recuo" : 0
+      }, {
+        "texto" : "Nga mi mesena kuiza ue ku diulu, Kuiza ku mueniu, mueniu ki uabue.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "490062c8-1064-4d38-bda3-0b57c2c48193",
+    "numero" : 17,
+    "pagina" : 371,
+    "titulo" : "Mundo uoso tambulenu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Mundu uoso tambulenu, Ua ngi kumu, kuabu kia: A ngi bane Ngana",
+        "recuo" : 0
+      }, {
+        "texto" : "Jezu, Henda ie i xale kia. O kutanga henda ioso, Nga i lembua, kidi kie;",
+        "recuo" : 0
+      }, {
+        "texto" : "O kuleba ni kuzanza, Mueniu se 'zubilu die.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "O kuxinganeka ngoho Kia ngi zola, muanu ue, Ku rnuxirna ku ngi",
+        "recuo" : 0
+      }, {
+        "texto" : "zela, Nga dielela kuenda ne.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ku jiplata ni maulu, Ni jimbongo joso kia, Nga ditunu ku di texi: Jezu",
+        "recuo" : 0
+      }, {
+        "texto" : "kotelele kia,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ku makamba ni jindandu, Nga mu sange 'kota dia; Henda ie i nanga",
+        "recuo" : 0
+      }, {
+        "texto" : "jinga, 'Anju je nga kala na.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "990f6c00-0130-4b61-87cf-ee4db0dc4a95",
+    "numero" : 18,
+    "pagina" : 372,
+    "titulo" : "Mu xahulu munja, mu divulu dia jezu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Mu xahulu munia, mu DivuJu dia Jezu A ngi soneka momo dikongo",
+        "recuo" : 0
+      }, {
+        "texto" : "diahi ngó! Maji ngeza kua Jezu, ngixi «Ngana Jezu 'el Nga diondo, nga",
+        "recuo" : 0
+      }, {
+        "texto" : "toloka,» - hi ua di jimune! I Kidi kie ... , kidi kie (0 kidi kie... nga diuana",
+        "recuo" : 0
+      }, {
+        "texto" : "ba) Ua jimuna 'kongo dina; kidi kie, (aleiuiat) Ngama iami, kid! kie, ua",
+        "recuo" : 0
+      }, {
+        "texto" : "ngi bana ufolo ue, Nga diuana ue, ki nsevu umbangi ue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Unganauosn pe ki nga u solo di', Nga solo ngo kuxala m'ungana ua",
+        "recuo" : 0
+      }, {
+        "texto" : "Jezu, Jihanji joso ue nga ji Iumbila kia, A ngi be ngó kilunji, ngi xala",
+        "recuo" : 0
+      }, {
+        "texto" : "ni Jezu,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ituxi sanda ie, ibeka ulaji pe Ituxi ue mulonga, ituxi uhaxi ue Ibeka",
+        "recuo" : 0
+      }, {
+        "texto" : "ufusa ue, isebukisa ba, Kiki pe nga di tende, H.1 ua ijirnune!",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Tamanu ngenda ne, Mukudi uami io, Tamanu ngi xalela mu ulonelu",
+        "recuo" : 0
+      }, {
+        "texto" : "ue, Nga texikile kia, eue, Ngana Jezul, Sernbele ngi mu imbila mukumbi",
+        "recuo" : 0
+      }, {
+        "texto" : "uami ifl.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "a8b65942-17d1-4848-9dff-8273fa6d62eb",
+    "numero" : 19,
+    "pagina" : 373,
+    "titulo" : "Dikamba dia kidi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Dikamba dia kidi, Mubidi, Jezu! Bu polo ie'nangu di' an' e; Kunioha",
+        "recuo" : 0
+      }, {
+        "texto" : "kua kidi mu mueniu ueniu, Kikale kuenioko ko ue",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Kilunga ki' kuebi kia jimbudi je? Ua a solela kuebi rnukau? Ngi",
+        "recuo" : 0
+      }, {
+        "texto" : "jirnbidil' ahi mu manianiu me, Mba ngi dila mu ikanga ia ngo?",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Mbebu' ohi ngi kala hukunii ko kue, Bu polo ia 'nguma je ia? Enio",
+        "recuo" : 0
+      }, {
+        "texto" : "a ki olela, a kela, Eue: Ngi kala semenii mudia,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Mubidi, nga diondo, kumuemua kue ngo, Kubuisa malamba oso-a:",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngi tale ni henda, kikuma kiabue; Ua tundu mu'aleia mukua",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "U tala! ene-oso ia xibidila, O dizui dia Muene, Muadi a; U zuela! eraia,",
+        "recuo" : 0
+      }, {
+        "texto" : "o nzungule ia: A tana ni ng'lasa, Eua!",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "8128f421-5734-4912-bbda-1acdda27c708",
+    "numero" : 20,
+    "pagina" : 374,
+    "titulo" : "Mukua ituxi, jezu iu ku ixana",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Mukua ituxi, Jezu ku ixana. Lenga indala ko kue; Xisa mahamba, u",
+        "recuo" : 0
+      }, {
+        "texto" : "diele ituxi, N'a ku loloke ue.",
+        "recuo" : 0
+      }, {
+        "texto" : "Izá, izá, uoso ua buila, Iza; Makua jikuka, Jezu iu ku ixana, Mukua ituxi,",
+        "recuo" : 0
+      }, {
+        "texto" : "iza.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Mukua ituxi, Jezu ua ku zola, Ua bele kia mueniu ue; Henda iavulu,",
+        "recuo" : 0
+      }, {
+        "texto" : "itaie kixanu, Uoso uandala, eze.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Mukua ituxi, Jezu ill kinga, Mivu, eie ua ditunu-e; Sunga kilunji, ku",
+        "recuo" : 0
+      }, {
+        "texto" : "texike dingi, Ngana Jezu 'kamba die.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Tembu ii' bita, Jezu, iu ku dionda, Bana muxima ue kia: Lenga ubika,",
+        "recuo" : 0
+      }, {
+        "texto" : "tambula ufolo, Mukua ituxi, iza.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "963f72eb-1511-4420-9191-65255df50e49",
+    "numero" : 21,
+    "pagina" : 375,
+    "titulo" : "Mu kikangalakata! jezu, tate!",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Mu kikangalakata! Jezu, rate! Tua bondalala muene! Jezu, rate! Sai-",
+        "recuo" : 0
+      }, {
+        "texto" : "ku kubanduluka, k'iza Jezu. Kidi, tu abanduluka, k'iza Jezu.",
+        "recuo" : 0
+      }, {
+        "texto" : "Jezu iu uiza muene ni ungana ue, Ni nzongo ia kikoue ; Jezu uize! Tuie",
+        "recuo" : 0
+      }, {
+        "texto" : "ku mu sangesa, k'iza Jezu! Tu kale kia no Sobat. k'iza Jezu!",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Oso a mu zola kidi, k'iza Jezu, Ka kala di'ni uoma; k'iza Jezu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kubuila kuanda kubua: k'iza Jezu, Ni kufua kuanda kubua, k'iza Jezu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "U tolokala ioso, mu kuiza kue: Malamba ma kituka jimbote je. Tu",
+        "recuo" : 0
+      }, {
+        "texto" : "langidile tata; mu kuiza kue, Tu kumbidile muene ni Nzumbi ie.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Jisandu ni jisoba ia eza ne; Io kanda kuiza ubeka - ia eza ne.",
+        "recuo" : 0
+      }, {
+        "texto" : "Mukuetu, lenguluka, tuietu ue, Tu takanese muene ni Nzumbi ie",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Ne tuala mu kitumbu, Jezu iu ue - Uijila ue mu iangu ku tuana rue.",
+        "recuo" : 0
+      }, {
+        "texto" : "Se tuala mu maloua ma mundu iu, U tu ixika-u muene ni ndunga ie.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "b1b3d34d-135c-417d-ad95-86a39e034433",
+    "numero" : 22,
+    "pagina" : 376,
+    "titulo" : "Muxima uami imba kia",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Muxima uami imba kia Ni henda ia Jezu; Kufumanesa 'jina die, Ni",
+        "recuo" : 0
+      }, {
+        "texto" : "mueniu uami iu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Mubidi uami, ize kia, Ku diximanu die, Ni fuma ia unene ue; Ia fuama",
+        "recuo" : 0
+      }, {
+        "texto" : "'jina die.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Dijina dia Ngana Jezu, Di konda malamba, Ni uoma uoso ubue ue;",
+        "recuo" : 0
+      }, {
+        "texto" : "Ni paz'i tula kia.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Muene uafuila mundu iu, Ku a vutula di', Ku mueniu ni ukota ua,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ni henda ki ibue di'.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Ifofo a sanga mesu ma, Mixilu evua di'; Mabubu ni inema ue A tanga",
+        "recuo" : 0
+      }, {
+        "texto" : "fuma ie.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "4cc06ab7-421b-4064-8698-5b487579de3b",
+    "numero" : 23,
+    "pagina" : 377,
+    "titulo" : "Ngana jezu nga mu zola",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ngana Jezu, nga mu zola, Muene ua ngi zola ue, Ua kudila mueniu",
+        "recuo" : 0
+      }, {
+        "texto" : "uami, Mu kubana mueniu ue. Ngama Jezu, nga mu zota, Nga mu zota,",
+        "recuo" : 0
+      }, {
+        "texto" : "kidi kie, Ua ngi kula ku ituxi, Nga/a kia kamona ke.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ngana Jezu, nga mu zola, Muene'kamba dia ari'e: Mu maniinga ua ngi",
+        "recuo" : 0
+      }, {
+        "texto" : "kula, Ni ufolo ua ngi be",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ngana Jezu, nga mu zola, Ua ngi bana nguzu ie, Ni mua xaxi ka",
+        "recuo" : 0
+      }, {
+        "texto" : "iluezu, Ua muikina njila ie.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ngana Jezu, nga mu zola, Ngilua ne ku ita ie; U ngi sanga ue dikuenze,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngi ia mu uzonda ue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Ngana Jezu, nga mu zola, Muene ngala jinga ne; Muene hadia uanda",
+        "recuo" : 0
+      }, {
+        "texto" : "kuiza Ku ambata ng'leja ie.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "687d7fbe-90f0-4b1d-a0dd-5b7088cb013e",
+    "numero" : 24,
+    "pagina" : 378,
+    "titulo" : "Tua sakidila ngoji ie",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tua sakidila ngoji ie, Ia tu jikita dingi; O ku di zola mua Jezu, Undandu",
+        "recuo" : 0
+      }, {
+        "texto" : "uoso ndenge.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Tat' etu imox', bu kiandu kie,Tu samba, tu fukarna, Beniobo mu'ivua",
+        "recuo" : 0
+      }, {
+        "texto" : "dizui die, Kididi kia kondama.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ua zediua, tu tana ne, Tua kala ku ukamba: Mu ku di kuatekesa ue",
+        "recuo" : 0
+      }, {
+        "texto" : "Tu di ahula imbamba",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ua biti ni divuua die, Mukuetu mu kisoxi, Tu konda o malamba me,",
+        "recuo" : 0
+      }, {
+        "texto" : "Tu dia ne kumoxi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Mu ku di uanununa ue, Mu tulu mu tu kata; O ngoji moxi pe ii-ie,",
+        "recuo" : 0
+      }, {
+        "texto" : "K'ia tena ku batuka.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 6,
+      "linhas" : [ {
+        "texto" : "Mu ngongo, mu iniunginu ie, Bu kala 'takanenu: O kiela pe dia boxi",
+        "recuo" : 0
+      }, {
+        "texto" : "ne, Tua kinga kia dia diulu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "3d8ed5f4-9cc8-47c0-8a6a-6e6da1429494",
+    "numero" : 25,
+    "pagina" : 379,
+    "titulo" : "Ki ngi tala ku dik'lusu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ki ngi tala ku dik'lusu, 'Klusu dia jipaxi je; Ngana Jezu ua ngi sungu",
+        "recuo" : 0
+      }, {
+        "texto" : "Ku ubulukilu ue. Ngi ximana! Ngi ximana! Ngi ximana 'Jina die; Ngana",
+        "recuo" : 0
+      }, {
+        "texto" : "Jezu ngi mu imbila, Va ngi kuta ni maniinga me",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Njila ie iatolo kidi, Pulu iami nga i xie: Jivondadi ni jihanji, Jaji mu",
+        "recuo" : 0
+      }, {
+        "texto" : "kizanga kie",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Nga di bana kia kuz Jezu, Ioso nga i lumbila ue: Nzumbi Ikola ua tuluka,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ua ngi be kidifua kie.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Tubia t ue t ua ngi zelesa, Ngala kia mu henda ie: Ngi di bana ku",
+        "recuo" : 0
+      }, {
+        "texto" : "mu imbila, Furna ia dijina die.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Aleluia ! Ngana Jezu, Ua ngi iambulula kia: Ua lolok' ituxi ioso, Ua",
+        "recuo" : 0
+      }, {
+        "texto" : "ngi be dibesa die.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "2b21c7ef-0b91-441b-b971-0e530d5091ab",
+    "numero" : 26,
+    "pagina" : 380,
+    "titulo" : "Ku diulu ala kuimba",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ku diulu ala kuimba, Furna ia Jehova, Ala kuimba nguzu; Anju joso",
+        "recuo" : 0
+      }, {
+        "texto" : "jala kuimba Diximanu dia Jezu. Fumanesa Jezu, Muene Mon 'a Nzambi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Fuma ioso ie; Fumanesa Jezu, Mubuludi uetu iu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Xirnanenu Ngana Jezu, Henda ie iavulu, Ua tu zola kidi; Mubuludi",
+        "recuo" : 0
+      }, {
+        "texto" : "uetu Jezu, Ua kudila mundu ue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Tala Jezu ku dik'lusu Ni ituxi iet u; Tonginina hanji, Ni u mone Mon'a",
+        "recuo" : 0
+      }, {
+        "texto" : "Nzambi, Uafu bu kididi kie, 4 Muene ua tolola mbila, Kufua kueza",
+        "recuo" : 0
+      }, {
+        "texto" : "mueniu; Muene ni uzonda, Uaii ku dibata bulu: Ua futila oso kia",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "f8c55da8-5b54-49ff-805b-f1007a3e0ae4",
+    "numero" : 27,
+    "pagina" : 381,
+    "titulo" : "renda ia jezu ia vulu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Henda ia Jezu iavulu, Ua tu bela mueniu ue; Iu ku diulu ua tu kinga;",
+        "recuo" : 0
+      }, {
+        "texto" : "Tuimba diximanu die.",
+        "recuo" : 0
+      }, {
+        "texto" : "Hinu kuna ku diulu, Kia mu bongolokela 'hute je, Tua ka sanguluka",
+        "recuo" : 0
+      }, {
+        "texto" : "Ni kuimba jinga fuma ie.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ne tu bita mu jihadi, Jezu ua ji muene ue; Ua tolola jinga joso,",
+        "recuo" : 0
+      }, {
+        "texto" : "Tuende mu manianiu me",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ne ifuke i zenzama, Ki i xita polo ie. Katangana i muangana, Tuala",
+        "recuo" : 0
+      }, {
+        "texto" : "kia mu muania ue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Pange iami, kolokota, Xinganeka 'bata die; Hadia kioso kiu bixila U",
+        "recuo" : 0
+      }, {
+        "texto" : "tambula futu ie.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "5b43a000-2917-4dd8-b89e-77f6d760bd04",
+    "numero" : 28,
+    "pagina" : 381,
+    "titulo" : "Henda ia jezu iavulu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Henda ia Jezu iavulu, Kufua ku muxi uaiiba Ku ngi bana ufolo;",
+        "recuo" : 0
+      }, {
+        "texto" : "Henda ie iavulu. Henda ia Jezu iavulu, Henda ia Jezu iavulu, Ku i tanga,",
+        "recuo" : 0
+      }, {
+        "texto" : "nga i tokoka; Henda ie iovuiu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Jezu ua muene malamba, Ua bitile ni kalunga, Eme, pala ki ngi fue",
+        "recuo" : 0
+      }, {
+        "texto" : "di': Henda ie iavulu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Muxima uami uaxidi, Jezu ua u sukula kia; Nga zele ku maniinga me:",
+        "recuo" : 0
+      }, {
+        "texto" : "Henda ie iavulu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "M'onzo ia Nzambi muauaba, Kana-mu mutu uaiiba; Jo ka tena",
+        "recuo" : 0
+      }, {
+        "texto" : "kubokona: Henda ie iavulu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "0040e6b8-150e-483b-ba55-fae521d05ceb",
+    "numero" : 29,
+    "pagina" : 382,
+    "titulo" : "Ngi matexa kuimba kia",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ngi mateka kuimba kia: Tala kia ngi bange o sange: Pulu iami iabu",
+        "recuo" : 0
+      }, {
+        "texto" : "kia. Mu kutena ngo kua sange.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Ó! tala henda ie! la bulu mbungu Je! Ó, pange! lenga ba! Nda u diuane",
+        "recuo" : 0
+      }, {
+        "texto" : "kiene o Sange.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Nga diuana henda ie la ngi vuua ue mu Sange! Ku ngi xika ioso kia",
+        "recuo" : 0
+      }, {
+        "texto" : "Ia ngi kexile mu Sange!",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ki ngi tena kuimba ngo, Kale ngi di tenda o Sange! 'Zanga dia Siloua",
+        "recuo" : 0
+      }, {
+        "texto" : "sai, Dialu subajaka o Sange!",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Henda ia ngi kuata kia, Mu kubanza ngoho o Sange! Pulu iami iabue",
+        "recuo" : 0
+      }, {
+        "texto" : "kia; Eme nga diuana o SangeHenda ia ngi kuata kia, Mu ",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "A ngi Jolokele pe, Mu ku di xikina o Sange! A ngi zelesele ue, Mu",
+        "recuo" : 0
+      }, {
+        "texto" : "ku di sukula o Sange!",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "d3564819-9913-47c2-a3b3-fc3af32cf78e",
+    "numero" : 31,
+    "pagina" : 384,
+    "titulo" : "Mon' a Nzambi ue jile",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Mon'a Nzambi uejile Kubana o mueniu ue, Pala o jinguma je, Pala etu;",
+        "recuo" : 0
+      }, {
+        "texto" : "tala henda!",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Muene mukua malamba; O dijina die Jezu;A mu tele ku dik'lus' Pala",
+        "recuo" : 0
+      }, {
+        "texto" : "etu: tala henda!",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Uixi: «Iotenese kia,» Ua betekele mutue, Ua batuile mueniu ue, Pala",
+        "recuo" : 0
+      }, {
+        "texto" : "etu; tala henda!",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Pal'etu rnaniinga me, Ma Jundulukile ue, A mu t ele mu mbila, Pala",
+        "recuo" : 0
+      }, {
+        "texto" : "etu; tala henda!",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Kia fukunukine kia, Ju ua bande ku diulu: Kuene kuala mu dionda,",
+        "recuo" : 0
+      }, {
+        "texto" : "Pala et u: tala henda !",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 6,
+      "linhas" : [ {
+        "texto" : "Jezu pe uanda kuiza, Kufundisa o mundu: Mu xikanenu oso, Solenu",
+        "recuo" : 0
+      }, {
+        "texto" : "Jezu Jusolo!",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "aebf9e4f-64b9-4c38-aeb6-524e9ac6a56f",
+    "numero" : 31,
+    "pagina" : 385,
+    "titulo" : "Nga rana mueniu hj",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Nga bana mueniu iu, Maniinga ue nga be Kukula mueniu ue Mu kufua",
+        "recuo" : 0
+      }, {
+        "texto" : "kua kale; Nga bana mueniu uarni pe, Kukula mueniu ue,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Dibata dia Tat 'etu, Ni kiandu kia ngi be, Nga xisa hanji pe, Kusota",
+        "recuo" : 0
+      }, {
+        "texto" : "mueniu ue: Dibata dioso nga di xie, Kusota mueniu ue.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ni ndumba ia jihadi Nga mono box'aba; Nga bange ni jinguma Kufula",
+        "recuo" : 0
+      }, {
+        "texto" : "kufua kue. Nga bange ni jingurna je Kufula kufua kue",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Nga ku bekela kia, Ubulukilu ue; Nga ku sumbila ue, Ku mueniu ki",
+        "recuo" : 0
+      }, {
+        "texto" : "uabue. Nga bana ioso kia ko kue. Kukula mueniu ue.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "8c1fdbe3-3d69-4f05-b2d5-6fb3e038aea2",
+    "numero" : 33,
+    "pagina" : 387,
+    "titulo" : "Data tata nga xile kia",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Bata dia Tata nga xile kia, Ngele dikanga mu ituxi iina; Nga zange ioso,",
+        "recuo" : 0
+      }, {
+        "texto" : "ki ngi lungu di; Jezu ua ngi kula pe.",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngi mu imbila ximanu die. Va ngi bulula ni maniinga me;Va ngi sukula",
+        "recuo" : 0
+      }, {
+        "texto" : "nga zediua ue; Nga tana kia! ngi mon 'e.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Henda ia Tata iavulu ngo, Ku ngi sotela ku ngele kuna; Kiki nga diela,",
+        "recuo" : 0
+      }, {
+        "texto" : "nga vutuka kia, Nga sange 'Kamba Jezu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ngambele Tata: Ki nga fuama di Ku ngi tambula kukala mon'e: Ngi",
+        "recuo" : 0
+      }, {
+        "texto" : "selevende. Maj'henda ii'e; Mona uafuile ueze.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Mukua ituxi, vutuka kia, Sunga kilunji kutexike di' , Ngana Jezu ku",
+        "recuo" : 0
+      }, {
+        "texto" : "dik 'lusu dina. Ua futu ue kongo die.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "ff8ed2aa-e300-4200-8401-1486746a8703",
+    "numero" : 34,
+    "pagina" : 388,
+    "titulo" : "Polo ia jezu ng i mona",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Polo ia Jezu ngi i mona, Polo.ie kubenia kua'i! Ni ngalasa ngi mu",
+        "recuo" : 0
+      }, {
+        "texto" : "mona, Ngi mu ijiia polo ie. Polo ia Jezu ngi i mono, Kunia ku dibata die/",
+        "recuo" : 0
+      }, {
+        "texto" : "Mu kubenia ngi mu ijiia, Ngi mu mona polo ie.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Hanji ki ngi tena luua Ku mu mona polo ie; Maji nga k'ijia kidi",
+        "recuo" : 0
+      }, {
+        "texto" : "'Kumbi sai nga kala ne.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "O kusanguluka kuahi! Bu kinama kia Jezu: Kuivua dizui dia Dikamba",
+        "recuo" : 0
+      }, {
+        "texto" : "Ua kudila mueniu iu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ku mu mona ngo lumoxi, Ni kumon' iote ie, Kuzukama ngo ku mu",
+        "recuo" : 0
+      }, {
+        "texto" : "ivua, Nuka dingi tu mu xie.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Dimi dia jianju joso Diala kuirnba fuma ie; Dizui diami ue ngi ta-ku",
+        "recuo" : 0
+      }, {
+        "texto" : "Kuximana 'jina die.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "938f71ab-7f51-4285-85dd-b3db13204e85",
+    "numero" : 35,
+    "pagina" : 388,
+    "titulo" : "Eme ngenji",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Eme ngenji, mukua'xi iengi, Baba ngi nanga-bu ngo usuku iu. Ki mu",
+        "recuo" : 0
+      }, {
+        "texto" : "ngi bombe; kikale ngenda Kate ku mbanza, 'niohenu diami.",
+        "recuo" : 0
+      }, {
+        "texto" : "Eme ngenji, mukuaxi iengi,Baba ngi nanga-bu ngó usuku iu",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Kox' ietu kuna kubenia kuoso! Koko nuka ki ngi kamba ngunzu ie.",
+        "recuo" : 0
+      }, {
+        "texto" : "Mu ngongo mumu rnuavul' itombe, Muavulu rninia iene mu kuama.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "lxi ia kidi i ngalu sota, O Mukudi uami muene Soba ie. Malamba",
+        "recuo" : 0
+      }, {
+        "texto" : "ne-ku, a sanguluka; ltuxi ne-ku, kana-ku kufua.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "829eabd8-540a-4a79-bba6-dd47af60a09e",
+    "numero" : 36,
+    "pagina" : 389,
+    "titulo" : "M'onzo mu ngele, kizuua kina",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "M'onzo mu ngele, kizuua kina, Nga sange mona ua kumbama kia;",
+        "recuo" : 0
+      }, {
+        "texto" : "Maka ma mueniu nga mu ambela na, Uixi, «Kiluua a ngi tangela».",
+        "recuo" : 0
+      }, {
+        "texto" : "Tangenu di'! tangenu di'! O kubuluka kua Ngana Jezu: Kana di' mutu n",
+        "recuo" : 0
+      }, {
+        "texto" : "'atena kuila «Eme kiluua a ngi range/a».",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "« Kifua rnuene ua ngi zola kiki, Kua ngi bana mueniu io ua kidi, Eme",
+        "recuo" : 0
+      }, {
+        "texto" : "ni a ngi fuidile, mueni6? Kiene, kiluua ngi k ' ivua ngo»",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "«Nzarnbi ua tumikisa o Mom'e, Ua range uoso uandala, eze; Nga mu",
+        "recuo" : 0
+      }, {
+        "texto" : "xikana, nga zediua kia, Akuetu oso a tangele ua».",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "ed90080f-0e10-4966-a3b3-64473e7c70a8",
+    "numero" : 37,
+    "pagina" : 390,
+    "titulo" : "Kuebi ku ngi tuma jezu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Kuebi ku ngi tuma Jezu, ngii e kia, Mu kukum bidila kiambe ngonge",
+        "recuo" : 0
+      }, {
+        "texto" : "ie; Ne mu hadi ni inalamba, ngiia ngo. Ngi dielela nguzu ia lukuaku Jue.",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngiia ngo, ngiia ngo, ni umbangi ue: Ngi tumaka kioso kiambe ngonge",
+        "recuo" : 0
+      }, {
+        "texto" : "ie.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Kuebi ku ngi tuma Jezu, ngiie kia, Mu kusarnbukisa huiii ia Nzumbi'ie:",
+        "recuo" : 0
+      }, {
+        "texto" : "Ne ku suku mba ku uombe, ngiia ne. O kimbaka kiami io Jehova ngó.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Kuoso-kuoso ngiia, Nzambi u ia ue, Ua ngi zola, ka ng'ehela, ngi",
+        "recuo" : 0
+      }, {
+        "texto" : "moni'e: Ne mu mueniu mba mu kufua, ngiia ne, Hanji ki a ngi kula uoma",
+        "recuo" : 0
+      }, {
+        "texto" : "uabu kia",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Zenu, muivue umbangi ua Muadi Jezu! Ua tu kula ni maniing' a tutu",
+        "recuo" : 0
+      }, {
+        "texto" : "ie; Ua ku zola, ua ku ixana: Iza kia! Sai kunioha bu jihata ja Jezu.",
+        "recuo" : 0
+      } ]
+    } ]
+  } ]
+}

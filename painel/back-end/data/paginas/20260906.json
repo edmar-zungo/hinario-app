@@ -1,0 +1,355 @@
+{
+  "pagina" : 20260906,
+  "hinarioId" : "por",
+  "imagem" : "imagens/original/20260906.jpg",
+  "imagemProcessada" : "imagens/processada/20260906.jpg",
+  "hash" : "sha256:9fe2122c3586b9063e0caf3f5b6173f860b23df3af2b782bf4a6b445b4dbf7d8",
+  "estado" : "confirmada",
+  "nomeOriginal" : "IMG_20260905_083709_1.jpg",
+  "importadoEm" : "2026-11-15T12:58:14.549164900Z",
+  "largura" : 2000,
+  "altura" : 1506,
+  "leituras" : {
+    "gemini" : {
+      "modelo" : "gemini-3.5-flash",
+      "resposta" : {
+        "blocos" : [ {
+          "tipo" : "bloco_sem_numero",
+          "linhas" : [ {
+            "texto" : "Coro. Venho, meu Senhor! venho como",
+            "recuo" : 0
+          }, {
+            "texto" : "[estou",
+            "recuo" : 2
+          }, {
+            "texto" : "Bem nenhum mereço a Ti, Tua voz me",
+            "recuo" : 0
+          }, {
+            "texto" : "[convidou!",
+            "recuo" : 2
+          } ],
+          "continuacaoDeBlocoAnterior" : true,
+          "duvidas" : [ ],
+          "italico" : true,
+          "numeroEstrofe" : null,
+          "numeroHino" : null,
+          "titulo" : null
+        }, {
+          "tipo" : "estrofe",
+          "linhas" : [ {
+            "texto" : "Sou débil pecador,",
+            "recuo" : 0
+          }, {
+            "texto" : "Indigno e sem saber;",
+            "recuo" : 0
+          }, {
+            "texto" : "Pureza em Teu sangue terei,",
+            "recuo" : 0
+          }, {
+            "texto" : "Em Teu favor, poder.",
+            "recuo" : 0
+          } ],
+          "continuacaoDeBlocoAnterior" : null,
+          "duvidas" : [ ],
+          "italico" : false,
+          "numeroEstrofe" : 2,
+          "numeroHino" : null,
+          "titulo" : null
+        }, {
+          "tipo" : "estrofe",
+          "linhas" : [ {
+            "texto" : "Nas trevas eu dormi;",
+            "recuo" : 0
+          }, {
+            "texto" : "Jesus espalha a Luz!",
+            "recuo" : 0
+          }, {
+            "texto" : "E Seu divino Espírito",
+            "recuo" : 0
+          }, {
+            "texto" : "A glória me conduz.",
+            "recuo" : 0
+          } ],
+          "continuacaoDeBlocoAnterior" : null,
+          "duvidas" : [ ],
+          "italico" : false,
+          "numeroEstrofe" : 3,
+          "numeroHino" : null,
+          "titulo" : null
+        }, {
+          "tipo" : "estrofe",
+          "linhas" : [ {
+            "texto" : "Graças por esse amor!",
+            "recuo" : 0
+          }, {
+            "texto" : "Por essa redenção!",
+            "recuo" : 0
+          }, {
+            "texto" : "Tendo Jesus, o Salvador,",
+            "recuo" : 0
+          }, {
+            "texto" : "Eu tenho a salvação.",
+            "recuo" : 0
+          } ],
+          "continuacaoDeBlocoAnterior" : null,
+          "duvidas" : [ ],
+          "italico" : false,
+          "numeroEstrofe" : 4,
+          "numeroHino" : null,
+          "titulo" : null
+        }, {
+          "tipo" : "titulo_hino",
+          "linhas" : [ ],
+          "continuacaoDeBlocoAnterior" : null,
+          "duvidas" : [ ],
+          "italico" : null,
+          "numeroEstrofe" : null,
+          "numeroHino" : 3,
+          "titulo" : "CONVITE AOS MENINOS"
+        }, {
+          "tipo" : "estrofe",
+          "linhas" : [ {
+            "texto" : "Vinde, meninos, vinde a Jesus!",
+            "recuo" : 0
+          }, {
+            "texto" : "Ele ganhou-vos bençãos na Cruz!",
+            "recuo" : 0
+          }, {
+            "texto" : "Os pequeninos Ele conduz;",
+            "recuo" : 0
+          }, {
+            "texto" : "Vinde ao Salvador!",
+            "recuo" : 0
+          } ],
+          "continuacaoDeBlocoAnterior" : null,
+          "duvidas" : [ ],
+          "italico" : false,
+          "numeroEstrofe" : 1,
+          "numeroHino" : null,
+          "titulo" : null
+        }, {
+          "tipo" : "bloco_sem_numero",
+          "linhas" : [ {
+            "texto" : "Coro. Que alegria! Sem pecado ou mal,",
+            "recuo" : 0
+          }, {
+            "texto" : "Reunir-vos todos, afinal,",
+            "recuo" : 1
+          }, {
+            "texto" : "Na santa pátria celestial,",
+            "recuo" : 1
+          }, {
+            "texto" : "Com o nosso Salvador!",
+            "recuo" : 1
+          } ],
+          "continuacaoDeBlocoAnterior" : null,
+          "duvidas" : [ ],
+          "italico" : true,
+          "numeroEstrofe" : null,
+          "numeroHino" : null,
+          "titulo" : null
+        } ],
+        "cabecalhoPagina" : null,
+        "numeroPaginaImpresso" : null
+      },
+      "tentativas" : [ {
+        "modelo" : "gemini-3.5-flash",
+        "resultado" : "ok",
+        "quando" : "2026-11-15T12:59:42.300577Z",
+        "origem" : "api"
+      } ],
+      "validacao" : {
+        "alfabeto" : [ ]
+      }
+    }
+  },
+  "divergencias" : [ ],
+  "blocos" : [ {
+    "tipo" : "coro",
+    "italico" : true,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : true,
+    "numeroHino" : 2,
+    "titulo" : null,
+    "numeroEstrofe" : null,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Coro. Venho, meu Senhor! venho como",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "estou",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Bem nenhum mereço a Ti, Tua voz me",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "convidou!",
+      "recuo" : 1,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "estrofe",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 2,
+    "titulo" : null,
+    "numeroEstrofe" : 2,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Sou débil pecador,",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Indigno e sem saber;",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Pureza em Teu sangue terei,",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Em Teu favor, poder.",
+      "recuo" : 0,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "estrofe",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 2,
+    "titulo" : null,
+    "numeroEstrofe" : 3,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Nas trevas eu dormi;",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Jesus espalha a Luz!",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "E Seu divino Espírito",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "A glória me conduz.",
+      "recuo" : 0,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "estrofe",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 2,
+    "titulo" : null,
+    "numeroEstrofe" : 4,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Graças por esse amor!",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Por essa redenção!",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Tendo Jesus, o Salvador,",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Eu tenho a salvação.",
+      "recuo" : 0,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "titulo_hino",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 3,
+    "titulo" : "CONVITE AOS MENINOS",
+    "numeroEstrofe" : null,
+    "ligacao" : null,
+    "linhas" : [ ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "estrofe",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 3,
+    "titulo" : null,
+    "numeroEstrofe" : 1,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Vinde, meninos, vinde a Jesus!",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Ele ganhou-vos bençãos na Cruz!",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Os pequeninos Ele conduz;",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Vinde ao Salvador!",
+      "recuo" : 0,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "coro",
+    "italico" : true,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 3,
+    "titulo" : null,
+    "numeroEstrofe" : null,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Que alegria! Sem pecado ou mal,",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Reunir-vos todos, afinal,",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Na santa pátria celestial,",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Com o nosso Salvador!",
+      "recuo" : 1,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  } ]
+}

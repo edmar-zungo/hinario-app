@@ -26,11 +26,15 @@ import java.util.EnumSet;
 public class DataFiles {
 
     private final Path raiz;
+    private final Path pastaMobileAssets;
     private final ObjectMapper mapper = new ObjectMapper()
             .enable(SerializationFeature.INDENT_OUTPUT);
 
     public DataFiles(@Value("${hinario.dados.dir:}") String configurado) {
         this.raiz = resolverRaiz(configurado);
+        this.pastaMobileAssets = (configurado == null || configurado.isBlank())
+                ? resolverMobileAssets(this.raiz)
+                : null;
     }
 
     public Path raiz() {
@@ -65,6 +69,7 @@ public class DataFiles {
         } finally {
             Files.deleteIfExists(temporario);
         }
+        espelharJsonPartilhado(alvo, valor);
     }
 
     /** Escreve texto de forma atómica (UTF-8). */
@@ -99,6 +104,49 @@ public class DataFiles {
 
     public ObjectMapper mapper() {
         return mapper;
+    }
+
+    private void espelharJsonPartilhado(Path alvo, Object valor) throws IOException {
+        if (pastaMobileAssets == null || alvo == null || alvo.getFileName() == null) {
+            return;
+        }
+        String nome = alvo.getFileName().toString();
+        boolean partilhado = "hinario.json".equals(nome)
+                || "estrofes.json".equals(nome)
+                || "constituicao.json".equals(nome)
+                || (nome.startsWith("hinario-") && nome.endsWith(".json"));
+        if (!partilhado) {
+            return;
+        }
+        Path naRaiz = raiz.resolve(nome).toAbsolutePath().normalize();
+        if (!alvo.toAbsolutePath().normalize().equals(naRaiz)) {
+            escreverCopiaAtomica(naRaiz, valor);
+        }
+        if (Files.isDirectory(pastaMobileAssets)) {
+            Path noMobile = pastaMobileAssets.resolve(nome).toAbsolutePath().normalize();
+            if (!alvo.toAbsolutePath().normalize().equals(noMobile)) {
+                escreverCopiaAtomica(noMobile, valor);
+            }
+        }
+    }
+
+    private void escreverCopiaAtomica(Path destino, Object valor) throws IOException {
+        Path pai = destino.getParent();
+        if (pai != null) {
+            Files.createDirectories(pai);
+        }
+        Path temporario = Files.createTempFile(pai, destino.getFileName().toString(), ".tmp");
+        try {
+            mapper.writeValue(temporario.toFile(), valor);
+            mover(temporario, destino);
+        } finally {
+            Files.deleteIfExists(temporario);
+        }
+    }
+
+    private static Path resolverMobileAssets(Path raizDados) {
+        Path candidato = raizDados.resolve("../../../mobile/src/assets/data").toAbsolutePath().normalize();
+        return Files.isDirectory(candidato) ? candidato : null;
     }
 
     private static void mover(Path origem, Path alvo) throws IOException {

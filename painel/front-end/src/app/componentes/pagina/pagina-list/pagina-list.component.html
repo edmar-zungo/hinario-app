@@ -21,7 +21,7 @@
             (change)="aoEscolherFicheiros($event)"
           />
           <div class="form-text">
-            O número de página é lido do nome do ficheiro (ex.: 0395.jpg).
+            O número da página é identificado automaticamente na imagem durante a extração.
           </div>
         </div>
         <div class="col-md-3">
@@ -103,7 +103,9 @@
           <td class="acoes">
             @if (pagina.estado === 'importada' || pagina.estado === 'erro_leitura'
                  || pagina.estado === 'pausada_quota') {
-              <button class="btn btn-sm btn-outline-primary" (click)="ler(pagina.pagina)">
+              <button class="btn btn-sm btn-outline-primary"\r
+                      [disabled]="enviando || extraindo"\r
+                      (click)="ler(pagina.pagina)">
                 Ler
               </button>
             }

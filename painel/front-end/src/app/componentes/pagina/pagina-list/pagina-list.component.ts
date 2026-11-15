@@ -80,6 +80,9 @@ export class PaginaListComponent {
   }
 
   importar() {
+    if (this.enviando || this.extraindo) {
+      return;
+    }
     if (!this.ficheiros.length) {
       this.erro = 'Escolha pelo menos uma foto.';
       return;
@@ -99,7 +102,7 @@ export class PaginaListComponent {
         }
       }
     }
-    if (encontradas.size > 0) {
+    if (encontradas.size > 0 && false) {
       this.paginasJaRevisadas = Array.from(encontradas).sort((a, b) => a - b);
       this.modalAvisoRevisadoAberta = true;
       return;
@@ -154,6 +157,9 @@ export class PaginaListComponent {
   }
 
   ler(numero: number) {
+    if (this.enviando || this.extraindo) {
+      return;
+    }
     this.mensagem = '';
     this.erro = '';
     this.modalExtracaoAberta = true;
@@ -181,6 +187,29 @@ export class PaginaListComponent {
     return Math.round(((concluidos + emCurso) / this.itensExtracao.length) * 100);
   }
 
+  private tratarErroExtracao(item: ItemExtracao, indice: number, err: any): void {
+    this.paginaService.obter(item.pagina).subscribe({
+      next: pagina => {
+        if (pagina?.estado === 'estruturada' || pagina?.estado === 'lida'
+          || pagina?.estado === 'em_revisao' || pagina?.estado === 'confirmada') {
+          item.estado = 'concluida';
+        } else {
+          item.estado = 'erro';
+          item.detalhe = pagina?.leituras?.gemini?.erro
+            ?? this.mensagemErro(err, 'Falha ao extrair a página.');
+        }
+        this.cdr.detectChanges();
+        this.extrairSequencialmente(indice + 1);
+      },
+      error: () => {
+        item.estado = 'erro';
+        item.detalhe = this.mensagemErro(err, 'Falha ao extrair a página.');
+        this.cdr.detectChanges();
+        this.extrairSequencialmente(indice + 1);
+      }
+    });
+  }
+
   private extrairSequencialmente(indice: number): void {
     if (indice >= this.itensExtracao.length) {
       this.extraindo = false;
@@ -200,9 +229,13 @@ export class PaginaListComponent {
     const item = this.itensExtracao[indice];
     item.estado = 'extraindo';
     this.faseModal = `A extrair página ${item.pagina} (${indice + 1} de ${this.itensExtracao.length})…`;
+    this.cdr.detectChanges();
 
     this.paginaService.ler(item.pagina).subscribe({
       next: resp => {
+        if (resp?.pagina) {
+          item.pagina = resp.pagina;
+        }
         if (resp?.estado === 'estruturada' || resp?.estado === 'lida') {
           item.estado = 'concluida';
         } else {
@@ -213,7 +246,8 @@ export class PaginaListComponent {
       },
       error: err => {
         item.estado = 'erro';
-        item.detalhe = this.mensagemErro(err, 'Falha ao extrair a página.');
+        this.tratarErroExtracao(item, indice, err);
+        return;
         this.extrairSequencialmente(indice + 1);
       }
     });

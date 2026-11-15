@@ -1,0 +1,342 @@
+{
+  "pagina" : 24,
+  "hinarioId" : "por",
+  "imagem" : "imagens/original/0024.jpg",
+  "imagemProcessada" : "imagens/processada/0024.jpg",
+  "hash" : "sha256:87749b6a14d81b05790d2deb554db25c1660a0011af9daa6e787cd5b7cbf827e",
+  "estado" : "confirmada",
+  "nomeOriginal" : "IMG_20260905_083726_1.jpg",
+  "importadoEm" : "2026-11-15T13:03:42.658991700Z",
+  "largura" : 2000,
+  "altura" : 1506,
+  "leituras" : {
+    "gemini" : {
+      "modelo" : "gemini-3.5-flash",
+      "resposta" : {
+        "blocos" : [ {
+          "tipo" : "estrofe",
+          "linhas" : [ {
+            "texto" : "Já, sem demora, hoje convém",
+            "recuo" : 0
+          }, {
+            "texto" : "Ir caminhando à glória além;",
+            "recuo" : 1
+          }, {
+            "texto" : "Jesus vos chama, quer vosso bem,",
+            "recuo" : 1
+          }, {
+            "texto" : "Vinde ao Salvador.",
+            "recuo" : 1
+          } ],
+          "numeroEstrofe" : 2,
+          "numeroHino" : null,
+          "titulo" : null
+        }, {
+          "tipo" : "estrofe",
+          "linhas" : [ {
+            "texto" : "Ama os meninos! Jesus o diz;",
+            "recuo" : 0
+          }, {
+            "texto" : "Quer receber-vos no bom país,",
+            "recuo" : 1
+          }, {
+            "texto" : "Quer conceder-vos vida feliz,",
+            "recuo" : 1
+          }, {
+            "texto" : "Vinde ao Salvador!",
+            "recuo" : 1
+          } ],
+          "numeroEstrofe" : 3,
+          "numeroHino" : null,
+          "titulo" : null
+        }, {
+          "tipo" : "estrofe",
+          "linhas" : [ {
+            "texto" : "Eis a chamada: «Oh vinde a mim!»",
+            "recuo" : 0
+          }, {
+            "texto" : "Outro não há que vos ame assim;",
+            "recuo" : 1
+          }, {
+            "texto" : "Seu é amor que nunca tem fim!",
+            "recuo" : 1
+          }, {
+            "texto" : "Vinde ao Salvador!",
+            "recuo" : 1
+          } ],
+          "numeroEstrofe" : 4,
+          "numeroHino" : null,
+          "titulo" : null
+        }, {
+          "tipo" : "titulo_hino",
+          "linhas" : [ ],
+          "numeroHino" : 4,
+          "titulo" : "AVANTE! AVANTE! OH CRENTES"
+        }, {
+          "tipo" : "estrofe",
+          "linhas" : [ {
+            "texto" : "Avante! Avante! oh crentes!",
+            "recuo" : 0
+          }, {
+            "texto" : "Soldados de Jesus!",
+            "recuo" : 1
+          }, {
+            "texto" : "Erguei Seu estandarte,",
+            "recuo" : 1
+          }, {
+            "texto" : "Lutai por Sua cruz!",
+            "recuo" : 1
+          }, {
+            "texto" : "Contra hostes inimigos,",
+            "recuo" : 1
+          }, {
+            "texto" : "Ante essas multidões.",
+            "recuo" : 1
+          }, {
+            "texto" : "O Comandante excelso",
+            "recuo" : 1
+          }, {
+            "texto" : "Dirige os batalhões.",
+            "recuo" : 1
+          } ],
+          "numeroEstrofe" : 1,
+          "numeroHino" : null,
+          "titulo" : null
+        }, {
+          "tipo" : "estrofe",
+          "linhas" : [ {
+            "texto" : "Avante! Avante! oh crentes!",
+            "recuo" : 0
+          }, {
+            "texto" : "Por Cristo pelejai!",
+            "recuo" : 1
+          }, {
+            "texto" : "Vesti Sua armadura.",
+            "recuo" : 1
+          }, {
+            "texto" : "Em Seu poder marchai!",
+            "recuo" : 1
+          }, {
+            "texto" : "No posto sempre achados,",
+            "recuo" : 1
+          }, {
+            "texto" : "Velando em oração,",
+            "recuo" : 1
+          }, {
+            "texto" : "Por meio de perigos",
+            "recuo" : 1
+          }, {
+            "texto" : "Seguindo o Capitão.",
+            "recuo" : 1
+          } ],
+          "numeroEstrofe" : 2,
+          "numeroHino" : null,
+          "titulo" : null
+        } ],
+        "cabecalhoPagina" : null,
+        "numeroPaginaImpresso" : 24
+      },
+      "tentativas" : [ {
+        "modelo" : "gemini-3.5-flash",
+        "resultado" : "ok",
+        "quando" : "2026-11-15T13:04:03.199267500Z",
+        "origem" : "api"
+      } ],
+      "validacao" : {
+        "alfabeto" : [ ]
+      }
+    }
+  },
+  "divergencias" : [ ],
+  "blocos" : [ {
+    "tipo" : "estrofe",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : null,
+    "titulo" : null,
+    "numeroEstrofe" : 2,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Já, sem demora, hoje convém",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Ir caminhando à glória além;",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Jesus vos chama, quer vosso bem,",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Vinde ao Salvador.",
+      "recuo" : 0,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "estrofe",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : null,
+    "titulo" : null,
+    "numeroEstrofe" : 3,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Ama os meninos! Jesus o diz;",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Quer receber-vos no bom país,",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Quer conceder-vos vida feliz,",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Vinde ao Salvador!",
+      "recuo" : 1,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "estrofe",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : null,
+    "titulo" : null,
+    "numeroEstrofe" : 4,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Eis a chamada: «Oh vinde a mim!»",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Outro não há que vos ame assim;",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Seu é amor que nunca tem fim!",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Vinde ao Salvador!",
+      "recuo" : 1,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "titulo_hino",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 4,
+    "titulo" : "AVANTE! AVANTE! OH CRENTES",
+    "numeroEstrofe" : null,
+    "ligacao" : null,
+    "linhas" : [ ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "estrofe",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 4,
+    "titulo" : null,
+    "numeroEstrofe" : 1,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Avante! Avante! oh crentes!",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Soldados de Jesus!",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Erguei Seu estandarte,",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Lutai por Sua cruz!",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Contra hostes inimigos,",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Ante essas multidões.",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "O Comandante excelso",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Dirige os batalhões.",
+      "recuo" : 1,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  }, {
+    "tipo" : "estrofe",
+    "italico" : false,
+    "continuacao" : false,
+    "incompleta" : false,
+    "sequenciaSuspeita" : false,
+    "possivelCoro" : false,
+    "numeroHino" : 4,
+    "titulo" : null,
+    "numeroEstrofe" : 2,
+    "ligacao" : null,
+    "linhas" : [ {
+      "texto" : "Avante! Avante! oh crentes!",
+      "recuo" : 0,
+      "revisto" : true
+    }, {
+      "texto" : "Por Cristo pelejai!",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Vesti Sua armadura.",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Em Seu poder marchai!",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "No posto sempre achados,",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Velando em oração,",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Por meio de perigos",
+      "recuo" : 1,
+      "revisto" : true
+    }, {
+      "texto" : "Seguindo o Capitão.",
+      "recuo" : 1,
+      "revisto" : true
+    } ],
+    "duvidas" : [ ]
+  } ]
+}

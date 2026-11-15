@@ -25,6 +25,12 @@ public record Pagina(
         JsonNode divergencias,
         JsonNode blocos) {
 
+    /** Cópia com outro número de página e novos caminhos de imagem. */
+    public Pagina comNumeroECaminhos(int novoNumero, String novaImagem, String novaProcessada) {
+        return new Pagina(novoNumero, hinarioId, novaImagem, novaProcessada, hash, estado,
+                nomeOriginal, importadoEm, largura, altura, leituras, divergencias, blocos);
+    }
+
     /** Cópia com outro estado (o registo é imutável). */
     public Pagina comEstado(EstadoPagina novo) {
         return new Pagina(pagina, hinarioId, imagem, imagemProcessada, hash, novo,

@@ -1,0 +1,5918 @@
+{
+  "id" : "kkr",
+  "lingua" : "kkr",
+  "nome" : "Hinário Kikongo (revisado)",
+  "geradoEm" : "2026-10-30T11:39:01.458194144Z",
+  "hinos" : [ {
+    "id" : "6326276e-f762-4e52-b97b-96c4a5823be4",
+    "numero" : 1,
+    "pagina" : 135,
+    "titulo" : "Muna lumbu mono vila",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Muna lumbu mono vila, YISU Unduanina, Muna Nzo ye muna njila",
+        "recuo" : 0
+      }, {
+        "texto" : "YISU unduanina",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "YISU nuanini, YISU Nhuludi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Muna tangua pukumuni,",
+        "recuo" : 0
+      }, {
+        "texto" : "YISU Unduanina",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Kadia Apemba hukumuna, YISU Unduanina, Muna ntima mono",
+        "recuo" : 0
+      }, {
+        "texto" : "nioma, YISU unduanina.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Nkudi ame mono ilanda, YISU unduanina, Kani muini kani pipa,",
+        "recuo" : 0
+      }, {
+        "texto" : "YISU unduanina.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "3c69ae8b-6c01-425a-b7d9-ed57ea1094bb",
+    "numero" : 2,
+    "pagina" : 135,
+    "titulo" : "Yetu auonso haha tsi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Yetu auonso haha tsi, Nzambi etu tukembela, Pila au Punga afukama,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yetu pe tufuete hanga.",
+        "recuo" : 0
+      }, {
+        "texto" : "2 Kotenu mu Nzo ya Nzambi, Ku nkembu yetu yimbila, Yetu mameme",
+        "recuo" : 0
+      }, {
+        "texto" : "ma YISU, Yandi pe tufuete tonda.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Tukala tauji za YISU, Nga tubezanga Yandi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Tuimbila nkembu andi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nkudi etu i Ntinu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Jina diandi tukembela, Ekuma Yandi Muenexi, Luzolo luandi kuele",
+        "recuo" : 0
+      }, {
+        "texto" : "mvu, Ye kenda zandi jifuana.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "64988e32-853a-4867-97d9-4e98712aa7f3",
+    "numero" : 3,
+    "pagina" : 136,
+    "titulo" : "Tulanda njila mzambi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tulanda njila Nzambi, Tuakahuluka,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ndiona menga Nzambi, Kalendi huluka.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Muna kata Nzambi, Nkembu una mo,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kuna pe ku ntima, Kiese monanga.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Kuna pe ku Zulu, Fulu ina ko,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kasi Yandi wambimbi, Kalendi kota ko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Nzambi pe Se etu, Nhuludi etu, Yandi hana moyo Kuele mvu ya mvu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Muna menga ma Yisu, Matusukula, Yo mbi zauonso, Yandi loloka.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 6,
+      "linhas" : [ {
+        "texto" : "Tutonda kua Nzambi, Tutonda kua Yisu, Tutondanga kaka, Kuele mvu",
+        "recuo" : 0
+      }, {
+        "texto" : "ya mvu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "92440a72-9f3b-41c5-bd08-263ed22c34a0",
+    "numero" : 4,
+    "pagina" : 137,
+    "titulo" : "gudi wame yehova",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Nhungudi wame Yehova, Ikupana Yawonsono, Ikutsongila njila,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kuna moyo wa mvu ya mvu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Yandi kupehula ntima, Ngiendila mu luhuhamu, Mu njila tuakubikilua",
+        "recuo" : 0
+      }, {
+        "texto" : "Mu luzolo lua Yisu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Kani mu ndimba wa lufua, Yisu wonga wakatula wo, Mambu ma",
+        "recuo" : 0
+      }, {
+        "texto" : "Mfumu etu Yisu, Mena muna ntima ame.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ngeye kungiadila meza, Kua wana tuamengana, Ngeye kupana luzolo,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ntima ame wayela.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Mu mbote zaku za swama, Mbi zawonso zafukuka, Ngienda Yakala",
+        "recuo" : 0
+      }, {
+        "texto" : "yo Nzambi, Kuna tsi ya Helela.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 6,
+      "linhas" : [ {
+        "texto" : "Kenda za .Mfumu etu Yisu, Zaku pulula muna lufua Moyo ikala",
+        "recuo" : 0
+      }, {
+        "texto" : "kua Yisu, Kuna Zulu ivundila.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 7,
+      "linhas" : [ {
+        "texto" : "Mambu ma Tata Jehova, Nuiza tuadiwila mo, Tutoma wa mambu ma",
+        "recuo" : 0
+      }, {
+        "texto" : "Nzambi, Tuadi yekula mene.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "6c1c1f87-cf15-4f79-961c-2945d900f992",
+    "numero" : 5,
+    "pagina" : 137,
+    "titulo" : "Kala kua mono nzambi ufuku wau",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Kala kua mono Nzambi ufuku wau, Pipa yavula muini wizidi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Unduanina muna moko maku wau, Wiza hanga fulu mu ntim'ame.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "E lumbu yetu luta ilutanga, Vila ivila yese ya tsi yai, hiluka o lufua",
+        "recuo" : 0
+      }, {
+        "texto" : "rnbuene lo, Hanga fulu kia rnvu ya mvu mu ntirri'ame.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Wiza kudisonga kua mono Mfumu, Nlongi wa moyo ntinu",
+        "recuo" : 0
+      }, {
+        "texto" : "walemvuka, Muna kenda zaku mono unduakisa, Wiza, wiza, hanga",
+        "recuo" : 0
+      }, {
+        "texto" : "fulu mu ntim'ame.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ngeye wakubama mu pipa yo muini, Kina ye wonga ko kimosi yo",
+        "recuo" : 0
+      }, {
+        "texto" : "yisu, O lufua ke lusanda moyo ko, Nzambi hanga fulu mu ntim'ame.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "0 lufua lua Yisu lukudidi, O njamu nitu ifululuka, Ku kimfumu ke kuna",
+        "recuo" : 0
+      }, {
+        "texto" : "wonga, ko Ikala ye Nzambi ame mu ntim'ame.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "2c1502e6-176e-4278-b58b-c98ffe038827",
+    "numero" : 6,
+    "pagina" : 139,
+    "titulo" : "Nzambi ufinama oko kua ngeye",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "ó Nzambi ufinama oko kua Ngeye, Yisu ufilanga, utsadisa, Nkunga",
+        "recuo" : 0
+      }, {
+        "texto" : "yaimbila Nzambi wafinama, Nzambi ufinama · oko kua Ngeye.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ukangadilanga mu yai tsi Tsangu yasamuna za Nhuludi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mu Njila ikuendila Nzambi ufinama, Nzarnbi ufinika oko kua Ngeye.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Mfumu za yai tsi sambula do, Kaka yako ifua asadila yo, Yisu",
+        "recuo" : 0
+      }, {
+        "texto" : "waloloki, Yisu waloloki, Nzambi wafinama oko kua Ngeye.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Mono muntu wa rnbi, utsadisa, Yatoma kemibla Ngeye Nhuludi, Yisu",
+        "recuo" : 0
+      }, {
+        "texto" : "ukumika, wa tsadisa,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Nzambi ufinama oko kua Ngeye.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "0dacd7e9-365c-4b28-9e18-df97c754b6da",
+    "numero" : 7,
+    "pagina" : 140,
+    "titulo" : "Kua nzambi tata wankembu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Kua Nzambi Tata wankembu, Uzolanga tsi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Muana Andi wafuila, Mu ekuma kietu",
+        "recuo" : 0
+      }, {
+        "texto" : "Mu kenda kasonga,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kua asumuki arnbi, Wayangula kielu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kia muelo Zulu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Kiese wau, kiese wau, Nuiza kernbelanga,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kua YISU Nhuludi, Kua YISU, Nkudi etu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kua Nzarnbi Tata wankembu, Uzolanga Tsi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Watumini YISU, Kafuila yetu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "E tsangu zarnbote, Za YISU Cristu, Watonda fuila, Masumu metu, Ye",
+        "recuo" : 0
+      }, {
+        "texto" : "talu kafuta, Ya menga mandi, Mahuha kua yetu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Tuasukuka mbi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Nukuikila yandi, Mu zola yandi, Mu ncanda wa Nzambi, Tutanganga",
+        "recuo" : 0
+      }, {
+        "texto" : "mo, Wese kua yandi, Ukuikilanga, Helelesua ntima, Umona Nzambi.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "ed5f8b51-b20d-4424-bc64-4fc8463006f2",
+    "numero" : 8,
+    "pagina" : 141,
+    "titulo" : "Pasi una maniega muna ntima",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Pasi una manienge muna ntima, Hoha kua Yisu, hoha kua Yisu, Matu",
+        "recuo" : 0
+      }, {
+        "texto" : "mandi mawa mambu maku, Hoha kua Yisu.",
+        "recuo" : 0
+      }, {
+        "texto" : "Hoha kua Yisu,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "hoha kua Yisu, Yandi nlemvu pe, Yandi zeye yandi sadilanga, Hoha",
+        "recuo" : 0
+      }, {
+        "texto" : "kua Yisu wau.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Yandi mon meso madilanga, Hoha kua Yisu, hoha kua Yisu,, Yandi",
+        "recuo" : 0
+      }, {
+        "texto" : "zeye nani wakumenga, Hoha kua Yisu, hoha kua Yisu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Mambu mambimbi masumu pila tsenga, Hoha kua Yisu, hoha kua",
+        "recuo" : 0
+      }, {
+        "texto" : "Yisu, Wuiza kua 'Yandi, Sukula muna Menga, Hoha kua Yisu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "9fdbb874-5cdf-4fb7-9d36-c3bcef2a16a9",
+    "numero" : 9,
+    "pagina" : 142,
+    "titulo" : "Kiyangukidi kelo",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Kiyangukidi kielo, Auonso alenda kota, Nkua masumu muelo wau, kota",
+        "recuo" : 0
+      }, {
+        "texto" : "wahuluka pe.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Talenu kenda za Yisu, Muelo Zulu yangudi, Mono, mono, Yakota",
+        "recuo" : 0
+      }, {
+        "texto" : "ku Zulu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Kotenu wese, wese ntu, Nulomba kenda kua Yisu, Kotenu yenu",
+        "recuo" : 0
+      }, {
+        "texto" : "nuahuluka, Nukala kuenu kiarnbote.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Kyangukidi mene wau, Kotenu yenu auonso, Nzambi usonga kenda,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kenda za Yandi zavula.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "E nsundi sunda muna mbi, Wakala kuna Zulu, Wakala ko, yo",
+        "recuo" : 0
+      }, {
+        "texto" : "Mfumu aku, Nzambi I Ntinu aku.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "b33c3bcc-96de-4846-b878-8f99805f2de9",
+    "numero" : 10,
+    "pagina" : 142,
+    "titulo" : "Aleke engi amana fua",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Aleke engi amana fua, Ku Zulu ena wau, Masumu mau malolokua,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ku kiese ena wau.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Hana nkembu, nkembu, nkembu, Hana nkembu, nkembu, nkembu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Kia tula au atudidi, Atuka oha tsi, Kutsi ya S, Au alueke wau, Ku",
+        "recuo" : 0
+      }, {
+        "texto" : "kiese ena wau.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ekuma Yisu Nhuludi, Wafua mu fulu kiau, Itumbu yau yalolokua,",
+        "recuo" : 0
+      }, {
+        "texto" : "wau ena iimbila.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "ó hatsi Yisu alandanga, Aleke andi auonso, ó unu kua makamba mau,",
+        "recuo" : 0
+      }, {
+        "texto" : "Idiau ena iirnbila,",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "e07a0ba7-2910-4710-8ffb-ac9876e184a7",
+    "numero" : 11,
+    "pagina" : 143,
+    "titulo" : "Ó petelo yo yoane",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "6 Petelo yo Yoane, Akcle kuenda, ku sambu, Mu sambu kia ku muini,",
+        "recuo" : 0
+      }, {
+        "texto" : "Awene ntu ha muelo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Yandi wakele, wakalanga, Kikokela, tuka luutuku luandi, Kalendi",
+        "recuo" : 0
+      }, {
+        "texto" : "kukangala ko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Kikokela yandi wamona, Atumu za Yisu mu polo, Wabanza ena",
+        "recuo" : 0
+      }, {
+        "texto" : "kuhana, Palata yo ulu ha moko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ó Petelo yo Yoane, Ahoha kua kikokela, «Palata yo olu muakatu, Mu",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngolo za Yisu telama.»",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Kikokela watelemene, Wakota muna Tempelu, Kumoxi yau alongi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Watonda Nzambi mu ntima.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Andonga muna tangua amona, Kikokela wakangala,",
+        "recuo" : 0
+      }, {
+        "texto" : "Amuene luimbi kua yandi, Ekurna yandi wakolesua.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 6,
+      "linhas" : [ {
+        "texto" : "Ó wau pe yenu akuetu, Katukadi kudihuna ko, Masumu mena mu",
+        "recuo" : 0
+      }, {
+        "texto" : "ntima, Tudihunini yetu mene",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "d20922d2-2624-4ed1-8f5b-1b0a305fda9a",
+    "numero" : 12,
+    "pagina" : 144,
+    "titulo" : "O nzambi seto wa nkua nkenda",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ó Nzambi Seto wa nkua nkenda, Toma tala tsi eto,",
+        "recuo" : 0
+      }, {
+        "texto" : "Konso tsi awa nsoki asibua, Pipa yalngi yabukama.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Ó Nzambi Seto nkwa kenda, Toma tala tsi 'eto,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ó Nzambi Seto nkwa kenda Toma tala tsi eto.",
+        "recuo" : 0
+      }, {
+        "texto" : "2 Atu auonso akua uzowa, Nganga za ngombo alandanga, Atu",
+        "recuo" : 0
+      }, {
+        "texto" : "akangidilu mambu, Nhondua\" ndoki abanzanga.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Atu auonso akua tsita, Hondana a hondana, Masumu mengi a",
+        "recuo" : 0
+      }, {
+        "texto" : "holanga, Nkanu mingi aholanga.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "b3a1b02c-be8d-4390-b738-e7c398ace692",
+    "numero" : 13,
+    "pagina" : 145,
+    "titulo" : "Kutulutiko yisu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Kutuluti ko YISU, Utuwila wau, Wau hululang'akaka,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kutuluti ko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "YISU Nhuludi, utuwila wau, ., Wau hululang'akaka, Kutuluti ko",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Pipa itubukamena, Ntutemuene, Njila Zulu tuna sata,",
+        "recuo" : 0
+      }, {
+        "texto" : "Utusonga yo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "YlSU kenda, zaku, kaka, Jitutukisa, Nfunu waku ivuvu kietu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kiatuhulula.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Wau tuzolele kulanda, Kuna tsi aku,",
+        "recuo" : 0
+      }, {
+        "texto" : "Jingu kietu nga kiwuidi",
+        "recuo" : 0
+      }, {
+        "texto" : "Watutambula.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Kubikanga ntima mietu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Katula ko mbi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Toma kutuhelelesa, Ututambula.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "8192cbee-638b-4162-b485-ddc697eeebfb",
+    "numero" : 14,
+    "pagina" : 146,
+    "titulo" : "Yakangalanga muna miongo",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Yakangalanga muna miongo, Ye muna ndimba yo muini aku, Yisu",
+        "recuo" : 0
+      }, {
+        "texto" : "wahoha, kilendiko, kuyeka, Tangua zauonso Ngina kua Ngeye.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Muini wa Zulu, muini wa Zulu, Ngielesa ntima, nkembu wa Zulu, Ngina",
+        "recuo" : 0
+      }, {
+        "texto" : "ye kiese wau iimba,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ya hana nkembu kua Nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Pipa ku tandu, pipa ku yanda, Kalendi sueka Nkudi etu, Yandi I Muini",
+        "recuo" : 0
+      }, {
+        "texto" : "kaulendiko jima, Mfumu Yisu Nhuludi,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Muini wambote una kunjeta, Wandonga ozaya ya lemvoka, Kaxi",
+        "recuo" : 0
+      }, {
+        "texto" : "welanda kufitakana, Hananga nkembu kua Nhuludi,",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "d5497526-1752-4a24-8ba0-c8a8a5596def",
+    "numero" : 15,
+    "pagina" : 147,
+    "titulo" : "Watukala vetu katu atu ko",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Watukala yctu katu atu ko, Tuka Yoane kawuila Ndinga Mfumu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Watubokila mu katuka mu tomba, Wau Nzambi watuhana Mwuanda.",
+        "recuo" : 0
+      }, {
+        "texto" : "Lutula Ngindu zenu mu Mfumu, Lukala mihungudi mu kanda dia",
+        "recuo" : 0
+      }, {
+        "texto" : "Nzambi Ngudi Nhungudi una monika,",
+        "recuo" : 0
+      }, {
+        "texto" : "Wau Nzambi watuhana Mwuanda",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Tata Nzambi muzola kazola Tsi, Watuhana Mwana andi Nhuludi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Wese kuikila muyandi, uhuluka, Wau Nzambi watuhana Mwanda.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Yisu Nhuludi eto waiza hatsi, Watufwuila mu masumu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kadi yandi I Ntinu wa tsi.",
+        "recuo" : 0
+      }, {
+        "texto" : "Wau Nzambi watuhana Mwuanda.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "387a685e-31ea-4cab-8114-f27467ab2fd6",
+    "numero" : 16,
+    "pagina" : 147,
+    "titulo" : "Mfumu yisu muna nti, luzolo",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "LU ANDI SONGELE",
+        "recuo" : 0
+      }, {
+        "texto" : "Mfumu Yisu muna Nti, · 1uzolo Luandi songele,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngeye una yo",
+        "recuo" : 0
+      }, {
+        "texto" : "moyo, hana kuetu pe moyo.",
+        "recuo" : 0
+      }, {
+        "texto" : "Wuiza, Wuiza, Mfumu etu, Telamesa yetu pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mu luzolo lua Ngeye,",
+        "recuo" : 0
+      }, {
+        "texto" : "Wuiza kutuiikika:",
+        "recuo" : 0
+      }, {
+        "texto" : "Wuiza, Wuiza, mianda mietu iikika.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Pukumuni za mutsi, jina kutuvidisa",
+        "recuo" : 0
+      }, {
+        "texto" : "Kala ke Mambu Maku, wau mene tuna bua",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Avula aiza kua Ngeye, wau kua leha ena au, Akaka ena landa pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "kioji muna ntima ena",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Wuiza wau katula mambu mambi Nhuludi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kani ngindu za sumu, Ngeye lenda katula.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "bbebc747-2e63-4adc-86c5-625ce1c582d2",
+    "numero" : 17,
+    "pagina" : 148,
+    "titulo" : "Yisu luzolo lusundidib",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Yisu luzolo lusundidi, · Mu moyo rune kota, Muna ntima ame katula,",
+        "recuo" : 0
+      }, {
+        "texto" : "Masumu yo majitu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Wau tula muna ntim'ame, Tuya tua Muanda Wahelela,",
+        "recuo" : 0
+      }, {
+        "texto" : "Hana moyo yo luhuhamu, Ngeye vuvu kieto.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Nhungudi Wangolo ntondele, Wau mono ilanda Ngeye,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kua mameme makaka ilonga pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Luzolo lua Mfumu Yisu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "df4d4918-6019-4495-bfb4-a94925e3eab2",
+    "numero" : 18,
+    "pagina" : 148,
+    "titulo" : "Tusendulanga meso kuna miongo",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tusendulanga meso kuna miongo, Kwa Nzambi S'eto muna nzitusu,",
+        "recuo" : 0
+      }, {
+        "texto" : ":Kutukanga lusadusu lueto, Mu Yesu tuenina lusadusu.:",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Oise diavanga ntoto ye dizulu, Diyalanga zinsi zazonsono,",
+        "recuo" : 0
+      }, {
+        "texto" : ":Diwanga yina tanga ntima mieto, Dilemvukilanga balonsono.:",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Tuvewanga kwa yandi mu mintima",
+        "recuo" : 0
+      }, {
+        "texto" : "Mayangi, yenge, nlemvo vava nsi,",
+        "recuo" : 0
+      }, {
+        "texto" : ":Ye lumbu kina zimunina kwandi",
+        "recuo" : 0
+      }, {
+        "texto" : "Minlele mina cema bonso kia.:",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "I diau, Ju bakundi, luena vava,",
+        "recuo" : 0
+      }, {
+        "texto" : "Luyangalala muna ntangu yi",
+        "recuo" : 0
+      }, {
+        "texto" : ":Luzola Ndiena watuteka zola",
+        "recuo" : 0
+      }, {
+        "texto" : "Ye watuvana Yesu Mvulusi.:",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "4e8e0b66-eccb-4677-bee1-5e609b3d6a46",
+    "numero" : 19,
+    "pagina" : 149,
+    "titulo" : "Luzolo luandi nhuludi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Luzolo luandi Nhuludi, Watonda fuila muna Nti, E pasi jikamona pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "kilendi tanga ko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Luzolo luandi Nhuludi, Luzolo luandi Nhuludi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ó zola ku kanzolele, kilendi tanga ko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "E kopo pasi wanua yo, Ye tumbu kia makamu pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mauonso mu kupulula, Kilendi tanga ko?",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Watahulua mate mu luse, Yowandua mbata muna ntue, Ye p6 ya tsende",
+        "recuo" : 0
+      }, {
+        "texto" : "muna ntue, Kilendi tanga ko?",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Kalendi fuaninisua ko, Luzolo luandi Mfumu arne, Wakomua tsotso",
+        "recuo" : 0
+      }, {
+        "texto" : "mu moko, Kitanga diaka ko.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "0a676784-232d-4167-9f68-095a0bda033b",
+    "numero" : 20,
+    "pagina" : 150,
+    "titulo" : "YIsu utuzolele",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "YISU utuzolele, Nkanda Nzambi uhohele- Yetu auonso tu ana andi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ukutulundanga.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "YISU utuzolele, Elo utuzolele, YISU utuzolele, O yandi Nkudi etu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "YISU utuzolele, Yandi utufuididi, Sumu dietu katudi, Muelu Zulu",
+        "recuo" : 0
+      }, {
+        "texto" : "yangudi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "YISU utuzolele, Yandi utulundidi, Nga tukuntondanga,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ku tsi andi tukuenda-ko.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "1aae6707-f148-4737-9b9e-31145d1cf6c0",
+    "numero" : 21,
+    "pagina" : 150,
+    "titulo" : "Yisu ngeye kamba dietu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "YISU Ngeye Kamba dietu, Ngeye Kutuzolanga, Ngeye wanata itumbu",
+        "recuo" : 0
+      }, {
+        "texto" : "yetu, Wau kutubanzanga, Ngeye Jenda hana wote, Mambi Jenda katula,",
+        "recuo" : 0
+      }, {
+        "texto" : "Wau oha tunata mambu, Kuna Sambu tukuendanga.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Yisu Ngeye Kamba dietu, Ngeye ukutulundanga, Muna pukumuni zetu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngeye kutusadila, YIS Kamba dietu mene, Nge a jingi kieleka, Wau o",
+        "recuo" : 0
+      }, {
+        "texto" : "tunata mambu, Kuna Sa,m .",
+        "recuo" : 0
+      }, {
+        "texto" : "tukuendanga.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Yisu Ngeye Kamba dietu, Ngeye ukutuhulula, Wau tuakala atu ambi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Sumu dietu katula, Wau muna ntima mietu, Kiese utuhananga, Wau oha",
+        "recuo" : 0
+      }, {
+        "texto" : "tunata mambu, Kuna Sambu tukuendanga.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "99e6d4da-7490-414f-9c26-b9a29f16d379",
+    "numero" : 22,
+    "pagina" : 151,
+    "titulo" : "Kamba dimosi tuna",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Kamba dimosi tuna, Yisu Nhuludi, Yansola mu mafunda, Nhuludi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Tulanda Yisu mbuta, nsundisi a lufua, Nani una vuvu kia kundungisa,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nlembekidi moyo, Nkudi etu pe, Mfumu Nzolua muna tsi zauonsono.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Pila nzehe tangua una Polo Mfumu Yisu, Nani una vuvu kia",
+        "recuo" : 0
+      }, {
+        "texto" : "kundungisa, Nlembekidi .moyo, Nkudi etu pe, Mfumu nzolua muna tsi",
+        "recuo" : 0
+      }, {
+        "texto" : "zauonsono, Yandi wasunda upemba yauonso haha tsi Yauonso ena kuna",
+        "recuo" : 0
+      }, {
+        "texto" : "Zulu pe,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ye pasi zame nete, Yauonso pele yo, Ekuma mono nzeye yandi",
+        "recuo" : 0
+      }, {
+        "texto" : "lengelu, O Yisu I Mfumu a Moyo ka Mfumu a lufua ko, Yandi Yisu",
+        "recuo" : 0
+      }, {
+        "texto" : "kubikanga, ntim'ame, Auonso akutumenga, kifulu asata kio, Yisu mosi",
+        "recuo" : 0
+      }, {
+        "texto" : "kaka kutulundanga.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Muna tangua pasi, Kalendi iina ko, Nga yetu tonda, Yandi tonda pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yisu Nuanini etu, ukutulunguisa Ye mu tangua lufua Punga kuiza pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Tukuenda kuna Zulu, yo nkembu una ´ko kadi apemba kalendi húkumuna",
+        "recuo" : 0
+      }, {
+        "texto" : "ko.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "2e0c8ad3-3613-45bb-adde-8c5c480b315d",
+    "numero" : 23,
+    "pagina" : 152,
+    "titulo" : "Nani waiza o hatsi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Nani waliza o hatsi? Yisu Mfumu etu, Wakituka nsukami, Yisu Mfumu",
+        "recuo" : 0
+      }, {
+        "texto" : "etu. Ha tutoma iimbila, Yisu watuhulula, Yetu pe tunzolele, Yisu Mfumu",
+        "recuo" : 0
+      }, {
+        "texto" : "etu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Uakomua mu kuluzu, Yisu Mfumu etu, Muna kutuhulula,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yisu Mfumu etu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Nani kutuloloka, Yisu Mfumu etu, Nga tukunkuikila, YISU Mfumu",
+        "recuo" : 0
+      }, {
+        "texto" : "etu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ku Zulu kayadila, Yisu Mfumu etu, Ha hatsi tunsadila, Yisu Mfumu",
+        "recuo" : 0
+      }, {
+        "texto" : "etu,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Nani una kuiza pe, Yisu Mfumu etu, Wuina kutuijila, Yisu Mfumu",
+        "recuo" : 0
+      }, {
+        "texto" : "etu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "8aa6c880-6ed1-4d75-ab62-530d62a49c7f",
+    "numero" : 24,
+    "pagina" : 153,
+    "titulo" : "Nga ukala kaka muna mdi zatsi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Nga ukala kaka muna mbi zatsi, Nga vuvu kiaku lenda vidisa, Tanga",
+        "recuo" : 0
+      }, {
+        "texto" : "tsangu zaku iikakeza zo, Tata wa simana Nzambi hele zo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Tanga Tsangu ikekesa zo, Yandi Nzambi utuhele zo, Mosi, mosi ikekesa",
+        "recuo" : 0
+      }, {
+        "texto" : "zo, Tala wasimana Nzambi hele zo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Nga mbanzu zaku zikutandisa, Ye kuluzu diaku nat'o nata dio, Tanga",
+        "recuo" : 0
+      }, {
+        "texto" : "tsangu zaku, yeka paka wau, Lunda kiese kaka muna ntim'aku.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Muna tangua ngeye tala ibamba, Banza una njimbu zaku ku Zulu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Njimbu. za tsi yai jituladisa Kasi kun'Ezulu kuna Moyo Etu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Kani pasi, zingi kani za keke, Kuniomi ko, Nzambi ukusadisa, Kua",
+        "recuo" : 0
+      }, {
+        "texto" : "Nsadisi wahelela tusunda mbi, Yandi mene Nzambi utulundanga.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "49720c12-bdfc-47bd-8fa7-fbcda908e324",
+    "numero" : 25,
+    "pagina" : 154,
+    "titulo" : "O ntima wayela yo manienga",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ntima wayela yo manienge, NzoleJe kamba Yisu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Akuetu alunga ena kuna, Ena kufulu wau.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Akani akondoloka Yisu, Kifulu kiau mu tuya.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "O Yuda wakondoloka Yisu, Kifulu kiandi mu tuya.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Pilatu wasukudi pe rnoko, mu kudinuaninandi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 6,
+      "linhas" : [ {
+        "texto" : "O Tome wafindisa mo epaka, Simba mua komua .tsotso.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 7,
+      "linhas" : [ {
+        "texto" : "Tome wahoha «Ngeye Nzambi arne», Ngeye Mfurnu «Ngeye Nzarnbi",
+        "recuo" : 0
+      }, {
+        "texto" : "ame».",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 8,
+      "linhas" : [ {
+        "texto" : "ó Yisu wahoha «Azediua», «Akuikidi kam bueniarne».",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 9,
+      "linhas" : [ {
+        "texto" : "lbamba atudidi okanimba, Ejidi kuikila wau.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 10,
+      "linhas" : [ {
+        "texto" : "E tsoni zabakamene Yuda, Wele kudinienga.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 11,
+      "linhas" : [ {
+        "texto" : "Muamu tsi kamuna diaka kiese, Kuna kiese kua Yisu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "5edd7504-9d2f-410d-8326-8426bdd8abc1",
+    "numero" : 26,
+    "pagina" : 155,
+    "titulo" : "Nuw a o yisu bo kela",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Nuawa ó Yisu bokela,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mamerne mandi mavila, Mu pipa au avidila,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kualeha kua yandi Nhuludi,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Ndolo wau, sata kuau,",
+        "recuo" : 0
+      }, {
+        "texto" : "Tuanata kua Nh(mgudi wambote,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ndolo wau, kamba kuau,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kua Yisu kilumbu kiambote.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Muehu kubaka mameme, Ku nzaJa ye kioji aufua, Mani ukuenda",
+        "recuo" : 0
+      }, {
+        "texto" : "kamba kuau, Ó Yisu-Nzambi Nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Yangula ntima nkuikiji, Ndolo tuanata Nhuludi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mu hata amameme odilanga,Ó Muana Nzambi kalutidiko ,",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "ce6c7d2c-3a58-421c-bf2c-92723c378f6b",
+    "numero" : 27,
+    "pagina" : 156,
+    "titulo" : "Ndonga ingi ijidi kala",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ndonga iingi iijidi kala, Muna hata dia Belem, Ahungudi ambuta",
+        "recuo" : 0
+      }, {
+        "texto" : "azolele tala,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ó Muenexi Nzambi au, Nkembu kua Nzambi kuna Zulu, Luhuhamu kuna",
+        "recuo" : 0
+      }, {
+        "texto" : "Tsi pe, Luzolo kua atu auonso, Au Punga ahindidi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Nuiza kuua tsangu zambote, Nzambi Apungu kembela, Mfumu Yisu",
+        "recuo" : 0
+      }, {
+        "texto" : "Nhuludi Wangolo, Mu Belem kautilua.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Au abundu au akangua Luhambu luau lutabukidi, O Muenexi watukula,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nzambi Nloloki, Yeka dila iimba nkunga, Matondo Nzambi Nhuludi, Ó",
+        "recuo" : 0
+      }, {
+        "texto" : "YISU Kadi Apemba walunga, Ku ngolo jisundidi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Wuilakana ndinga mbote, Mfumu Yisu hohele, Yeka tsoni, landa mono,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mono Nkubiki, Nkembu kua Nzambi tukembela, Wau, ke una tsuka ko,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mfumu YISU, Mfumu wa kenda, Mu Belem kautilua,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Hoha muna Tsi zauonso, Kua Ndombe ye Mindele,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ó Yisu ku luzolo lusundidi, Hulula asurnuki, Uiza kaka Mfumu Yisu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kalendi diabula nkutu ko, Wuiza moko mandi massanzuka, Mu Belem",
+        "recuo" : 0
+      }, {
+        "texto" : "Kautilua",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "5f1ba2b1-8189-4db8-8283-48fa5047eb52",
+    "numero" : 28,
+    "pagina" : 157,
+    "titulo" : "Muna paka ya itueji muna paka ya itueji",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Muna mbanza ya Belem Kuehi andonga kani banza, Yisu Lenda utuka",
+        "recuo" : 0
+      }, {
+        "texto" : "Muana Nzambi o Nhuludi Muna paka kautilua",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Yandi Mfurnu tsi yawonso Muamu tsi kautilua Yandi Ntinu Muana",
+        "recuo" : 0
+      }, {
+        "texto" : "Nzarnbi, Muna Mpaka Nlekese Pasi zingi bakidi Muna kala Nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Muna hanga o lutezo, Yandi Yisu bezele, O Malia Nguandi a Yisu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nsiku a Nzambi tondele, Mu ntim'Andi wauonso, Kua Yandi kahele-wo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Tuzolanga wau mene, Tuzaya Yisu Nhuludi, Ekuma Yandi, muene",
+        "recuo" : 0
+      }, {
+        "texto" : "pasi, Fuila yetu muna Nti, Kenda Zandi songele, Kutuhana luhuluzu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Bosi tukota kuna Zulu, Kue tumuena Nhuludi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yandi Ntinu, Yandi nlemvu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yandi Mfumu kuele mvu, Njila Zulu Yangudi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Tuakakala kua Nzambi.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "76b4fe22-64b7-4a74-8630-9b2077a3cc12",
+    "numero" : 29,
+    "pagina" : 158,
+    "titulo" : "Luhuhamu ofuku wau",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Luhuhamu ofuku wau, Muna ndambu aleka wau, Muna Belem Kautuka,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ntinu wa Moyo wa Zulu ye Tsi, Yisu I Nnuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Luhuhamu ofuku wau, Muna kiana ahungudi, Awuidi Apunga aiimbila,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nkembu walukulu lua mvu ya rnvu; Nkudi arne, Nkudi aku pe.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Luhuhamu ofuku wau, Hana Polo hatemuna, Tuke luwatiku lua tsi",
+        "recuo" : 0
+      }, {
+        "texto" : "yai, Hana Polo ha moneka, Tangua itemingina.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "79166336-864d-4da0-88cb-1a90efa58e60",
+    "numero" : 30,
+    "pagina" : 159,
+    "titulo" : "Nani yandi zolele fuete sambila",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Nani yandi zolele fuete sambila, Luhuluzu lua kenda nufuete tonda-Io,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nga yenu tonda nulenda huluka, Wese zolele, kuiza wau.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Wese zolele, wese zolele, Kani mbevo kaka yandi lenda wa, Tata andi",
+        "recuo" : 0
+      }, {
+        "texto" : "ku ZuJu zolele monanga, Wese zolele, kuiza wau.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Nani yandi zolele fuete kuiza wau, Ekiaki kielo kiayanguka, lenda",
+        "recuo" : 0
+      }, {
+        "texto" : "kota wau, Yandi Mfumu YISU, zolele kotisa, Wese zolele, kuiza wau.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Nani yandi zolele fuete Janda wau, Yenu auonso wau nufuete kuiza",
+        "recuo" : 0
+      }, {
+        "texto" : "pe, Nani yandi zolele Jenda kernbela, Wese zolele, kuiza wau.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "9497c7fd-97ab-491c-a003-154a2192b351",
+    "numero" : 31,
+    "pagina" : 159,
+    "titulo" : "Kamba tsangu zambote",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Kamba tsangu zambote, za Cristu Nhuludi, O Cristu Kenda zandi",
+        "recuo" : 0
+      }, {
+        "texto" : "zingi, Yo luzolo Luandi mpe, Wau muna mambu Mandi, Yatoma indula,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ekuma Yandi rnene Nzambi, Wazola kua mono.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Kamba Tsangu zambote, Za Cristu ó Nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Kamba tsangu zambote, Za Cristu Nololoki, Yehova Yandi kaka",
+        "recuo" : 0
+      }, {
+        "texto" : "Nzambi, Ifuete Sambilua, Yatonda Mfumu Yisu, Wahana Moyo Andi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Wau mono ilanda Yandi, Kamba dia jijila.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Nkembu mia tsi yai, Tulenganga mio pe, Yauonso mesu mena mona,",
+        "recuo" : 0
+      }, {
+        "texto" : "Katumoni yo luimbi, ko Mu pukumuni zame, Kua Yandi isundila, Ku",
+        "recuo" : 0
+      }, {
+        "texto" : "Zulu Yandi tulukidi, Ku hulula mono.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "16421400-8e60-4ba5-ba20-39aa6b31b13a",
+    "numero" : 32,
+    "pagina" : 160,
+    "titulo" : "Zenu yenu aleke",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Zenu yenu aleke, Tuimba Nkunga mietu, Mia Yisu Nlemvu watuzola,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yisu Nhuludi, Yandi mene watonda dio, Idiau pe wabokele, Nuyeka au",
+        "recuo" : 0
+      }, {
+        "texto" : "aleka eza kua Mono.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "A rnase mu luzolo, Atuele tuana tuau, Ahehua etsambu yo sambilua, Kua",
+        "recuo" : 0
+      }, {
+        "texto" : "Cristu Emanuel, Au alongoki abadidi, Mu ngolo zau aitngidi,",
+        "recuo" : 0
+      }, {
+        "texto" : "«Nukatul'au aleke nuendenu pe!»",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Kasi Yisu Nlongi Wambote, YeNdinga andi ya kenda, Wabokele aleke",
+        "recuo" : 0
+      }, {
+        "texto" : "eza, Azaya Nhuludi au,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mu Moko mandi watambula, Iboxi wa asambila, Nuyeka au aleke eza",
+        "recuo" : 0
+      }, {
+        "texto" : "kua mono.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Zenu yenu aleke, ó Yisu wanukula, Waiza enu kunufwila,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yenu auonso nuahuluka, Nua Ndinga ya Yisu, ó yandi zolele yenu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nuyeka au aleke eza kua Mono.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "4ae2928f-2460-443a-941d-288c2126631b",
+    "numero" : 33,
+    "pagina" : 161,
+    "titulo" : "Nguidi ndinga mbote",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "NGUIDI Ndinga mbote, Ya Cristu Nhuludi, lbokelanga asumuki, Nuiza",
+        "recuo" : 0
+      }, {
+        "texto" : "nuahuluka.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "IKUIZA Mfumu ame, wau ngina, IKUIZA wau insumuki, NDINGA aku",
+        "recuo" : 0
+      }, {
+        "texto" : "pfuete wa.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Masumu ma ngina, Kilendi tanga ko, o Menga maku malitika, Mau",
+        "recuo" : 0
+      }, {
+        "texto" : "makutsukula.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Mu pipa yaleka, YISU utemuna,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ó Muanda aku wahelela, Wandonga zaya Ngeye.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "ed2dab05-b64f-4cf9-8274-e302fb14ad10",
+    "numero" : 34,
+    "pagina" : 162,
+    "titulo" : "Enu yenu aleke tuenda kua yisa",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Zenu yenu alcke, tuenda kua YISU, Utubokelanga, nuiza auonso atu,",
+        "recuo" : 0
+      }, {
+        "texto" : "YISU zolele kuetu, pe yauonso tsi, Nuiza kua Nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Zenu yenu aleke tuenda kua YISU wau, Tubaka ngangu zetu tuyeka",
+        "recuo" : 0
+      }, {
+        "texto" : "mazowa wau, Muna Menga mandi sukula mbi, Nuiza kua Nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Zenu aleke ndolo kanubedi lua ko, YISU kuna polo katulendi vila ko,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kutubokelanga Nuiza kua Nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Zenu venu andumba tuenda kua YISU, Katulendi nanga mu njila ku",
+        "recuo" : 0
+      }, {
+        "texto" : "Zulu, Tuzolele Mfumu YISU, yandi Nkudi a tsi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nuiza kua Nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Zenu yenu andurnba tuenda kua YISU. Tuyeka pipa yauonso tulanda",
+        "recuo" : 0
+      }, {
+        "texto" : "muini wau, Matondo kua Mfumu YISU, Nzambi Nloloki, Nuiza kua",
+        "recuo" : 0
+      }, {
+        "texto" : "Nhuludi.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "4df63c2a-33bb-4e94-88e9-0d89ed91c1e0",
+    "numero" : 35,
+    "pagina" : 163,
+    "titulo" : "Kuna zulu nzambi ludikidi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Kuna Zulu Nzarnbi ludikidi, Fulu kietu kiambote kina ko, Kuna nkembu",
+        "recuo" : 0
+      }, {
+        "texto" : "ye kiese tukala, Mu kikunda kia Nzambi, Kuna pe, Kuna pe, Ye Punga",
+        "recuo" : 0
+      }, {
+        "texto" : "za Muanda jina ko, Muna lumbu ya nkembu yo muini, Kua yetu, Yisu",
+        "recuo" : 0
+      }, {
+        "texto" : "bekela.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Muna nkembu miauonso mu tsi, Pila rnvuma zamena zabua, Kasi",
+        "recuo" : 0
+      }, {
+        "texto" : "nkembu mia Nzambi ku Zulu, Miakala mu mvu ya mvu, Kuna pe, Kuna",
+        "recuo" : 0
+      }, {
+        "texto" : "pe, Tukala yo Yisu kurnoxi, Muna nkembu yo rnuini una ko, Muna nkata",
+        "recuo" : 0
+      }, {
+        "texto" : "ya Nzambi etu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Katulendi ko, banza kumbundu, Ubamba wetu wakubikua ko,",
+        "recuo" : 0
+      }, {
+        "texto" : "Tukuikilanga kaka mu mambu, Yo mu moyo wa kiese tuvua, Kuna pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "kuna pe, Kuna ndinga imoxi kaka, Muna polo ya Nzambi etu, Yo mu",
+        "recuo" : 0
+      }, {
+        "texto" : "polo ya Mfumu YISU.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Muna tangua tukota ku Zulu, Kuna Tsi yahelela, Muna moyo",
+        "recuo" : 0
+      }, {
+        "texto" : "wapembe tukala, Moyo wa luzolo lua Yisu, Kuna pe kuna pe, Mu",
+        "recuo" : 0
+      }, {
+        "texto" : "luzolo tukala mvu ya mvu, O luzolo kasonga muna Nti, Tuku uila",
+        "recuo" : 0
+      }, {
+        "texto" : "Yisu Nhuludi.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "84285d93-60f9-409e-8dbf-d788e7ed2da1",
+    "numero" : 36,
+    "pagina" : 164,
+    "titulo" : "Yisu uku bokela",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Yisu uku bokela, Muna kikanga, nsumuki, Yandi kuhulula,",
+        "recuo" : 0
+      }, {
+        "texto" : "Wuiza kunangi ko, Kua Nkudi aku.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Yisu kuhulula, Yisu kuhulula, Kunangi ko, wuiza nsumuki, Wuiza wau",
+        "recuo" : 0
+      }, {
+        "texto" : "unu hoha kua Yandi, Ngeye kupulula, Mfumu ame.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Yandi una bekela, Yandi walemvoka Mfumu etu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yandi YISU, Una kubokela mu Juzolo luandi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Luzolo luavula, Waiiza hatsi Nhuludi etu, Wuiza kua Yandi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Tonda kua Yisu Nkudi aku.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "fb48ab01-60e2-44c7-bcc4-34b9c17488dc",
+    "numero" : 37,
+    "pagina" : 165,
+    "titulo" : "Ndinga yambote yisu bokelanga           ",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ndinga yambote Yisu bokelanga, Bokela yetu atu, Tala ha muelo",
+        "recuo" : 0
+      }, {
+        "texto" : "Yisu bekelanga, Bekela yetu atu. Wuiza, wiza, ngeye wanioma wuiza,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ndinga yambote Yisu bokelanga, Bokela yetu atu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Nani nubekela? Yisu bokelanga, Bokela yetu atu, Ekuma diabula kenda",
+        "recuo" : 0
+      }, {
+        "texto" : "kahana? Hana kua yetu atu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Tangua ifuene ye ilurnbu iluta, Luta kua yetu atu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Lufua ye pasi utulonga mene, Longa kua yetu atu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Tala luzolo Yisu kena hana, Hana kua yetu atu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ekuma masumu metu Ya,adi nete, Kuhulula yetu atu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "d09b9ef5-fb99-44a1-8c84-cd9c67d6870a",
+    "numero" : 38,
+    "pagina" : 165,
+    "titulo" : "Wau nsamu wa mfumu: aleluia",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Wau Nsamu wa Mfumu: Aleluia, Marnbu mambote ma Nzambi, Yisu",
+        "recuo" : 0
+      }, {
+        "texto" : "hulula asurnuki: Aleluia, Lendandi kutuhulula.",
+        "recuo" : 0
+      }, {
+        "texto" : "Talenu, apangi wau, Talenu kua Yisu wau, Yandi hulula asumuki,",
+        "recuo" : 0
+      }, {
+        "texto" : "tutonda, Lendandi Kutuhulula.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Pfuka zenu wafuta: Aleluia, Yandi Yisu futidi mu Nti, Moyo andi",
+        "recuo" : 0
+      }, {
+        "texto" : "hele wo: Aleluia, Yenu kunusonga kua Nzambi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Yandi kaiidi kua yenu: Aleluia, Moyo wa mvu ya mvu kuna Zulu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Talenu kua Yisu kaka: Aleluia, Kuikilanga uau mu Nzambi enu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Tonda wau Nhuludi: Aleluia, Landenu mu itambi Yandi, Numuanga",
+        "recuo" : 0
+      }, {
+        "texto" : "Tsangu zandi: Aleluia, Kembelanga Nkudi etu Yisu",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "f2ff3ab5-b6a4-4726-a6a1-ae793a323209",
+    "numero" : 39,
+    "pagina" : 166,
+    "titulo" : "Njila nsoki njila fua",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Njila nsoki, njila fua, Kukangadimo-ko, Nga moyo aku uzola vua,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kukangadi-mo ko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Tina mambi Wuiza kua Yisu Cristu, Yandi Yisu lenda hulula ntu",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Nga masumu unata-mo, Kalendi huluka ko, Njila Nzambi wamenga",
+        "recuo" : 0
+      }, {
+        "texto" : "yo, Kalendi huluka ko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Nga Mambu ma Yisu, ukuikila, Kukonda Nhuludi ko,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nga tsangu Zandi tondele, Kukonda Nhuludi ko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Masumu maku malolokua, Kukonda mu nkanu ko,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nga mbi kua Yisu wakusunua, Kukala mu nkanu ko.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "7bcb219a-db3c-45b8-a10d-8876abedec66",
+    "numero" : 40,
+    "pagina" : 167,
+    "titulo" : "Kuna nga mbongo ya kenda",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Kunanga mbongo, mbongo ya kenda, Mene-mene, muini, kani masika,",
+        "recuo" : 0
+      }, {
+        "texto" : "Bekelanga kamba tangua isalua, Tukemba ye kiese mitete tuna miau,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Mitete tuna miau, mitete tuna miau;",
+        "recuo" : 0
+      }, {
+        "texto" : "Tukemba ye kiese, mitete tuna miau.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Solanga kiana hetamanga kuingi, Mvula yo muini ketulenga ko, Tangua",
+        "recuo" : 0
+      }, {
+        "texto" : "isalu, isalu ihuidi, Tukemba ye kiese, mitete tuna miau",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Tsangu za Yisu, Nhuludi wetu, Mbongo yakunua muna ntima miau, Ó",
+        "recuo" : 0
+      }, {
+        "texto" : "Yai lenda hulula ndonga, Tukemba ye kiese, mitete tuna miau.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "33383c48-322d-443f-b947-7aca9fbe9387",
+    "numero" : 41,
+    "pagina" : 167,
+    "titulo" : "Tsangu za yisu cristo",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tsangu za Yisu Cristu, Numuanganesa zo, E pfuila katufuila, Nzola",
+        "recuo" : 0
+      }, {
+        "texto" : "kazolele tsi, Nzambi wazola tsi, Yandi hana kahana, Ó Muan' Andi",
+        "recuo" : 0
+      }, {
+        "texto" : "wanzolua, Keza kutuhulula.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Kuikila, kuikila, Mu Yisu nualolokua,",
+        "recuo" : 0
+      }, {
+        "texto" : "Tambula luhuluzul Luangohou hana lo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Tsangu za Yisu Cristu, Kivuvu zinatanga, Ye luhuhamu lua kieleka,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yo moyo wa mvu ya rnvu, Nkembu kasisidi, Katina hondua ko, E mfunu",
+        "recuo" : 0
+      }, {
+        "texto" : "katuvuidi, Nzola katuzolele.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Yenu makamba rname, Kalutini Yisu ko, E pasi zauonso kamona, Mu",
+        "recuo" : 0
+      }, {
+        "texto" : "yenu kamuena zo, Wau nutambula, Ka nuzembi nkutu ko, E tangua yai ya",
+        "recuo" : 0
+      }, {
+        "texto" : "kenda, tangua ya huluka.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "d041b836-d3e5-4af0-92b9-135df7182d44",
+    "numero" : 42,
+    "pagina" : 168,
+    "titulo" : "Wilankana poha yisu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Wuilakana",
+        "recuo" : 0
+      }, {
+        "texto" : "poha",
+        "recuo" : 0
+      }, {
+        "texto" : "Yisu,Wuilakana",
+        "recuo" : 0
+      }, {
+        "texto" : "kaka",
+        "recuo" : 0
+      }, {
+        "texto" : "wau,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ó wau wuilakana Yisu, Wuilakana kaka wau.",
+        "recuo" : 0
+      }, {
+        "texto" : "",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Wuiza moneka kua Yisu, Wuiza moneka wau, Ó wau wuiza wau kua",
+        "recuo" : 0
+      }, {
+        "texto" : "Yisu, Wuiza moneka wau.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ngeye zolele kua Yisu, Ukuzolanga wau, Ó wau zolele kua Yisu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ukuzolanga wau.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Yisu lenda hulula ntu, Lenda kuandi wau, Owau ngeye huluka pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Huluka kuaku wau",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Tonda Yisu sambilanga, Xia vuvu wau, Evuvu kiaku Yisu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kuikilanga Ó wau.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 6,
+      "linhas" : [ {
+        "texto" : "Tonda Nzambi, Aleluia, Aleluia, Amen, Amen, Aleluia, Aleluia",
+        "recuo" : 0
+      }, {
+        "texto" : "Amen.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "e3f18808-81f4-4f5d-9619-09bd18d03d37",
+    "numero" : 43,
+    "pagina" : 169,
+    "titulo" : "Bena ye to yakangala",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Hena ye TÓ yakangala, yo Menga ma Yisu, I mau ma kutsukula,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mono rnbuta nsumuki.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Mono rnbuta nsumuki.",
+        "recuo" : 0
+      }, {
+        "texto" : "Mono mbuta nsumuki,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mono mbuia nsumuki,",
+        "recuo" : 0
+      }, {
+        "texto" : "I muau muna luhuluzi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mono rnbuta nsumki.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "o muivi muau kamuena, Muna Nti wayondala, I muau muna Luhuluzu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kua ndonga ya Yisu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Yai TÓ Yatsukula, Ntima ame wambi, Ó Menga maku Yisu, Mu luzolo",
+        "recuo" : 0
+      }, {
+        "texto" : "lua sunda.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Nga utsukudi ikuenda ko, Kua akuetu ndonga, Avuata vuatu kiapemne,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kuna fulu kia Nzambi.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "b9a22134-2633-4449-9d8e-85b0e8510d54",
+    "numero" : 44,
+    "pagina" : 170,
+    "titulo" : "Nkua paasi jina diandi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Nkua pasi jina diandi,Muana Nzambi waiza, Kula yetu asumuki,",
+        "recuo" : 0
+      }, {
+        "texto" : "Aleluia Nhuludi etu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Tsoni ye pasi bakidi, Muna nitu muna Nti, Kuna Zulu Kavuanda wau,",
+        "recuo" : 0
+      }, {
+        "texto" : "Aleluia Nhuludi etu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Muana Nzambi wahelela, Kua yandi wakondua mbi, Muna Nti",
+        "recuo" : 0
+      }, {
+        "texto" : "kakomenua, Aleluia Nhuludi etu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "62f145ea-1f39-4c1f-8ea2-eb00d76f4c09",
+    "numero" : 45,
+    "pagina" : 171,
+    "titulo" : "Mfimu yisu muna nti andi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Mfumu YISU muna Nti Andi, Ku pelelesa wapfuila pe, Yahelela muna",
+        "recuo" : 0
+      }, {
+        "texto" : "menga wau, Menga ma YISU.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Nkembu kua YISU, Nkembu kua YISU, Yandi Mfumu wapulula,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nkembu kua YISU.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Zola kua kuingi kanzolele, Mu kenda zandi wandoloka, Wapulula",
+        "recuo" : 0
+      }, {
+        "texto" : "muna ntambu a lufua, Nkembu kua YISU.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Yatonda wau kua Nhuludi, Mawote rnandi kapangidi, Tondele kuingi",
+        "recuo" : 0
+      }, {
+        "texto" : "mu ntirn'ame, Tondele YISU.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Yenu nuakulua kua Nhuludi, Nding' Andi kaka nufuete wa, Nuatambula",
+        "recuo" : 0
+      }, {
+        "texto" : "rnbila nuabokelua, Nuiza kuenu wau.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "813ed2cf-4daf-49c8-816c-3b6ad93fb79d",
+    "numero" : 46,
+    "pagina" : 172,
+    "titulo" : "Mfumu yisu nkudi etu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "fumu YISU Nkudi etu, di tukuntondanga, mvuala tuna kua Nzambi,",
+        "recuo" : 0
+      }, {
+        "texto" : "YISU Nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Wau Nzarnbi tutondanga, Ngeye Kutuvundisa, Kitufuete utuhana,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngeye kutukubika",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Nzo etu tuna dilengelu, Muna tangua masumu, Kuehi iina? Kuna Zulu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yandi mene Nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Maza ma rnoyo kuna Zulu, Mfumu YISU, hana mo, Tufuete lomba",
+        "recuo" : 0
+      }, {
+        "texto" : "tufuete huka, YISU kaka Nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Yandi muini tuamona wo, Yetu nga tukuikila, Muna pipa tuatuka mo,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mu kenda zandi Nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Muana Nzambi watufuila, Menga mandi mahuha, Mu masumu",
+        "recuo" : 0
+      }, {
+        "texto" : "tuatukarno, Moyo rnietu miahelela",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 6,
+      "linhas" : [ {
+        "texto" : "Nuiza unu tuenda rala, Kuehi tufuete lengela, Nkubiki etu tuna yandi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nzambi kutulundanga.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 7,
+      "linhas" : [ {
+        "texto" : "Mfumu etu watusonga, Njila moyo mvu ya mvu, Wese tonda fuete",
+        "recuo" : 0
+      }, {
+        "texto" : "songa, Mfumu YISU wafuluka",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "3220861d-989d-45c9-b4a3-cea9f682d704",
+    "numero" : 47,
+    "pagina" : 173,
+    "titulo" : "Yisu mono nzolele",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "YISU mono nzolele, YISU Muana Nzambi, Menga mandi sukula, Ntima",
+        "recuo" : 0
+      }, {
+        "texto" : "ame wambimbi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Muna Nti, Muna Nti, YISU tambudi fulu, Pasi zame bakidi, Mono",
+        "recuo" : 0
+      }, {
+        "texto" : "ibaka Zulu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Muna Nti Ó YISU pe, Luzolo luandi songa, Kua Tata yandi lombele,",
+        "recuo" : 0
+      }, {
+        "texto" : "Loloka andonga",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Muna Nti mbuene pe, Masumu mame masunda, Yisu Yandi hohele,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kenda zame zasunda.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Mambumame, kuikidi, Makaepana moyo, YISU yandi nsundi Ofua,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mono pe isunda.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "0e2c26b2-f48a-4317-b90f-b666311f5b5c",
+    "numero" : 48,
+    "pagina" : 173,
+    "titulo" : "Yafuila muna nti kua ngeye huluka",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Yafuila muna Nti, Kua ngeye Huluka, Moyo ame pele wo, ngeye",
+        "recuo" : 0
+      }, {
+        "texto" : "lenda huluka",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Yafua, Yafua mu Nti kua ngeye, uhanga uau pe?",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Yakele wau kua ngeye pasi jisundidi, Yauonso mono pangidi, kukala",
+        "recuo" : 0
+      }, {
+        "texto" : "Nhuludi,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Mu Nti mbuene pasi kuhulula ngeye, Moyo wapa mono ngina, ikuhana",
+        "recuo" : 0
+      }, {
+        "texto" : "wo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Mono ndete luhuluzu lua nkembu wa Zulu, Ikuloloka rnasurnu mu",
+        "recuo" : 0
+      }, {
+        "texto" : "luzolo lusundidi.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "ad845fae-7fcb-4ec7-94c1-198cdf9e140f",
+    "numero" : 49,
+    "pagina" : 174,
+    "titulo" : "Hena ye to yayela",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Hena ye to yayela, Yo Menga ma Yisu, Au adimbukanga rnuna to, Aman",
+        "recuo" : 0
+      }, {
+        "texto" : "a hehela.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Wau iikuikila yazaya wo, YISU wame Nhuludi, Wapfuila mene muna",
+        "recuo" : 0
+      }, {
+        "texto" : "Nti.: Yatoma huluka.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ó rnuivi yandi wahelela, Mu yai to ya menga, Mono pe nsumuki, Muau",
+        "recuo" : 0
+      }, {
+        "texto" : "pe wahelela",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "YISU Menga maku, Mamana hulula, Auonso akukuikila,",
+        "recuo" : 0
+      }, {
+        "texto" : "Akulanda, yo mu lufua.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "E nitu oha iivundila, Mu vundu eki kia lufua, Moyo ame ukukembela,",
+        "recuo" : 0
+      }, {
+        "texto" : "Muna kuaku hulula.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "0548438f-2415-459d-b556-7fa64d662b2b",
+    "numero" : 50,
+    "pagina" : 175,
+    "titulo" : "Kuki mono yahuluka",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ku-ki mono yahuluka, Muna Menga mandi Yisu, Luhuhamu mbuene",
+        "recuo" : 0
+      }, {
+        "texto" : "lo, Muna Menga mandi Yisu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Ó Menga ma Yisu, Ma lenda sukula mbi! Luhuhamu ngina,",
+        "recuo" : 0
+      }, {
+        "texto" : "Luna Muna Menga Mandi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Cristu wahanga kikulu, Muna Menga mandi kaka, Ngeye lenda",
+        "recuo" : 0
+      }, {
+        "texto" : "lolokua, Muna Menga Mandi kaka.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Luhuluzu kua Yisu, Luna Muna Menga mandi, Moyo kuele mvu ivua,",
+        "recuo" : 0
+      }, {
+        "texto" : "Muna Menga mandi kaka.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Aleluia kua Yisu, Watukula muna Menga, Tufuete pe Kuntonda, Muna",
+        "recuo" : 0
+      }, {
+        "texto" : "ntima mietu wau.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "da27eabb-6208-4980-b10e-2fb0893b94c1",
+    "numero" : 51,
+    "pagina" : 176,
+    "titulo" : "Ngeye nsumuki tumbulanga",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ngeye nsumuki tumbulanga Nzambi, una ntima aku luimbi luyelele, e",
+        "recuo" : 0
+      }, {
+        "texto" : "banza wau Pasi za Yisu, tangua yandi wele muna kuluzu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Mfumu Yisu, Mfumu Yisu, Pasi bakidi kua yetu muna Nti, Muna",
+        "recuo" : 0
+      }, {
+        "texto" : "Nti, Wuiza, wuiza, nsumuki, wuiza wuiza wau.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Tangua keke isidi tangua luta wau, Fuete yeka huna ye sumuka pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Wenda kudibanza kua yandi Nhuludi, Okutelemesa mu ngolo zandi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Toma banza wau mu Pasi za Yisu, Muna tangua yandi Kafuila, Muna",
+        "recuo" : 0
+      }, {
+        "texto" : "Kuluzu, Wafuta muna kenda pfuka za Sumu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ówau tufuete tonda Tsangu za Yisu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "601feeeb-3edb-464b-8fcf-466e10fc9db3",
+    "numero" : 52,
+    "pagina" : 177,
+    "titulo" : "Yisu wafuluka",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "YISU wafuluka, Mambu makieleka, Mu Njamu Yandi tukidi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Walunga pe lufua",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "YISU Wafuluka, Lufua fuidi-Io, Ndiona yandi kuikila, Kalendi vila-",
+        "recuo" : 0
+      }, {
+        "texto" : "ko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "YISU wafuluka, Nkembu tuirnbila, Lukailu pe tuhukidi, Mu Menga",
+        "recuo" : 0
+      }, {
+        "texto" : "luhuhamu.YISU wafuluka, Nkembu tuirnbila, Lukailu pe tuhukidi, Mu Menga",
+        "recuo" : 0
+      }, {
+        "texto" : "luhuhamu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "YISU Wafuluka, Engi azeya-wo, Ó YISU Kani wanlunga,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mfumu kuele mvu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "YISU Wafuluka, Funda kafundisa, Ndonga Yingi aiinini, Aina Nhuludi",
+        "recuo" : 0
+      }, {
+        "texto" : "au. Ó YISU wafuluka, Jipunga akembela, O yetu pe tunkembela, Mu",
+        "recuo" : 0
+      }, {
+        "texto" : "nkembu wa mvu ya mvu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "d11bcb98-728a-4e3f-81ff-b645b0d38c1f",
+    "numero" : 53,
+    "pagina" : 178,
+    "titulo" : "Cristo wafululuka: aleluia",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Cristu wafululuka; Aleluia! Muna lufua sundidi; Aleluia! Yawonso",
+        "recuo" : 0
+      }, {
+        "texto" : "yalulama; Aleluia! Luhuluzu lua kenda; Aleluia!",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Pasi muna nti mu.ene; Aleluia! Kua Yisu kafuididi: Aleluia! Kasi wau",
+        "recuo" : 0
+      }, {
+        "texto" : "rnoyo kena; Aleluia! Yandi ntinu wa nitinu; Aleluia!",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Kolesenu ndinga zenu; Aleluia! Kua Yisu ntinu etu; Aleluia! Yandi",
+        "recuo" : 0
+      }, {
+        "texto" : "sundidi lufua; Aleluia! Asumuki ahuluka; Aleluia!",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "0439141c-8ed7-43ce-8a93-6da8ea9df191",
+    "numero" : 54,
+    "pagina" : 178,
+    "titulo" : "Tutoma zaya nsinga wau",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tutoma zaya nsinga wau, Watukangilu diaka, Kudizola mua Yisu, E",
+        "recuo" : 0
+      }, {
+        "texto" : "kanda dike nkutu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Tata eto mosi kuna Zulu. Tu samba tufukama, lbosi tuwa Ndinga-",
+        "recuo" : 0
+      }, {
+        "texto" : "Andi, Mu fulu kia kondama.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Nga pangi eto una dila, Tuenda tuandidisa, Tuankatula manienge pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Tuadila yandi kumosi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Nga pangi eto tuazolana, Tukala mu ukamba, Ekudizola mua Yisu, E",
+        "recuo" : 0
+      }, {
+        "texto" : "kanda dike nkutu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "b0ca1c35-7d85-4c83-8273-1408dfa6754a",
+    "numero" : 55,
+    "pagina" : 179,
+    "titulo" : "Tala a ndonga muna pipa avila",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tala ndonga muna pipa avila, Kami azaya nani Nhuludi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nani kuenda kamba kuau tsangu, Yisu Nhuludi asumuki.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Ngolo zawonso ngina zau mu tsi, Ye kuna zulu pe, Luenda kueno",
+        "recuo" : 0
+      }, {
+        "texto" : "mwanganesa tsango, Mono ngina kumosi yo yeno.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Yelu ya yanguka muna tsi zawonso, Lutelama kweno yeno akuikizi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Akuikizi kungolo lukubama, Ena mu kembila Nhuludi",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Nuiza kua mono ndinga ina boka, Nuiza lwakulua mu jina dia Yisu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yandi kuluhulula mumbi zawonso, Menga ma Yisu maitika mu Nti.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Nzambi utuma kilumbu kia kiese, Au akulua ahuharna, Au ahelele",
+        "recuo" : 0
+      }, {
+        "texto" : "akernbisanga Nzambi Tangu za wonso za Munvu ya Mvu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "a8154dd2-b1ed-471d-ad3b-0f38189845dc",
+    "numero" : 56,
+    "pagina" : 180,
+    "titulo" : "Tukunsanisina tukunkembila",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tukunsanisina tukunkembila, Tukunkembila mu Muanda wa Helela,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Nkembu kua Tata, Nkembu kua Muana, Nkembu kua Bundu; Mu",
+        "recuo" : 0
+      }, {
+        "texto" : "Muanda wa Helela.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Mfumu Yisu wa fua, wafulukidi, Yandi tekele fua mu kubika",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Kuikila kuaku wau kembila Nzambi aku, Njila kakuluakisa mu",
+        "recuo" : 0
+      }, {
+        "texto" : "vundilu diapa.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "c907669d-9c3a-47e5-a021-b3fe7cb99645",
+    "numero" : 57,
+    "pagina" : 181,
+    "titulo" : "O yisu wau nzeye wo",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ó Yisu wau nzeye wo, Ngeye Nhuludi, Nkanda Nzambi ukembe wo, Ye",
+        "recuo" : 0
+      }, {
+        "texto" : "mono kuidiki.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Ó YISU wafuila muna Nti, Muna fulu kia mono, Ye Menga mandi,",
+        "recuo" : 0
+      }, {
+        "texto" : "mahuhidi, Wo nkembu yaionda wo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Kiboko kaJa kizaidi ko, Yisu Nhuludi, Vuvu muakatu kele kiau, Muna",
+        "recuo" : 0
+      }, {
+        "texto" : "pipa yavidila.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ngeye wiza kua YISU, za, Kua, YISU Nloloki, Muna ntima baka",
+        "recuo" : 0
+      }, {
+        "texto" : "luyangalalu, Tonda kua Nhuludi,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Muna polo aku tufukama, Tutonda Ngeye YISU, Ó Muenixi wa",
+        "recuo" : 0
+      }, {
+        "texto" : "luhuhamu, Ó Nzambi mvu ya rnvu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "d929a117-9fb7-4ad0-964c-6f2868a5e81b",
+    "numero" : 58,
+    "pagina" : 181,
+    "titulo" : "Nzambi waho ha ikunuhulula",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Nzambi wahoha ikunuhulula, Nani kuikila mu Yisu uhuluka.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Aleluia mono kuikila kua Mfumu Yisu, Ye moyo ngina wa mvu ya mvu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Mu fulu kiame yandi fuididi, Njimbu za masumu yandi futidi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Kalendi iina ko, luzolo luandi, Mono fukarna kaka 'muna polo andi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Mu tangua ikota, ku nkembu andi, Auonso aheledi kuna iimbila.",
+        "recuo" : 0
+      }, {
+        "texto" : "Aleluia watukula Yisu Muana Nzambi, Yo Menga mandi matusukula.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "31579ea9-b33f-43bd-b4b9-3f470df7ca3c",
+    "numero" : 59,
+    "pagina" : 182,
+    "titulo" : "Mono nguidi ndinga nzambi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Mono nguidi ndinga Nzambi, Yisu I Nhuludi, lbokela kuna Zulu, Yisu",
+        "recuo" : 0
+      }, {
+        "texto" : "-I Nhuludi, Tsangu zambote zatuka Nti, · Nzambi zola nsumuki, Luhuluzu",
+        "recuo" : 0
+      }, {
+        "texto" : "muna Yisu, Yisu I nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Yenu ndonga talenu, Yisu I Nhuludi, Mu Menga mandi nualolokua,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yisu I Nhuludi, Tsi zauonso iimbila, Luzolo luandi longa pe, Punga za",
+        "recuo" : 0
+      }, {
+        "texto" : "Muanda tekela, Yisu I Nhuludi,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Aheledi nuhohenu, Yisu I Nhuludi, Baka kiese yenu atu, Yisu I",
+        "recuo" : 0
+      }, {
+        "texto" : "Nhuludi, Luhuluzu lua kenda, Kua auonso assumuki, Nkembu, nkembu",
+        "recuo" : 0
+      }, {
+        "texto" : "kua Nzarnbi, YISU I Naulud",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "3a9e62b5-01d9-46ec-b36e-3d6a868d43c6",
+    "numero" : 60,
+    "pagina" : 183,
+    "titulo" : "Ntima mosi mosi usata",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ntima moxi, rnoxi, usata, Akuehi lenda kuvundila, Kasi kivundu kia",
+        "recuo" : 0
+      }, {
+        "texto" : "kieleka, Yisu kaka hana kio,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Mfumu Yisu, Yandi kaka, Yisu Nkudi ye Ntinu, Karnba diame nsadisi",
+        "recuo" : 0
+      }, {
+        "texto" : "ame, Yauonso m,u yandi iina.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Mfumu Yisu, Yandi kaka, Yisu Nkudi ye Ntinu, Karnba diame nsadisi",
+        "recuo" : 0
+      }, {
+        "texto" : "ame, Yauonso m,u yandi iina.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "37faf54b-e7ab-4f3d-8504-d2c46bfb2240",
+    "numero" : 61,
+    "pagina" : 183,
+    "titulo" : "Muakatu nguelele",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Muakatu nguelele O Mfumu hohele, O nhuludi etu o Yisu, Ku Zulu",
+        "recuo" : 0
+      }, {
+        "texto" : "uatambula.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Muakatu nguelele, O Nzarnbi wakieleka, Watonda Yisu nkudi etu, Ku",
+        "recuo" : 0
+      }, {
+        "texto" : "zulu utubekela.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Muakatu nguelele, Cadi apemba ovididi, Awonso nani akuikila, Kua",
+        "recuo" : 0
+      }, {
+        "texto" : "Mfumu etu Yisu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Muakatu nguelele, Akuikidi Yisu, O menga ah uhisa mo,Kua Yisu muna nti.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "3555368a-9055-4f34-96aa-f4d0ab32c2d8",
+    "numero" : 62,
+    "pagina" : 184,
+    "titulo" : "Nhuludi wame ku zulu kena",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Nhuludi wame ku Zulu kena, Kipohila kiame kua Nzambi Tata,",
+        "recuo" : 0
+      }, {
+        "texto" : "Watoma kundunda Karnba dia Nzolua, Wakitula mbote Kamba diaku pe.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Kua Ngeye isambilanga, Kua Ngeye isambilanga kaka, Watambula wau",
+        "recuo" : 0
+      }, {
+        "texto" : "he Karnba diaku pe.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ngina ye Tata yandi wapana, Kivuvu mu ntima, kia tarnbulua, Ku",
+        "recuo" : 0
+      }, {
+        "texto" : "Zulu diandi kalenda kutuala, Ye kiese kia tuala kua ngeye pe ,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ngina ye kiese kingi mu ntima, Kia tuka kua Yisu, Kikubama pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kisundidi iima yauonso yai, Ukamba kua Ngeye katambika wo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Kuei kuna Kamba, diakaka, o hatsi, Ifuete kuvundisa nti'aku wau, Mu",
+        "recuo" : 0
+      }, {
+        "texto" : "Yisu yasodilua mambu rnauonso, Ke hena diarnbu dikondeleko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Ngeye pe hanga ukamba kua Yisu, Yandi Mfumu ame i Mfumu aku",
+        "recuo" : 0
+      }, {
+        "texto" : "pe, Wenda longingi akuaku auonso, Azaya huluka pila ngeye.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "7045d08d-5bfd-48ad-9712-69dcb79cc87b",
+    "numero" : 63,
+    "pagina" : 185,
+    "titulo" : "Pulukidi kuame ngji yo yisu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Pulukidi kuame ngina yo Yisu, Yandi wafua, wanata masumu, Wakula",
+        "recuo" : 0
+      }, {
+        "texto" : "mono, yatonda Yandi, Tuele kua Yandi tondele.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Pangi etu fuete pe tonda, Nsurnuki njila ina, Tala kua Yisu, walanda",
+        "recuo" : 0
+      }, {
+        "texto" : "Yandi, Wakula yetu muna Nti.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "O nsumuki fuete baka pasi, Kasi luloloko Yisu hana lo, uka, lua kenda",
+        "recuo" : 0
+      }, {
+        "texto" : "watonda lo, pe. Yisu watukula muna Nti.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Tsangu zambote, pasi zaluta, Tuna luhuhamu, Wonga muakatu, Tuvuata",
+        "recuo" : 0
+      }, {
+        "texto" : "vuatu kia Mfumu Yisu, yandi watukula muna Nti",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Tuana tua Nzambi kiese monanga, Nzambi Juzolo Jusundidi mene,",
+        "recuo" : 0
+      }, {
+        "texto" : "tyo tala ndonga wakubika yo, Tua kubarnet u kua Yisu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "ac15fc76-c257-4b1a-9804-316327b4a021",
+    "numero" : 64,
+    "pagina" : 186,
+    "titulo" : "Muakalanga nkentu mosi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Muakalanga nkentu Wawelele kiavula, Nkentu Ndiona wawelele, Kumi",
+        "recuo" : 0
+      }, {
+        "texto" : "dia Mvu ye miole.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Wakuikila Nzarnbi, Wakuikila Nzambi, Wele diandi diakole.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Wakasimba mukivuatu, Kia Yisu mpe kolele, Mfumu Yisu wa inhudi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nani iondi simbidi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Mfumu Yisu wa hohese, Nda wendaku nda wendaku, Kieleka wau",
+        "recuo" : 0
+      }, {
+        "texto" : "kieleka wau, Atu auonso asimane.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "38611059-b692-4f39-b9c2-2579770039fd",
+    "numero" : 65,
+    "pagina" : 187,
+    "titulo" : "Mfumu yisu walonga mo",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Mfumu YISU walonga mo, Mambu mambote ma moyo, Wuiza",
+        "recuo" : 0
+      }, {
+        "texto" : "kulengi diaka-ko,Mambu mambote ma moyo,",
+        "recuo" : 0
+      }, {
+        "texto" : "I:",
+        "recuo" : 0
+      }, {
+        "texto" : "Mfumu YISU muna Nti, Pasi zetu bakidi, Mambote mo, mambote mo,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mambu mambote ma moyo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Mfumu YISU Yandi PE Mbolo yambote ya moyo, Jitisa Muana pila",
+        "recuo" : 0
+      }, {
+        "texto" : "Se, Mbolo yambote ya moyo, Mbolo ya moyo ndidi yo, Kilendi baka nzala",
+        "recuo" : 0
+      }, {
+        "texto" : "ko,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yambote yo, yambote yo, Mbolo yarnbote yamoyo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Mfumu Yisu wahana mo, Maza mambote ma moyo, Huka kaka wa nua",
+        "recuo" : 0
+      }, {
+        "texto" : "mo, Maza mam bote ma rnoyo, Nuini kala wese ntu, moyo wa mvu ya",
+        "recuo" : 0
+      }, {
+        "texto" : "mvu. bote mo, mambote mo, mambote ma rnoyo.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "fd1eb294-c6db-4ffd-846a-34fa139762f6",
+    "numero" : 66,
+    "pagina" : 188,
+    "titulo" : "Kuna zulu yo hara hatsi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Kuna Zulu yo haha hatsi, Jina dimoxi dina mo, Jina dia Yandi",
+        "recuo" : 0
+      }, {
+        "texto" : "Yisu, Akaka kalendi zaya ko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Diambote dio, diambote dio, Jina dia YISU, Jina dia YISU,",
+        "recuo" : 0
+      }, {
+        "texto" : "Vuvu kietu mvu ya mvu, Diambote dio, diambote dio,",
+        "recuo" : 0
+      }, {
+        "texto" : "Jina dia YISU, Vuvu kietu mvu ya mvu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Yandi YISU muna vita, Sadisa yo lungisa, Kani muini, kani pipa, Kua",
+        "recuo" : 0
+      }, {
+        "texto" : "Yisu Ndoki zakama.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Lumbu mbimbi lumbu mbote, Tangua pukumuni,",
+        "recuo" : 0
+      }, {
+        "texto" : "Jina dia Yisu diambote, Diau dilenda kubika.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Yisu, Yisu, Yisu, Mfumu, Wambote mene Nhuludi, Onata dio Yandi",
+        "recuo" : 0
+      }, {
+        "texto" : "unu, Jijilanga mvu ya mvu",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "f8e45afb-408d-4b1f-ac15-8aea807b3390",
+    "numero" : 67,
+    "pagina" : 188,
+    "titulo" : "Idihele kua yisu mfumu ame",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Idihene kua Yisu Mfumu ame, Masumu mame mawonso pasi pe, Muna",
+        "recuo" : 0
+      }, {
+        "texto" : "tangua imuene muna nti, Mu Iuzolo ukembe «Mono Yisu», Muna zitu",
+        "recuo" : 0
+      }, {
+        "texto" : "diame hana hau mbuene dio, Muna zitu diame hana hau mbuene dio.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "N,iekele Yo, Yawonso kua Yisu, Muna moko Mandi ngina wau, Muna",
+        "recuo" : 0
+      }, {
+        "texto" : "luzolo Luandi kuikidi, Muna Muand' Andi ngina wau, E kenda zandi",
+        "recuo" : 0
+      }, {
+        "texto" : "zafuana kupulula, Kenda zandi zafuana kupulula Muna mbi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Lukuikilu luawonso inhene lo, Muna ulemvu yabaka kenda za Yisu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Zatuka kua Yandi Yisu Nhuludi, Mu kiese kiawonso ivundila, Ye mbote",
+        "recuo" : 0
+      }, {
+        "texto" : "zame zawonso kua Yisu ibaka zo, Ye mbote zame zawonso kua Yisu",
+        "recuo" : 0
+      }, {
+        "texto" : "ibaka zo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Mbanzu zaku zawonso wayeka zo, Hana zo kua Yisu wasambila,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kiboko kala wavila muna mbi, Yandi zola ngeye nsumuki, Yisu ngeye",
+        "recuo" : 0
+      }, {
+        "texto" : "kasata wavutuka kua Nzambi, Telama kuaku wenda kua Yisu, Nhuludi.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "94c9ed9c-eed0-4ec5-b762-58ce8940486b",
+    "numero" : 68,
+    "pagina" : 189,
+    "titulo" : "Ngina ye kiese mbuene yisu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ngina ye kiese mbuene Yisu, Mu kiese ikuendila mbuene Yisu, Nkembu",
+        "recuo" : 0
+      }, {
+        "texto" : "mia tsi yai, Vila mivilanga, Luhuhamu ngina, luna mu Yisu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Mono Jenda suka, Yisu Kundunda, Nga mono inzununu, Yisu",
+        "recuo" : 0
+      }, {
+        "texto" : "KibamJ-auonso ikondele, andi hana yo pe, Gsata kima ko, ngina yo Yisu",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Muna tsuka ya tsi, Yisu kaka usala, Kikuiza Mfundisi yandi ó Yisu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kiese ikala kiau, Kikuiza Ntinu ame, Kua yandi hoha «Mono Mfumu»",
+        "recuo" : 0
+      }, {
+        "texto" : "aku.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Mu lufua ki wonga ko, ngina yo Yisu, Mono ikuenda ku Zulu, kua",
+        "recuo" : 0
+      }, {
+        "texto" : "Mfumu Yisu, Yandi Nkudi ame, Ye Pelelesa pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nsongi wa kieleka ngina mu Yisu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "9d27fe12-5918-4d30-ae17-3287a8ab92d4",
+    "numero" : 69,
+    "pagina" : 191,
+    "titulo" : "Masoladi ma yisu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Masoladi ma YISU, Yenu akuikiji, Nuzangulanga, edimbu, Nusunda mu",
+        "recuo" : 0
+      }, {
+        "texto" : "vita, Mu kati atuadimenga, Nujijilanga kaka, Nulanda Nturni a vita, Yandi",
+        "recuo" : 0
+      }, {
+        "texto" : "i Nkubiki",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Masoladi ma YISU, Mu Yandi nuanenu, Nuvuata vuatu kiandi, Nudiata",
+        "recuo" : 0
+      }, {
+        "texto" : "ku ngolo, Nukala pe ye kasu, Muna lusarnbilu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mu tangua pukumuni, Yandi nujijila",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Masoladi ma YISU, Ku tambi zangolo, Mu vita yai, ya pasi, Unu",
+        "recuo" : 0
+      }, {
+        "texto" : "nusunda yo, O wau mvu ya mvu, tukembela Nzambi etu, Cristu Nhuludi.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "a568f171-353e-4940-b904-04f795e1d5a5",
+    "numero" : 70,
+    "pagina" : 192,
+    "titulo" : "Tuimba yisu wa muini watsi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tuimbila YISU wa Muini wa tsi, 'Ye pipa yalenga muini Wijidi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Hana nkembu kua Mfumu YISU, Kua ngeye wafua, Tonda Yandi",
+        "recuo" : 0
+      }, {
+        "texto" : "Nloloki, aku, Una Moyo YISU.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Tuimbila YISU, watufuila mu Nti, Muna Menga maiitika, makula yetu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Tuiimbila Nzambi, watuzola mene, Watuhana Mfumu YISU, Nhuludi",
+        "recuo" : 0
+      }, {
+        "texto" : "etu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Tusambila Ngeye, Nganga mvuala etu, Tsaudi ya mambu kua Nzambi",
+        "recuo" : 0
+      }, {
+        "texto" : "Apungu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Nukuikila wau, e tangua ifuene, Njila ya moyo I Mfumu YISU.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "bed71c78-fe43-46d8-b911-7776147d8073",
+    "numero" : 71,
+    "pagina" : 192,
+    "titulo" : "Etangua kiese yai pe",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Etangua kiese yai pe, o YISU yandi upuludi, Ku kiese una ntim'ame, o",
+        "recuo" : 0
+      }, {
+        "texto" : "mono wau ihohanga.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Kembela kembela, o YISU wau nzolele, E YISU undonga sambila, Ya",
+        "recuo" : 0
+      }, {
+        "texto" : "kuikila yo sambanga, Kembila kembila, ó Yisu wau nzolele.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Walunga pe ye muna Nti, O YISU Yandi Mfumu ame,Umbokele mu ndinga-Andi, Ya jijila yo lenga mbi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Yavunda wau kua Nhuludi, Madia ma Zulu upananga, Wamvundisa",
+        "recuo" : 0
+      }, {
+        "texto" : "yakembela, Nkubiki Nsadisi",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Kua ndonga pe yasonga mo, Ikulanda yo mu lufua, Yaluta lufua",
+        "recuo" : 0
+      }, {
+        "texto" : "yakembela, Ku tsi aku utudisa.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "cce30a91-d3a1-4619-b8e6-f6fb4d1b510d",
+    "numero" : 72,
+    "pagina" : 193,
+    "titulo" : "Zenu ambuta kua ngolo",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Zenu ambuta kuna ngolo, Tulanda kua Yisu, Yandi mene kuna polo,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yandi Mbuta mvu.",
+        "recuo" : 0
+      }, {
+        "texto" : "Kubika ntima, Mono ndueke, Hohele Mfumu Yisu, Ndiona lunga, yandi",
+        "recuo" : 0
+      }, {
+        "texto" : "kala, Kua Mono ku Zulu .",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Zenu aleke, simba kidimbu, Kipu kitonda ko, Nuzolele lenga, nuzolele,",
+        "recuo" : 0
+      }, {
+        "texto" : "maka, Kivuidi nfunu ko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Zenu andonga kamoni wonga, Baka luhuluzu, Nuzolele fulu kembu ku",
+        "recuo" : 0
+      }, {
+        "texto" : "zulu, Landa kua Yisu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ndolo ku polo tulanda Mbuta, Yisu Muenixi, Ka nubekela lua tangua",
+        "recuo" : 0
+      }, {
+        "texto" : "iluta, Moye uvididi.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "4140e801-9a8a-4299-b248-a9fc1ddaee14",
+    "numero" : 73,
+    "pagina" : 194,
+    "titulo" : "Yisu wakula omu ubundu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Yisu wakula omu ubundu, Talu iingi futidi yo, Kakitadi-ko kafuta,",
+        "recuo" : 0
+      }, {
+        "texto" : "Menga mandi wahuhisa mo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Luzolo luaku Mfumu Yisu, Luwasonga muna nti, Muna kula mono",
+        "recuo" : 0
+      }, {
+        "texto" : "mbundu, Waku moyo kunuanini ko",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Mono wau kua Ngeye mvuilu, Ke kua kaka diaka ko, Ngeye Yisu",
+        "recuo" : 0
+      }, {
+        "texto" : "ikulanda, Yatondua kua Ngeye Yisu,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Taka diaku mono inata, Tambi Zaku ilanda mpe, Nga muna Ngeye",
+        "recuo" : 0
+      }, {
+        "texto" : "pasi ibaka, Kua Ngeye pe ikala ko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Yisu Muana Nzambi Apungu, Kuna Zulu diaku Katuka, Waiiza nata",
+        "recuo" : 0
+      }, {
+        "texto" : "au akulua, Kua Ngeye Yisu akala ko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Luzolo luaku lu wasonga, Lu wafuila m una Nt i, Ngeye wau upana",
+        "recuo" : 0
+      }, {
+        "texto" : "ngolo, Wuiza, Wuiza, Mfumu Yisu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "fbd4dc16-a3c3-4e81-a8ba-4e9bf88614ab",
+    "numero" : 74,
+    "pagina" : 195,
+    "titulo" : "Nga tutelema kua vita wau",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Nga tutelema kuna vita wau, Atuadimenga afitakana wau,",
+        "recuo" : 0
+      }, {
+        "texto" : "Tuna tuakubama tuvuata nuaninu, Tubonga tókolu ya Muanda pe.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Anuani nuakala akua kasu, Yenu auonso nutumakana wau, Nuzangula",
+        "recuo" : 0
+      }, {
+        "texto" : "ndinga nubonga wau nkunga, YISU Mbuta muna vita yai.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Yisu tutadila, Yandi tulandanga, Ye mbi tunuananga, ke atu ko,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kikakikilu tuna kiau, kialukuikilu, Nga tuximba kio tusunda ko.",
+        "recuo" : 0
+      }, {
+        "texto" : "Nzambi wahelela utuwuila wau, Utuhulula muna mbi, Nga tusundidi rnbi",
+        "recuo" : 0
+      }, {
+        "texto" : "zauonsono, Boxi tukembela Nhuludi.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "0a6942c8-5089-42f6-bacc-b26e46db6a26",
+    "numero" : 75,
+    "pagina" : 195,
+    "titulo" : "Auonso tumenanga pasi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Mauonso tumuenanga pasi, mu ntirna, lmau tulombanga,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Wuiza Nhuludi etu, E pasi musaka jina,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nza wuiza, wuiza, Nhuludi etu, E nkazu ku wuidi mi ko?",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Mu pasi tumonanga haha hatsi, Kua Ngeye tulombanga.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Mu dilu tudilanga, haha hatsi, Kua Ngeye tudidilanga.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "47dd49bd-e167-40bd-9565-8139ae3e4793",
+    "numero" : 76,
+    "pagina" : 197,
+    "titulo" : "Nzambiyandikunulundenu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Nzambi Yandi kunulundenu, Yandi kulusadisa pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yandi uwanga sambu kienu, Nzambi etu kunulundenu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Kunulundenu, kunulundenu, Kate tuwanana kua Yisu, Kunulundenu,",
+        "recuo" : 0
+      }, {
+        "texto" : "kunulundenu, Nzambi etu kunulundenu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Nzambi Yandi kunulundenu, Muna njila inukuenda, Yandi",
+        "recuo" : 0
+      }, {
+        "texto" : "kunulembekela, Nzambi etu kunulundenu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Nzambi kunulunda muna mbi, Yandi kunuhana ngolo, Muna sunda",
+        "recuo" : 0
+      }, {
+        "texto" : "Kadi Apernba, Nzambi etu kunulundenu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Nzambi Yandi kunukubika, Yandi kunuhana kiese,",
+        "recuo" : 0
+      }, {
+        "texto" : "kani muini",
+        "recuo" : 0
+      }, {
+        "texto" : "kani pipa, bi etu kunulundenu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "97daac15-168b-434e-843c-b20e6f17cad9",
+    "numero" : 77,
+    "pagina" : 197,
+    "titulo" : "77 Nge tata yandi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ngeye tata yandi, kuwanga malongi ko. bi aku moyo wina kubokila",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Wau kufuanga matu, Pasi mukuiza zina, Mfumu wa kakuiza osinga",
+        "recuo" : 0
+      }, {
+        "texto" : "fundisua.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ngeye mama yandi, mama kawangamalongi-ko, Mfumu wa kakuiza",
+        "recuo" : 0
+      }, {
+        "texto" : "osinga fundisua.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ngeye Nlongi yandi, Nlongi kuwanga rnalongi ko, Mfumu wa kakuiza",
+        "recuo" : 0
+      }, {
+        "texto" : "osinga fundisua.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "6775a725-e0a2-43bb-b9b9-04581c80028f",
+    "numero" : 78,
+    "pagina" : 198,
+    "titulo" : "Hata dia tata yasidi pe",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Hata dia Tata yasidi pe, Ngiele kua leha mu masumu mame,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mvidisi yauonso, kani indunga, Yisu wapuludi pe.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Kenda za Tata zavula jina, wela kusata kuna ya yenda, Wau kuikidi",
+        "recuo" : 0
+      }, {
+        "texto" : "he mvutukidi, Nzolele Kamba Yisu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ikamba pe Tata kia fuana ame ko, O Kutumbula yakala Muana aku,",
+        "recuo" : 0
+      }, {
+        "texto" : "lngamba, kasi kenda zaku, Muana wafua wizidi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Nkua masumu uvutukidi, Sunga kilunji kasumuki ko, Mfumu Yisu",
+        "recuo" : 0
+      }, {
+        "texto" : "wakomua mu Nti,· Wafuta pe Pfuka aku.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "26bbd978-00dc-4421-ac8d-3d2bce4fed50",
+    "numero" : 79,
+    "pagina" : 199,
+    "titulo" : "Yafitakana kua yisu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Yafitakana kua Yisu, Kenda zaku pfuene zo, Nga wau ngina ye pasi",
+        "recuo" : 0
+      }, {
+        "texto" : "zame, Watambula wau ngina,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Watambula wau ngina, Watambula wau ngina,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mono yambi kasi Yisn wafua, Watambula wau ngina.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Mu nguelele ngina ye ngolo kato, Luloloko Iuaku upana Io, Wafua",
+        "recuo" : 0
+      }, {
+        "texto" : "ekuma kia kula mono, Watambula wau ngina.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "kani diambote ditsoloka diau, Ye ngolo zame jilalanga pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Wahulula mono mu kenda Watambula wau ngina.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "E kenda zaku zafuana jina, ku pilula ntima yasala kua ngeye,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ntuma mono ibeza wau, wambula wau ngina,",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "6094b599-d0ad-4a50-848b-281e9439ce5a",
+    "numero" : 80,
+    "pagina" : 199,
+    "titulo" : "Mfumu yisu wa nsamu zame",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Mfumu Yisu, wa ndomba zame, Ngeye i nhuludi-ame!",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngolo za ngeye kinazau ko, Ngeye i nhuludi'ame.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Wau mono yavila njil'aku, Mono kele mbumdu mu masumu, Wau Yisu",
+        "recuo" : 0
+      }, {
+        "texto" : "i wapulula, Yandi Nloloki'arne",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Hilakana idilu yame pe, Muna ntim'ame, Mono Yambimbi muna",
+        "recuo" : 0
+      }, {
+        "texto" : "pol'aku, Muna ntim'ame.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Mono kifuene ko.kua ngeye, Ekuma kia masumu mame, Wapulula",
+        "recuo" : 0
+      }, {
+        "texto" : "muna tsumbi ambi, Ngeye i nhuludi'arne.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Mono yavila rnuna pipa wau, Kasi wakatula mo,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngolo za zulu Ngeye upana zo, Ngeye i Nhuludi'arne,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Mono ikala mu luhuharnu, Muna kenda zaku, Nga mono tonda Mfumu",
+        "recuo" : 0
+      }, {
+        "texto" : "Yisu wau, Mono ihulukampe.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "18b2839e-1e4b-48a8-8149-65a7dda71a96",
+    "numero" : 81,
+    "pagina" : 200,
+    "titulo" : "O yehova ukangalesa",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ó Jehova ukangalesa, Mu tsi yo nzenza wau, Mono mene yafua mesu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngeye vuvu kiame.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Mfumu Yisu ngina vuvu kua Ngeye, Mfumu Yisu, ngina vuvu kua",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngeye.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ndonga aku ikuarnona, Muna tangua ihuluka, Ngina tuka muna pipa,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngina kuenda ku tsi aku.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Kiese lumbu ki iluaka, Muna ximu a lufua, Nhuludi ame ututakana,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ye akuetu tukua wana ko.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "d13490cd-2d59-406e-bcca-258f9d082f88",
+    "numero" : 82,
+    "pagina" : 201,
+    "titulo" : "Mu ana kavidi nguandi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Muana kavidi Nguandi, Kulornba kakulombele, Wa Yenda mu azungila,",
+        "recuo" : 0
+      }, {
+        "texto" : "Eti kufua Nzambi nguandi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Vutuka muan'ame wuiza, Landa mu itarnbi yame",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Muana kavidi Nguandi, Kenda kamuene moyo aku, Ndinga ya kenda",
+        "recuo" : 0
+      }, {
+        "texto" : "wuidi yo, Kabenze Ó unu vutuka.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Muana kavidi Nguandi, Kielo wau aningamene, Yandi kudila eti wenda,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ebulanganu diaku edi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Muana havidi nguandi, Kani wafu kala kiboko, Kenda kavidi ndandu",
+        "recuo" : 0
+      }, {
+        "texto" : "aku, Kubekela nga wafuluka.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Muana kavidI nguandi, Pasi kakumuena pe, Wakele mui vumu kiandi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Akubekele tangua andi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 6,
+      "linhas" : [ {
+        "texto" : "Muana kavidi nguandi, Kutala wowo lehele, Wanata kudima diandi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Xidiko ye nkundiko pe",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 7,
+      "linhas" : [ {
+        "texto" : "uana kavidi nguandi, Kutala wowo wuine pe, Kiuti waku uta pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Wakondele nga wafuaku.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "d6638ede-a2be-426c-b9d9-b50c1e5d32e9",
+    "numero" : 83,
+    "pagina" : 202,
+    "titulo" : "Mfumu yisu una kuiza",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Mfurnu Yisu una kuiza, Fundisa kua yetu atu, Mu masumu yo mahangu",
+        "recuo" : 0
+      }, {
+        "texto" : "metu, Tuna hanga wau, Muna ntiMa tudiabula, Mambu mandi tutina,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kuiza kena Yisu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Nkembu, nkembu, Aleluia, Kuiza kena Yisu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Muna tsi yai tuna. Yetu auonso asumuki, Kasi Yisu, yandi mene,",
+        "recuo" : 0
+      }, {
+        "texto" : "Lendakuiza hambula, Yandi zeye auonso asukuka, Mu Menga mandi pe,",
+        "recuo" : 0
+      }, {
+        "texto" : "Menga mandi Yisu",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Mu iteke yo mabunda, Yetu auonso tuavila, Muna moko mandi Kadia",
+        "recuo" : 0
+      }, {
+        "texto" : "Apemba, tl'uakalanga mo, YISU; watukula, una Menga ima talu, menga",
+        "recuo" : 0
+      }, {
+        "texto" : "mandi Yisu",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Muna ntima tuzeye wo, Mfumu Yisu Nhuludi, Kaxi mu masumu lua,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yetu tuna bekela, Kaxi wau nga tuyeka mo, Tulenda huluka, Yisu I",
+        "recuo" : 0
+      }, {
+        "texto" : "Nhuludi,",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "fe2d672d-ddd1-4bbe-9d2f-8c0d896f5ce0",
+    "numero" : 84,
+    "pagina" : 204,
+    "titulo" : "Jina dia mbote dia yisu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Jina diambote dia Yisu, Yimbenu ku Nkembu, Nuiza awonso kunsakila,",
+        "recuo" : 0
+      }, {
+        "texto" : "O Cristu, Cristu, Cristu Nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "O Ntinu vuete Kalumezem, Yo nti wa Kintinu, Nuiza awonso",
+        "recuo" : 0
+      }, {
+        "texto" : "kusambila, O Cristu, Cristu, Cristu Nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Makolowa Mengi mena yo Yisu, Mu tsi etu Nhangui, Punga yatu",
+        "recuo" : 0
+      }, {
+        "texto" : "nunkembela, O Cristu, Cristu, Cristu Nhuludi.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "23447996-10ab-43dc-9299-10a3817e598a",
+    "numero" : 85,
+    "pagina" : 204,
+    "titulo" : "Kiese kilumbu nitu yai",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Kiese kilumbu nitu yai, Hiluluka ntoto pe, Mono pe ngina kunuana,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mutala kuna kua Yisu,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Ikamona Polo andi, Yakangala ye Punga pe, Ku Zulu kuna kua kejima,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ya kembela nkembu andi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Kilumbu kiese, kiese pe, Ki ikulembu ó moyo wau, Nzeye-wo",
+        "recuo" : 0
+      }, {
+        "texto" : "imukuikidi, kifulu kiame kina ko",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ku ilumbu mbuludi ko pe; Ndungidi hena tangua Andi, Mfumu",
+        "recuo" : 0
+      }, {
+        "texto" : "ukuhoha kuhuidi, Vunda mu kufulu kiaku.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "llumbu yauonso itambula, Isata kuditomesa, Ubokela njamu nitu yai,",
+        "recuo" : 0
+      }, {
+        "texto" : "Moyo ame ukuenda kua Yisu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "bc4c41b3-669a-4f00-a358-a04d60c4db24",
+    "numero" : 86,
+    "pagina" : 205,
+    "titulo" : "Ukihua salu kia moyo wau",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ukihua salu kia moyo wau, Nga lufua lukuluakila, Kifulu ukala moyo",
+        "recuo" : 0
+      }, {
+        "texto" : "aku, Kia ndambu iuluak.ila.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Kamba diame unu torna sola, Moyo yo lufua, kizolele, kizolele, Mbazi",
+        "recuo" : 0
+      }, {
+        "texto" : "tangua ilenda kuluta, Unu Cristu zolele kukula.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ngeye sata luhuhamu lua csi, Nkembu mia tsi nfunu katu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Muna tsuka ya rnovo aku, Kamilendi kukembisa ko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Kamba diame wau, wanga mambu, Ma Yisu Nhuludi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Muna ekuma kia kula ngeye, Moyo Andi Kahana mu Nti.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "f40454af-fa45-4c73-92ef-32d7b29d433d",
+    "numero" : 87,
+    "pagina" : 206,
+    "titulo" : "Mfumu yisu muana nzambi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Mfumu Yisu muana Nzarnbi, Mukuiza kena haha tsi, Kiese kingi kikala",
+        "recuo" : 0
+      }, {
+        "texto" : "kua, Au asolua.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Kuna tsi ya helele tukuenda, Yisu kutufila tukondwa idilu, Ye kisanga",
+        "recuo" : 0
+      }, {
+        "texto" : "kwa Yisu Nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Mfumu Yisu mukuiza kena, Mukuiza sola ambi yambote,",
+        "recuo" : 0
+      }, {
+        "texto" : "Muna matuti kakuizila muna kamonika.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Muna matuti kakuizila, Ye Pungi za Nzambi, Pungi ya Mbaninu itatala,",
+        "recuo" : 0
+      }, {
+        "texto" : "awonso afuluka.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Fundisa kafundisa Mwana Nzambi, Ukahohele aonso asolua, Ayala",
+        "recuo" : 0
+      }, {
+        "texto" : "ye kwele mvu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "4b83e158-d22c-4558-b617-b4de0dac761f",
+    "numero" : 88,
+    "pagina" : 206,
+    "titulo" : "Kina lumbu kakuiza",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Kina Lumbu kakuiza, Nani wavidisa wa? Yisu fitakana.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Awonso oha tsi, Yauonso tuika yo, Yetu nguetu yo diaka, Yisu fitakana.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Yisu ualunga vita, Nkadi Ampemba wa buisua, Uafwa wafuluka, Yisu",
+        "recuo" : 0
+      }, {
+        "texto" : "fitakana",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Ufitakana mene, Mono nzolele Ngeye, Uasimba mu luloku luaku,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yisu fitakana.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "3222835b-4388-494d-985d-b0354a20e469",
+    "numero" : 89,
+    "pagina" : 207,
+    "titulo" : "Mu buku dia nzambi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Mu buku dia Nzambi mutuna bokelua, Nga zolele wiza wau;",
+        "recuo" : 0
+      }, {
+        "texto" : "Nkoko wa Kenda una luta wau, Nga zolele wiza wau.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Yisu ukubokele,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nga zolele wiza wau,",
+        "recuo" : 0
+      }, {
+        "texto" : "Sosa Mvuluzi kakuloloka,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Tuna rnona mahinda, Mu tanga Nkand'andi, Nga zolele wiza wau, Nga",
+        "recuo" : 0
+      }, {
+        "texto" : "zolele Nsumuki ye mono mene mpe, Nga zolele wiza wau",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "O mbokele aku nguidi yo, Mu nkenda zaku ezi, Nga zolele wiza wau,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngina bokela wau, Nga tonda wa lunga, Nga zolele wiza wau",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "62ce2f4d-72b6-4bc4-8ec2-61f49a20491b",
+    "numero" : 90,
+    "pagina" : 208,
+    "titulo" : "Nzambi wahoha kwa noe",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Nzambi wahoha kwa Noe haha ntoto, Tunga Nzanza nza he ladisa yo,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kadi mbuene ntsi yo masumu, .. Kadi wau tsi yawonso he ifuasa yo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Dodo; dodo utuyanguluila, Kumbazi Mvula tuina nokina, Kamono",
+        "recuo" : 0
+      }, {
+        "texto" : "kwameko ngina ye tsabi, Kadi Tata kenge nzanza welenge.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Noe wahoha kwa atu haha ntoto, He tutungi nzanza tsi he ifuasuka,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kadi tsi ifuidi ye masurnu, Kadi tsi yawonso he ifuasa yo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Mvula ya watika noka haha ntótó Atu azaya wo tsi he ifuasuka,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ayenda didila kwa Noe kayangula, Noe wavutula Nzambi kenge nzanza",
+        "recuo" : 0
+      }, {
+        "texto" : "welenge",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "8e60c5bc-11ef-4e42-ba7a-e2bfb12d4483",
+    "numero" : 91,
+    "pagina" : 209,
+    "titulo" : "Tubamzako ku tsi ina",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tubanzako ku tsi ina, Ku nkembo yo kiese tukala, Kuna Zulu kua",
+        "recuo" : 0
+      }, {
+        "texto" : "Nzambi wa Se, Kani wei tukalako, kuna?",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Tubanzako ku tsi Ina, O luhuhamu lunako, Ye nkunga tuimbilako,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kani wei tukalako kuna?",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Tubanzako ku tsi ina, Ya akuetu atekelako, Muna polo ya Mfumu YISU,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kani wei tukalako, kuna?",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Masumu ye pasi jihua, Kuna tsi kayaweluanguko, Kuna moyo wa Mvu",
+        "recuo" : 0
+      }, {
+        "texto" : "ya Mvu, Kani wei tukalako, kuna",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Kua ngeye YISU tukalako, Yo akuikiji auonso hatsi, Ku kiese",
+        "recuo" : 0
+      }, {
+        "texto" : "tuluakilako, Muna tangua tukalako, kuna?",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "a06a738e-dce5-407e-9e81-4e52d133fa8e",
+    "numero" : 92,
+    "pagina" : 209,
+    "titulo" : "Tuakakala kua mfumu yisu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tuakakala kua Mfumu YISU, Muna zola kazolele tsi, TuaJcakala ku tsi",
+        "recuo" : 0
+      }, {
+        "texto" : "ya YISU, a kuikila Mfumu YISU.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Kuzulu, Ku Zulu, Kua YISU, ku Zulu tukala.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Mu manienga tufuete banza, Muna honda tuahonda YISU, Muana",
+        "recuo" : 0
+      }, {
+        "texto" : "Nzambi wakubika tsi, Tuakakala ku tsi ya YISU.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Tuakavunda kua Mfumu YISU, Muna lufua tutukidi mo, Tukembila",
+        "recuo" : 0
+      }, {
+        "texto" : "Mfumu YISU, Muna zola kazolele tsi.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "f62b45ba-fa17-4988-b56d-2b9af16fd57f",
+    "numero" : 93,
+    "pagina" : 210,
+    "titulo" : "Yisu hohele wo kuau alongoki",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "ó YISU hohele wo kuau alonguki, Fulu ina-ko Tata ludikidi, Fulu",
+        "recuo" : 0
+      }, {
+        "texto" : "kiambote kio, Tuna kuna Zulu wau, Kalendi mona pasi ko diese mvu",
+        "recuo" : 0
+      }, {
+        "texto" : "ya mvu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "ó YISU hohele wo, kua mono kuikila, Ka rnoni wonga ko, mono",
+        "recuo" : 0
+      }, {
+        "texto" : "ivutuka, Kuna Zulu mu yandi Nzo, Kua mono yenu kala mo, Kalendi",
+        "recuo" : 0
+      }, {
+        "texto" : "diaka dila ko kiese, mvu ya mvu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "ó YISU hohele wo, mono njila pe, Mono kuame kieleka, kumosi",
+        "recuo" : 0
+      }, {
+        "texto" : "kua Se, Kua mono wese kaka ntu, Lenda kota ku Zulu, Mono ikaila",
+        "recuo" : 0
+      }, {
+        "texto" : "kuandi fulu, moyo mvu ya mvu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "5e63e5ac-ae6f-41df-add4-5fd5444018dc",
+    "numero" : 94,
+    "pagina" : 211,
+    "titulo" : "Mu lukuikilu tukala ko",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Mu lukuikilu tukala ko, Kuna fulu tualudikilua, Ye ndonga ya",
+        "recuo" : 0
+      }, {
+        "texto" : "Yeruzalem, Kuna fulu kia mvu ya mvu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Elo wau, ku tsi etu, Ku Zulu, ku Tsi etu tukala, Elo wau, ku tsi etu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ku Zulu, ku tsi etu tukala.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ku tsi ya nkembu tuiimbila, Kuna Zulu kua jeta muini, Kuna tsi ya",
+        "recuo" : 0
+      }, {
+        "texto" : "luhuhamu, Epasi hatsi jisala,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Matondo kua Yisu Nkudi, Muna kulua tuakulua mu mbi, Muna Tsangu",
+        "recuo" : 0
+      }, {
+        "texto" : "tukuikila wau, Muna kenda za Mfumu Yisu .",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "6b3aef88-c1ea-45d0-859e-e4fd6328854e",
+    "numero" : 95,
+    "pagina" : 211,
+    "titulo" : "Yambote tsi tukuendanga",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Yambote tsi tukuendanga, Tsi tuasongelua, Kuna ka kukota wese, mbi",
+        "recuo" : 0
+      }, {
+        "texto" : "Auonso ahelela.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Tuenda ku tsi yahelela, KUa tunga Nzambi Se, Kuna akuehi tukembela,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kuna nkembu mvu ya mvu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Eyai tsi tukuendanga, Kiese tumonanga, Kulumbu pe tutudila, Kuna",
+        "recuo" : 0
+      }, {
+        "texto" : "tuabekelua",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Eyai Tsi tutudila, Ka tukota kaka ko, Eyai tsi katufua ko,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kuna moyo mvu ya mvu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Eyai tsi tuvundila, Pasi huajihua, Ku nkembu pe tutudila, Kuna",
+        "recuo" : 0
+      }, {
+        "texto" : "tuhuhama.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "de8d4c70-9863-44d7-bea4-2a35cd6f20bc",
+    "numero" : 96,
+    "pagina" : 212,
+    "titulo" : "Hara pasi tumonanga",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Haha pasi tumonanga, Yo manienge tubakanga, Ku zulu luhujamu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Ekue kiese kuna, Kiese elo kiese, Ekue",
+        "recuo" : 0
+      }, {
+        "texto" : "kiese kuna,",
+        "recuo" : 0
+      }, {
+        "texto" : "Katuharnbana diaka ko;",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Tangua zengi mu manienge, Tuna kudihaluka, Ya akuetu (tuzolanga).",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Yetu tuzolanga Yisu, Tuhulukila mu kenda, Tujinga mvu ya mvu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Tuana kuna tuwanana, Abakidi kala luhuluzu, Mu yandi Mfumu Yisu.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Awonso tukua wana ko, Akuetu atuzolanga,Mu t si ya pasi yai.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 6,
+      "linhas" : [ {
+        "texto" : "Kuna tumona Yisu, Turninanga mu muini, Ku ngolo zisundidi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 7,
+      "linhas" : [ {
+        "texto" : "Kuna tuiimba nkembu, Ua Nhuludi wahelela, Kua Yandi kuele mvu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "3b5a8ee6-1e64-4515-9c3e-3ebb02a5f724",
+    "numero" : 97,
+    "pagina" : 214,
+    "titulo" : "Mufulu kiame kafuila",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Mu fulu kiame kafuila, ó Yisu moyo wa Tsi, Pasi kua mono kabaka,",
+        "recuo" : 0
+      }, {
+        "texto" : "Wayondala Nti.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Ó hanga mono funguna, Kua Yisu Mfumu ame, Ó hanga mono",
+        "recuo" : 0
+      }, {
+        "texto" : "kuikila, Mu kenda za Yisu",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Ó ntima ame zakarna, Ku fimguna mbi, Kasi ngeye fuidi mo, Kuhulula",
+        "recuo" : 0
+      }, {
+        "texto" : "mono",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Wau mono lenda iimbila, Kiese mu ntim'ame, Ya mono lenda funguna,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nhuludi ame wau.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "ccf2db7a-42f1-4c5e-bcbf-48a5267fcf9b",
+    "numero" : 98,
+    "pagina" : 214,
+    "titulo" : "Auonso ahoha pasi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Auonso ahoha pasi, Muna njila yai ngina, Au kalendi mona muini,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kuna polo ikuendanga,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Mfumu Yisu ukangalesa, Waiza kala kua mono, Muna tsi yai ya pasi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mono kaka kilendi ko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ahoha mambu mambote, Ma lutezo kua mono, Kasi Yisu utsadisa, Ye",
+        "recuo" : 0
+      }, {
+        "texto" : "undembekela pe.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ahoha mambu mambote, Ma lutezo kua mono,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kasi Yisti utsadisa, Ye undembekela pe.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Luzolo luame ngolo katu, Mu masumu yazenzama,",
+        "recuo" : 0
+      }, {
+        "texto" : "Mu lusadisu Iuandi kaka, Luau pe isundila.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "904ec8b7-37be-4d19-8c56-49d35ddd62c4",
+    "numero" : 99,
+    "pagina" : 215,
+    "titulo" : "Lengelu diame ngeye yisu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Lengelu diame, Ngeye Yisu, Tadi diangolo kuele mvu, Lumbu kia",
+        "recuo" : 0
+      }, {
+        "texto" : "pasi kijidi ko, kilendi mona wonga ko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Aleluia Mfumu Yisu, Vuvu kiame Nhuludi pe, Nani muna moko",
+        "recuo" : 0
+      }, {
+        "texto" : "Mandi, Lenda kua mono katula.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Mambu mandi makieleka kaka, Yisu kalendi huna ko,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kadi Apem a kalendi baka, Wese kua yandi kuidiki.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Njimbu zame yandi wafuta, Menga mandi mahumd], Zulu ye tsi",
+        "recuo" : 0
+      }, {
+        "texto" : "dilenda Iuta, Mambu mandi kalendi luta ko.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "d254383d-9675-4c9a-8da4-cdc65078e1e2",
+    "numero" : 100,
+    "pagina" : 216,
+    "titulo" : "Yenu apangi tuna oha tsi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Yenu apangi tuna oha hatsi, Tubanzanga tutomane wau, Kasi akuetu",
+        "recuo" : 0
+      }, {
+        "texto" : "katuna kiambote ko, Ngeye yo mono tusambanga.",
+        "recuo" : 0
+      }, {
+        "texto" : "Tusambilanga, tusambilanga, E pila ya hanga yandi Daniel",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Ó Daniel wajijila o samba, Antakula mu ulu dia kosi, Ekuma yandi",
+        "recuo" : 0
+      }, {
+        "texto" : "wasambila Nzambi, Jikosi ye nzala alembua kundia,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Ntinu wabaka manienge mu ntirna, Ekuma kia yandi Daniel,",
+        "recuo" : 0
+      }, {
+        "texto" : "Wadimeneka kuna wabaka kiese, Bkuma ankatudi muna lufua.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Nzambi ya kenda wasadila pasi, Tsoni abaka atuadimenga,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ntinu wabala wavutula epfutu, Epfutu ya sumu luau lufua.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Tufuete yetu baka kiese, Kujijila pila Daniel, o mambu ma Nzambi",
+        "recuo" : 0
+      }, {
+        "texto" : "nga mena mu ntima, Mau o yetu tusundila.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 6,
+      "linhas" : [ {
+        "texto" : "Ó Balasazala, kasambila Nzambi ko, Wabaka pasi mu paka zandi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kilumbu kimosi wamona nlernbu, Wasonikanga lufua Iuandi,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 7,
+      "linhas" : [ {
+        "texto" : "Ikutangidi ilumbu ihuidi, Ikupezele ka wafuanako pe, Ikukaidi",
+        "recuo" : 0
+      }, {
+        "texto" : "kundambu ya akuenu, Wenda wakawana pasi zaku.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "1895dfa2-d1ba-41df-9e4a-52e9d3d1df70",
+    "numero" : 101,
+    "pagina" : 217,
+    "titulo" : "Wakieleka wau wakieleka wau",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Wakieleka wau, Wakieleka wau, O Yisu Nzola Kanzolele, Wakieleka wau,",
+        "recuo" : 0
+      }, {
+        "texto" : "wakieleka wau, O Yisu ·unzolele.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Wakieleka wau, wakieleka wau, Mfumu Yisu upfuididi, Wakieleka wau,",
+        "recuo" : 0
+      }, {
+        "texto" : "wakieleka wau, Yisu upfuididi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Yahuluka wau, Yahuluka wau, Ekuma Yisu upfuididi, Yahuluka wau,",
+        "recuo" : 0
+      }, {
+        "texto" : "yahuluka wau,' Yisu upfuididi.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "a6a06905-2fe7-469f-99c3-aa2320eaaed5",
+    "numero" : 102,
+    "pagina" : 217,
+    "titulo" : "E kingi kina yame",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Kiese kingi kina yame, Mu kusadila, Yesu Klisto, Nkundi arne, Wau",
+        "recuo" : 0
+      }, {
+        "texto" : "nate lufwa",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "coro",
+      "numero" : null,
+      "linhas" : [ {
+        "texto" : "Moyo ame ikuvana. Waku mvimba wau; Do, mu nkenda zaku zingi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Umpuluza mu· mbi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Vuvu kiame kianene, mu velela, Kansi Yesu kak'ofwene, Mu",
+        "recuo" : 0
+      }, {
+        "texto" : "kumfwanisa",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Yesu, kala Mfidi ame, Mu mawonsono, Meso mame muna Ngeye,",
+        "recuo" : 0
+      }, {
+        "texto" : "Yasi'aka mo.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Salu kingi ye zimpasi, Kina tina ko; Nzeye Yesu, Nkundi ame,",
+        "recuo" : 0
+      }, {
+        "texto" : "Kakunsisa ko.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Bika twenda kuna nkembo, Ndolo kuna ntu! Bonga nkunga mia",
+        "recuo" : 0
+      }, {
+        "texto" : "matondo, Yakwayele mvu.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "43708cb8-4726-4b06-b84e-86fbd071aefa",
+    "numero" : 103,
+    "pagina" : 219,
+    "titulo" : "Tsangu jina jikupulula",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tsangu jina jikupulula, Menga mandi makutsukula, Ngolo jina",
+        "recuo" : 0
+      }, {
+        "texto" : "jikukubika,",
+        "recuo" : 0
+      }, {
+        "texto" : "Jina kua Ngeye.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "04841f2b-68ee-42af-adf6-a9624a639ecf",
+    "numero" : 104,
+    "pagina" : 219,
+    "titulo" : "Nzambi etu mvu ya mvu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Nzambi etu mvu ya mvu, Muan' Andi pe Nkudi etu, Muanda Wahelela",
+        "recuo" : 0
+      }, {
+        "texto" : "pe,Tutonda, tujitisa yo tukembela.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "f15bf5bf-76d6-42b0-8c0d-03a20cf60542",
+    "numero" : 105,
+    "pagina" : 219,
+    "titulo" : "Tangua zauonso fitana kua yisu nhuludi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tangua zauonso fitakana kua Yisu, Nhuludi, Pila kakumona kenda zandi",
+        "recuo" : 0
+      }, {
+        "texto" : "ye nkembu andi pe.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "034543b6-c361-4989-a22d-47cf85374eb9",
+    "numero" : 106,
+    "pagina" : 220,
+    "titulo" : "Landa kuandi yisu ikembela yisu nhuludi ame",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ikembela Yisu Nhuludi arne, Ikuma yandi upfuididi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Nkembu Andi ngina mona. Yo rnoyo mvu ya mvu ivua.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "fa3de490-7672-42c4-a5a4-887d07f9cd6b",
+    "numero" : 107,
+    "pagina" : 220,
+    "titulo" : "Ikuimbila mfumu yisu luzolo luaku",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Ikuimbila Mfumu Yisu, luzolo luaku, Ngeye wame Nhuludi tangua",
+        "recuo" : 0
+      }, {
+        "texto" : "Pulukidi kuame, wau ndungidi, Kangalesa kuame Yisu, kuna tsi aku.",
+        "recuo" : 0
+      }, {
+        "texto" : "zauonso.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Mono mene ngolo katu, mu pukumuni. Kasi ngeye ngolo upana,",
+        "recuo" : 0
+      }, {
+        "texto" : "Ngeye undimgisa.",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "31ff28fb-7c14-4118-ac6a-ae74f7ed73f8",
+    "numero" : 109,
+    "pagina" : 220,
+    "titulo" : "Hanga mono zaya",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "ó Hanga mono zaya, Yatoma baka wau, Talu futidi Nhuludi, Kuhulula",
+        "recuo" : 0
+      }, {
+        "texto" : "mono.",
+        "recuo" : 0
+      }, {
+        "texto" : "JINA DIMOXI",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "52bb40bf-1210-4552-be76-e352bd3aa043",
+    "numero" : 110,
+    "pagina" : 221,
+    "titulo" : "Jina dimosi kaka jina dia yisu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Jina dimoxi kaka, Jina dia Yisu, Mu yandi luhuhamu yo lulolokua,",
+        "recuo" : 0
+      }, {
+        "texto" : "Jina dimoxi kaka, Jina dia Yisu, Mu Yandi I rnoyo kiese yo Muini",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "b17dd801-1fdd-45e3-b621-73225b74f87a",
+    "numero" : 111,
+    "pagina" : 221,
+    "titulo" : "Kalanga hatsi",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Kalanga hatsi, Yisu wanzola, Muna lufua, Yandi upuludi,",
+        "recuo" : 0
+      }, {
+        "texto" : "Masumu mame, Yandi nete, Kuiza Kakuiza, mu nkembu andi",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "d3c48c36-c0f2-47a1-badb-70fd280f07bb",
+    "numero" : 112,
+    "pagina" : 221,
+    "titulo" : "Tukuenda ku polo mu njila ya zulu",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Tukuenda ku polo mu njila ya Zulu, Kuakala aheledi ahuluka mu",
+        "recuo" : 0
+      }, {
+        "texto" : "mbi,óngeye wavila kualeha kua Nzambi, o hoha, zolele kuenda kuna tsi",
+        "recuo" : 0
+      }, {
+        "texto" : "ya helela. Zolele? zolele? zolele? ó hoha, zolele kuenda kuna tsi helela?",
+        "recuo" : 0
+      }, {
+        "texto" : "Kuna tsi yaina kuakatu kudila,",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "Manienga ye lufua kalendi kota ko, O ngeye wayela ye wonga wa lufua,",
+        "recuo" : 0
+      }, {
+        "texto" : "O hoha, zolele kuenda kuna tsi yahelela",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Kuna kuakatu putu auonso ibamba, lbamba ya rnoyo tsuka muakatu,",
+        "recuo" : 0
+      }, {
+        "texto" : "Cuakatu kuwela, kuakatu imbevu, hoha zolele kuenda kuna tsi vahelela?",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Watuka ku zulu 6 Yisu Nhuludi, Yandi I Njila yatuka kua Se, Nga",
+        "recuo" : 0
+      }, {
+        "texto" : "tukuntonda tulenda pe tula, ó hoha, zolele kuenda kuna tsi yahelela?",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "Watuka ku zulu 6 Yisu Nhuludi, Yandi I Njila yatuka kua Se, Nga",
+        "recuo" : 0
+      }, {
+        "texto" : "tukuntonda tulenda pe tula, ó hoha, zolele kuenda kuna tsi yahelela?",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 6,
+      "linhas" : [ {
+        "texto" : "ó yeka yai iifo yambimbi ya mu tsi, Walenga pe yese yauonso ya",
+        "recuo" : 0
+      }, {
+        "texto" : "mu tsi O Yisu ukuhana kiese ye kuele mvu, ó hoha «Nzolele kuenda",
+        "recuo" : 0
+      }, {
+        "texto" : "kuna tsi yahelela» Nzolele, nzolele, nzolele, nzolele, Mono nzolele",
+        "recuo" : 0
+      }, {
+        "texto" : "kuenda kuna tsi yahelela",
+        "recuo" : 0
+      } ]
+    } ]
+  }, {
+    "id" : "b9310dad-653b-40c7-94e8-0f81d16a6f9e",
+    "numero" : 113,
+    "pagina" : 222,
+    "titulo" : "Kamba dia tuana",
+    "autor" : "IERA",
+    "blocos" : [ {
+      "tipo" : "estrofe",
+      "numero" : 1,
+      "linhas" : [ {
+        "texto" : "Kamba dia tuana, Yisu Nhuludi, Kamba dia tuana Yisu Nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 2,
+      "linhas" : [ {
+        "texto" : "ó Yetu lunda kuetu Ngeye Nhuludi, Yetu lunda kuetu Ngeye Nhuludi.",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 3,
+      "linhas" : [ {
+        "texto" : "Lunda mameme maku, kukenda zizundidi!",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 4,
+      "linhas" : [ {
+        "texto" : "Hana kua yetu tsangu, Za ntima mia sungama!",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 5,
+      "linhas" : [ {
+        "texto" : "O mambu maku mambote, Tua toma zayamo",
+        "recuo" : 0
+      } ]
+    }, {
+      "tipo" : "estrofe",
+      "numero" : 6,
+      "linhas" : [ {
+        "texto" : "Ya rnuna malongi maku, Matuna mau wau.",
+        "recuo" : 0
+      } ]
+    } ]
+  } ]
+}

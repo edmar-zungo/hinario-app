@@ -104,10 +104,15 @@ public class LeituraService {
 
         try {
             Pagina atualizada = pagina.comLeituras(leituras).comEstado(estado);
-            paginas.atualizar(atualizada);
+            Integer numeroImpresso = numeroPaginaImpresso(leituraGemini);
+            if (numeroImpresso != null && numeroImpresso > 0 && numeroImpresso != atualizada.pagina()) {
+                atualizada = paginas.renomear(atualizada, numeroImpresso);
+            } else {
+                paginas.atualizar(atualizada);
+            }
             if (estado == EstadoPagina.LIDA) {
                 try {
-                    return estruturas.estruturar(pagina.pagina());
+                    return estruturas.estruturar(atualizada.pagina());
                 } catch (Exception ignorada) {
                     // a leitura Gemini fica guardada mesmo se a estruturação falhar
                 }
@@ -117,6 +122,14 @@ public class LeituraService {
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,
                     "não foi possível gravar a leitura da página " + pagina.pagina() + ": " + e.getMessage());
         }
+    }
+
+    private static Integer numeroPaginaImpresso(LeituraResultado leituraGemini) {
+        if (leituraGemini == null || leituraGemini.resposta() == null) {
+            return null;
+        }
+        JsonNode numero = leituraGemini.resposta().get("numeroPaginaImpresso");
+        return (numero != null && numero.isInt()) ? numero.asInt() : null;
     }
 
     private ObjectNode geminiJson(LeituraResultado resultado, LeituraExcecao falha) {
